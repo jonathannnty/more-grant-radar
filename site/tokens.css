@@ -1,0 +1,129 @@
+/* Hallmark · tokens · theme: Cobalt · axes: light-paper / grotesk-sans / cool-accent */
+:root {
+  color-scheme: light;
+
+  /* color — paper & ink */
+  --color-paper: oklch(98.5% 0.003 250);
+  --color-paper-2: oklch(96.5% 0.004 250);
+  --color-paper-3: oklch(93.5% 0.006 250);
+  --color-ink: oklch(21% 0.01 260);
+  --color-ink-2: oklch(42% 0.012 260);
+  --color-ink-3: oklch(58% 0.01 260);
+  --color-rule: oklch(88% 0.005 250);
+  --color-border: oklch(21% 0.01 260 / 0.12);
+
+  /* color — accent & status */
+  --color-accent: oklch(52% 0.185 262);
+  --color-accent-ink: oklch(44% 0.17 262);
+  --color-accent-wash: oklch(52% 0.185 262 / 0.09);
+  --color-accent-border: oklch(52% 0.185 262 / 0.35);
+  --color-critical: oklch(54% 0.19 27);
+  --color-critical-wash: oklch(54% 0.19 27 / 0.09);
+  --color-warning-ink: oklch(50% 0.11 80);
+  --color-warning-wash: oklch(80% 0.14 85 / 0.18);
+  --color-good: oklch(60% 0.15 150);
+  --color-line-item: oklch(52% 0.13 55);
+  --color-line-item-wash: oklch(52% 0.13 55 / 0.10);
+  --color-sub: oklch(50% 0.11 175);
+  --color-sub-wash: oklch(50% 0.11 175 / 0.10);
+  --color-muted-wash: oklch(21% 0.01 260 / 0.05);
+  --color-focus: oklch(52% 0.185 262);
+
+  /* surfaces */
+  --color-bar: oklch(98.5% 0.003 250 / 0.78);
+  --color-edge-shadow: oklch(30% 0.01 260 / 0.10);
+
+  /* type */
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+  --text-display: clamp(1.75rem, 3.6vw, 2.375rem);
+  --text-xl: 1.0625rem;
+  --text-lg: 0.96875rem;
+  --text-md: 0.90625rem;
+  --text-sm: 0.84375rem;
+  --text-xs: 0.78125rem;
+  --text-2xs: 0.71875rem;
+
+  /* space — 4pt scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in: cubic-bezier(0.5, 0, 0.9, 0.4);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.15, 1);
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 320ms;
+
+  /* shape */
+  --radius-1: 4px;
+  --radius-2: 8px;
+  --rule-1: 1px;
+  --rule-2: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-paper: oklch(18% 0.008 255);
+    --color-paper-2: oklch(21.5% 0.009 255);
+    --color-paper-3: oklch(26% 0.01 255);
+    --color-ink: oklch(94% 0.005 250);
+    --color-ink-2: oklch(76% 0.008 250);
+    --color-ink-3: oklch(60% 0.008 250);
+    --color-rule: oklch(30% 0.008 255);
+    --color-border: oklch(94% 0.005 250 / 0.12);
+    --color-accent: oklch(66% 0.16 262);
+    --color-accent-ink: oklch(74% 0.13 262);
+    --color-accent-wash: oklch(66% 0.16 262 / 0.14);
+    --color-accent-border: oklch(66% 0.16 262 / 0.4);
+    --color-critical: oklch(66% 0.17 27);
+    --color-critical-wash: oklch(66% 0.17 27 / 0.14);
+    --color-warning-ink: oklch(80% 0.13 85);
+    --color-warning-wash: oklch(80% 0.14 85 / 0.12);
+    --color-good: oklch(70% 0.15 150);
+    --color-line-item: oklch(72% 0.12 55);
+    --color-line-item-wash: oklch(72% 0.12 55 / 0.13);
+    --color-sub: oklch(72% 0.11 175);
+    --color-sub-wash: oklch(72% 0.11 175 / 0.13);
+    --color-muted-wash: oklch(94% 0.005 250 / 0.06);
+    --color-focus: oklch(70% 0.15 262);
+    --color-bar: oklch(18% 0.008 255 / 0.72);
+    --color-edge-shadow: oklch(5% 0 0 / 0.5);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: oklch(18% 0.008 255);
+  --color-paper-2: oklch(21.5% 0.009 255);
+  --color-paper-3: oklch(26% 0.01 255);
+  --color-ink: oklch(94% 0.005 250);
+  --color-ink-2: oklch(76% 0.008 250);
+  --color-ink-3: oklch(60% 0.008 250);
+  --color-rule: oklch(30% 0.008 255);
+  --color-border: oklch(94% 0.005 250 / 0.12);
+  --color-accent: oklch(66% 0.16 262);
+  --color-accent-ink: oklch(74% 0.13 262);
+  --color-accent-wash: oklch(66% 0.16 262 / 0.14);
+  --color-accent-border: oklch(66% 0.16 262 / 0.4);
+  --color-critical: oklch(66% 0.17 27);
+  --color-critical-wash: oklch(66% 0.17 27 / 0.14);
+  --color-warning-ink: oklch(80% 0.13 85);
+  --color-warning-wash: oklch(80% 0.14 85 / 0.12);
+  --color-good: oklch(70% 0.15 150);
+  --color-line-item: oklch(72% 0.12 55);
+  --color-line-item-wash: oklch(72% 0.12 55 / 0.13);
+  --color-sub: oklch(72% 0.11 175);
+  --color-sub-wash: oklch(72% 0.11 175 / 0.13);
+  --color-muted-wash: oklch(94% 0.005 250 / 0.06);
+  --color-focus: oklch(70% 0.15 262);
+  --color-bar: oklch(18% 0.008 255 / 0.72);
+  --color-edge-shadow: oklch(5% 0 0 / 0.5);
+}

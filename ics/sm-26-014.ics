@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:sm-26-014-20260817@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260817
+SUMMARY:CCBHC Planning, Development & Implementation (SM-26-014) due — MORE Grant Radar
+URL:https://www.samhsa.gov/grants/grant-announcements/sm-26-014
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:CCBHC Planning, Development & Implementation (SM-26-014) due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

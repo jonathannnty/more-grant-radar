@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MORE Grant Radar — every funding route for MORE clinician training, ranked by likelihood × dollars, with direct links to each NOFO.">
+<meta name="robots" content="noindex, nofollow">
+<title>MORE Grant Radar</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%233355cc' stroke-width='2.5'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='none' stroke='%233355cc' stroke-width='2' opacity='.45'/%3E%3Ccircle cx='21.5' cy='11' r='3.2' fill='%23c03b34'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Hallmark · macrostructure: Workbench ledger · tone: utilitarian · theme: Cobalt · anchor hue: cobalt 262 */
+  :root {
+    color-scheme: light;
+    --color-paper: oklch(98.5% 0.003 250);
+    --color-paper-2: oklch(96.5% 0.004 250);
+    --color-paper-3: oklch(93.5% 0.006 250);
+    --color-ink: oklch(21% 0.01 260);
+    --color-ink-2: oklch(42% 0.012 260);
+    --color-ink-3: oklch(58% 0.01 260);
+    --color-rule: oklch(88% 0.005 250);
+    --color-border: oklch(21% 0.01 260 / 0.12);
+    --color-accent: oklch(52% 0.185 262);
+    --color-accent-ink: oklch(44% 0.17 262);
+    --color-accent-wash: oklch(52% 0.185 262 / 0.09);
+    --color-accent-border: oklch(52% 0.185 262 / 0.35);
+    --color-critical: oklch(54% 0.19 27);
+    --color-critical-wash: oklch(54% 0.19 27 / 0.09);
+    --color-warning-ink: oklch(50% 0.11 80);
+    --color-warning-wash: oklch(80% 0.14 85 / 0.18);
+    --color-good: oklch(60% 0.15 150);
+    --color-line-item: oklch(52% 0.13 55);
+    --color-line-item-wash: oklch(52% 0.13 55 / 0.10);
+    --color-sub: oklch(50% 0.11 175);
+    --color-sub-wash: oklch(50% 0.11 175 / 0.10);
+    --color-muted-wash: oklch(21% 0.01 260 / 0.05);
+    --color-focus: oklch(52% 0.185 262);
+    --color-bar: oklch(98.5% 0.003 250 / 0.78);
+    --color-edge-shadow: oklch(30% 0.01 260 / 0.10);
+    --font-display: "Space Grotesk", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+    --text-display: clamp(1.75rem, 3.6vw, 2.375rem);
+    --text-xl: 1.0625rem; --text-lg: 0.96875rem; --text-md: 0.90625rem;
+    --text-sm: 0.84375rem; --text-xs: 0.78125rem; --text-2xs: 0.71875rem;
+    --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+    --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
+    --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+    --ease-in-out: cubic-bezier(0.45, 0, 0.15, 1);
+    --dur-1: 120ms; --dur-2: 200ms; --dur-3: 320ms;
+    --radius-1: 4px; --radius-2: 8px;
+    --rule-1: 1px; --rule-2: 2px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --color-paper: oklch(18% 0.008 255);
+      --color-paper-2: oklch(21.5% 0.009 255);
+      --color-paper-3: oklch(26% 0.01 255);
+      --color-ink: oklch(94% 0.005 250);
+      --color-ink-2: oklch(76% 0.008 250);
+      --color-ink-3: oklch(60% 0.008 250);
+      --color-rule: oklch(30% 0.008 255);
+      --color-border: oklch(94% 0.005 250 / 0.12);
+      --color-accent: oklch(66% 0.16 262);
+      --color-accent-ink: oklch(74% 0.13 262);
+      --color-accent-wash: oklch(66% 0.16 262 / 0.14);
+      --color-accent-border: oklch(66% 0.16 262 / 0.4);
+      --color-critical: oklch(66% 0.17 27);
+      --color-critical-wash: oklch(66% 0.17 27 / 0.14);
+      --color-warning-ink: oklch(80% 0.13 85);
+      --color-warning-wash: oklch(80% 0.14 85 / 0.12);
+      --color-good: oklch(70% 0.15 150);
+      --color-line-item: oklch(72% 0.12 55);
+      --color-line-item-wash: oklch(72% 0.12 55 / 0.13);
+      --color-sub: oklch(72% 0.11 175);
+      --color-sub-wash: oklch(72% 0.11 175 / 0.13);
+      --color-muted-wash: oklch(94% 0.005 250 / 0.06);
+      --color-focus: oklch(70% 0.15 262);
+      --color-bar: oklch(18% 0.008 255 / 0.72);
+      --color-edge-shadow: oklch(5% 0 0 / 0.5);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --color-paper: oklch(18% 0.008 255);
+    --color-paper-2: oklch(21.5% 0.009 255);
+    --color-paper-3: oklch(26% 0.01 255);
+    --color-ink: oklch(94% 0.005 250);
+    --color-ink-2: oklch(76% 0.008 250);
+    --color-ink-3: oklch(60% 0.008 250);
+    --color-rule: oklch(30% 0.008 255);
+    --color-border: oklch(94% 0.005 250 / 0.12);
+    --color-accent: oklch(66% 0.16 262);
+    --color-accent-ink: oklch(74% 0.13 262);
+    --color-accent-wash: oklch(66% 0.16 262 / 0.14);
+    --color-accent-border: oklch(66% 0.16 262 / 0.4);
+    --color-critical: oklch(66% 0.17 27);
+    --color-critical-wash: oklch(66% 0.17 27 / 0.14);
+    --color-warning-ink: oklch(80% 0.13 85);
+    --color-warning-wash: oklch(80% 0.14 85 / 0.12);
+    --color-good: oklch(70% 0.15 150);
+    --color-line-item: oklch(72% 0.12 55);
+    --color-line-item-wash: oklch(72% 0.12 55 / 0.13);
+    --color-sub: oklch(72% 0.11 175);
+    --color-sub-wash: oklch(72% 0.11 175 / 0.13);
+    --color-muted-wash: oklch(94% 0.005 250 / 0.06);
+    --color-focus: oklch(70% 0.15 262);
+    --color-bar: oklch(18% 0.008 255 / 0.72);
+    --color-edge-shadow: oklch(5% 0 0 / 0.5);
+  }
+
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; font-size: 100%; overflow-x: clip; }
+  body {
+    font-family: var(--font-display);
+    background: var(--color-paper); color: var(--color-ink);
+    line-height: 1.5; font-size: var(--text-md);
+    padding: var(--space-6) var(--space-5) var(--space-12);
+    overflow-x: clip;
+    transition: background var(--dur-3) var(--ease-in-out), color var(--dur-3) var(--ease-in-out);
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; position: relative; }
+  .mono { font-family: var(--font-mono); }
+
+  .skip {
+    position: absolute; left: -9999px; top: 0; z-index: 60;
+    background: var(--color-paper); color: var(--color-accent-ink);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-1); border: var(--rule-1) solid var(--color-border);
+    font-weight: 600; text-decoration: none;
+  }
+  .skip:focus-visible { left: 0; }
+
+  .topline { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-6); }
+  .buildbar {
+    font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3);
+    border: var(--rule-1) dashed var(--color-rule); border-radius: var(--radius-1);
+    padding: var(--space-1) var(--space-3);
+    overflow-wrap: anywhere;
+  }
+  .buildbar b { color: var(--color-ink-2); font-weight: 600; }
+  .theme { margin-left: auto; display: inline-flex; border: var(--rule-1) solid var(--color-rule); border-radius: var(--radius-1); padding: 2px; background: var(--color-paper); }
+  .theme button {
+    font: inherit; font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 500;
+    color: var(--color-ink-3); background: none; border: none; border-radius: var(--radius-1);
+    padding: var(--space-1) var(--space-3); cursor: pointer; white-space: nowrap;
+    transition: color var(--dur-2) var(--ease-out), background var(--dur-2) var(--ease-out);
+  }
+  .theme button:active { transform: translateY(1px); }
+  .theme button[aria-pressed="true"] { background: var(--color-muted-wash); color: var(--color-ink); }
+
+  header.top { display: flex; align-items: baseline; gap: var(--space-4); flex-wrap: wrap; margin-bottom: var(--space-2); }
+  .wordmark { font-size: var(--text-xs); letter-spacing: 0.12em; font-weight: 700; color: var(--color-accent); }
+  h1 {
+    font-size: var(--text-display); font-weight: 700; letter-spacing: -0.02em; line-height: 1.05;
+    text-wrap: balance; overflow-wrap: anywhere; min-width: 0;
+  }
+  .stamp { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); margin-left: auto; }
+  .stamp .dot-live { color: var(--color-good); margin-right: var(--space-1); }
+  .sub { color: var(--color-ink-2); font-size: var(--text-md); max-width: 62ch; text-wrap: pretty; margin: var(--space-3) 0 var(--space-6); }
+  .sub b { font-weight: 600; color: var(--color-ink); }
+
+  .strip {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+    border: var(--rule-1) solid var(--color-rule); border-radius: var(--radius-2);
+    margin-bottom: var(--space-4); background: var(--color-paper);
+  }
+  .strip .cell { padding: var(--space-3) var(--space-4); border-left: var(--rule-1) solid var(--color-rule); min-width: 0; }
+  .strip .cell:first-child { border-left: none; }
+  .strip .k { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); }
+  .strip .v { font-family: var(--font-mono); font-size: 1.375rem; font-weight: 600; margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .strip .cell.alert .v { color: var(--color-critical); }
+  .strip .d { font-size: var(--text-2xs); color: var(--color-ink-2); text-wrap: pretty; }
+
+  .filters {
+    position: sticky; top: 0; z-index: 30;
+    display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center;
+    padding: var(--space-3) 2px; margin-bottom: var(--space-2);
+    background: var(--color-bar);
+    backdrop-filter: blur(14px) saturate(160%); -webkit-backdrop-filter: blur(14px) saturate(160%);
+  }
+  .filters::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -14px; height: 14px;
+    background: linear-gradient(var(--color-edge-shadow), transparent);
+    opacity: 0; transition: opacity var(--dur-2) var(--ease-out); pointer-events: none;
+  }
+  .filters.scrolled::after { opacity: 1; }
+  .filters select, .filters input {
+    font: inherit; font-size: var(--text-sm); font-weight: 500; color: var(--color-ink);
+    background: var(--color-paper); border: var(--rule-1) solid var(--color-rule);
+    border-radius: var(--radius-1); padding: var(--space-2) var(--space-3);
+    transition: border-color var(--dur-2) var(--ease-out);
+  }
+  .filters input { flex: 1; min-width: 140px; }
+  .filters :is(select, input):hover { border-color: var(--color-ink-3); }
+  .filters select:active { transform: translateY(1px); }
+  .filters :is(select, input):focus-visible { outline: var(--rule-2) solid var(--color-focus); outline-offset: 1px; border-color: transparent; }
+
+  h2.band {
+    display: flex; align-items: center; gap: var(--space-2);
+    font-size: var(--text-sm); font-weight: 600; color: var(--color-ink-2);
+    margin: var(--space-8) 0 0; white-space: nowrap;
+  }
+  h2.band::after { content: ""; flex: 1; height: var(--rule-1); background: var(--color-rule); margin-left: var(--space-2); }
+  h2.band .mark { font-size: 9px; }
+  h2.band .mark.red { color: var(--color-critical); }
+  h2.band .mark.mut { color: var(--color-ink-3); }
+  h2.band .count { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); font-weight: 500; }
+
+  article.row {
+    display: grid; grid-template-columns: 56px minmax(0, 1fr) auto;
+    gap: 0 var(--space-4); align-items: start;
+    padding: var(--space-4) var(--space-2) var(--space-4) var(--space-3);
+    border-bottom: var(--rule-1) solid var(--color-rule);
+    border-left: var(--rule-2) solid transparent;
+    cursor: pointer; position: relative;
+    transition: background var(--dur-2) var(--ease-out), border-color var(--dur-2) var(--ease-out);
+  }
+  article.row:hover { background: var(--color-paper-2); }
+  .act article.row { border-left-color: var(--color-accent); }
+  .act article.row.hot { border-left-color: var(--color-critical); }
+  .watch article.row:hover { border-left-color: var(--color-rule); }
+
+  .score { text-align: left; padding-top: 2px; min-width: 0; }
+  .score .n { font-family: var(--font-mono); font-size: var(--text-xl); font-weight: 600; color: var(--color-accent-ink); font-variant-numeric: tabular-nums; }
+  .score .l { font-family: var(--font-mono); font-size: 0.625rem; color: var(--color-ink-3); }
+  .dots { margin-top: var(--space-1); font-size: 0.6rem; letter-spacing: 2px; color: var(--color-accent); }
+  .dots span.off { color: var(--color-rule); }
+
+  .main { min-width: 0; }
+  .name { font-size: var(--text-xl); font-weight: 600; letter-spacing: -0.01em; text-wrap: balance; overflow-wrap: anywhere; min-width: 0; }
+  .funder { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); margin-top: 2px; }
+  .heart { font-size: var(--text-md); color: var(--color-ink-2); margin-top: var(--space-2); max-width: 64ch; text-wrap: pretty; }
+  .heart b { font-weight: 600; color: var(--color-ink); }
+  .tags { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-3); }
+  .tag {
+    font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 500;
+    padding: 2px var(--space-2); border-radius: var(--radius-1);
+    background: var(--color-muted-wash); color: var(--color-ink-2);
+  }
+  .tag.path-direct { background: var(--color-accent-wash); color: var(--color-accent-ink); font-weight: 600; }
+  .tag.path-line { background: var(--color-line-item-wash); color: var(--color-line-item); font-weight: 600; }
+  .tag.path-sub { background: var(--color-sub-wash); color: var(--color-sub); font-weight: 600; }
+
+  .right { text-align: right; min-width: 150px; display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-2); }
+  .money { font-family: var(--font-mono); font-size: var(--text-lg); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .money small { display: block; font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); font-weight: 400; margin-top: 1px; }
+  .due { font-family: var(--font-mono); font-size: var(--text-2xs); padding: 3px var(--space-2); border-radius: var(--radius-1); font-weight: 600; white-space: nowrap; }
+  .due.critical { background: var(--color-critical-wash); color: var(--color-critical); }
+  .due.warning { background: var(--color-warning-wash); color: var(--color-warning-ink); }
+  .due.quiet { background: var(--color-muted-wash); color: var(--color-ink-2); font-weight: 500; }
+  .status { font-size: var(--text-2xs); color: var(--color-ink-2); }
+  .status::before { content: "●"; margin-right: var(--space-1); font-size: 8px; color: var(--color-ink-3); }
+  .status.live::before { color: var(--color-good); }
+  .status.pursuing::before { color: var(--color-accent); }
+  .owner { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); }
+  .owner::before { content: "owner · "; }
+  .owner.none::before { content: ""; }
+  .nofo {
+    display: inline-block; font-size: var(--text-sm); font-weight: 600; text-decoration: none;
+    color: var(--color-paper); background: var(--color-accent);
+    border: var(--rule-1) solid var(--color-accent);
+    border-radius: var(--radius-1); padding: var(--space-1) var(--space-3);
+    white-space: nowrap;
+    transition: background var(--dur-2) var(--ease-out);
+  }
+  .nofo:hover { background: var(--color-accent-ink); border-color: var(--color-accent-ink); }
+  .nofo:active { transform: translateY(1px); }
+  .nofo:focus-visible, .skip:focus-visible, .empty button:focus-visible, .chev:focus-visible,
+  .theme button:focus-visible, .cal:focus-visible, .coverage summary:focus-visible {
+    outline: var(--rule-2) solid var(--color-focus); outline-offset: 2px;
+  }
+  a.watchlink { font-size: var(--text-sm); font-weight: 600; color: var(--color-accent-ink); text-decoration: none; white-space: nowrap; }
+  a.watchlink:hover { text-decoration: underline; }
+
+  .chev {
+    font: inherit; background: none; border: none; cursor: pointer; padding: 2px var(--space-1);
+    color: var(--color-ink-3); font-size: var(--text-xs); border-radius: var(--radius-1);
+    transition: transform var(--dur-3) var(--ease-out), color var(--dur-2) var(--ease-out);
+  }
+  .chev:hover { color: var(--color-ink); }
+  article.row.open .chev { transform: rotate(180deg); }
+  .details { grid-column: 1 / -1; display: grid; grid-template-rows: 0fr; transition: grid-template-rows var(--dur-3) var(--ease-out); }
+  article.row.open .details { grid-template-rows: 1fr; }
+  .details-inner { overflow: hidden; min-height: 0; }
+  .details-body {
+    margin-top: var(--space-4); padding: var(--space-3) 0 var(--space-1);
+    border-top: var(--rule-1) solid var(--color-rule);
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+    gap: var(--space-3) var(--space-6);
+    font-size: var(--text-sm); color: var(--color-ink-2);
+  }
+  .details-body h4 { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; color: var(--color-ink-3); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 3px; }
+  .details-body p { text-wrap: pretty; overflow-wrap: anywhere; }
+  .details-body b { color: var(--color-ink); font-weight: 600; }
+  .actions { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; }
+  .cal {
+    font: inherit; font-size: var(--text-xs); font-weight: 600; color: var(--color-ink-2);
+    background: none; border: var(--rule-1) solid var(--color-rule); border-radius: var(--radius-1);
+    padding: var(--space-1) var(--space-3); cursor: pointer; white-space: nowrap;
+    transition: border-color var(--dur-2) var(--ease-out), color var(--dur-2) var(--ease-out);
+  }
+  .cal:hover { border-color: var(--color-ink-3); color: var(--color-ink); }
+  .cal:active { transform: translateY(1px); }
+  .cal[data-state="done"] { color: var(--color-good); border-color: var(--color-good); }
+  .kitbtn {
+    font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600; color: var(--color-line-item);
+    background: var(--color-line-item-wash); border-radius: var(--radius-1); padding: var(--space-1) var(--space-2);
+    white-space: nowrap; text-decoration: none; display: inline-block;
+  }
+  .kitbtn.soon { opacity: 0.62; }
+  .kitbtn.soon::after { content: " · lands build week"; font-weight: 400; color: var(--color-ink-3); }
+  .remind { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); }
+  .verif { grid-column: 1 / -1; font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); }
+  .verif b { color: var(--color-good); font-weight: 600; }
+  .verif.stale b { color: var(--color-warning-ink); }
+
+  .watch .name { font-size: var(--text-lg); }
+  .watch .heart { font-size: var(--text-sm); margin-top: var(--space-1); }
+  .watch article.row { padding-top: var(--space-3); padding-bottom: var(--space-3); }
+
+  .empty {
+    display: none; text-align: center; padding: var(--space-10) var(--space-5); color: var(--color-ink-2);
+    border: var(--rule-1) dashed var(--color-rule); border-radius: var(--radius-2); margin-top: var(--space-4);
+  }
+  .empty.show { display: block; }
+  .empty p { margin-bottom: var(--space-3); }
+  .empty button {
+    font: inherit; font-weight: 600; color: var(--color-accent-ink); background: var(--color-accent-wash);
+    border: none; border-radius: var(--radius-1); padding: var(--space-2) var(--space-4); cursor: pointer;
+  }
+  .empty button:active { transform: translateY(1px); }
+
+  .coverage { margin-top: var(--space-10); border: var(--rule-1) solid var(--color-rule); border-radius: var(--radius-2); background: var(--color-paper); }
+  .coverage summary {
+    cursor: pointer; list-style: none; padding: var(--space-4) var(--space-5);
+    font-size: var(--text-md); font-weight: 600; color: var(--color-ink);
+    display: flex; align-items: baseline; gap: var(--space-3); flex-wrap: wrap;
+  }
+  .coverage summary::-webkit-details-marker { display: none; }
+  .coverage summary .count { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); font-weight: 500; }
+  .coverage summary::after { content: "▾"; margin-left: auto; color: var(--color-ink-3); transition: transform var(--dur-3) var(--ease-out); }
+  .coverage[open] summary::after { transform: rotate(180deg); }
+  .cov-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
+    gap: var(--space-4) var(--space-6);
+    padding: var(--space-1) var(--space-5) var(--space-5);
+    font-size: var(--text-sm); color: var(--color-ink-2);
+  }
+  .cov-grid h4 { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; color: var(--color-ink-3); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 3px; }
+  .cov-grid p { overflow-wrap: anywhere; }
+  .cov-stamp { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); margin-top: var(--space-1); }
+  .cov-stamp.gap { color: var(--color-warning-ink); font-weight: 500; }
+
+  footer {
+    margin-top: var(--space-8); border-top: var(--rule-1) solid var(--color-rule);
+    padding-top: var(--space-5); font-size: var(--text-xs); color: var(--color-ink-2);
+    max-width: 74ch; text-wrap: pretty;
+  }
+  footer b { color: var(--color-ink); font-weight: 600; }
+  footer .mono { font-size: var(--text-2xs); }
+
+  @media (max-width: 900px) {
+    .strip { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .strip .cell:nth-child(3) { border-left: none; }
+    .strip .cell:nth-child(n+3) { border-top: var(--rule-1) solid var(--color-rule); }
+  }
+  @media (max-width: 660px) {
+    article.row { grid-template-columns: minmax(0, 1fr); gap: var(--space-2) var(--space-4); padding-left: var(--space-3); }
+    .score { display: flex; gap: var(--space-3); align-items: baseline; }
+    .dots { margin-top: 0; }
+    .right { align-items: flex-start; text-align: left; }
+    .filters { position: static; }
+    .stamp { margin-left: 0; width: 100%; }
+    h2.band { white-space: normal; }
+  }
+  @media (max-width: 420px) {
+    .strip { grid-template-columns: minmax(0, 1fr); }
+    .strip .cell { border-left: none; border-top: var(--rule-1) solid var(--color-rule); }
+    .strip .cell:first-child { border-top: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .details, .chev, .coverage summary::after { transition: none; }
+    article.row.open .chev { transform: rotate(180deg); }
+    body { transition: none; }
+  }
+  @media (prefers-reduced-transparency: reduce) {
+    .filters { background: var(--color-paper); backdrop-filter: none; -webkit-backdrop-filter: none; }
+  }
+  @media (prefers-contrast: more) {
+    .strip, .coverage { border-color: var(--color-ink-3); }
+    article.row { border-bottom-color: var(--color-ink-3); }
+    .filters { background: var(--color-paper); backdrop-filter: none; -webkit-backdrop-filter: none; }
+    .tag { border: var(--rule-1) solid currentColor; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="skip" href="#pipeline">Skip to opportunities</a>
+
+  <div class="topline">
+    <p class="buildbar"><b>live</b> · generated 2026-08-04 00:46 · statuses from the Team sheet</p>
+    <div class="theme" role="group" aria-label="Color theme">
+      <button type="button" data-set="" aria-pressed="true">auto</button>
+      <button type="button" data-set="light" aria-pressed="false">light</button>
+      <button type="button" data-set="dark" aria-pressed="false">dark</button>
+    </div>
+  </div>
+
+  <header class="top">
+    <div>
+      <div class="wordmark">MORE THERAPY</div>
+      <h1>Grant Radar</h1>
+    </div>
+    <p class="stamp"><span class="dot-live" aria-hidden="true">●</span>last run 2026-08-04 00:46</p>
+  </header>
+  <p class="sub">Every funding route for MORE clinician training — ranked by likelihood × dollars, each with the heart of the opportunity and a direct line to the NOFO. Statuses live in the <b>Team sheet</b> and surface here on refresh. Tap a row for the fine print.</p>
+
+  <section class="strip" aria-label="Summary" id="strip"></section>
+
+  <nav class="filters" id="filters" aria-label="Filters">
+    <select id="fPath" aria-label="Filter by path"><option value="">All paths</option><option>Direct</option><option>Line-item</option><option>Sub</option><option>Grant</option></select>
+    <select id="fStatus" aria-label="Filter by status"><option value="">All statuses</option></select>
+    <select id="fOwner" aria-label="Filter by owner"><option value="">All owners</option></select>
+    <input id="fSearch" type="search" placeholder="Search name, funder, state…" aria-label="Search opportunities">
+  </nav>
+
+  <main id="pipeline">
+    <div class="act" id="bandAct" hidden>
+      <h2 class="band"><span class="mark red" aria-hidden="true">●</span> Act now — deadline inside 45 days <span class="count" id="countAct"></span></h2>
+      <div id="rowsAct"></div>
+    </div>
+    <div class="watch" id="bandWatch" hidden>
+      <h2 class="band"><span class="mark mut" aria-hidden="true">●</span> Ranked pipeline &amp; cycle watch <span class="count" id="countWatch"></span></h2>
+      <div id="rowsWatch"></div>
+    </div>
+
+    <div class="empty" id="empty">
+      <p>No opportunities match these filters.</p>
+      <button id="reset" type="button">Clear filters</button>
+    </div>
+
+    <details class="coverage" id="coverage">
+      <summary>Coverage — what the radar watches <span class="count" id="covCount"></span></summary>
+      <div class="cov-grid" id="covGrid"></div>
+    </details>
+  </main>
+
+  <footer>
+    <b>How this stays fresh:</b> the radar engine scans daily (federal) and weekly (states, counties, foundations), re-scores, and republishes this page. Grant writers mark <b>status, owner, and notes in the Team sheet</b> — those appear here on the next refresh. Priority = likelihood (1–5) × log₁₀ of accessible dollars. ● red = due within 14 days · ▲ amber = within 45. Tips and forwarded announcements: <span class="mono">radar@moretherapy.com</span> (triaged into the next scan).
+  </footer>
+</div>
+
+<script>
+const RADAR = {"today": "2026-08-04", "rows": [{"grant_id": "sm-26-014", "aliases": ["SM-26-014"], "name": "CCBHC Planning, Development & Implementation (SM-26-014)", "funder": "SAMHSA", "program": "Certified Community Behavioral Health Clinics PDI", "channel": "Federal-discretionary", "state": "US", "path": "Line-item", "forprofit_direct": "N", "category": "MAT-MOUD", "accessible_usd": 9400000, "pool_usd": 94000000, "deadline": "2026-08-17", "cycle_watch": null, "likelihood": 3, "heart": "94 CCBHCs are writing applications right now — MORE goes in as their evidence-based line item and strengthens their scoring. Nonprofits and local government only, so this is a pure partner play: the insert kit goes out before the 17th.", "eligibility": "Community-based behavioral health nonprofits; local-government behavioral health authorities; IHS / tribal / Urban Indian organizations. For-profits cannot apply.", "nofo_url": "https://www.samhsa.gov/grants/grant-announcements/sm-26-014", "source_url": "https://www.grants.gov/search-results-detail/360977", "portal": "Grants.gov (partners apply; MORE rides as line item)", "accounts_needed": "Partner needs SAM/UEI + Grants.gov", "match_required": null, "page_limit": null, "attachments": null, "scoring_map": "MORE evidence (59% dropout reduction, ~3x CBT) strengthens the evidence-based-practices section of a CCBHC application", "effort_hrs": 20, "kit_type": "line-item-kit", "kit_url": null, "last_verified": "2026-08-04", "next_check": "2026-08-05", "found_date": "2026-08-01", "notes": "Insert-kit campaign to CCBHC applicants + state associations before 8/17 — campaign go/no-go is open decision #5.", "priority": 20.9, "status": "New", "owner": "", "next_action": ""}, {"grant_id": "pa-27-100", "aliases": ["PA-27-100"], "name": "NIH/NIDA SBIR Phase I (PA-27-100)", "funder": "NIH / NIDA", "program": "Parent SBIR (R43/R44) Clinical Trial Optional", "channel": "Federal-discretionary", "state": "US", "path": "Direct", "forprofit_direct": "Y", "category": "SUD", "accessible_usd": 400000, "pool_usd": null, "deadline": "2026-09-08", "cycle_watch": null, "likelihood": 5, "heart": "The one big pot built for for-profits — R&D money for the MORE app and training platform. Eric wants the ~$2M path; Phase I is the door, first standard due date Sep 8.", "eligibility": "US for-profit small business, ≤500 employees, majority US-owned — More Therapy qualifies as-is.", "nofo_url": "https://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e", "source_url": "https://www.grants.gov/search-results-detail/359671", "portal": "Grants.gov / NIH ASSIST", "accounts_needed": "SAM/UEI + eRA Commons — register now, takes weeks", "match_required": "None", "page_limit": null, "attachments": null, "scoring_map": "NIDA caps: Phase I $400K / Phase II $3M. Cycle recurs Jan 5 / Apr 5; parent open through 2027-04-05.", "effort_hrs": 120, "kit_type": "direct-template", "kit_url": null, "last_verified": "2026-08-04", "next_check": "2026-08-05", "found_date": "2026-08-01", "notes": "Dr. Garland owns. Phase I outline this week.", "priority": 28.0, "status": "New", "owner": "", "next_action": ""}, {"grant_id": "hrsa-rcorp-fy27", "aliases": ["93.912"], "name": "HRSA RCORP — FY27 cycle", "funder": "HRSA", "program": "Rural Communities Opioid Response Program", "channel": "Federal-discretionary", "state": "US", "path": "Direct", "forprofit_direct": "Y", "category": "SUD", "accessible_usd": 750000, "pool_usd": 60000000, "deadline": null, "cycle_watch": "2027-04-01", "likelihood": 4, "heart": "For-profits are explicitly eligible — rare for federal treatment money. FY26 closed in June; FY27 expected around May. Prep now, apply day one.", "eligibility": "For-profits explicitly eligible; rural service area required.", "nofo_url": "https://simpler.grants.gov/opportunity/e779b908-4f8c-48ce-9485-1345475cdbaf", "source_url": "https://www.hrsa.gov/rural-health/grants/rural-communities-opioid-response", "portal": "Grants.gov", "accounts_needed": "SAM/UEI + Grants.gov", "match_required": null, "page_limit": null, "attachments": null, "scoring_map": "FY26 shape: Planning $100K × 40 · Impact $60M ~80 awards $750K min", "effort_hrs": 60, "kit_type": "direct-template", "kit_url": null, "last_verified": "2026-08-01", "next_check": "2026-08-11", "found_date": "2026-08-01", "notes": "Draft the rural partner map now (MAT/MOUD sites in rural counties) so the FY27 application starts day one.", "priority": 23.5, "status": "New", "owner": "", "next_action": ""}, {"grant_id": "tx-oafc-core-2026f", "aliases": [], "name": "Texas OAFC — Fall 2026 CORE grants", "funder": "TX Opioid Abatement Fund Council", "program": "CORE grant cycle", "channel": "Settlement-state", "state": "TX", "path": "Direct/Sub", "forprofit_direct": "Y", "category": "SUD", "accessible_usd": 500000, "pool_usd": null, "deadline": null, "cycle_watch": "2026-09-15", "likelihood": 4, "heart": "Settlement money with provider-friendly eligibility, opening this fall. Watch page and GovDelivery list are live; position before it posts.", "eligibility": "Provider-friendly; applications via the Texas Opioid Grant Management System.", "nofo_url": null, "source_url": "https://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php", "portal": "Texas OGMS", "accounts_needed": "TX OGMS account; TX SmartBuy/CMBL ($70/yr) for vendor path", "match_required": null, "page_limit": null, "attachments": null, "scoring_map": null, "effort_hrs": 40, "kit_type": "direct-template", "kit_url": null, "last_verified": "2026-08-01", "next_check": "2026-08-11", "found_date": "2026-08-01", "notes": "Join Comptroller GovDelivery list (L0 pass); pre-draft the TX provider pitch.", "priority": 22.8, "status": "New", "owner": "", "next_action": ""}, {"grant_id": "oneohio-c3", "aliases": [], "name": "OneOhio Recovery Foundation — Cycle 3", "funder": "OneOhio Recovery Foundation", "program": "Regional grant cycle 3", "channel": "Settlement-state", "state": "OH", "path": "Direct", "forprofit_direct": "Y", "category": "SUD", "accessible_usd": 500000, "pool_usd": null, "deadline": null, "cycle_watch": "2026-11-15", "likelihood": 3, "heart": "For-profits eligible; Cycle 2 was $45.7M. Roughly annual — verify More Therapy's 2-year Ohio registration now so eligibility is ready when it opens.", "eligibility": "For-profits eligible IF 2+ consecutive years registered with the Ohio Secretary of State — verify More Therapy's status (open decision #6) or line up an Ohio partner.", "nofo_url": null, "source_url": "https://www.oneohiofoundation.com/grants", "portal": "OneOhio application portal", "accounts_needed": "Ohio SoS registration 2+ yrs", "match_required": null, "page_limit": null, "attachments": null, "scoring_map": "Cycle 2 pattern: RFP Dec 10 → inquiry Jan 14–Feb 11 → awards mid-year", "effort_hrs": 40, "kit_type": "direct-template", "kit_url": null, "last_verified": "2026-08-01", "next_check": "2026-08-11", "found_date": "2026-08-01", "notes": null, "priority": 17.1, "status": "New", "owner": "", "next_action": ""}, {"grant_id": "allegheny-osf-2026", "aliases": [], "name": "Allegheny County OSF — annual RFP", "funder": "Allegheny County DHS", "program": "Opioid Settlement Fund RFP", "channel": "Settlement-county", "state": "PA", "path": "Direct/Sub", "forprofit_direct": "Y", "category": "SUD", "accessible_usd": 400000, "pool_usd": null, "deadline": null, "cycle_watch": "2026-11-15", "likelihood": 3, "heart": "Annual county settlement RFP — opens around November, due January. Calendar it; the county pattern of 3–6-week windows is the volume play nationwide.", "eligibility": "County RFP via Bonfire; historically opens ~third week of November, due January.", "nofo_url": null, "source_url": "https://solicitations.alleghenycounty.us/", "portal": "Bonfire", "accounts_needed": "Bonfire vendor account (free)", "match_required": null, "page_limit": null, "attachments": null, "scoring_map": null, "effort_hrs": 30, "kit_type": "direct-template", "kit_url": null, "last_verified": "2026-08-01", "next_check": "2026-08-11", "found_date": "2026-08-01", "notes": "Template for the national county sweep — the weekly scan hunts for RFPs shaped like this in every settlement-funded county.", "priority": 16.8, "status": "New", "owner": "", "next_action": ""}, {"grant_id": "va-oaa-fy28", "aliases": [], "name": "Virginia OAA — FY28 city & county cycle", "funder": "VA Opioid Abatement Authority", "program": "City & county grants", "channel": "Settlement-state", "state": "VA", "path": "Sub", "forprofit_direct": "N", "category": "SUD", "accessible_usd": 200000, "pool_usd": null, "deadline": null, "cycle_watch": "2026-09-01", "likelihood": 2, "heart": "Only Virginia localities can apply — MORE rides in as their named training vendor. Annual cycle; pitch localities while they draft.", "eligibility": "VA cities/counties apply on an annual cycle (roughly Aug–Mar windows); vendors are named inside locality applications.", "nofo_url": null, "source_url": "https://www.oaa.virginia.gov/portal-grants/", "portal": "VA OAA portal (localities); eVA vendor registration (free) for MORE", "accounts_needed": "Virginia eVA (free)", "match_required": null, "page_limit": null, "attachments": null, "scoring_map": null, "effort_hrs": 20, "kit_type": "letter-of-support", "kit_url": null, "last_verified": "2026-08-01", "next_check": "2026-08-11", "found_date": "2026-08-01", "notes": "Identify 3–5 VA localities with unspent abatement funds and offer the insert kit while they draft.", "priority": 10.6, "status": "New", "owner": "", "next_action": ""}], "coverage": [{"channel": "Federal", "cadence": "daily", "what": "simpler.grants.gov new postings · SAMHSA dashboard + forecasts · HHS newsroom · Search2 API", "stamp": "last scan 2026-08-04"}, {"channel": "Settlement states", "cadence": "weekly", "what": "OneOhio · TX OAFC · VA OAA · CA opioid response · NY OASAS · OpioidSettlementTracker", "stamp": "last scan 2026-08-04"}, {"channel": "Counties & cities", "cadence": "weekly", "what": "Open-web sweep for settlement RFPs (the 3–6-week windows)", "stamp": "last scan 2026-08-04"}, {"channel": "Foundations", "cadence": "weekly", "what": "FORE + health-foundation RFP pages", "stamp": "last scan 2026-08-04"}, {"channel": "State pass-through", "cadence": "building", "what": "SOR/SUBG sub-RFPs via each state's behavioral-health agency (CA DHCS, NY OASAS, OH MHAS…)", "stamp": "agency directory: 16 states mapped, building toward 50", "gap": true}, {"channel": "Winners feed", "cadence": "monthly", "what": "New SOR + RCORP awardees via USASpending → warm pitches via the contact pipeline", "stamp": "next pull 2026-09-01"}]};
+
+(function () {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+  const TODAY = new Date(RADAR.today + 'T12:00:00');
+  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  function money(n) {
+    if (n == null || isNaN(n)) return null;
+    if (n >= 1e9) return '$' + (n / 1e9).toFixed(n % 1e9 ? 1 : 0).replace(/\.0$/, '') + 'B';
+    if (n >= 1e6) return '$' + (n / 1e6).toFixed(n % 1e6 ? 1 : 0).replace(/\.0$/, '') + 'M';
+    if (n >= 1e3) return '$' + Math.round(n / 1e3) + 'K';
+    return '$' + n;
+  }
+  function fmtDate(iso) {
+    if (!iso) return null;
+    const d = new Date(iso + 'T12:00:00');
+    return MONTHS[d.getMonth()] + ' ' + d.getDate();
+  }
+  function fmtMonth(iso) {
+    if (!iso) return null;
+    const d = new Date(iso + 'T12:00:00');
+    return MONTHS[d.getMonth()] + ' ' + d.getFullYear();
+  }
+  function runway(r) {
+    if (!r.deadline) return null;
+    return Math.round((new Date(r.deadline + 'T12:00:00') - TODAY) / 86400000);
+  }
+
+  function pathTags(path) {
+    return (path || '').split('/').map(p => {
+      const t = p.trim();
+      const cls = t === 'Direct' ? 'path-direct' : t === 'Line-item' ? 'path-line' : t === 'Sub' ? 'path-sub' : '';
+      return '<span class="tag ' + cls + '">' + esc(t.toLowerCase()) + '</span>';
+    }).join('');
+  }
+
+  function dueChip(r) {
+    const d = runway(r);
+    if (d != null && d <= 14) return '<div class="due critical">● due ' + fmtDate(r.deadline) + ' · ' + d + 'd</div>';
+    if (d != null && d <= 45) return '<div class="due warning">▲ due ' + fmtDate(r.deadline) + ' · ' + d + 'd</div>';
+    if (d != null) return '<div class="due quiet">due ' + fmtDate(r.deadline) + ', ' + r.deadline.slice(0, 4) + '</div>';
+    if (r.cycle_watch) return '<div class="due quiet">watch ' + fmtMonth(r.cycle_watch) + '</div>';
+    return '<div class="due quiet">cycle TBD</div>';
+  }
+
+  function moneyBlock(r) {
+    const acc = money(r.accessible_usd), pool = money(r.pool_usd);
+    const big = acc || pool || 'TBD';
+    let small = '';
+    if (acc && pool && acc !== pool) small = pool + ' pool';
+    else if (!acc && !pool) small = 'sizing pending';
+    return '<div class="money">' + big + (small ? '<small>' + esc(small) + '</small>' : '') + '</div>';
+  }
+
+  function statusBlock(r) {
+    const s = r.status || 'New';
+    const cls = /campaign/i.test(s) ? ' live' : /^pursuing|^submitted/i.test(s) ? ' pursuing' : '';
+    const owner = r.owner
+      ? '<div class="owner">' + esc(r.owner) + '</div>'
+      : '<div class="owner none">unassigned</div>';
+    return '<div class="status' + cls + '">' + esc(s) + '</div>' + owner;
+  }
+
+  function detailCell(title, html) {
+    return html ? '<div><h4>' + title + '</h4><p>' + html + '</p></div>' : '';
+  }
+
+  function fitBrief(r) {
+    const bits = [];
+    if (r.portal) bits.push('<b>Portal:</b> ' + esc(r.portal));
+    if (r.accounts_needed) bits.push('<b>Accounts:</b> ' + esc(r.accounts_needed));
+    if (r.match_required) bits.push('<b>Match:</b> ' + esc(r.match_required));
+    if (r.page_limit) bits.push('<b>Pages:</b> ' + esc(r.page_limit));
+    if (r.attachments) bits.push('<b>Attachments:</b> ' + esc(r.attachments));
+    return bits.join(' · ');
+  }
+
+  function rowHTML(r, band) {
+    const like = Math.max(1, Math.min(5, Math.round(r.likelihood || 1)));
+    const dots = '●'.repeat(like) + (like < 5 ? '<span class="off">' + '●'.repeat(5 - like) + '</span>' : '');
+    const d = runway(r);
+    const hot = band === 'act' && d != null && d <= 14 ? ' hot' : '';
+    const link = band === 'act'
+      ? '<a class="nofo" href="' + esc(r.nofo_url || r.source_url) + '" target="_blank" rel="noopener">Open NOFO →</a>'
+      : '<a class="watchlink" href="' + esc(r.nofo_url || r.source_url) + '" target="_blank" rel="noopener">' + (r.deadline ? 'Open NOFO →' : 'Watch page →') + '</a>';
+    const calBtn = r.deadline
+      ? '<button type="button" class="cal" data-date="' + r.deadline.replace(/-/g, '') + '" data-title="' + esc(r.name) + ' due — MORE Grant Radar">Add to calendar</button>'
+      : (r.cycle_watch ? '<span class="remind">engine reminder · re-check ' + fmtMonth(r.cycle_watch) + '</span>' : '');
+    const kit = r.kit_url
+      ? '<a class="kitbtn" href="' + esc(r.kit_url) + '" target="_blank" rel="noopener">' + esc(r.kit_type || 'insert kit') + '</a>'
+      : (r.kit_type ? '<span class="kitbtn soon">' + esc(r.kit_type) + '</span>' : '');
+    const staleDays = r.last_verified ? Math.round((TODAY - new Date(r.last_verified + 'T12:00:00')) / 86400000) : null;
+    const stale = staleDays == null || staleDays > 7;
+    const verif = '<p class="verif' + (stale ? ' stale' : '') + '"><b>' + (stale ? '⚠' : '✓') + '</b> verified against the primary source · ' + esc(r.last_verified || 'pending') + (r.next_check ? ' · next check ' + esc(r.next_check) : '') + '</p>';
+
+    const searchText = [r.grant_id, r.name, r.funder, r.program, r.state, r.channel, r.category].join(' ').toLowerCase();
+
+    return '<article class="row' + hot + '" data-path="' + esc(r.path || '') + '" data-status="' + esc(r.status || 'New') + '" data-owner="' + esc(r.owner || '') + '" data-text="' + esc(searchText) + '">' +
+      '<div class="score"><div><div class="n">' + (r.priority != null ? r.priority.toFixed(1) : '—') + '</div><div class="l">priority</div></div>' +
+      '<div class="dots" role="img" aria-label="Likelihood ' + like + ' of 5">' + dots + '</div></div>' +
+      '<div class="main">' +
+        '<h3 class="name">' + esc(r.name) + ' <button class="chev" aria-expanded="false" aria-label="Show details">▾</button></h3>' +
+        '<p class="funder">' + esc([r.funder, r.channel, r.state === 'US' ? 'national' : r.state].filter(Boolean).join(' · ')) + '</p>' +
+        '<p class="heart">' + heartHTML(r.heart) + '</p>' +
+        '<div class="tags">' + pathTags(r.path) + (r.category ? '<span class="tag">' + esc(r.category) + '</span>' : '') + (r.channel ? '<span class="tag">' + esc(r.channel.toLowerCase()) + '</span>' : '') + '</div>' +
+      '</div>' +
+      '<div class="right">' + moneyBlock(r) + dueChip(r) + statusBlock(r) + link + '</div>' +
+      '<div class="details"><div class="details-inner"><div class="details-body">' +
+        detailCell('Eligibility', r.eligibility ? esc(r.eligibility) : null) +
+        detailCell('Next action', r.next_action ? esc(r.next_action) : (r.notes ? esc(r.notes) : null)) +
+        detailCell('Fine print', fitBrief(r)) +
+        detailCell('Scoring fit', r.scoring_map ? esc(r.scoring_map) : null) +
+        '<div class="actions">' + calBtn + kit + '</div>' + verif +
+      '</div></div></div>' +
+    '</article>';
+  }
+
+  function heartHTML(h) {
+    if (!h) return '';
+    const i = h.indexOf('. ');
+    if (i > 0 && i < h.length - 4) return '<b>' + esc(h.slice(0, i + 1)) + '</b> ' + esc(h.slice(i + 2));
+    return '<b>' + esc(h) + '</b>';
+  }
+
+  // Partition + render
+  const act = [], watchRows = [];
+  RADAR.rows.forEach(r => {
+    const d = runway(r);
+    (d != null && d >= 0 && d <= 45 ? act : watchRows).push(r);
+  });
+  act.sort((a, b) => (a.deadline || '').localeCompare(b.deadline || ''));
+  watchRows.sort((a, b) => (b.priority || 0) - (a.priority || 0));
+
+  if (act.length) { $('bandAct').hidden = false; $('rowsAct').innerHTML = act.map(r => rowHTML(r, 'act')).join(''); $('countAct').textContent = '(' + act.length + ')'; }
+  if (watchRows.length) { $('bandWatch').hidden = false; $('rowsWatch').innerHTML = watchRows.map(r => rowHTML(r, 'watch')).join(''); $('countWatch').textContent = '(' + watchRows.length + ')'; }
+
+  // Stat strip
+  const hot14 = RADAR.rows.filter(r => { const d = runway(r); return d != null && d >= 0 && d <= 14; });
+  const pursuing = RADAR.rows.filter(r => /^pursuing|^submitted|campaign/i.test(r.status || ''));
+  const pursuingSum = pursuing.reduce((s, r) => s + (r.accessible_usd || 0), 0);
+  const directOpen = RADAR.rows.filter(r => r.forprofit_direct === 'Y').reduce((s, r) => s + (r.accessible_usd || 0), 0);
+  const totalAcc = RADAR.rows.reduce((s, r) => s + (r.accessible_usd || 0), 0);
+  $('strip').innerHTML =
+    '<div class="cell' + (hot14.length ? ' alert' : '') + '"><div class="k">deadline ≤ 14d</div><div class="v">' + hot14.length + '</div><div class="d">' + (hot14.length ? 'act now: ' + esc(hot14.map(r => r.grant_id.toUpperCase()).join(', ')) : 'nothing burning') + '</div></div>' +
+    '<div class="cell"><div class="k">pipeline</div><div class="v">' + pursuing.length + '</div><div class="d">' + (pursuing.length ? 'pursuing · ' + money(pursuingSum) + ' accessible' : 'mark statuses in the Team sheet') + '</div></div>' +
+    '<div class="cell"><div class="k">direct-eligible</div><div class="v">' + (money(directOpen) || '$0') + '</div><div class="d">for-profit-direct accessible dollars</div></div>' +
+    '<div class="cell"><div class="k">tracked</div><div class="v">' + RADAR.rows.length + '</div><div class="d">' + (money(totalAcc) || '$0') + ' total accessible</div></div>';
+
+  // Coverage
+  $('covGrid').innerHTML = RADAR.coverage.map(c =>
+    '<div><h4>' + esc(c.channel) + ' · ' + esc(c.cadence) + '</h4><p>' + esc(c.what) + '</p><p class="cov-stamp' + (c.gap ? ' gap' : '') + '">' + esc(c.stamp) + '</p></div>'
+  ).join('');
+  $('covCount').textContent = RADAR.coverage.length + ' channels';
+
+  // Filters — owner + status options from data
+  const owners = [...new Set(RADAR.rows.map(r => r.owner).filter(Boolean))].sort();
+  $('fOwner').innerHTML = '<option value="">All owners</option>' + owners.map(o => '<option>' + esc(o) + '</option>').join('') + '<option>Unassigned</option>';
+  const statuses = [...new Set(RADAR.rows.map(r => r.status || 'New'))].sort();
+  $('fStatus').innerHTML = '<option value="">All statuses</option>' + statuses.map(s => '<option>' + esc(s) + '</option>').join('');
+
+  const rows = [...document.querySelectorAll('article.row')];
+  const fPath = $('fPath'), fStatus = $('fStatus'), fOwner = $('fOwner'), fSearch = $('fSearch');
+  function apply() {
+    const p = fPath.value, s = fStatus.value, o = fOwner.value, q = fSearch.value.trim().toLowerCase();
+    let visible = 0;
+    rows.forEach(c => {
+      const okP = !p || c.dataset.path.includes(p);
+      const okS = !s || c.dataset.status === s;
+      const okO = !o || (o === 'Unassigned' ? !c.dataset.owner : c.dataset.owner === o);
+      const okQ = !q || (c.dataset.text + ' ' + c.textContent.toLowerCase()).includes(q);
+      const show = okP && okS && okO && okQ;
+      c.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    [$('bandAct'), $('bandWatch')].forEach(group => {
+      if (group.hidden) return;
+      const any = [...group.querySelectorAll('article.row')].some(c => c.style.display !== 'none');
+      group.style.visibility = '';
+      group.style.display = any ? '' : 'none';
+    });
+    $('empty').classList.toggle('show', visible === 0);
+  }
+  [fPath, fStatus, fOwner].forEach(el => el.addEventListener('change', apply));
+  fSearch.addEventListener('input', apply);
+  $('reset').addEventListener('click', () => {
+    fPath.value = ''; fStatus.value = ''; fOwner.value = ''; fSearch.value = ''; apply(); fSearch.focus();
+  });
+
+  // Theme toggle
+  document.querySelectorAll('.theme button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const v = btn.dataset.set;
+      if (v) { document.documentElement.dataset.theme = v; localStorage.setItem('radar-theme', v); }
+      else { delete document.documentElement.dataset.theme; localStorage.removeItem('radar-theme'); }
+      document.querySelectorAll('.theme button').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+    });
+  });
+  const saved = localStorage.getItem('radar-theme');
+  if (saved) {
+    document.documentElement.dataset.theme = saved;
+    document.querySelectorAll('.theme button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.set === saved)));
+  }
+
+  // Expand/collapse
+  rows.forEach(row => {
+    const chev = row.querySelector('.chev');
+    const toggle = () => {
+      const open = row.classList.toggle('open');
+      chev.setAttribute('aria-expanded', String(open));
+      chev.setAttribute('aria-label', open ? 'Hide details' : 'Show details');
+    };
+    row.addEventListener('click', (e) => {
+      if (e.target.closest('a, select, input, .cal')) return;
+      if (window.getSelection()?.toString()) return;
+      toggle();
+    });
+    chev.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+  });
+
+  // Add-to-calendar: real .ics with a −3-day alarm
+  document.querySelectorAll('.cal').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const d = btn.dataset.date, t = btn.dataset.title;
+      const stamp = RADAR.today.replace(/-/g, '') + 'T120000Z';
+      const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//MORE Grant Radar//EN','BEGIN:VEVENT',
+        `UID:${d}-${t.replace(/\W+/g, '').slice(0, 24)}@more-grant-radar`,
+        `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${d}`, `SUMMARY:${t}`,
+        'BEGIN:VALARM','TRIGGER:-P3D','ACTION:DISPLAY',`DESCRIPTION:${t}`,'END:VALARM',
+        'END:VEVENT','END:VCALENDAR'].join('\r\n');
+      const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
+      const a = document.createElement('a');
+      a.href = url; a.download = t.slice(0, 40).replace(/[^\w ()-]/g, '') + '.ics';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+      btn.dataset.state = 'done'; btn.textContent = '✓ Added';
+      setTimeout(() => { delete btn.dataset.state; btn.textContent = 'Add to calendar'; }, 2400);
+    });
+  });
+
+  // Scroll edge effect
+  const bar = $('filters');
+  let ticking = false;
+  addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      bar.classList.toggle('scrolled', (bar.getBoundingClientRect().top <= 0) && scrollY > 8);
+      ticking = false;
+    });
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>
