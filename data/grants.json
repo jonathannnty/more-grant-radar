@@ -737,6 +737,43 @@
    "next_check": "2026-10-01",
    "found_date": "2026-08-04",
    "notes": "Statutory recurring funding: HCAI gets ≥3% of BHSA revenues (~$100M/yr est.) for workforce initiatives. Plan approved 6/19/2026. Contact: BHSAWorkforce@hcai.ca.gov. Getting MORE onto HCAI's training-program map is the near-term move."
+  },
+  {
+   "grant_id": "dod-cdmrp-prmrp",
+   "aliases": [
+    "PRMRP",
+    "CPMRP"
+   ],
+   "name": "DoD CDMRP — chronic pain research (PRMRP / CPMRP)",
+   "funder": "US Dept. of Defense — CDMRP",
+   "program": "Peer Reviewed Medical Research Program + Chronic Pain Management Research Program",
+   "channel": "Federal-discretionary",
+   "state": "US",
+   "path": "Direct",
+   "forprofit_direct": "Y",
+   "category": "pain",
+   "accessible_usd": null,
+   "pool_usd": null,
+   "deadline": null,
+   "cycle_watch": "2027-03-01",
+   "likelihood": 3,
+   "heart": "Rare for-profit-direct DoD money for chronic-pain research — MORE's pain dyad fits squarely. FY26 entry is closed; FY27 opens ~spring 2027, so we prep and apply on day one.",
+   "eligibility": "For-profit organizations eligible (open to a broad range of applicants). Military/veteran relevance is emphasized in review.",
+   "nofo_url": null,
+   "source_url": "https://cdmrp.health.mil/funding/prmrp",
+   "portal": "Grants.gov / eBRAP",
+   "accounts_needed": "SAM/UEI + Grants.gov + eBRAP",
+   "match_required": null,
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": "Peer + programmatic review; frame MORE as a non-pharmacological chronic-pain intervention with military/veteran relevance",
+   "effort_hrs": 100,
+   "kit_type": "direct-template",
+   "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
+   "last_verified": "2026-08-04",
+   "next_check": "2027-01-15",
+   "found_date": "2026-08-04",
+   "notes": "FY26 PRMRP full apps were due 2026-08-06 / 2026-09-22 but the REQUIRED pre-application closed 2026-07-23, so new entry this cycle is closed. Next open entry: FY27 (~spring 2027). Also watch the Chronic Pain Management Research Program (CPMRP) topic area."
   }
  ],
  "coverage": [
@@ -761,15 +798,26 @@
   {
    "channel": "Foundations",
    "cadence": "weekly",
-   "what": "FORE + health-foundation RFP pages",
+   "what": "FORE · Arnold Ventures · RWJF · Kresge · Bloomberg · Conrad Hilton · Elevance Health Foundation",
    "stamp": "last scan 2026-08-04"
   },
   {
    "channel": "State pass-through",
    "cadence": "building",
    "what": "SOR/SUBG sub-RFPs via each state's behavioral-health agency (CA DHCS, NY OASAS, OH MHAS…)",
-   "stamp": "agency directory: 16 states mapped 2026-08-04 (14 URL-verified), building toward 50",
-   "gap": true
+   "stamp": "agency directory: all 50 states + DC mapped 2026-08-04 (3 URLs need manual confirm: KS, LA, NH)"
+  },
+  {
+   "channel": "Federal (non-HHS)",
+   "cadence": "daily",
+   "what": "CDC OD2A · DOJ/BJA COSSUP · DoD CDMRP (pain, for-profit) · DOL apprenticeship/WIOA · SAMHSA SUPTRS+MHBG block grants",
+   "stamp": "added 2026-08-04"
+  },
+  {
+   "channel": "Payers & associations",
+   "cadence": "weekly",
+   "what": "Medicaid 1115 SUD waivers · National Council / CCBHC-E · NACHC + state PCAs · ASAM education",
+   "stamp": "added 2026-08-04"
   },
   {
    "channel": "Winners feed",
@@ -780,102 +828,18 @@
  ],
  "state_directory": [
   {
-   "state": "California",
-   "agency": "California Department of Health Care Services (DHCS)",
-   "url": "https://www.dhcs.ca.gov/provgovpart/Pages/Funding_Opportunities_and_Grants_Resources.aspx",
-   "settlement_url": "https://www.dhcs.ca.gov/services/Pages/Opioid-Settlements-Oversight-Section.aspx",
-   "notes": "Funding page verified (title: 'Funding Opportunities and Grant Resources | DHCS'); also see Program Support & Grants hub https://www.dhcs.ca.gov/providers-partners/program-support-grants/ (fetched, co"
+   "state": "Alabama",
+   "agency": "Alabama Department of Mental Health (ADMH) — Division of Mental Health and Substance Abuse Services (Single State Authority for the Substance Use Prevention & Treatment Block Grant)",
+   "url": "https://mh.alabama.gov/grants/",
+   "settlement_url": "https://mh.alabama.gov/faq/opioid-grants/",
+   "notes": "ADMH grants page verified: lists SUD Prevention & Treatment Block Grant, Mental Health Block Grant, PATH, and Substance Use Treatment Initiatives. Opioid settlement path: the AL Legislature appropriated settlement dollars to ADMH to run com"
   },
   {
-   "state": "New York",
-   "agency": "NYS Office of Addiction Services and Supports (OASAS)",
-   "url": "https://oasas.ny.gov/funding-opportunities",
-   "settlement_url": "https://oasas.ny.gov/opioid-settlement-fund",
-   "notes": "Funding page fetched and confirmed: RFP/RFA table with due dates. Settlement-fund URL returned 403/Cloudflare challenge on fetch ('Just a moment...') so settlement page content unconfirmed, but fundin"
-  },
-  {
-   "state": "Ohio",
-   "agency": "Ohio Department of Behavioral Health (formerly OhioMHAS; mha.ohio.gov now 301-redirects to dbh.ohio.gov)",
-   "url": "https://dbh.ohio.gov/supporting-providers/apply-for-funding",
-   "settlement_url": "https://www.oneohiofoundation.com/",
-   "notes": "Agency renamed: mha.ohio.gov redirects to dbh.ohio.gov. Funding page verified via curl (title 'Apply for Funding'; WebFetch got 404 due to bot-blocking, curl with browser UA got 200). OneOhio Recovery"
-  },
-  {
-   "state": "Texas",
-   "agency": "Texas Health and Human Services Commission (HHSC)",
-   "url": "https://www.hhs.texas.gov/business/grants",
-   "settlement_url": "https://comptroller.texas.gov/programs/opioid-council/",
-   "notes": "URL unverified (bot-blocked) — confirm by hand. HHSC grants URL returned 403 Access Denied to both WebFetch and curl (Akamai bot-blocking) — could not confirm content, so verified=false for the HHSC page. Settlement page IS verified: Texas Opioid A"
-  },
-  {
-   "state": "Pennsylvania",
-   "agency": "Pennsylvania Department of Drug and Alcohol Programs (DDAP)",
-   "url": "https://www.pa.gov/agencies/ddap/for-professionals/funding-opportunities",
-   "settlement_url": "https://www.paopioidtrust.org/",
-   "notes": "Funding page fetched and confirmed: DDAP 'Grant Initiative Funding Opportunities' (GIFAs). Settlement: Pennsylvania Opioid Misuse and Addiction Abatement Trust, verified via curl (title 'PAOpioidTrust"
-  },
-  {
-   "state": "Virginia",
-   "agency": "Virginia Department of Behavioral Health and Developmental Services (DBHDS)",
-   "url": "https://dbhds.virginia.gov/",
-   "settlement_url": "https://www.oaa.virginia.gov/portal-grants/",
-   "notes": "DBHDS main site verified via curl (title confirms DBHDS); no single consolidated DBHDS grants page found (/about-dbhds/grants/ is 404). Settlement: Virginia Opioid Abatement Authority official .gov si"
-  },
-  {
-   "state": "Florida",
-   "agency": "Florida Department of Children and Families (DCF), Office of Substance Abuse and Mental Health (SAMH)",
-   "url": "https://www.myflfamilies.com/services/substance-abuse-and-mental-health",
-   "settlement_url": "https://www.myflfamilies.com/services/samh/florida-opioid-settlement",
-   "notes": "Both pages fetched and confirmed. SAMH contracts via regional Managing Entities (pass-through path). Settlement page confirms state opioid settlement hub; also relevant: https://opioidimplementation.m"
-  },
-  {
-   "state": "Michigan",
-   "agency": "Michigan Department of Health and Human Services (MDHHS)",
-   "url": "https://www.michigan.gov/opioids",
-   "settlement_url": "https://www.michigan.gov/opioids/opioidsettlements",
-   "notes": "Both URLs verified via curl (titles: 'Substance Use Disorder (SUD) Resources' and 'Opioid Settlements'); michigan.gov blocks WebFetch (403). MDHHS issues Grant Funding Opportunities via EGrAMS (https:"
-  },
-  {
-   "state": "Washington",
-   "agency": "Washington State Health Care Authority (HCA) – Division of Behavioral Health and Recovery",
-   "url": "https://www.hca.wa.gov/about-hca/programs-and-initiatives/behavioral-health-and-recovery",
-   "settlement_url": "https://waportal.org/health-initiatives/pregnant-parenting-children-families-and-substance-use-workgroup/opioid-settlement-funds",
-   "notes": "HCA main behavioral-health page verified (no consolidated grants page; grants like BHI and SAMHSA block grants are posted as subpages). The former waportal.org/partners/washington-state-opioid-settlem"
-  },
-  {
-   "state": "Massachusetts",
-   "agency": "Massachusetts Department of Public Health – Bureau of Substance Addiction Services (BSAS)",
-   "url": "https://www.mass.gov/orgs/bureau-of-substance-addiction-services",
-   "settlement_url": "https://www.mass.gov/opioid-recovery-and-remediation-fund",
-   "notes": "URL unverified (bot-blocked) — confirm by hand. mass.gov returns HTTP 403 to all automated fetchers (WebFetch and curl with browser UA), so pages could not be confirmed programmatically; URLs are the standard mass.gov org/topic paths for BSAS and t"
-  },
-  {
-   "state": "New Jersey",
-   "agency": "NJ Department of Human Services – Division of Mental Health and Addiction Services (DMHAS)",
-   "url": "https://nj.gov/humanservices/dmhas/",
-   "settlement_url": "https://www.nj.gov/opioidfunds/",
-   "notes": "DMHAS homepage verified; it has a 'Funding Opportunities' section under Notices and links directly to the verified nj.gov/opioidfunds opioid settlement fund site (>$1B through 2038)."
-  },
-  {
-   "state": "Illinois",
-   "agency": "Illinois Department of Human Services – Division of Substance Use Prevention and Recovery (SUPR) / Division of Behavioral Health and Recovery",
-   "url": "https://www.dhs.state.il.us/page.aspx?item=149872",
-   "settlement_url": "https://ilopioidsettlements.com/",
-   "notes": "IDHS 'Grant Funded Programs' page verified, lists SUPR funding opportunities by fiscal year (FY2025-FY2027); formal NOFOs go through Illinois GATA/CSFA. ilopioidsettlements.com verified as official ID"
-  },
-  {
-   "state": "North Carolina",
-   "agency": "NC DHHS – Division of Mental Health, Developmental Disabilities and Substance Use Services (DMH/DD/SUS)",
-   "url": "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/grants/mental-health-developmental-disabilities-and-substance-use-services-grant-opportunities",
-   "settlement_url": "https://ncopioidsettlement.org/",
-   "notes": "Grant opportunities page verified (currently no open RFAs; email list rfa.responses@dhhs.nc.gov). ncopioidsettlement.org (CORE-NC) verified as official settlement hub run by NC DOJ, NCACC, UNC IPRC, a"
-  },
-  {
-   "state": "Georgia",
-   "agency": "Georgia Department of Behavioral Health and Developmental Disabilities (DBHDD)",
-   "url": "https://dbhdd.georgia.gov/",
-   "settlement_url": "https://www.gaopioidtrust.org/",
-   "notes": "DBHDD homepage verified but has no consolidated grants page (funding posted ad hoc, e.g. AOT grant, SUPTR block grant). Georgia Opioid Crisis Abatement Trust (gaopioidtrust.org) verified — up to $1.3B"
+   "state": "Alaska",
+   "agency": "Alaska Department of Health — Division of Behavioral Health (DBH)",
+   "url": "https://health.alaska.gov/en/services/behavioral-health-grant-funding/",
+   "settlement_url": "https://health.alaska.gov/en/education/drugs-and-alcohol/opioids-prevention-and-recovery/opioid-settlement/",
+   "notes": "DBH grant-funding page verified: opportunities are posted on the state Online Public Notices board and via GEMS (gems.dhss.alaska.gov); eligibility per 7 AAC 78.030. Opioid settlement in Alaska is administered by the Dept. of Health (85% st"
   },
   {
    "state": "Arizona",
@@ -885,11 +849,340 @@
    "notes": "AHCCCS Current Grants page verified (MHBG, SOR IV, etc.). Settlement funds governed by One Arizona MOU; azag.gov One Arizona Agreement page verified via curl (title 'One Arizona Agreement | Attorney G"
   },
   {
+   "state": "Arkansas",
+   "agency": "Arkansas Department of Human Services — Division of Aging, Adult, & Behavioral Health Services (DAABHS) (Single State Authority for the Substance Use Block Grant)",
+   "url": "https://humanservices.arkansas.gov/divisions-shared-services/aging-adult-behavioral-health-services/substance-abuse-prevention/substance-abuse-prevention-grants/",
+   "settlement_url": "https://www.arorp.org/apply-for-funding/",
+   "notes": "DAABHS grants page (Substance Abuse Prevention Grants) lists SABG, Partnerships for Success, State Opioid Response II, and First Responder CARA; confirmed via ARKDHS domain (WebFetch on the DHS site returned navigation-only rendering, but t"
+  },
+  {
+   "state": "California",
+   "agency": "California Department of Health Care Services (DHCS)",
+   "url": "https://www.dhcs.ca.gov/provgovpart/Pages/Funding_Opportunities_and_Grants_Resources.aspx",
+   "settlement_url": "https://www.dhcs.ca.gov/services/Pages/Opioid-Settlements-Oversight-Section.aspx",
+   "notes": "Funding page verified (title: 'Funding Opportunities and Grant Resources | DHCS'); also see Program Support & Grants hub https://www.dhcs.ca.gov/providers-partners/program-support-grants/ (fetched, co"
+  },
+  {
    "state": "Colorado",
    "agency": "Colorado Behavioral Health Administration (BHA)",
    "url": "https://bha.colorado.gov/for-service-providers/funding/funding-opportunities",
    "settlement_url": "https://coag.gov/opioids/",
    "notes": "BHA funding-opportunities page verified via curl (colorado.gov blocks WebFetch; title 'Funding opportunities | Behavioral Health Administration'). coag.gov/opioids verified — AG administers ~$912M set"
+  },
+  {
+   "state": "Connecticut",
+   "agency": "Connecticut Department of Mental Health and Addiction Services (DMHAS)",
+   "url": "https://portal.ct.gov/DMHAS/RFPs/Index/RFPs-and-RFQs",
+   "settlement_url": "https://portal.ct.gov/dmhas/newsworthy/news-items/ct-opioid-settlement-advisory-committee",
+   "notes": "DMHAS RFPs and RFQs page verified as the funding-opportunities/procurement portal (POS RFPs, RFQs, RFIs). CT's Opioid Settlement Advisory Committee (OSAC), established 2022, is co-chaired by the DMHAS Commissioner and a municipal representa"
+  },
+  {
+   "state": "Delaware",
+   "agency": "Delaware Department of Health and Social Services — Division of Substance Abuse and Mental Health (DSAMH)",
+   "url": "https://atrc.dhss.delaware.gov/sor-4-0-funding-opportunities-overview",
+   "settlement_url": "https://deopioidsettlementfunds.org/grants",
+   "notes": "DSAMH funding-opportunities overview (State Opioid Response 4.0) verified via the Addiction Treatment Resource Center (ATRC), a DSAMH/dhss.delaware.gov property: lists Tier Award Program, grassroots messaging, ECASU mini-grants, ACCESS 988,"
+  },
+  {
+   "state": "District of Columbia",
+   "agency": "DC Department of Behavioral Health (DBH)",
+   "url": "https://dbh.dc.gov/page/opportunities",
+   "settlement_url": "https://dbh.dc.gov/page/office-opioid-abatement",
+   "notes": "DBH is the District's SUD/BH authority; the Opportunities page links to the Request for Applications, Community Mental Health Services Block Grant, and contract opportunities. DBH administers both the MH and SUPTRS block grants. Opioid sett"
+  },
+  {
+   "state": "Florida",
+   "agency": "Florida Department of Children and Families (DCF), Office of Substance Abuse and Mental Health (SAMH)",
+   "url": "https://www.myflfamilies.com/services/substance-abuse-and-mental-health",
+   "settlement_url": "https://www.myflfamilies.com/services/samh/florida-opioid-settlement",
+   "notes": "Both pages fetched and confirmed. SAMH contracts via regional Managing Entities (pass-through path). Settlement page confirms state opioid settlement hub; also relevant: https://opioidimplementation.m"
+  },
+  {
+   "state": "Georgia",
+   "agency": "Georgia Department of Behavioral Health and Developmental Disabilities (DBHDD)",
+   "url": "https://dbhdd.georgia.gov/",
+   "settlement_url": "https://www.gaopioidtrust.org/",
+   "notes": "DBHDD homepage verified but has no consolidated grants page (funding posted ad hoc, e.g. AOT grant, SUPTR block grant). Georgia Opioid Crisis Abatement Trust (gaopioidtrust.org) verified — up to $1.3B"
+  },
+  {
+   "state": "Hawaii",
+   "agency": "Hawaii Department of Health, Alcohol and Drug Abuse Division (ADAD)",
+   "url": "https://health.hawaii.gov/substance-abuse/",
+   "settlement_url": null,
+   "notes": "ADAD is Hawaii's single state authority for SUD prevention/treatment and administers the SABG and State Opioid Response funds. ADAD lists 'Grants and Contracts' as a core function but has NO dedicated grants/funding-opportunities webpage; p"
+  },
+  {
+   "state": "Idaho",
+   "agency": "Idaho Department of Health and Welfare, Division of Behavioral Health",
+   "url": "https://healthandwelfare.idaho.gov/providers/behavioral-health-providers/funding-opportunities",
+   "settlement_url": "https://behavioralhealthcouncil.idaho.gov/idaho-opioid-settlement-fund/",
+   "notes": "DHW Division of Behavioral Health administers the SUPTRS Block Grant and Idaho's State Opioid Response (ISOR). Funding Opportunities page (last updated 2026-07-24) posts announcements such as Recovery Support Services, Warm Handoff, and OBO"
+  },
+  {
+   "state": "Illinois",
+   "agency": "Illinois Department of Human Services – Division of Substance Use Prevention and Recovery (SUPR) / Division of Behavioral Health and Recovery",
+   "url": "https://www.dhs.state.il.us/page.aspx?item=149872",
+   "settlement_url": "https://ilopioidsettlements.com/",
+   "notes": "IDHS 'Grant Funded Programs' page verified, lists SUPR funding opportunities by fiscal year (FY2025-FY2027); formal NOFOs go through Illinois GATA/CSFA. ilopioidsettlements.com verified as official ID"
+  },
+  {
+   "state": "Indiana",
+   "agency": "Indiana Family and Social Services Administration (FSSA), Division of Mental Health and Addiction (DMHA)",
+   "url": "https://www.in.gov/fssa/dmha/funding-information/",
+   "settlement_url": "https://www.in.gov/recovery/settlement",
+   "notes": "DMHA is Indiana's SUD/BH authority, administering the MH and SUD block grants; competitive opportunities (e.g., Opioid Settlement Dollar-for-Dollar Match, SUD Residential Treatment for Women, Recovery Community Center grants) are posted on "
+  },
+  {
+   "state": "Iowa",
+   "agency": "Iowa Department of Health and Human Services (Iowa HHS), Behavioral Health",
+   "url": "https://hhs.iowa.gov/health-prevention/behavioral-health/provider-resources/grants",
+   "settlement_url": "https://www.iowaattorneygeneral.gov/news/opioid-settlement-information",
+   "notes": "Iowa HHS Behavioral Health is the SUD/BH authority; grants page lists SABG/MHBG block grants, IPN (Integrated Provider Network) grant, SOAR, and CCBHC. Competitive funding opportunities (including opioid-settlement rounds under HF 1038, 202"
+  },
+  {
+   "state": "Kansas",
+   "agency": "Kansas Department for Aging and Disability Services (KDADS), Behavioral Health Services",
+   "url": "https://www.kdads.ks.gov/provider-home/providers/bhs-funding-opportunities",
+   "settlement_url": "https://www.ag.ks.gov/reports-resources/affiliated-organizations/kansas-fights-addiction-act-grant-review-board",
+   "notes": "URL UNVERIFIED (bot-blocked) — confirm by hand. KDADS BHS Funding Opportunities is the official state SUD/BH grants page (surfaced directly from kdads.ks.gov); however the site returns HTTP 403 to both curl and WebFetch (bot-blocking), so t"
+  },
+  {
+   "state": "Kentucky",
+   "agency": "Kentucky Cabinet for Health and Family Services — Department for Behavioral Health, Developmental and Intellectual Disabilities (DBHDID)",
+   "url": "https://www.chfs.ky.gov/agencies/dbhdid/Pages/sud.aspx",
+   "settlement_url": "https://kyoaac.ky.gov/",
+   "notes": "DBHDID SUD funding page confirmed via WebFetch — lists active Notices of Funding Opportunity through the Kentucky Overdose Response Effort (KORE), e.g. Contingency Management pilot grants. General CHFS grants hub also exists at https://www."
+  },
+  {
+   "state": "Louisiana",
+   "agency": "Louisiana Department of Health (LDH) — Office of Behavioral Health (OBH)",
+   "url": "https://www.ldh.la.gov/office-of-behavioral-health",
+   "settlement_url": "https://laoatf.org/",
+   "notes": "URL UNVERIFIED (bot-blocked) — confirm by hand. LDH OBH is the official state BH/SUD authority; the OBH page is on the state's own ldh.la.gov domain but returns HTTP 403 to both curl and WebFetch, so content could not be programmatically co"
+  },
+  {
+   "state": "Maine",
+   "agency": "Maine Department of Health and Human Services — Office of Behavioral Health (OBH, formerly SAMHS)",
+   "url": "https://www.maine.gov/dhhs/obh/about/grants",
+   "settlement_url": "https://www.maine.gov/ag/about-us/special-projects/maine-recovery-council",
+   "notes": "OBH grants page confirmed via WebFetch — lists Mental Health Block Grant, Substance Abuse Prevention & Treatment Block Grant, PATH, SOR2, FR-CARA, OD2A. Opioid settlement: Maine Recovery Council under the AG's office; original URL /ag/recov"
+  },
+  {
+   "state": "Maryland",
+   "agency": "Maryland Department of Health — Behavioral Health Administration (BHA)",
+   "url": "https://health.maryland.gov/bha/Pages/index.aspx",
+   "settlement_url": "https://stopoverdose.maryland.gov/orf/use-of-funds/",
+   "notes": "BHA homepage confirmed via WebFetch as the state BH/SUD authority (oversees inpatient and community behavioral health), but it does not link a standalone grants page; BHA competitive grants and block-grant subawards are announced ad hoc (re"
+  },
+  {
+   "state": "Massachusetts",
+   "agency": "Massachusetts Department of Public Health – Bureau of Substance Addiction Services (BSAS)",
+   "url": "https://www.mass.gov/orgs/bureau-of-substance-addiction-services",
+   "settlement_url": "https://www.mass.gov/opioid-recovery-and-remediation-fund",
+   "notes": "URL unverified (bot-blocked) — confirm by hand. mass.gov returns HTTP 403 to all automated fetchers (WebFetch and curl with browser UA), so pages could not be confirmed programmatically; URLs are the standard mass.gov org/topic paths for BSAS and t"
+  },
+  {
+   "state": "Michigan",
+   "agency": "Michigan Department of Health and Human Services (MDHHS)",
+   "url": "https://www.michigan.gov/opioids",
+   "settlement_url": "https://www.michigan.gov/opioids/opioidsettlements",
+   "notes": "Both URLs verified via curl (titles: 'Substance Use Disorder (SUD) Resources' and 'Opioid Settlements'); michigan.gov blocks WebFetch (403). MDHHS issues Grant Funding Opportunities via EGrAMS (https:"
+  },
+  {
+   "state": "Minnesota",
+   "agency": "Minnesota Department of Human Services (DHS), Behavioral Health Administration",
+   "url": "https://mn.gov/dhs/partners-and-providers/grants-rfps/open-rfps/",
+   "settlement_url": null,
+   "notes": "Grants/RFPs page confirmed (header 'Grants and RFPs / mn.gov/dhs | Partners and Providers'); site is bot-protected so full RFP listing renders via JS, but the page resolves to the correct DHS grants section which posts Behavioral Health Div"
+  },
+  {
+   "state": "Mississippi",
+   "agency": "Mississippi Department of Mental Health (DMH), Bureau of Behavioral Health",
+   "url": "https://www.dmh.ms.gov/bureau-of-behavioral-health-fy-2027-notice-of-funding-opportunities/",
+   "settlement_url": "https://attorneygenerallynnfitch.com/opioid-settlement-fund-advisory-council/",
+   "notes": "DMH NOFO page verified: competitive grants across Peer Recovery/Support, Children & Youth, and Alcohol & Drug Addiction Treatment Services divisions; only DMH Certified Providers eligible. Opioid Settlement Fund Advisory Council (AG Lynn Fi"
+  },
+  {
+   "state": "Missouri",
+   "agency": "Missouri Department of Mental Health (DMH), Division of Behavioral Health",
+   "url": "https://dmh.mo.gov/behavioral-health/block-grant",
+   "settlement_url": "https://moopioidsettlements.dmh.mo.gov/",
+   "notes": "DMH/DBH block grant page verified: combined MHBG + SUPTRS block grant administered annually; plans posted for comment (DBHResearch@dmh.mo.gov). Missouri opioid settlement reporting site verified, run by DMH (lead agency); state share deposi"
+  },
+  {
+   "state": "Montana",
+   "agency": "Montana Department of Public Health and Human Services (DPHHS), Behavioral Health and Developmental Disabilities Division (BHDD)",
+   "url": "https://dphhs.mt.gov/BHDD/Prevention/SubstanceUseBlockGrant",
+   "settlement_url": "https://montanaopioid.org/grant-portal/",
+   "notes": "DPHHS BHDD Substance Use Block Grant (SUBG) page verified. Opioid abatement is handled largely outside DPHHS by the Montana Opioid Abatement Trust (MOAT, ~70% share), whose Grant Portal is verified and accepts applications routed through 14"
+  },
+  {
+   "state": "Nebraska",
+   "agency": "Nebraska Department of Health and Human Services (DHHS), Division of Behavioral Health",
+   "url": "https://dhhs.ne.gov/Pages/Grants-and-Contract-Opportunities.aspx",
+   "settlement_url": "https://ago.nebraska.gov/nebraska-opioid-settlement-remediation-advisory-committee",
+   "notes": "DHHS Office of Procurement and Grants opportunities hub verified (informational; specific listings on /Pages/Grant-Opportunities.aspx and /Pages/Contract-Opportunities.aspx). DHHS Division of Behavioral Health administers SUPTRS/MHBG block "
+  },
+  {
+   "state": "Nevada",
+   "agency": "Nevada Department of Health and Human Services (DHHS), Division of Public and Behavioral Health (DPBH), Bureau of Behavioral Health, Wellness and Prevention (BBHWP) — the state's Substance Abuse Prevention and Treatment Agency (SAPTA / Single State Authority)",
+   "url": "https://dpbh.nv.gov/Programs/BBHWP/SOR/SOR4RFA/",
+   "settlement_url": "https://www.dhs.nv.gov/Programs/frn/",
+   "notes": "Grants URL verified (HTTP 200; DPBH State Opioid Response SOR 4 RFA funding-opportunity page, project period 1/1/2025–9/29/2027). BBHWP also runs the SUPTRS Block Grant RFA, but the specific SUPTRS_RFA path 404s to automated fetch, so the c"
+  },
+  {
+   "state": "New Hampshire",
+   "agency": "New Hampshire Department of Health and Human Services (DHHS), Bureau of Drug and Alcohol Services (BDAS) — the state's Single State Authority for substance use; administers the SAMHSA SUPTRS/SABG block grant",
+   "url": "https://www.dhhs.nh.gov/programs-services/health-care/substance-misuse/substance-abuse-prevention-and-treatment-block-grant",
+   "settlement_url": "https://www.dhhs.nh.gov/about-dhhs/advisory-organizations/nh-opioid-abatement-trust-fund-advisory-commission",
+   "notes": "URL UNVERIFIED (bot-blocked) — confirm by hand. Both URLs are legitimate official dhhs.nh.gov pages surfaced by search, but the NH DHHS site returns HTTP 403 to automated fetch/curl (bot-blocking), so page content could not be directly conf"
+  },
+  {
+   "state": "New Jersey",
+   "agency": "NJ Department of Human Services – Division of Mental Health and Addiction Services (DMHAS)",
+   "url": "https://nj.gov/humanservices/dmhas/",
+   "settlement_url": "https://www.nj.gov/opioidfunds/",
+   "notes": "DMHAS homepage verified; it has a 'Funding Opportunities' section under Notices and links directly to the verified nj.gov/opioidfunds opioid settlement fund site (>$1B through 2038)."
+  },
+  {
+   "state": "New Mexico",
+   "agency": "New Mexico Health Care Authority (HCA), Behavioral Health Services Division (BHSD) — formerly under the Human Services Department; the state SUD/BH authority overseeing non-Medicaid behavioral health and SB3 reform funding",
+   "url": "https://www.hca.nm.gov/lookingforinformation/open-rfps/",
+   "settlement_url": null,
+   "notes": "Open RFPs page verified (HTTP 200); lists behavioral-health RFP/RFI opportunities including BHSD SBIRT training (up to $4M for SFY27) and ASO administration for SB3 Behavioral Health Reform & Investment Act funds. BHSD awards are typically "
+  },
+  {
+   "state": "New York",
+   "agency": "NYS Office of Addiction Services and Supports (OASAS)",
+   "url": "https://oasas.ny.gov/funding-opportunities",
+   "settlement_url": "https://oasas.ny.gov/opioid-settlement-fund",
+   "notes": "Funding page fetched and confirmed: RFP/RFA table with due dates. Settlement-fund URL returned 403/Cloudflare challenge on fetch ('Just a moment...') so settlement page content unconfirmed, but fundin"
+  },
+  {
+   "state": "North Carolina",
+   "agency": "NC DHHS – Division of Mental Health, Developmental Disabilities and Substance Use Services (DMH/DD/SUS)",
+   "url": "https://www.ncdhhs.gov/divisions/mental-health-developmental-disabilities-and-substance-use-services/grants/mental-health-developmental-disabilities-and-substance-use-services-grant-opportunities",
+   "settlement_url": "https://ncopioidsettlement.org/",
+   "notes": "Grant opportunities page verified (currently no open RFAs; email list rfa.responses@dhhs.nc.gov). ncopioidsettlement.org (CORE-NC) verified as official settlement hub run by NC DOJ, NCACC, UNC IPRC, a"
+  },
+  {
+   "state": "North Dakota",
+   "agency": "North Dakota Department of Health and Human Services (HHS), Behavioral Health Division — the state SUD/BH authority administering the SAMHSA SUPTRS Block Grant, State Opioid Response, and Opioid Settlement Fund grants",
+   "url": "https://www.hhs.nd.gov/behavioral-health/funding-opportunities",
+   "settlement_url": null,
+   "notes": "Funding-opportunities page verified (HTTP 200); lists provider funding pathways (1915(i) SPA, Community Connect, Free Through Recovery, Recovery Housing, SUD Voucher). The ND Opioid Settlement Fund Grant (NDCC ch. 50-36, Opioid Settlement A"
+  },
+  {
+   "state": "Ohio",
+   "agency": "Ohio Department of Behavioral Health (formerly OhioMHAS; mha.ohio.gov now 301-redirects to dbh.ohio.gov)",
+   "url": "https://dbh.ohio.gov/supporting-providers/apply-for-funding",
+   "settlement_url": "https://www.oneohiofoundation.com/",
+   "notes": "Agency renamed: mha.ohio.gov redirects to dbh.ohio.gov. Funding page verified via curl (title 'Apply for Funding'; WebFetch got 404 due to bot-blocking, curl with browser UA got 200). OneOhio Recovery"
+  },
+  {
+   "state": "Oklahoma",
+   "agency": "Oklahoma Department of Mental Health and Substance Abuse Services (ODMHSAS) — the state SUD/BH authority; issues block-grant and RFP-based contracts",
+   "url": "https://oklahoma.gov/odmhsas/about/public-information/grant-and-solicitations.html",
+   "settlement_url": "https://oklahoma.gov/oag/resources/grants/opioid-abatement-grant.html",
+   "notes": "Both URLs verified (HTTP 200). ODMHSAS Grants & Solicitations page lists block-grant applications (FFY26-27) and directs contract opportunities through the OMES Central Purchasing RFP process. Opioid settlement is administered separately by"
+  },
+  {
+   "state": "Oregon",
+   "agency": "Oregon Health Authority (OHA), Behavioral Health Division",
+   "url": "https://www.oregon.gov/oha/hsd/amh/pages/bhi-programs.aspx",
+   "settlement_url": null,
+   "notes": "OHA Behavioral Health Division administers SUD/MH block grants and behavioral health investment grants. Verified page = Behavioral Health Investments Programs. Oregon's opioid settlement funds are directed by the Opioid Settlement Preventio"
+  },
+  {
+   "state": "Pennsylvania",
+   "agency": "Pennsylvania Department of Drug and Alcohol Programs (DDAP)",
+   "url": "https://www.pa.gov/agencies/ddap/for-professionals/funding-opportunities",
+   "settlement_url": "https://www.paopioidtrust.org/",
+   "notes": "Funding page fetched and confirmed: DDAP 'Grant Initiative Funding Opportunities' (GIFAs). Settlement: Pennsylvania Opioid Misuse and Addiction Abatement Trust, verified via curl (title 'PAOpioidTrust"
+  },
+  {
+   "state": "Rhode Island",
+   "agency": "RI Department of Behavioral Healthcare, Developmental Disabilities and Hospitals (BHDDH)",
+   "url": "https://bhddh.ri.gov/mental-health/bhddh-grant-information",
+   "settlement_url": "https://eohhs.ri.gov/Opioid-Settlement-Advisory-Committee",
+   "notes": "BHDDH is the state BH/SUD authority (block grants MHBG/SUPTRS, PATH, Synar). Opioid settlement dollars are administered separately by the RI Executive Office of Health and Human Services (EOHHS) via the Opioid Settlement Advisory Committee "
+  },
+  {
+   "state": "South Carolina",
+   "agency": "SC Office of Substance Use Services (OSUS) — formerly DAODAS, now under the Dept. of Behavioral Health and Developmental Disabilities (BHDD)",
+   "url": "https://www.daodas.sc.gov/about/grants",
+   "settlement_url": "https://scorf.sc.gov",
+   "notes": "DAODAS was restructured into the Office of Substance Use Services (OSUS) under the new SC Dept. of Behavioral Health and Developmental Disabilities; the daodas.sc.gov domain is still live and hosts the grants page (verified). Opioid settlem"
+  },
+  {
+   "state": "South Dakota",
+   "agency": "SD Department of Social Services (DSS), Division of Behavioral Health",
+   "url": "https://dss.sd.gov/behavioralhealth/grantinfo.aspx",
+   "settlement_url": null,
+   "notes": "DSS Division of Behavioral Health is the state BH/SUD authority (SAPT/MH block grants, CCBHC, PATH, 988). Verified grant-info page also hosts the Opioid Settlement Abatement Funds community grant program (Resource/Organizational/Transformat"
+  },
+  {
+   "state": "Tennessee",
+   "agency": "Tennessee Department of Mental Health and Substance Abuse Services (TDMHSAS)",
+   "url": "https://www.tn.gov/behavioral-health/for-providers/grants-management.html",
+   "settlement_url": "https://www.tn.gov/oac.html",
+   "notes": "TDMHSAS is the state BH/SUD authority; verified page is its Grants Management hub for providers (grantee manual, compliance) — note it is a resource/guidance hub rather than a live NOFO list. Opioid settlement dollars are administered by th"
+  },
+  {
+   "state": "Texas",
+   "agency": "Texas Health and Human Services Commission (HHSC)",
+   "url": "https://www.hhs.texas.gov/business/grants",
+   "settlement_url": "https://comptroller.texas.gov/programs/opioid-council/",
+   "notes": "URL unverified (bot-blocked) — confirm by hand. HHSC grants URL returned 403 Access Denied to both WebFetch and curl (Akamai bot-blocking) — could not confirm content, so verified=false for the HHSC page. Settlement page IS verified: Texas Opioid A"
+  },
+  {
+   "state": "Utah",
+   "agency": "Utah Department of Health and Human Services, Office of Substance Use and Mental Health (SUMH)",
+   "url": "https://dhhs.utah.gov/block-grants/",
+   "settlement_url": "https://sumh.utah.gov/data-reports/opioidlitigation/",
+   "notes": "SUMH is Utah's state behavioral-health/SUD authority; it administers the Combined MHBG/SUPTRS block grants (public comment Aug 1-30; applications available after Oct 31). Utah has no separate opioid-abatement board site: ~$495M over 18 yrs "
+  },
+  {
+   "state": "Vermont",
+   "agency": "Vermont Department of Health, Division of Substance Use Programs (DSU)",
+   "url": "https://www.healthvermont.gov/alcohol-drugs/grantees-contractors",
+   "settlement_url": "https://www.healthvermont.gov/alcohol-drugs/public-meetings-comments/opioid-settlement-advisory-committee",
+   "notes": "In Vermont the SUD grant authority is the Dept of Health's Division of Substance Use Programs (DSU), not the separate Dept of Mental Health. The grantees-contractors page hosts active RFPs/RFIs/RFAs (several funded by opioid settlement doll"
+  },
+  {
+   "state": "Virginia",
+   "agency": "Virginia Department of Behavioral Health and Developmental Services (DBHDS)",
+   "url": "https://dbhds.virginia.gov/",
+   "settlement_url": "https://www.oaa.virginia.gov/portal-grants/",
+   "notes": "DBHDS main site verified via curl (title confirms DBHDS); no single consolidated DBHDS grants page found (/about-dbhds/grants/ is 404). Settlement: Virginia Opioid Abatement Authority official .gov si"
+  },
+  {
+   "state": "Washington",
+   "agency": "Washington State Health Care Authority (HCA) – Division of Behavioral Health and Recovery",
+   "url": "https://www.hca.wa.gov/about-hca/programs-and-initiatives/behavioral-health-and-recovery",
+   "settlement_url": "https://waportal.org/health-initiatives/pregnant-parenting-children-families-and-substance-use-workgroup/opioid-settlement-funds",
+   "notes": "HCA main behavioral-health page verified (no consolidated grants page; grants like BHI and SAMHSA block grants are posted as subpages). The former waportal.org/partners/washington-state-opioid-settlem"
+  },
+  {
+   "state": "West Virginia",
+   "agency": "West Virginia Department of Human Services, Bureau for Behavioral Health (BBH)",
+   "url": "https://bbh.wv.gov/bbh-funding",
+   "settlement_url": "https://wvfirst.org/grants/",
+   "notes": "BBH is the state SUD/BH authority; bbh-funding page has Current Funding Announcements, Applying for Funding, and Archived Announcements. Opioid settlement funds are largely distributed by the West Virginia First Foundation (WVFF), a separat"
+  },
+  {
+   "state": "Wisconsin",
+   "agency": "Wisconsin Department of Health Services (DHS) — Division of Care and Treatment Services, Bureau of Prevention Treatment and Recovery",
+   "url": "https://www.dhs.wisconsin.gov/business/solicitations-list.htm",
+   "settlement_url": "https://www.dhs.wisconsin.gov/opioids/index.htm",
+   "notes": "DHS is the state BH/SUD authority; the 'Current Grant Funding Opportunities' (solicitations-list) page lists active solicitations by due date (also posted to Wisconsin Public Notices/VendorNet). Wisconsin has no independent settlement board"
+  },
+  {
+   "state": "Wyoming",
+   "agency": "Wyoming Department of Health, Behavioral Health Division (Mental Health & Substance Use Treatment Services)",
+   "url": "https://health.wyo.gov/behavioralhealth/mhsa/public-notices/",
+   "settlement_url": "https://health.wyo.gov/admin/opioid-settlement-funds/",
+   "notes": "The Behavioral Health Division's Grants & Programs Unit administers federal SUD/MH funding; the Public Notices page carries current RFAs (e.g., 2027 Combined MHBG/SUPTRS block grant, community treatment/recovery-housing solicitations). No s"
   }
  ]
 }

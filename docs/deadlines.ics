@@ -385,4 +385,22 @@ ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] CA HCAI BHSA WET Plan — workforce training vendor watch — cycle watch
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:dod-cdmrp-prmrp-watch-20270301@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20270301
+SUMMARY:[Grant Radar] DoD CDMRP — chronic pain research (PRMRP / CPMRP) — cycle watch
+DESCRIPTION:Rare for-profit-direct DoD money for chronic-pain research — MORE's pain dyad fits squarely. FY26 entry is closed\; FY27 opens ~spring 2027\, so we prep and apply on day one.\n\nPath: Direct · Priority 3.0\nhttps://cdmrp.health.mil/funding/prmrp
+URL:https://cdmrp.health.mil/funding/prmrp
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] DoD CDMRP — chronic pain research (PRMRP / CPMRP) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] DoD CDMRP — chronic pain research (PRMRP / CPMRP) — cycle watch
+END:VALARM
+END:VEVENT
 END:VCALENDAR

@@ -25,12 +25,20 @@ QUERIES = [
     {"keyword": "behavioral health workforce"},
     {"keyword": "chronic pain management"},
     {"keyword": "mindfulness"},
+    {"keyword": "overdose prevention"},          # CDC OD2A family
+    {"keyword": "criminal justice substance"},    # DOJ/BJA COSSUP family
+    {"keyword": "apprenticeship behavioral health"},  # DOL/ETA
     {"aln": "93.788"},   # State Opioid Response
     {"aln": "93.912"},   # HRSA RCORP
     {"aln": "93.243"},   # SAMHSA discretionary
+    {"aln": "93.136"},   # CDC injury/overdose prevention
+    {"aln": "16.838"},   # DOJ/BJA COSSUP
+    {"aln": "12.420"},   # DoD CDMRP (medical research)
+    {"aln": "17.285"},   # DOL registered apprenticeship
 ]
 
-RELEVANT_AGENCIES = ("HHS", "USDOJ", "DOL")
+# HHS=93 · USDOJ=16 · DOL=17 · DoD=12 (CDMRP) · CDC rolls under HHS
+RELEVANT_AGENCIES = ("HHS", "USDOJ", "DOJ", "DOL", "DOD", "DOD-")
 
 
 def search(body):

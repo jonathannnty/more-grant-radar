@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 .env
 data/winners.csv
+data/channels_result.json
