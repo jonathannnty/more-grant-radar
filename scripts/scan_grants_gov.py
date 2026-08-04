@@ -28,6 +28,10 @@ QUERIES = [
     {"keyword": "overdose prevention"},          # CDC OD2A family
     {"keyword": "criminal justice substance"},    # DOJ/BJA COSSUP family
     {"keyword": "apprenticeship behavioral health"},  # DOL/ETA
+    {"keyword": "comparative effectiveness substance"},  # AHRQ (PCORI is a separate system, not Grants.gov)
+    {"keyword": "behavioral health workforce education training"},  # HRSA BHWET
+    {"keyword": "drug court treatment"},  # BJA / SAMHSA treatment courts
+    {"keyword": "tribal opioid response"},  # SAMHSA TOR / IHS
     {"aln": "93.788"},   # State Opioid Response
     {"aln": "93.912"},   # HRSA RCORP
     {"aln": "93.243"},   # SAMHSA discretionary
@@ -35,6 +39,9 @@ QUERIES = [
     {"aln": "16.838"},   # DOJ/BJA COSSUP
     {"aln": "12.420"},   # DoD CDMRP (medical research)
     {"aln": "17.285"},   # DOL registered apprenticeship
+    {"aln": "93.226"},   # AHRQ research
+    {"aln": "93.732"},   # HRSA BHWET
+    {"aln": "16.585"},   # BJA Drug Court Discretionary
 ]
 
 # HHS=93 · USDOJ=16 · DOL=17 · DoD=12 (CDMRP) · CDC rolls under HHS

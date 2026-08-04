@@ -1,0 +1,320 @@
+{
+ "results": [
+  {
+   "category": "pcori",
+   "verdict": "worth-adding",
+   "verdict_reason": "PCORI is a strong, currently-open fit that is not in the already-tracked list. It funds head-to-head comparative clinical-effectiveness research (exactly the MORE-vs-CBT or MORE + usual-care design), and for-profit private-sector research organizations are eligible lead applicants under its authorizing statute. Most importantly, a Topical 'Addressing Substance Use' PFA (Cycle 3 2026) opens Aug. 4, 2026 (today) and explicitly funds patient-centered CER of treatment/recovery approaches for substance use disorders including opioids, with a concrete LOI deadline of Sept. 9, 2026 and application deadline of Jan. 12, 2027 (up to $12M direct costs/award, 5 years). One responsiveness caveat to design around: the PFA requires at least one primary outcome focused on substance use, and 'novel interventions' or new-technology development are nonresponsive — MORE is an established, manualized, evidence-based therapy (adaptations must be minimal and justified a priori), so a study positioning MORE against CBT/usual care for OUD with an opioid-use primary outcome and chronic pain as a secondary outcome is responsive. Note: PCORI does NOT fund clinician-training delivery per se — it funds the research study; training clinicians in MORE would be a cost/line-item within a funded CER trial, and the for-profit LLC would be applicant or a subcontractor to an academic/clinical partner. NOTE: the dedicated /eligibility page returned a persistent Cloudflare 403 this session and could not be re-verified live; for-profit eligibility is asserted from PCORI's standing statutory/published policy, not a fresh fetch.",
+   "sources": [
+    {
+     "name": "PCORI Funding Opportunities (umbrella catalog of PFAs / cycles)",
+     "url": "https://www.pcori.org/funding-opportunities",
+     "scope": "National (US); Patient-Centered Outcomes Research Institute",
+     "what_it_funds": "Patient-centered comparative clinical-effectiveness research (CER) via Broad PFAs (applicant-chosen topics), Topical PFAs (designated conditions), Phased Large Awards, pragmatic studies, observational/retrospective CER, and implementation/dissemination awards. Runs on three standard cycles per year. Confirmed live: ~286 total opportunities, 11 'Upcoming', 7 receiving invited applications.",
+     "how_more_fits": "direct / sub — This is the entry point for finding each new cycle. A MORE-vs-CBT (or MORE + usual care) head-to-head CER study for co-occurring OUD + chronic pain is the core PCORI product. More Therapy LLC could apply directly (for-profit eligible) or as a subcontractor on an academic partner's award; MORE clinician training would be a budget line item within the funded trial, not the funded object itself.",
+     "forprofit_eligible": "Y",
+     "open_now": "Catalog page, not a single opportunity — cycles recur ~3x/year; see the two Cycle 3 2026 PFAs below (LOI due Sept. 9, 2026).",
+     "url_note": "Verified via fetch (HTTP 200)."
+    },
+    {
+     "name": "Addressing Substance Use PCORI Funding Announcement — Cycle 3 2026 (Topical PFA)",
+     "url": "https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026",
+     "scope": "National (US)",
+     "what_it_funds": "High-quality, patient-centered comparative clinical-effectiveness research on substance use/misuse and substance use disorders — substances of interest 'include but are not limited to alcohol, opioids, nicotine and polysubstance use.' Funds CER of prevention, screening, TREATMENT and RECOVERY approaches at individual, community or systems level. At least one primary outcome must focus on substance use. Funds available up to $60M; up to $12M total direct costs per award; project period up to 5 years. Key dates (verified on page): PFA opens Aug. 4, 2026; Applicant Town Hall Aug. 18, 2026; LOI deadline Sept. 9, 2026 (5pm ET); LOI status Oct. 14, 2026; application deadline Jan. 12, 2027 (5pm ET); merit review Mar. 2027; awards announced ~Aug. 2027; earliest start Dec. 2027.",
+     "how_more_fits": "direct — The cleanest fit. A CER trial comparing MORE against CBT (or MORE added to usual care/MOUD) for opioid use disorder, with an opioid-use primary outcome and co-occurring chronic pain as a secondary outcome. MORE clinician training is funded as a within-trial implementation cost. Responsiveness check (from PFA body): MORE is an established, manualized, evidence-based intervention — NOT a 'novel intervention' or new-technology build (those are nonresponsive); any adaptation must be minimal, described, and justified a priori. Applicant = More Therapy LLC (for-profit eligible) or subcontract to an academic/clinical partner.",
+     "forprofit_eligible": "Y",
+     "open_now": "Yes — this PFA opens Aug. 4, 2026 (today). LOI deadline Sept. 9, 2026; application deadline Jan. 12, 2027.",
+     "url_note": "Verified via fetch (HTTP 200); dates/amounts quoted from page text."
+    },
+    {
+     "name": "Broad Pragmatic Studies PCORI Funding Announcement — Cycle 3 2026 (Broad PFA)",
+     "url": "https://www.pcori.org/funding-opportunities/announcement/broad-pragmatic-studies-pcori-funding-announcement-cycle-3-2026",
+     "scope": "National (US)",
+     "what_it_funds": "High-impact, patient-centered comparative clinical-effectiveness research via pragmatic study designs. Funds available up to $120M total; three budget categories (Cat 1 <=$5M direct; Cat 2 >$5M up to $12M direct; Cat 3 up to $12M direct); project period up to 5 years. This cycle designates specific topic areas applicants must map to — verified topics include 'Management of Neuropathic Pain,' 'Improving Mental Health and Substance Use Outcomes for Pregnant and Postpartum Populations,' and cancer-survivor follow-up care. Key dates: PFA opens Aug. 4, 2026; Applicant Town Hall Aug. 13, 2026; LOI deadline Sept. 9, 2026 (5pm ET); LOI status Oct. 14, 2026; application deadline Jan. 12, 2027 (5pm ET).",
+     "how_more_fits": "sub / line-item — Secondary/partial fit. A large pragmatic MORE trial could map to the 'Management of Neuropathic Pain' topic (only if the pain phenotype studied is neuropathic; MORE's typical chronic-pain populations are often musculoskeletal, so fit is topic-dependent this cycle) or to a substance-use angle. Bigger budget headroom than the Topical Substance Use PFA. For OUD-primary designs the 'Addressing Substance Use' Topical PFA is the stronger channel; treat this as a fallback / alternate framing.",
+     "forprofit_eligible": "Y",
+     "open_now": "Yes — opens Aug. 4, 2026 (today); LOI deadline Sept. 9, 2026; application deadline Jan. 12, 2027. Note: constrained to this cycle's designated topic areas.",
+     "url_note": "Verified via fetch (HTTP 200); dates/amounts quoted from page text."
+    }
+   ]
+  },
+  {
+   "category": "tribal-ihs",
+   "verdict": "worth-adding",
+   "verdict_reason": "Tribal/IHS is a distinct, high-burden funding channel where MORE fits cleanly as a named training/EBP vendor. SAMHSA TOR (up to $63M, ~130 awards, CFDA 93.788) and IHS COIPP both explicitly fund MOUD plus the full treatment/recovery continuum for OUD AND co-occurring SUD — MORE's exact clinical niche (addiction + chronic pain). None of these programs let a for-profit LLC apply directly, so MORE's path is always subcontract / named-vendor / line-item to a tribal grantee, tribal organization, or Urban Indian Organization, or subcontract to the national SOR/TOR TA center. BIA itself is NOT a fit (its tribal opioid role is social-services/family/ICWA wraparound via Tiwahe and law enforcement via DOJ CTAS, already tracked), so exclude BIA as a direct avenue but keep the SAMHSA-TOR + IHS-COIPP/SASP cluster on the radar. Note: no IHS behavioral-health/SUD NOFO is open as of 2026-08-04 (open FY2026 IHS NOFOs are epidemiology, produce-prescription, and self-governance only); the SUD programs are mid-cycle, so the near-term play is subcontracting to existing active grantees rather than a new application.",
+   "sources": [
+    {
+     "name": "SAMHSA Tribal Opioid Response (TOR) Grants — most recent competitive NOFO (TI-24-009)",
+     "url": "https://www.samhsa.gov/grants/grant-announcements/ti-24-009",
+     "what_it_funds": "Addresses the opioid overdose crisis in Tribal communities by increasing access to FDA-approved medications for OUD (MOUD) and supporting the full continuum of prevention, harm reduction, treatment, and recovery support services for OUD AND co-occurring substance use disorders. CFDA 93.788. TI-24-009: up to $63,000,000, up to 130 awards, project length up to 5 years, no match required.",
+     "how_more_fits": "sub / line-item. TOR grantees must deliver evidence-based treatment for OUD and co-occurring SUD — MORE is directly on-point (addiction + chronic pain). A for-profit cannot be the applicant, so MORE is budgeted as a named training/TA vendor (contractual line item) in a Tribe's or tribal organization's application, or as a subcontractor delivering clinician training to grantee staff.",
+     "forprofit_eligible": "N",
+     "scope": "National — federally recognized American Indian/Alaska Native Tribes and tribal organizations (may apply individually, as a consortium, or in partnership with an Urban Indian Organization).",
+     "open_now": null,
+     "what_it_funds_note": null
+    },
+    {
+     "name": "SAMHSA Tribal Affairs — Opioid Response Grants (TOR program hub / cycle monitor)",
+     "url": "https://www.samhsa.gov/communities/tribal-affairs/funding-opportunities/opioid-response-grants",
+     "what_it_funds": "Program landing/hub for TOR. Confirms TOR reduces unmet treatment need and opioid overdose deaths through prevention, treatment, and recovery for OUD and stimulant misuse; FY2020 distributed ~$50M to 92 federally-recognized Tribes/tribal orgs (historical NOFOs TI-18-016, TI-19-012, TI-20-011, TI-21-007, TI-24-009). Links to the current SAMHSA grants dashboard and FY2026 NOFO forecasts.",
+     "how_more_fits": "sub. This is the page to monitor for the next TOR competition (a FY2026 TOR NOFO, reported in secondary sources as TI-26-012, was NOT verifiable on an official SAMHSA NOFO page as of 2026-08-04 — confirm on the SAMHSA grants dashboard before relying on it). When a new cohort opens, MORE positions as the named EBP/training vendor to applicant Tribes.",
+     "forprofit_eligible": "N",
+     "scope": "National — federally recognized Tribes / tribal organizations / Urban Indian Organization partners.",
+     "open_now": null
+    },
+    {
+     "name": "IHS Community Opioid Intervention Prevention Program (COIPP)",
+     "url": "https://www.ihs.gov/newsroom/pressreleases/2025-press-releases/indian-health-service-awards-95-million-to-combat-the-opioid-epidemic-in-indian-country/",
+     "what_it_funds": "IHS opioid grant (Grants.gov HHS-2024-IHS-COIPP-0001; earlier HHS-2021-IHS-COIPP-0001). Funds four strategies: public awareness/education, treatment and recovery to strengthen Native families, expanding access to MOUD and overdose-reversal medication, and low-barrier care. Most recent award round: $9.5M to 19 Tribes/tribal organizations/Urban Indian Organizations, 5-year project period beginning Feb 1, 2025.",
+     "how_more_fits": "sub / line-item. The 19 COIPP grantees are in an active 5-year 'treatment and recovery' build-out right now — the most actionable near-term path is subcontracting MORE clinician training to those existing grantees rather than a new application. MORE fits the treatment/recovery and MOUD-support strategies.",
+     "forprofit_eligible": "N",
+     "scope": "National — Tribes, tribal organizations, Urban Indian Organizations.",
+     "open_now": null
+    },
+    {
+     "name": "IHS Substance Abuse and Suicide Prevention (SASP) Program — incl. Substance Abuse Prevention, Treatment & Aftercare (SAPTA)",
+     "url": "https://www.ihs.gov/sasp/",
+     "what_it_funds": "Nationally coordinated IHS Division of Behavioral Health program (formerly MSPI). Grantees implement evidence- and practice-based, culturally appropriate models for prevention, intervention, treatment, and aftercare of substance abuse (and suicide). Recurring components include SASP: Substance Abuse Prevention, Treatment, and Aftercare (SAPTA) and SASP: Suicide Prevention. Awarded 72 grants in the most recent cited round.",
+     "how_more_fits": "sub / line-item. SAPTA explicitly funds evidence-based treatment and aftercare models — MORE is a fundable EBP/training component within a grantee's project. Not a for-profit applicant program; MORE serves as named training/TA vendor to the Tribe/tribal org/UIO grantee.",
+     "forprofit_eligible": "N",
+     "scope": "National — Tribes, tribal organizations, Urban Indian Organizations (via IHS Division of Grants Management).",
+     "open_now": null
+    },
+    {
+     "name": "IHS Division of Grants Management — Funding Opportunities (master NOFO list)",
+     "url": "https://www.ihs.gov/dgm/funding/",
+     "what_it_funds": "Authoritative IHS list of all open, forecasted, and closed Notices of Funding Opportunity across IHS programs, including Behavioral Health (COIPP, National Urban Indian Behavioral Health Awareness, Zero Suicide Initiative + Coordinating Center, Behavioral Health Integration Initiative, SASP/SAPTA). As of 2026-08-04 the only OPEN FY2026 IHS NOFOs are non-behavioral-health (Epidemiology EP1 HHS-2026-IHS-EP1-0001, Produce Prescription PPPP, Tribal Self-Governance Planning/Negotiation).",
+     "how_more_fits": "sub (monitor). This is the single page to watch for the next COIPP / SASP / behavioral-health reopening so MORE can line up as a training vendor in applicant budgets. Confirms no BH/SUD IHS competition is currently open — near-term play is existing grantees.",
+     "forprofit_eligible": "N",
+     "scope": "National — Tribes, tribal organizations, Urban Indian Organizations.",
+     "open_now": null
+    },
+    {
+     "name": "SAMHSA State Opioid Response / Tribal Opioid Response (SOR/TOR) Technical Assistance (TI-24-012)",
+     "url": "https://www.samhsa.gov/grants/grant-announcements/ti-24-012",
+     "what_it_funds": "Single national cooperative agreement (up to $18,500,000/yr, one award) to advance trauma-informed, culturally relevant, evidence-based substance-use interventions and deliver training/technical assistance to SOR and TOR grantees nationwide across prevention, treatment, harm reduction, and recovery for opioid and stimulant use disorders.",
+     "how_more_fits": "sub. MORE cannot hold this award (for-profit ineligible), but the TA awardee is chartered to bring evidence-based interventions and training to every TOR/SOR grantee — a direct channel for MORE to subcontract or be listed as an EBP the TA center disseminates to Tribal grantees.",
+     "forprofit_eligible": "N",
+     "scope": "National single award — eligible applicants: States/Territories, political subdivisions, Indian tribes/tribal organizations, IHS-operated or IHS-contract programs/health facilities, or other public or private NON-PROFIT entities.",
+     "open_now": null
+    },
+    {
+     "name": "Bureau of Indian Affairs — Division of Human Services / Tiwahe Initiative (checked — NOT a direct fit)",
+     "url": "https://www.bia.gov/bia/ois/dhs",
+     "what_it_funds": "BIA human services funding: social services, welfare assistance, Indian Child Welfare Act (ICWA) casework, protective services, IIM account guardianship, and the Housing Improvement Program under the Tiwahe Initiative (family stability). Tiwahe is a holistic social-services/family-security model, not a clinical substance-use-treatment or clinician-training grant.",
+     "how_more_fits": "Not a fit for MORE. BIA does not run a clinical opioid/SUD treatment or evidence-based-therapy training grant; its opioid-adjacent role is wraparound social services (Tiwahe) and, separately, tribal law enforcement funded through DOJ CTAS/COSSUP (already tracked). Recorded here so the radar reflects that BIA was checked and excluded as a direct avenue.",
+     "forprofit_eligible": "N",
+     "scope": "Federally recognized Tribes (ISDEAA/638 contracting) — social services, not behavioral health treatment.",
+     "open_now": null
+    }
+   ]
+  },
+  {
+   "category": "justice-courts",
+   "verdict": "worth-adding",
+   "verdict_reason": "Real, sizable, MORE-shaped money exists in the justice-treatment lane beyond COSSUP, but the structural reality is consistent: for-profit companies are almost never the eligible prime. Across every program the primary applicant is a court, a state/local/tribal government, or (for the ONDCP TTA) a 501(c)(3) — and MORE enters as a subcontractor / curriculum partner / line-item trainer. That entry path is explicitly endorsed by SAMHSA's own ATDC FAQ (\"for-profit organizations are not eligible to apply. They may partner with eligible organizations/drug courts and subcontract to provide treatment and recovery support services...\"). The standout is currently OPEN: ONDCP's FY2026 Drug Court Training & Technical Assistance cooperative agreement (DCT-DCT-26-001, $6M single national award, closes 08/27/2026) — it exists precisely to push evidence-based addiction treatment for co-occurring SUD+mental-health into drug courts using licensed behavioral-health practitioners and in-person/online training, which is MORE's product; MORE can't be the 501(c)(3) prime but is an ideal named training subcontractor to whoever wins. The recurring SAMHSA ATDC/FTDC NOFO (adult + family drug courts, explicitly including Veterans Treatment Courts and Reentry Courts — a strong chronic-pain/veteran fit for MORE) and the BJA Adult Treatment Court program are both between cycles as of 2026-08-04 but recur annually and are worth calendaring. RSAT covers MAT-in-jails but flows as a formula grant through State Administering Agencies, so MORE only reaches it via a jail/prison subgrantee. Net: add the category, but track it as a \"partner/subcontract radar,\" not a direct-application radar.",
+   "sources": [
+    {
+     "name": "ONDCP FY2026 Drug Court Training & Technical Assistance Competitive Cooperative Agreement (DCT-DCT-26-001)",
+     "url": "https://www.grants.gov/search-results-detail/363191",
+     "scope": "Federal (national single award)",
+     "what_it_funds": "$6M, one national award (posted 7/15/2026). Funds nationwide training + technical assistance to embed evidence-based addiction treatment in drug courts, explicitly including when SUD co-occurs with other mental-health conditions. Recipient must use expert addiction-science practitioners and LICENSED behavioral-health practitioners, deliver in-person + online training + jurisdiction-specific TA to state/local/tribal courts (incl. rural), cover FDA-approved MOUD, contingency management, and other evidence-based behavioral modalities, and fund an independent academic effectiveness assessment.",
+     "how_more_fits": "sub / line-item. This is the single most on-point, currently-OPEN federal vehicle for MORE in the justice space — its entire purpose is delivering evidence-based behavioral treatment training for co-occurring addiction into courts. MORE (a for-profit LLC) cannot be the 501(c)(3) prime, but MORE's clinician-training curriculum is exactly the kind of 'evidence-based behavioral health modality' content the prime must deliver; MORE positions as a named training-content subcontractor/partner to bidding TTA organizations.",
+     "forprofit_eligible": "N",
+     "open_now": "OPEN — DCT-DCT-26-001, applications close Aug 27, 2026 (grants.gov). Prime eligibility restricted to 501(c)(3) nonprofits other than institutions of higher education."
+    },
+    {
+     "name": "SAMHSA — Grants to Expand SUD Treatment Capacity in Adult and Family Treatment Drug Courts (ATDC/FTDC; reference NOFO TI-24-004)",
+     "url": "https://www.samhsa.gov/grants/grant-announcements/ti-24-004",
+     "scope": "Federal (SAMHSA/CSAT), awarded to individual drug courts / court partners",
+     "what_it_funds": "Expands evidence-based SUD treatment and recovery-support capacity within adult and family treatment drug courts. Eligible court models explicitly include Veterans Treatment Courts, Reentry Courts, Co-Occurring Drug & Mental Health Courts, DWI/DUI Courts, Recovery Courts, Municipal problem-solving courts, and Adult Tribal Healing to Wellness Courts. Recurs roughly annually (prior iterations TI-18-008, TI-19-002, TI-20-003, TI-22-010, TI-23-007, TI-24-004).",
+     "how_more_fits": "sub / line-item. SAMHSA's own FAQ (Q10 + Q12) is explicit: for-profits are NOT eligible to apply, but 'they may partner with eligible organizations/drug courts and subcontract to provide treatment and recovery support services, evaluation, drug testing, etc.,' and recipients 'can subcontract required and allowable activities with partner agencies.' MORE enters as the court grantee's treatment/clinician-training subcontractor — directly aligned with the required 'evidence-based SUD treatment' activities and the co-occurring / chronic-pain population. Veterans Treatment Court eligibility is a strong chronic-pain fit.",
+     "forprofit_eligible": "N",
+     "open_now": null
+    },
+    {
+     "name": "BJA Adult Treatment Court Discretionary Grant Program (DOJ/OJP)",
+     "url": "https://bja.ojp.gov/program/adult-treatment-court-program/overview",
+     "scope": "Federal (DOJ/BJA), awarded to courts/governments",
+     "what_it_funds": "Financial + technical assistance to plan, implement, or enhance adult treatment courts that integrate evidence-based SUD treatment, drug testing, equitable sanctions/incentives, and recovery support services. FY23 cycle closed April 2023; FY25 ran an 'invited to apply'/continuation track (O-BJA-2025-172586).",
+     "how_more_fits": "sub / line-item via a court/government partner. Eligible applicants are states, state courts, local courts, units of local government, and federally recognized tribal governments — a for-profit LLC cannot apply directly. MORE enters as the awarded court's treatment/training vendor (clinician training + evidence-based treatment delivery are allowable program activities). Best pursued by getting written into a specific court's application budget.",
+     "forprofit_eligible": "N",
+     "open_now": null
+    },
+    {
+     "name": "BJA Residential Substance Abuse Treatment (RSAT) for State Prisoners Program",
+     "url": "https://bja.ojp.gov/program/rsat/overview",
+     "scope": "Federal formula grant → State Administering Agencies → local subgrants (jails/prisons + treatment providers)",
+     "what_it_funds": "Formula grant (Violent Crime Control Act 1994) to state/local/tribal governments for residential/jail-based SUD treatment during detention/incarceration, specialized treatment for co-occurring MH+SUD, reentry aftercare, and — explicitly encouraged — inclusion of medication-assisted treatment (buprenorphine/methadone/naltrexone) as part of the SUD treatment protocol in jails and prisons.",
+     "how_more_fits": "sub / line-item at the state-subgrant level. There is no direct federal application for a company; federal dollars flow to State Administering Agencies (e.g., state DCJS / eGrants portals) that competitively subgrant to corrections agencies and treatment providers. MORE enters via a jail/prison program or its contracted treatment vendor, with clinician training in evidence-based SUD treatment as an allowable program cost. For-profit vendor/subrecipient eligibility is governed by each state's subgrant rules — state-dependent, must be checked per state.",
+     "forprofit_eligible": "unclear",
+     "open_now": null
+    }
+   ]
+  },
+  {
+   "category": "other-federal-health",
+   "verdict": "worth-adding",
+   "verdict_reason": "Two of the four channels are genuine funding routes for MORE training, mostly as partner/line-item rather than direct for-profit grants. HRSA BHWET is recurring federal money whose explicit purpose is behavioral-health/SUD clinician field training — for-profits can't apply directly, but a MORE curriculum/field-placement line-item inside a university or nonprofit's BHWET grant is a clean fit. CMS's Innovation in Behavioral Health (IBH) Model (2025-2032, SUD-integration focus) pays participating community BH practices practice-transformation/HIT infrastructure + performance dollars that a practice can spend on MORE clinician training — a customer/line-item channel, not a grant to More Therapy. AHRQ is the one directly for-profit-eligible research funder here, but it is a tiny agency with no currently open SUD/pain/dissemination NOFO, so it is a watch item, not an active cycle. VA is the weakest: its research grants are intramural (VA-appointed investigators only) and its community-care route is a billing/contracting channel, not training funding — worth a note but marginal on its own. Net: the category earns a radar slot.",
+   "sources": [
+    {
+     "name": "HRSA Behavioral Health Workforce Education & Training (BHWET) Program — Professionals (HRSA-25-068) and Paraprofessionals (HRSA-25-066)",
+     "url": "https://www.hrsa.gov/grants/find-funding/HRSA-25-068",
+     "scope": "National (HRSA Bureau of Health Workforce)",
+     "what_it_funds": "Establishing/expanding paid internships and field-placement training for the behavioral health workforce, explicitly including substance use disorder prevention and treatment. Professionals track funds accredited IHEs and professional training programs (psychology, social work, counseling, psychiatric nursing, MFT, SUD treatment, etc.); Paraprofessionals track funds universities/community colleges, nonprofits, hospitals, FQHCs, RHCs, and state/local/tribal govts. Awards fund stipends, curriculum, clinical supervision, and experiential training. Recurring annual cycle; FY25 NOFOs (HRSA-25-068/066) were the most recent posting. NOTE: HRSA.gov hard-blocks automated fetch (Akamai 403/500) — this is HRSA's official find-funding path surfaced via HRSA's indexed listing but could NOT be machine-fetched this session; verify the live NOFO and FY26 dates directly in a browser or on Grants.gov.",
+     "how_more_fits": "line-item/sub — for-profits and individuals are NOT eligible applicants, so More Therapy cannot apply directly. Fit is as a named training partner inside a university/nonprofit/FQHC BHWET application: budget MORE curriculum licensing, train-the-trainer, and clinical supervision as a line item, or serve as a designated field-placement/experiential site delivering MORE to trainees working with co-occurring SUD + chronic pain populations. Strongest MORE fit of the four channels because the grant's whole purpose is BH clinician training that includes SUD.",
+     "forprofit_eligible": "N",
+     "open_now": null
+    },
+    {
+     "name": "CMS Innovation Center (CMMI) — Innovation in Behavioral Health (IBH) Model",
+     "url": "https://www.cms.gov/priorities/innovation/innovation-models/ibh",
+     "scope": "State-based; Cohort 1 states = Michigan, New York, South Carolina; Cohort 2 recruitment underway in 2026",
+     "what_it_funds": "A 2025-2032 model integrating behavioral + physical health for Medicaid/Medicare/dually-eligible adults with mental illness and/or substance use disorder. Direct grant recipients are STATE MEDICAID AGENCIES (via competitive CMS NOFO — Cohort 2 NOFO webinar held March 5, 2026). Within participating states, community BH practices (Community Mental Health Centers, opioid treatment programs, safety-net and public/private practices) enroll as 'Practice Participants' and receive infrastructure/HIT capacity-building payments plus performance-based payments during the Implementation Period (2028-2032).",
+     "how_more_fits": "sub/line-item (customer channel) — More Therapy is not an eligible grantee (states apply; practices enroll, they don't receive a training grant). The realistic route: an IBH Practice Participant in a participating state uses its practice-transformation / infrastructure payments to purchase MORE clinician training as part of building integrated SUD + pain care capacity. Also a business-development signal — target community BH practices and OTPs in MI/NY/SC and future Cohort 2 states.",
+     "forprofit_eligible": "N",
+     "open_now": null
+    },
+    {
+     "name": "AHRQ (Agency for Healthcare Research and Quality) — Notice of Funding Opportunities",
+     "url": "https://www.ahrq.gov/funding/fund-opps/index.html",
+     "scope": "National (HHS health-services / dissemination & implementation research)",
+     "what_it_funds": "Grants to improve quality, effectiveness, accessibility, and cost-effectiveness of care — including dissemination & implementation (D&I) research and PCOR translation into practice. As of 2026-08-04 the only open RFA is RFA-HS-25-001 (Disseminating PCOR Evidence for Long COVID Care via clinical decision support) and there are NO open Program Announcements — i.e., no currently open SUD, pain, opioid, or BH-workforce NOFO. AHRQ posts all NOFOs through the NIH Guide and is a very small-budget agency.",
+     "how_more_fits": "direct (research) — AHRQ is the one channel of the four where a for-profit can be the prime applicant. AHRQ grant NOFOs generally list domestic for-profit organizations among eligible applicants (verify eligibility per specific NOFO). A future AHRQ D&I or PCOR-dissemination opportunity could fund a study of scaling/implementing MORE in real-world practices. This is a WATCH item, not an active cycle — nothing MORE-relevant is open now. AHRQ does not currently run its own SBIR program (unlike NIH, already tracked).",
+     "forprofit_eligible": "Y",
+     "open_now": null
+    },
+    {
+     "name": "VA — Office of Research & Development (ORD) funding + Community Care Network provider channel",
+     "url": "https://www.research.va.gov/funding/",
+     "scope": "National (Veterans Health Administration)",
+     "what_it_funds": "VA ORD runs actively-managed research portfolios directly relevant to MORE — 'Pain and Opioid Use' and 'Brain, Behavioral and Mental Health' — plus Merit Review, Career Development, and Cooperative Studies awards. Separately, VA Community Care (va.gov/COMMUNITYCARE) lets non-VA clinicians treat Veterans (including SUD and pain) under Veterans Care Agreements / CCN administered by third-party administrators (Optum, TriWest).",
+     "how_more_fits": "sub/contract, not grant — VA ORD Merit Review funding is INTRAMURAL: eligibility is restricted to investigators with a qualifying VA appointment, so a for-profit training LLC cannot be a prime and the award money stays inside VA. Realistic MORE routes into VA are: (1) federal contracting/procurement via SAM.gov to train VHA clinicians in MORE (a legitimate for-profit path, but a contract, not a grant); (2) partner as a subcontractor/site on a VA-investigator-led pain/opioid or mental-health study; (3) revenue (not funding) channel — MORE-trained community clinicians treating Veterans and billing through CCN/Veterans Care Agreements. Marginal as a funding source for the training itself.",
+     "forprofit_eligible": "N",
+     "open_now": null
+    }
+   ]
+  },
+  {
+   "category": "state-workforce",
+   "verdict": "worth-adding",
+   "verdict_reason": "State BH workforce/training grants are a genuine, distinct channel with concrete vendor routes beyond California HCAI. Two mechanics recur: (1) DIRECT WIN — states procure training/technical-assistance/EBP-implementation services via competitive RFP (New York OMH is the cleanest example, issuing training-academy, curriculum-development, ECHO, and statewide-training RFPs a vendor bids on); (2) SUPPLY/SUBCONTRACT — states fund employers or hubs who then buy training from a vendor of their choice (Massachusetts Workforce Training Fund lets any MA behavioral-health employer purchase More's training with grant dollars; MA WCTF Healthcare & BH Hubs name 'education and training providers' as partners; Oregon HOWTO grantees and WA's HCA-contracted Harborview TWP center subcontract training delivery). The catch: most headline 'workforce' dollars in these states are scholarships/loan-repayment/wage-retention that flow to individuals or employers and are NOT vendor routes — the real openings are the smaller training-procurement and employer-training-purchase pools, which need per-RFP for-profit-eligibility checks. NY (direct RFP wins) and MA (employer-choice training purchase, expanded April 2026) have the clearest routes; OR HOWTO Round 7 (late 2026) is the best-timed upcoming window. I could NOT verify a specific state Medicaid managed-care 'community reinvestment / in-lieu-of-services' training pool in this pass (web-search budget exhausted); flagging it as an unconfirmed gap rather than asserting one exists.",
+   "sources": [
+    {
+     "name": "New York State OMH — Requests for Proposals (RFP/RFI) portal",
+     "url": "https://omh.ny.gov/omhweb/rfp/",
+     "scope": "New York (statewide)",
+     "what_it_funds": "Competitive OMH service contracts, including recurring workforce/training procurements — verified live examples on the portal: Psychiatric Rehabilitation Training Academy, Psychiatric Rehabilitation Curriculum & Resource Development, statewide Youth/Teen Mental Health First Aid training, and 'Managing and Deescalating Challenging Behaviors' ECHO training. These are the clearest direct-win training-vendor RFPs among the reviewed states.",
+     "how_more_fits": "direct — More Therapy can bid as the training vendor/contractor on OMH training-academy, curriculum-development, EBP-implementation, or ECHO-style RFPs (MORE is an evidence-based practice for co-occurring addiction + chronic pain, squarely OMH's SUD/mental-health workforce remit). This is a procurement/service-contract route, not restricted state-aid.",
+     "forprofit_eligible": "unclear",
+     "open_now": null
+    },
+    {
+     "name": "Massachusetts Workforce Training Fund Program (WTFP) — Commonwealth Corporation",
+     "url": "https://commcorp.org/program/workforce-training-fund-program/",
+     "scope": "Massachusetts (statewide)",
+     "what_it_funds": "Grants to Massachusetts employers of any size to train current and newly hired employees. The General Program explicitly lets applicants 'work with training vendors of their choice to deliver a training plan.' Express, General, ESOL Bridge, and Technical Assistance grant types. Page states 'Expanded access and increased funding now available—effective April 1, 2026.'",
+     "how_more_fits": "sub / supply — the grantee is the MA behavioral-health employer (clinic, CBHC, hospital BH unit); More Therapy is the paid outside training vendor the employer selects to deliver MORE clinician training. Rolling/employer-driven, so no fixed cycle to miss; the April 1 2026 expansion widens access. Clearest employer-choice supply route of the set.",
+     "forprofit_eligible": "Y",
+     "open_now": "Rolling/employer-initiated; expanded access and increased funding effective April 1, 2026 (no single fixed deadline — employers apply as they plan training)"
+    },
+    {
+     "name": "Massachusetts WCTF Healthcare & Behavioral Health Hubs — Commonwealth Corporation",
+     "url": "https://commcorp.org/program/healthcare-and-behavioral-health-hubs/",
+     "scope": "Massachusetts (regional, via MassHire Workforce Boards)",
+     "what_it_funds": "Workforce Competitiveness Trust Fund grants where regional MassHire Workforce Boards partner with local employers and 'education and training providers' to fund training, credentialing, and employment services — including upskilling existing behavioral-health talent. Period of performance Jan 1 2024 – Dec 31 2026.",
+     "how_more_fits": "sub — More Therapy joins a MassHire-led hub consortium as the 'training provider' partner delivering MORE upskilling to incumbent BH clinicians (subcontract/line-item within the hub award). Current hub cohort is mid-performance; watch for the next WCTF hub round after the 2024–2026 cycle.",
+     "forprofit_eligible": "unclear",
+     "open_now": null
+    },
+    {
+     "name": "Oregon Health Authority — HOWTO Grant Program (Health Workforce Training & Opportunities)",
+     "url": "https://www.oregon.gov/oha/hpa/hp-pco/pages/howto-grant-program.aspx",
+     "scope": "Oregon (statewide)",
+     "what_it_funds": "Grants (~$12M per 2023–25 biennium) for 'innovative, transformative, community-based training initiatives' to expand the health professional workforce, explicitly including mental health practitioners, peer specialists, and behavioral-health certifications.",
+     "how_more_fits": "sub — More Therapy subcontracts to a HOWTO grantee (community org, health system, or workforce partnership) to deliver the MORE clinical-training component. Best-timed upcoming window: OHA lists Round 7 posting planned for 'Late 2026' (deadline TBD); a notify-me signup is available. For-profit direct-applicant eligibility is not stated — verify when the Round 7 RFA posts.",
+     "forprofit_eligible": "unclear",
+     "open_now": "Round 7 posting anticipated Late 2026 (exact date TBD; sign up for notification on the OHA page)"
+    },
+    {
+     "name": "Washington — Harborview Behavioral Health Training, Workforce & Policy Innovation Center (TWP), UW / HCA-contracted",
+     "url": "https://bhinstitute.uw.edu/training-workforce-policy",
+     "scope": "Washington (statewide)",
+     "what_it_funds": "A HCA-contracted center 'dedicated to increasing access to quality training for all mental health and substance use providers in Washington state'; its portfolio includes multiple collaborative trainings and workforce-development projects delivered with external partners. Funded via WA legislative appropriations plus private support.",
+     "how_more_fits": "sub — the practical WA route for a training vendor is partnering/subcontracting with the HCA-funded TWP center (or responding if HCA/TWP issues a training procurement), since WA's other 'workforce' dollars (WSAC Behavioral Health Conditional Scholarship; UW BHWDI conditional grants) are individual student scholarships/loan-repayment, not vendor routes. No public procurement/vendor-onboarding process is posted on the page — a relationship-driven supply lead rather than an open competition.",
+     "forprofit_eligible": "unclear",
+     "open_now": null
+    },
+    {
+     "name": "Colorado — HCPF ARPA HCBS grant opportunities (incl. Training Fund – Provider Grant) / BHA Behavioral Health Workforce grants",
+     "url": "https://hcpf.colorado.gov/arpa/arpa-grant-opportunities",
+     "scope": "Colorado (statewide)",
+     "what_it_funds": "HCPF's ARPA §9817 HCBS portfolio (~$100M) included a '1.05 Training Fund – Provider Grant' for entities that develop/deliver HCBS-workforce training. Separately, Colorado BHA ran a $4.5M Behavioral Health Workforce grants RFA (up to $250K/employer) for provider retention/recruitment.",
+     "how_more_fits": "sub / direct — mechanically a training-provider grant (Training Fund – Provider) or a BHA employer grant that could buy MORE training would fit, BUT both are effectively closed/spent: the ARPA HCBS funds are winding down (2023-era, one-time, HCBS not BH-specific) and the BHA $4.5M workforce RFA closed March 22, 2023. Marginal today — monitor BHA for a fresh workforce RFA rather than treating these as open.",
+     "forprofit_eligible": "unclear",
+     "open_now": null
+    }
+   ]
+  },
+  {
+   "category": "samhsa-programs",
+   "verdict": "marginal",
+   "verdict_reason": "Keep on the radar as a low-priority watch-list, not as a direct funding source. Every program here is for-profit-INELIGIBLE for direct application, so MORE's only route across all six is subcontract/line-item/content-partnership. Topic overlap is partial: these grants fund naloxone/first-responder training (FR-CARA, Rural EMS), peer recovery support (BCOR), individual clinician fellowships (MFP), and children's system-of-care (Comprehensive Community MH) — none is squarely \"clinician EBP training for co-occurring addiction + chronic pain.\" Two items justify the category's place: (1) PCSS is a genuinely on-mission national SUD/OUD/pain clinician-training consortium and the single best content-partnership/dissemination target — arguably more valuable than any grant here; (2) FR-CARA is a large recurring annual program ($34.7M/yr, ~118 awards to states/local/tribes) where a MORE clinical-training component could ride as a \"linkage-to-treatment\" line item. Timing note as of 2026-08-04: all three annual cycles (PCSS TI-26-002, BCOR TI-26-010, FR-CARA TI-26-006) have just CLOSED for FY26 — nothing is open now; the action is to watch for spring 2027 reposts of FR-CARA and BCOR.",
+   "sources": [
+    {
+     "name": "Providers Clinical Support System (PCSS) — incl. PCSS-MOUD / PCSS-MAUD / PCSS-SUD Treatment (TI-26-002)",
+     "url": "https://www.samhsa.gov/technical-assistance/pcss",
+     "scope": "National (single cooperative-agreement consortium; free training delivered nationwide)",
+     "what_it_funds": "SAMHSA's national training, mentoring, and technical-assistance program teaching multidisciplinary healthcare/behavioral-health clinicians to prevent, identify, and treat substance/opioid/alcohol use disorders (and related pain). Run as a cooperative agreement led by professional associations (AAAP with ASAM, AOAAM, APA, ANA, etc.). The FY26 recompete (Opportunity TI-26-002, 'PCSS-SUD Treatment') carried a $3,000,000 single award. Verified on simpler.grants.gov TI-26-002: eligibility 'Domestic public and private nonprofit entities, which can include professional organizations included in the MATE Act'; posted May 15 2026, archived July 15 2026.",
+     "how_more_fits": "sub / content-partnership — the strongest, most on-mission item in this category. MORE cannot apply (nonprofit-only), but its route is to get the MORE curriculum adopted as a co-branded module/mentoring track inside the PCSS-MOUD/MAUD consortium (led by professional societies), i.e., PCSS as a national DISSEMINATION/distribution channel for clinician training rather than a grant to win. PCSS's clinician audience and SUD+pain scope map almost exactly to MORE.",
+     "forprofit_eligible": "N",
+     "open_now": null
+    },
+    {
+     "name": "First Responders–Comprehensive Addiction and Recovery Act (FR-CARA) — TI-26-006",
+     "url": "https://simpler.grants.gov/opportunity/b9261f17-c75d-4389-bd4b-64552979e2df",
+     "scope": "National program to state/local/tribal grantees (~118 awards/yr)",
+     "what_it_funds": "Trains first responders and community members to administer/distribute opioid overdose-reversal medication (naloxone), plus linkage to treatment and recovery support. FY26 (TI-26-006, CFDA 93.490): $34,700,000 total, award ceiling $800,000, ~118 awards, posted July 1 2026, closed July 27 2026. Eligibility (statutory): 'states, local governmental entities, and American Indian/Alaska Native (AI/AN) tribes and tribal organizations.' Recurring annually.",
+     "how_more_fits": "line-item / sub — best recurring HOST grant in this set for a budget line. A state/local/tribal FR-CARA grantee's required 'referral to treatment / recovery support' component is where a MORE clinician-training line item can plausibly sit, since MORE targets the co-occurring addiction+pain patients these overdose responses feed into. MORE is never the prime (for-profit + eligibility barred both).",
+     "forprofit_eligible": "N",
+     "open_now": null
+    },
+    {
+     "name": "Building Communities of Recovery (BCOR) — TI-26-010",
+     "url": "https://simpler.grants.gov/opportunity/6ea50a53-280d-4e82-9013-bdecf3cf2146",
+     "scope": "National program to Recovery Community Organizations (~27 awards/yr)",
+     "what_it_funds": "Mobilizes community/peer resources to expand long-term recovery support (peer support, recovery housing, employment, wraparound) for people with SUD and co-occurring disorders. FY26 (TI-26-010): award ceiling $350,000, ~27 awards, posted June 16 2026, closed July 16 2026 (first-70-applications cap). Eligibility is statutorily limited to Recovery Community Organizations (RCOs) — nonprofits governed by people in recovery. Recurring annually.",
+     "how_more_fits": "line-item / sub — weak. BCOR funds PEER recovery support, not clinical EBP training, so overlap with a clinician-delivered therapy is thin. Conceivable route only: an RCO grantee subcontracts MORE to train its clinical/peer staff on the addiction+pain population — a minor, opportunistic line item, not a reliable channel.",
+     "forprofit_eligible": "N",
+     "open_now": null
+    },
+    {
+     "name": "Rural Emergency Medical Services (EMS) Training Grant — TI-23-011 (FY24 NOFO latest)",
+     "url": "https://www.samhsa.gov/grants/grant-announcements/ti-23-011",
+     "scope": "Rural EMS agencies (govt-operated or nonprofit), per-award cap $200,000",
+     "what_it_funds": "Recruits and trains rural EMS/first-responder personnel on mental and substance use disorders and on naloxone use in overdose emergencies; funds Naloxone kits and training equipment. Eligibility (FY24 NOFO verified): 'public or private nonprofit' rural EMS agencies (incl. tribal/fire-based) — for-profit not eligible. Cadence irregular: FY24 was awarded as a 2-year project, so NO FY25 NOFO was posted; a future cycle is uncertain.",
+     "how_more_fits": "line-item — weak/marginal. Audience is EMS responders, not the licensed therapists who deliver MORE, so it is off-target for a clinician-training product. Only a tangential SUD-education line item is imaginable, and the for-profit bar plus small $200K cap limit it further.",
+     "forprofit_eligible": "N",
+     "open_now": null
+    },
+    {
+     "name": "Minority Fellowship Program (MFP) — the SAMHSA 'minority/rural behavioral-health workforce' item (SM-24-009 latest)",
+     "url": "https://www.grants.gov/search-results-detail/352473",
+     "scope": "National (fellowships administered through 8 professional-field associations)",
+     "what_it_funds": "Funds fellowships/stipends to increase the number of culturally competent behavioral-health clinicians serving racial/ethnic minority and underserved (incl. rural) populations. FY24 (SM-24-009, CFDA 93.243): ceiling ~$1.92M, 8 awards, posted Apr 10 2024, closed Jun 10 2024. Eligibility 'limited to nationally representative mental health and/or substance use disorder treatment professional organizations' across 8 fields (psychiatry, nursing, social work, psychology, MFT, mental-health counseling, SUD/addictions counseling, addiction medicine). This is the closest SAMHSA match to the 'minority/rural workforce' concept; note the broader federal behavioral-health workforce dollars (HRSA BHWET, Rural BH Workforce Centers) sit at HRSA, not SAMHSA.",
+     "how_more_fits": "sub — very weak / essentially not a funding route. Grantees are professional associations awarding individual fellowships, not vendors buying training. Only indirect angle: an MFP grantee association adopts MORE as fellowship curriculum content. Treat as background, not actionable.",
+     "forprofit_eligible": "N",
+     "open_now": null
+    },
+    {
+     "name": "Grants for Expansion & Sustainability of the Comprehensive Community Mental Health Services (System of Care / Children's Mental Health Initiative) — SM-21-004 (CFDA 93.104)",
+     "url": "https://www.grants.gov/search-results-detail/330035",
+     "scope": "State/territory, political-subdivision, and tribal children's mental-health systems (large awards, ceiling up to ~$15M)",
+     "what_it_funds": "Builds/expands 'systems of care' for CHILDREN and youth with serious emotional disturbances and their families. Verified via grants.gov API (SM-21-004): eligibility 'limited to public entities' — state governments/territories, governmental units of political subdivisions (county/city/town), and federally recognized tribes/tribal orgs. Award ceiling $15,030,147, ~15 awards; most recent cycle captured posted Dec 2020 / closed Feb 2021 (recurring but infrequent).",
+     "how_more_fits": "line-item — weak/off-target. Population is children with SED, not the adult co-occurring addiction+chronic-pain patients MORE treats; and only public entities are eligible. Distant angle only: a state/tribal SoC grantee funds a transition-age-youth co-occurring-SUD component that subcontracts MORE training. Low priority.",
+     "forprofit_eligible": "N",
+     "open_now": null
+    }
+   ]
+  }
+ ]
+}

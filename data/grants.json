@@ -774,6 +774,42 @@
    "next_check": "2027-01-15",
    "found_date": "2026-08-04",
    "notes": "FY26 PRMRP full apps were due 2026-08-06 / 2026-09-22 but the REQUIRED pre-application closed 2026-07-23, so new entry this cycle is closed. Next open entry: FY27 (~spring 2027). Also watch the Chronic Pain Management Research Program (CPMRP) topic area."
+  },
+  {
+   "grant_id": "pcori-substance-use",
+   "aliases": [
+    "PCORI Cycle 3 2026"
+   ],
+   "name": "PCORI — Addressing Substance Use (Cycle 3 2026)",
+   "funder": "Patient-Centered Outcomes Research Institute",
+   "program": "Topical PFA — comparative clinical-effectiveness research on substance use",
+   "channel": "Federal-discretionary",
+   "state": "US",
+   "path": "Direct",
+   "forprofit_direct": "Y",
+   "category": "SUD",
+   "accessible_usd": 2000000,
+   "pool_usd": 12000000,
+   "deadline": "2026-09-09",
+   "cycle_watch": null,
+   "likelihood": 4,
+   "heart": "The cleanest research fit we've found: a head-to-head trial of MORE vs CBT (or MORE + usual care/MOUD) for opioid use disorder is exactly what this funds — and for-profits can apply directly. Opened today; the LOI gate is Sep 9.",
+   "eligibility": "For-profit research organizations are eligible lead applicants (statutory). MORE is an established, manualized EBP — responsive as long as the study isn't framed as a 'novel intervention' and has a substance-use primary outcome (chronic pain as secondary).",
+   "nofo_url": "https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026",
+   "source_url": "https://www.pcori.org/funding-opportunities",
+   "portal": "PCORI Online (pcori.org)",
+   "accounts_needed": "PCORI Online account; realistically an academic/clinical trial partner",
+   "match_required": "None",
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": "Merit review; must map to the PFA's substance-use CER priorities with a substance-use primary outcome. Position MORE against CBT/usual care for OUD + co-occurring chronic pain.",
+   "effort_hrs": 200,
+   "kit_type": "direct-template",
+   "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
+   "last_verified": "2026-08-04",
+   "next_check": "2026-08-11",
+   "found_date": "2026-08-04",
+   "notes": "Opened 2026-08-04. LOI due 2026-09-09 (required gate); full application 2027-01-12; up to $12M total direct costs/award over 5 yrs, ~$60M available; awards ~Aug 2027, start ~Dec 2027. Applicant Town Hall 2026-08-18. Garland-led CER trial; likely needs an academic site partner. Companion 'Broad Pragmatic Studies' PFA (same dates) has a 'Management of Neuropathic Pain' topic — a fallback framing if the pain phenotype fits."
   }
  ],
  "coverage": [
@@ -824,6 +860,24 @@
    "cadence": "monthly",
    "what": "New SOR + RCORP awardees via USASpending → warm pitches via the contact pipeline",
    "stamp": "next pull 2026-09-01"
+  },
+  {
+   "channel": "Research (CER)",
+   "cadence": "weekly",
+   "what": "PCORI comparative-effectiveness PFAs (for-profit-eligible, MORE-vs-CBT) · AHRQ NOFOs",
+   "stamp": "added 2026-08-04"
+  },
+  {
+   "channel": "Tribal & justice",
+   "cadence": "weekly",
+   "what": "SAMHSA Tribal Opioid Response · IHS COIPP/SASP · ONDCP + BJA drug-court TTA (sub/partner routes)",
+   "stamp": "added 2026-08-04"
+  },
+  {
+   "channel": "Workforce (states)",
+   "cadence": "weekly",
+   "what": "CA HCAI · NY OMH RFPs · MA Workforce Training Fund · OR HOWTO · HRSA BHWET · SAMHSA PCSS",
+   "stamp": "added 2026-08-04"
   }
  ],
  "state_directory": [
