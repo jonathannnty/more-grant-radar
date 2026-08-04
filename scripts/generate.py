@@ -252,8 +252,15 @@ def main():
     payload = "const RADAR = " + json.dumps(
         {"today": today.isoformat(), "rows": site_rows, "coverage": coverage},
         ensure_ascii=False) + ";"
+    # Optional live feed URL (Apps Script Web App /exec) — one line in data/feed_url.txt.
+    feed_file = ROOT / "data" / "feed_url.txt"
+    feed_url = feed_file.read_text(encoding="utf-8").strip() if feed_file.exists() else ""
     html = (ROOT / "site" / "template.html").read_text(encoding="utf-8")
-    html = html.replace("/*__RADAR_DATA__*/", payload).replace("__BUILD_STAMP__", stamp)
+    html = (html.replace("/*__RADAR_DATA__*/", payload)
+                .replace("__BUILD_STAMP__", stamp)
+                .replace("__TEAM_FEED_URL__", feed_url))
+    if feed_url:
+        print(f"  ✓ live feed wired: {feed_url}")
     docs = ROOT / "docs"
     docs.mkdir(exist_ok=True)
     (docs / ".nojekyll").touch()

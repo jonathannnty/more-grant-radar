@@ -502,7 +502,11 @@
 <script>
 /*__RADAR_DATA__*/
 
-(function () {
+// Live status/owner feed (Apps Script Web App doGet). Empty = use the build-time
+// values baked in below. When set, the site reflects Team-tab edits within seconds.
+const TEAM_FEED_URL = "__TEAM_FEED_URL__";
+
+(async function () {
   'use strict';
   const $ = id => document.getElementById(id);
   const esc = s => String(s == null ? '' : s)
@@ -628,6 +632,30 @@
     if (i > 0 && i < h.length - 4) return '<b>' + esc(h.slice(0, i + 1)) + '</b> ' + esc(h.slice(i + 2));
     return '<b>' + esc(h) + '</b>';
   }
+
+  // Live overlay — pull current status/owner from the Sheet (best-effort; the
+  // baked-in build-time values stand if the feed is unset, slow, or blocked).
+  async function liveOverlay() {
+    if (!TEAM_FEED_URL || TEAM_FEED_URL.indexOf('__') === 0) return;
+    try {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 4000);
+      const res = await fetch(TEAM_FEED_URL, { signal: ctrl.signal, redirect: 'follow' });
+      clearTimeout(timer);
+      if (!res.ok) return;
+      const map = await res.json();
+      RADAR.rows.forEach(r => {
+        const t = map[r.grant_id];
+        if (!t) return;
+        if (t.status) r.status = t.status;
+        if (t.owner != null) r.owner = t.owner;
+        if (t.next_action != null) r.next_action = t.next_action;
+      });
+      const strip = document.querySelector('.buildbar');
+      if (strip) strip.innerHTML = '<b>live</b> · statuses & owners synced from the Team sheet';
+    } catch (e) { /* keep build-time values */ }
+  }
+  await liveOverlay();
 
   // Partition + render
   const act = [], watchRows = [];

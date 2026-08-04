@@ -46,6 +46,24 @@ var DATA_COLS = 30; // Data_Auto schema width (A..AD)
 var STATUS_LIST = ['New', 'Reviewing', 'Pursuing-Direct', 'Pursuing-Sub', 'Submitted', 'Won', 'Lost', 'Passed'];
 var OWNER_LIST = ['Jon', 'Asha', 'Dr. Garland', 'Rhea'];  // people who work the grants
 
+/** Live status/owner feed for the website. Deploy this project as a Web App
+ * (Deploy -> New deployment -> Web app -> Execute as: Me -> Who has access:
+ * Anyone) and put the /exec URL in the site's TEAM_FEED_URL. Returns ONLY
+ * grant_id -> {status, owner, next_action} (never the private notes/why_passed),
+ * so the public site can reflect Team edits within seconds, no rebuild. */
+function doGet(e) {
+  var sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Team');
+  var vals = sh.getDataRange().getValues();
+  var out = {};
+  for (var i = 1; i < vals.length; i++) {
+    var id = String(vals[i][0]).trim();
+    if (!id) continue;
+    out[id] = { status: vals[i][1], owner: vals[i][2], next_action: vals[i][4] };
+  }
+  return ContentService.createTextOutput(JSON.stringify(out))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
 /** Owner-column dropdown on the Team tab. Warning (not reject) so a part-time
  * writer's name can still be typed. Safe to run standalone anytime. */
 function addOwnerDropdown() {
