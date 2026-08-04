@@ -606,7 +606,7 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
 
     const searchText = [r.grant_id, r.name, r.funder, r.program, r.state, r.channel, r.category].join(' ').toLowerCase();
 
-    return '<article class="row' + hot + '" data-path="' + esc(r.path || '') + '" data-status="' + esc(r.status || 'New') + '" data-owner="' + esc(r.owner || '') + '" data-text="' + esc(searchText) + '">' +
+    return '<article class="row' + hot + '" data-id="' + esc(r.grant_id) + '" data-path="' + esc(r.path || '') + '" data-status="' + esc(r.status || 'New') + '" data-owner="' + esc(r.owner || '') + '" data-text="' + esc(searchText) + '">' +
       '<div class="score"><div><div class="n">' + (r.priority != null ? r.priority.toFixed(1) : '—') + '</div><div class="l">priority</div></div>' +
       '<div class="dots" role="img" aria-label="Likelihood ' + like + ' of 5">' + dots + '</div></div>' +
       '<div class="main">' +
@@ -632,30 +632,6 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
     if (i > 0 && i < h.length - 4) return '<b>' + esc(h.slice(0, i + 1)) + '</b> ' + esc(h.slice(i + 2));
     return '<b>' + esc(h) + '</b>';
   }
-
-  // Live overlay — pull current status/owner from the Sheet (best-effort; the
-  // baked-in build-time values stand if the feed is unset, slow, or blocked).
-  async function liveOverlay() {
-    if (!TEAM_FEED_URL || TEAM_FEED_URL.indexOf('__') === 0) return;
-    try {
-      const ctrl = new AbortController();
-      const timer = setTimeout(() => ctrl.abort(), 4000);
-      const res = await fetch(TEAM_FEED_URL, { signal: ctrl.signal, redirect: 'follow' });
-      clearTimeout(timer);
-      if (!res.ok) return;
-      const map = await res.json();
-      RADAR.rows.forEach(r => {
-        const t = map[r.grant_id];
-        if (!t) return;
-        if (t.status) r.status = t.status;
-        if (t.owner != null) r.owner = t.owner;
-        if (t.next_action != null) r.next_action = t.next_action;
-      });
-      const strip = document.querySelector('.buildbar');
-      if (strip) strip.innerHTML = '<b>live</b> · statuses & owners synced from the Team sheet';
-    } catch (e) { /* keep build-time values */ }
-  }
-  await liveOverlay();
 
   // Partition + render
   const act = [], watchRows = [];
@@ -783,6 +759,68 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
       ticking = false;
     });
   }, { passive: true });
+
+  // Live overlay — the page is already rendered with build-time status/owner;
+  // this pulls the CURRENT Team-tab values from the Sheet (via the Apps Script
+  // web app) and patches them in without a rebuild. Best-effort: if the feed is
+  // unset, slow, or blocked, the baked-in values simply stand.
+  async function liveOverlay() {
+    if (!TEAM_FEED_URL || TEAM_FEED_URL.indexOf('__') === 0) return;
+    let map;
+    try {
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 20000);  // Apps Script cold start can be ~15s
+      const res = await fetch(TEAM_FEED_URL, { signal: ctrl.signal, redirect: 'follow' });
+      clearTimeout(timer);
+      if (!res.ok) return;
+      map = await res.json();
+    } catch (e) { return; }
+
+    RADAR.rows.forEach(r => {
+      const t = map[r.grant_id]; if (!t) return;
+      if (t.status) r.status = t.status;
+      if (t.owner != null) r.owner = t.owner;
+      if (t.next_action != null) r.next_action = t.next_action;
+    });
+    rows.forEach(el => {
+      const t = map[el.dataset.id]; if (!t) return;
+      el.dataset.status = t.status || 'New';
+      el.dataset.owner = t.owner || '';
+      const ownerEl = el.querySelector('.owner');
+      if (ownerEl) { ownerEl.classList.toggle('none', !t.owner); ownerEl.textContent = t.owner || 'unassigned'; }
+      const statusEl = el.querySelector('.status');
+      if (statusEl) {
+        const s = t.status || 'New';
+        statusEl.className = 'status' + (/campaign/i.test(s) ? ' live' : /^pursuing|^submitted/i.test(s) ? ' pursuing' : '');
+        statusEl.textContent = s;
+      }
+    });
+
+    const ownerOpts = [...new Set(RADAR.rows.map(r => r.owner).filter(Boolean))].sort();
+    const curO = fOwner.value;
+    fOwner.innerHTML = '<option value="">All owners</option>' + ownerOpts.map(o => '<option>' + esc(o) + '</option>').join('') + '<option>Unassigned</option>';
+    fOwner.value = curO;
+    const statusOpts = [...new Set(RADAR.rows.map(r => r.status || 'New'))].sort();
+    const curS = fStatus.value;
+    fStatus.innerHTML = '<option value="">All statuses</option>' + statusOpts.map(s => '<option>' + esc(s) + '</option>').join('');
+    fStatus.value = curS;
+
+    const hot14b = RADAR.rows.filter(r => { const d = runway(r); return d != null && d >= 0 && d <= 14; });
+    const pursuingB = RADAR.rows.filter(r => /^pursuing|^submitted|campaign/i.test(r.status || ''));
+    const pursuingSumB = pursuingB.reduce((s, r) => s + (r.accessible_usd || 0), 0);
+    const directOpenB = RADAR.rows.filter(r => r.forprofit_direct === 'Y').reduce((s, r) => s + (r.accessible_usd || 0), 0);
+    const totalAccB = RADAR.rows.reduce((s, r) => s + (r.accessible_usd || 0), 0);
+    $('strip').innerHTML =
+      '<div class="cell' + (hot14b.length ? ' alert' : '') + '"><div class="k">deadline ≤ 14d</div><div class="v">' + hot14b.length + '</div><div class="d">' + (hot14b.length ? 'act now: ' + esc(hot14b.map(r => r.grant_id.toUpperCase()).join(', ')) : 'nothing burning') + '</div></div>' +
+      '<div class="cell"><div class="k">pipeline</div><div class="v">' + pursuingB.length + '</div><div class="d">' + (pursuingB.length ? 'pursuing · ' + money(pursuingSumB) + ' accessible' : 'mark statuses in the Team sheet') + '</div></div>' +
+      '<div class="cell"><div class="k">direct-eligible</div><div class="v">' + (money(directOpenB) || '$0') + '</div><div class="d">for-profit-direct accessible dollars</div></div>' +
+      '<div class="cell"><div class="k">tracked</div><div class="v">' + RADAR.rows.length + '</div><div class="d">' + (money(totalAccB) || '$0') + ' total accessible</div></div>';
+
+    apply();
+    const bb = document.querySelector('.buildbar');
+    if (bb) bb.innerHTML = '<b>live</b> · owners &amp; statuses synced from the Team sheet';
+  }
+  liveOverlay();
 })();
 </script>
 </body>
