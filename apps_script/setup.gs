@@ -213,6 +213,14 @@ function buildPlaybook(ss) {
    ['5', 'Found money we missed? Email radar@moretherapy.com — it gets triaged Monday.', '', '']
   ].forEach(function (r) { rows.push(r); });
 
+  section('PATHS — how MORE gets the money (the path column)');
+  [['Direct', 'More Therapy is the applicant — we apply for and hold the grant ourselves.', 'for-profit-eligible programs (SBIR, RCORP, some settlement RFPs)', ''],
+   ['Sub', 'A partner applies; More Therapy is a named subcontractor in their application.', 'settlement grants where only govs/nonprofits apply', ''],
+   ['Line-item', "Our training is written in as a budget line inside a partner's application.", 'CCBHC applicants, state plans', ''],
+   ['Direct/Sub', 'Could go either way — depends on whether we apply ourselves or team with a partner.', '', ''],
+   ['Grant', 'Generic/straight grant (rarely used — treat like Direct).', '', '']
+  ].forEach(function (r) { rows.push(r); });
+
   section('SCORING RUBRIC — likelihood 1-5, priority = likelihood × log10(accessible $)');
   [['5', 'For-profit-direct eligible + addiction/MAT core + open now', 'e.g. NIDA SBIR', ''],
    ['4', 'Direct-eligible, strong fit, competitive or opening soon', 'e.g. RCORP, TX CORE', ''],

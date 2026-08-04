@@ -174,6 +174,29 @@
   .strip .cell.alert .v { color: var(--color-critical); }
   .strip .d { font-size: var(--text-2xs); color: var(--color-ink-2); text-wrap: pretty; }
 
+  .legend { margin-bottom: var(--space-2); border: var(--rule-1) solid var(--color-rule); border-radius: var(--radius-2); background: var(--color-paper); }
+  .legend summary {
+    cursor: pointer; list-style: none; padding: var(--space-3) var(--space-4);
+    font-size: var(--text-sm); font-weight: 600; color: var(--color-ink);
+    display: flex; align-items: baseline; gap: var(--space-3); flex-wrap: wrap;
+  }
+  .legend summary::-webkit-details-marker { display: none; }
+  .legend summary .hint { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); font-weight: 500; }
+  .legend summary::after { content: "▾"; margin-left: auto; color: var(--color-ink-3); transition: transform var(--dur-3) var(--ease-out); }
+  .legend[open] summary::after { transform: rotate(180deg); }
+  .legend-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: var(--space-4) var(--space-6); padding: 0 var(--space-4) var(--space-4);
+    font-size: var(--text-sm); color: var(--color-ink-2);
+  }
+  .legend-grid h4 { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; color: var(--color-ink-3); letter-spacing: 0.05em; text-transform: uppercase; margin: var(--space-2) 0 var(--space-2); }
+  .legend-grid h4:first-child { margin-top: 0; }
+  .legend-grid p { margin-bottom: var(--space-2); text-wrap: pretty; display: flex; gap: var(--space-2); align-items: baseline; flex-wrap: wrap; }
+  .legend-grid .tag { flex: none; }
+  .legend-grid .due { flex: none; display: inline; }
+  .legend-grid .lg-note { color: var(--color-ink-3); font-size: var(--text-xs); }
+  .legend-grid b { color: var(--color-ink); font-weight: 600; }
+
   .filters {
     position: sticky; top: 0; z-index: 30;
     display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center;
@@ -404,7 +427,7 @@
   <a class="skip" href="#pipeline">Skip to opportunities</a>
 
   <div class="topline">
-    <p class="buildbar"><b>live</b> · generated 2026-08-04 02:01 · statuses from the Team sheet</p>
+    <p class="buildbar"><b>live</b> · generated 2026-08-04 03:20 · statuses from the Team sheet</p>
     <div class="theme" role="group" aria-label="Color theme">
       <button type="button" data-set="" aria-pressed="true">auto</button>
       <button type="button" data-set="light" aria-pressed="false">light</button>
@@ -417,11 +440,30 @@
       <div class="wordmark">MORE THERAPY</div>
       <h1>Grant Radar</h1>
     </div>
-    <p class="stamp"><span class="dot-live" aria-hidden="true">●</span>last run 2026-08-04 02:01</p>
+    <p class="stamp"><span class="dot-live" aria-hidden="true">●</span>last run 2026-08-04 03:20</p>
   </header>
   <p class="sub">Every funding route for MORE clinician training — ranked by likelihood × dollars, each with the heart of the opportunity and a direct line to the NOFO. Statuses live in the <b>Team sheet</b> and surface here on refresh. Tap a row for the fine print.</p>
 
   <section class="strip" aria-label="Summary" id="strip"></section>
+
+  <details class="legend">
+    <summary>How to read this <span class="hint">paths, scores, colors</span></summary>
+    <div class="legend-grid">
+      <div>
+        <h4>The path — how MORE gets the money</h4>
+        <p><span class="tag path-direct">direct</span> We apply for and hold the grant ourselves.</p>
+        <p><span class="tag path-sub">sub</span> A partner applies; we're a named subcontractor in their application.</p>
+        <p><span class="tag path-line">line-item</span> Our training is a budget line inside a partner's application.</p>
+        <p><span class="lg-note">A row tagged both (e.g. <b>direct</b> + <b>sub</b>) can go either way depending on whether we team up.</span></p>
+      </div>
+      <div>
+        <h4>The number — priority</h4>
+        <p>Likelihood we win (1–5 dots) × the dollars we could realistically touch. It keeps a near-certain $400K from being buried under a $50M longshot. Higher = work it sooner.</p>
+        <h4>The colors — runway</h4>
+        <p><span class="due critical">● red</span> due within 14 days · <span class="due warning">▲ amber</span> within 45 · grey = further out or a recurring cycle we're watching.</p>
+      </div>
+    </div>
+  </details>
 
   <nav class="filters" id="filters" aria-label="Filters">
     <select id="fPath" aria-label="Filter by path"><option value="">All paths</option><option>Direct</option><option>Line-item</option><option>Sub</option><option>Grant</option></select>
