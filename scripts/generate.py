@@ -99,21 +99,58 @@ def csv_text(rows, cols):
     return buf.getvalue()
 
 
-def write_ics(row, out_dir):
-    d = row["deadline"].replace("-", "")
-    title = f"{row['name']} due — MORE Grant Radar"
-    uid = f"{row['grant_id']}-{d}@more-grant-radar"
-    ics = "\r\n".join([
-        "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//MORE Grant Radar//EN",
+def ics_escape(s):
+    return str(s or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+
+
+def vevent(row, dtstart, title, kind):
+    """One all-day VEVENT with −14d and −3d popup reminders."""
+    uid = f"{row['grant_id']}-{kind}-{dtstart}@more-grant-radar"
+    link = row.get("nofo_url") or row.get("source_url") or ""
+    desc = ics_escape(f"{row.get('heart', '')}\n\nPath: {row.get('path', '')} · Priority {row.get('priority', '')}\n{link}")
+    lines = [
         "BEGIN:VEVENT", f"UID:{uid}",
         f"DTSTAMP:{date.today().strftime('%Y%m%d')}T120000Z",
-        f"DTSTART;VALUE=DATE:{d}", f"SUMMARY:{title}",
-        f"URL:{row.get('nofo_url') or row.get('source_url')}",
-        "BEGIN:VALARM", "TRIGGER:-P3D", "ACTION:DISPLAY",
-        f"DESCRIPTION:{title}", "END:VALARM",
-        "END:VEVENT", "END:VCALENDAR", "",
-    ])
+        f"DTSTART;VALUE=DATE:{dtstart}", f"SUMMARY:{ics_escape(title)}",
+        f"DESCRIPTION:{desc}",
+    ]
+    if link:
+        lines.append(f"URL:{link}")
+    for trig in ("-P14D", "-P3D"):
+        lines += ["BEGIN:VALARM", f"TRIGGER:{trig}", "ACTION:DISPLAY",
+                  f"DESCRIPTION:{ics_escape(title)}", "END:VALARM"]
+    lines.append("END:VEVENT")
+    return lines
+
+
+def write_ics(row, out_dir):
+    d = row["deadline"].replace("-", "")
+    ics = "\r\n".join(["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//MORE Grant Radar//EN"]
+                      + vevent(row, d, f"[Grant Radar] {row['name']} — due", "due")
+                      + ["END:VCALENDAR", ""])
     (out_dir / f"{row['grant_id']}.ics").write_text(ics, encoding="utf-8")
+
+
+def write_combined_ics(rows, out_path):
+    """One subscribable feed of every dated deadline + cycle-watch reminder.
+    Subscribe in Google Calendar via 'From URL' → the Pages URL of this file;
+    it auto-updates as the engine republishes."""
+    body = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//MORE Grant Radar//EN",
+            "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+            "X-WR-CALNAME:MORE Grant Radar — Deadlines",
+            "X-WR-CALDESC:Funding deadlines and cycle-watch dates for MORE clinician training.",
+            "REFRESH-INTERVAL;VALUE=DURATION:PT12H", "X-PUBLISHED-TTL:PT12H"]
+    n = 0
+    for r in rows:
+        if r.get("deadline"):
+            body += vevent(r, r["deadline"].replace("-", ""), f"[Grant Radar] {r['name']} — due", "due")
+            n += 1
+        elif r.get("cycle_watch"):
+            body += vevent(r, r["cycle_watch"].replace("-", ""), f"[Grant Radar] {r['name']} — cycle watch", "watch")
+            n += 1
+    body += ["END:VCALENDAR", ""]
+    out_path.write_text("\r\n".join(body), encoding="utf-8")
+    return n
 
 
 def load_team(path):
@@ -198,6 +235,11 @@ def main():
     for r in dated:
         write_ics(r, ics_dir)
     print(f"  ✓ ics/ — {len(dated)} calendar file(s)")
+
+    docs_dir = ROOT / "docs"
+    docs_dir.mkdir(exist_ok=True)
+    n_feed = write_combined_ics(active, docs_dir / "deadlines.ics")
+    print(f"  ✓ docs/deadlines.ics — subscribable feed, {n_feed} event(s)")
 
     # Site — template + payload (+ optional Team overlay for status/owner)
     team = load_team(ROOT / "data" / "team.csv")

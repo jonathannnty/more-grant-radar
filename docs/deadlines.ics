@@ -1,0 +1,388 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MORE Grant Radar — Deadlines
+X-WR-CALDESC:Funding deadlines and cycle-watch dates for MORE clinician training.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:york-county-pa-2027-due-20260814@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260814
+SUMMARY:[Grant Radar] York County PA opioid settlement — 2027 cycle — due
+DESCRIPTION:York County settlement dollars explicitly fund treatment\, recovery\, and training under Exhibit E — a MORE cohort for York County SUD clinicians is a direct remediation use. Open now but GATED: required info sessions already ran.\n\nPath: Direct/Sub · Priority 16.6\nhttps://www.ycpc.org/691/How-to-Apply
+URL:https://www.ycpc.org/691/How-to-Apply
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] York County PA opioid settlement — 2027 cycle — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] York County PA opioid settlement — 2027 cycle — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sm-26-014-due-20260817@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260817
+SUMMARY:[Grant Radar] CCBHC Planning\, Development & Implementation (SM-26-014) — due
+DESCRIPTION:94 CCBHCs are writing applications right now — MORE goes in as their evidence-based line item and strengthens their scoring. Nonprofits and local government only\, so this is a pure partner play: the insert kit goes out before the 17th.\n\nPath: Line-item · Priority 20.9\nhttps://www.samhsa.gov/grants/grant-announcements/sm-26-014
+URL:https://www.samhsa.gov/grants/grant-announcements/sm-26-014
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] CCBHC Planning\, Development & Implementation (SM-26-014) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] CCBHC Planning\, Development & Implementation (SM-26-014) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:samhsa-sm-26-015-due-20260817@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260817
+SUMMARY:[Grant Radar] CCBHC Improvement & Advancement (SM-26-015) — due
+DESCRIPTION:117 existing CCBHCs are applying for $1M/yr improvement money right now — same 8/17 deadline\, same insert-kit: MORE named as the Section C EBP and a Section B workforce-training line.\n\nPath: Line-item · Priority 21.2\nhttps://www.samhsa.gov/grants/grant-announcements/sm-26-015
+URL:https://www.samhsa.gov/grants/grant-announcements/sm-26-015
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] CCBHC Improvement & Advancement (SM-26-015) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] CCBHC Improvement & Advancement (SM-26-015) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:samhsa-sm-26-016-due-20260817@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260817
+SUMMARY:[Grant Radar] CCBHC State Planning Grants (SM-26-016) — due
+DESCRIPTION:12 states get $1M each to make clinics certification-ready\, and the NOFO explicitly funds training/TA on implementing EBPs with fidelity — the 12 winners are the next CCBHC training market.\n\nPath: Line-item · Priority 2.0\nhttps://www.samhsa.gov/grants/grant-announcements/sm-26-016
+URL:https://www.samhsa.gov/grants/grant-announcements/sm-26-016
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] CCBHC State Planning Grants (SM-26-016) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] CCBHC State Planning Grants (SM-26-016) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tn-williamson-cy27-due-20260817@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260817
+SUMMARY:[Grant Radar] Williamson County TN opioid settlement — CY27 cycle — due
+DESCRIPTION:For-profits are explicitly eligible to apply directly\, and remediation item FF4 funds 'training providers to offer multi-modal\, evidence-informed treatment of pain' — MORE training for Williamson County clinicians is a verbatim allowable activity. Open now\, due Aug 17.\n\nPath: Direct · Priority 5.0\nhttps://chhs.mtsu.edu/wp-content/uploads/sites/83/2026/07/Williamson-CY27-RFP-APD-3.pdf
+URL:https://chhs.mtsu.edu/wp-content/uploads/sites/83/2026/07/Williamson-CY27-RFP-APD-3.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Williamson County TN opioid settlement — CY27 cycle — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Williamson County TN opioid settlement — CY27 cycle — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:al-admh-settlement-r4-due-20260824@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260824
+SUMMARY:[Grant Radar] Alabama ADMH Opioid Settlement Round 4 (RFP 2027-04) — due
+DESCRIPTION:Alabama's $8.9M Round 4 requires applicants to articulate evidence-based practices with training\, supervision\, and fidelity plans — MORE training rides as a subcontract line (capped at 10% of award) in ADMH-certified treatment providers' proposals.\n\nPath: Line-item · Priority 13.6\nhttps://mh.alabama.gov/wp-content/uploads/2026/07/RFP-2027-04-Opioid-Settlement-Round-4.pdf
+URL:https://mh.alabama.gov/wp-content/uploads/2026/07/RFP-2027-04-Opioid-Settlement-Round-4.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Alabama ADMH Opioid Settlement Round 4 (RFP 2027-04) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Alabama ADMH Opioid Settlement Round 4 (RFP 2027-04) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pa-27-100-due-20260905@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260905
+SUMMARY:[Grant Radar] NIH/NIDA SBIR Phase I (PA-27-100) — due
+DESCRIPTION:The one big pot built for for-profits — R&D money for the MORE app and training platform. Eric wants the ~$2M path\; Phase I is the door\, first standard due date Sep 5.\n\nPath: Direct · Priority 28.0\nhttps://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e
+URL:https://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH/NIDA SBIR Phase I (PA-27-100) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH/NIDA SBIR Phase I (PA-27-100) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:md-orf-2027-moor-due-20260915@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260915
+SUMMARY:[Grant Radar] Maryland Opioid Restitution Fund 2027 (MOOR NOFA) — due
+DESCRIPTION:Maryland settlement dollars\, $1M ceiling per 2-year project\, for evidence-based treatment and staff training — MORE rides as a named training/subcontract line in a nonprofit partner's application.\n\nPath: Line-item · Priority 15.0\nhttps://stopoverdose.maryland.gov/wp-content/uploads/sites/34/2026/07/MOOR-2027-ORF-NOFA-Revised.pdf
+URL:https://stopoverdose.maryland.gov/wp-content/uploads/sites/34/2026/07/MOOR-2027-ORF-NOFA-Revised.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Maryland Opioid Restitution Fund 2027 (MOOR NOFA) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Maryland Opioid Restitution Fund 2027 (MOOR NOFA) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ks-sedgwick-wichita-2026-due-20260915@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260915
+SUMMARY:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) — due
+DESCRIPTION:For-profits check a box on the response form and apply directly — and RFP 26-0081's Workforce Support goal ($580K\, awards to $200K) explicitly funds 'continuing education and skill-building training' for behavioral-health clinicians. A straight MORE training proposal.\n\nPath: Direct · Priority 26.5\nhttps://www.sedgwickcounty.org/media/73833/26-0081-integrated-care.pdf
+URL:https://www.sedgwickcounty.org/media/73833/26-0081-integrated-care.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tx-oafc-cjs-2026-watch-20260901@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260901
+SUMMARY:[Grant Radar] Texas OAFC — criminal-justice opioid abatement (targeted cycle) — cycle watch
+DESCRIPTION:Up to $25M for opioid abatement in the criminal-justice system\, awards $250K–$2.5M\, categories explicitly include Workforce Development and Training — train jail/reentry clinicians in MORE layered onto MOUD. NOFA overdue\; watch closely.\n\nPath: Direct · Priority 25.6\nhttps://comptroller.texas.gov/programs/opioid-council/docs/grants/Amended-2026-OAFC-grant-issuance-plan.pdf
+URL:https://comptroller.texas.gov/programs/opioid-council/docs/grants/Amended-2026-OAFC-grant-issuance-plan.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Texas OAFC — criminal-justice opioid abatement (targeted cycle) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Texas OAFC — criminal-justice opioid abatement (targeted cycle) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tx-oafc-core-2026f-watch-20260901@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260901
+SUMMARY:[Grant Radar] Texas OAFC — Fall 2026 CORE grants — cycle watch
+DESCRIPTION:Settlement money with provider-friendly eligibility\, opening this fall. Watch page and GovDelivery list are live\; position before it posts.\n\nPath: Direct/Sub · Priority 25.1\nhttps://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php
+URL:https://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Texas OAFC — Fall 2026 CORE grants — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Texas OAFC — Fall 2026 CORE grants — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hrsa-rcorp-fy27-watch-20270301@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20270301
+SUMMARY:[Grant Radar] HRSA RCORP — FY27 cycle — cycle watch
+DESCRIPTION:For-profits are explicitly eligible — rare for federal treatment money. FY26 closed Jul 8\; no FY27 forecast is posted yet\, so the radar watches while we prep the rural partner map to apply day one.\n\nPath: Direct · Priority 23.5\nhttps://simpler.grants.gov/opportunity/e779b908-4f8c-48ce-9485-1345475cdbaf
+URL:https://simpler.grants.gov/opportunity/e779b908-4f8c-48ce-9485-1345475cdbaf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] HRSA RCORP — FY27 cycle — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] HRSA RCORP — FY27 cycle — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:heal-translation-rfa-da-27-016-due-20261009@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261009
+SUMMARY:[Grant Radar] NIH HEAL — Translating Addiction Research into Practice (RFA-DA-27-016) — due
+DESCRIPTION:NIH money a for-profit can hold directly\, whose stated priority is exactly MORE's pitch: getting clinicians trained in and delivering evidence-based addiction treatment\, with chronic-pain-comorbid SUD named as a priority. An R61 (train clinicians\, pilot fidelity) into R33 (implementation trial) built around MORE dissemination.\n\nPath: Direct · Priority 23.4\nhttps://files.simpler.grants.gov/opportunities/c33f1e5e-0354-4976-adca-9aa7240778d3/attachments/d20bcf8b-9221-47b2-93d3-2351a3eac1a4/RFA-DA-27-016-Full-Announcement.html
+URL:https://files.simpler.grants.gov/opportunities/c33f1e5e-0354-4976-adca-9aa7240778d3/attachments/d20bcf8b-9221-47b2-93d3-2351a3eac1a4/RFA-DA-27-016-Full-Announcement.html
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH HEAL — Translating Addiction Research into Practice (RFA-DA-27-016) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH HEAL — Translating Addiction Research into Practice (RFA-DA-27-016) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nih-heal-impowr-beacon-due-20261102@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261102
+SUMMARY:[Grant Radar] NIH HEAL IMPOWR BEACON Center (RFA-DA-27-006\, forecast) — due
+DESCRIPTION:The single capacity-building hub for scaling evidence-based practices across the chronic pain + OUD consortium — one award\, $1.75M\, and clinician training at the EBP/implementation intersection is its core duty.\n\nPath: Direct/Sub · Priority 18.7\nhttps://www.grants.gov/search-results-detail/360366
+URL:https://www.grants.gov/search-results-detail/360366
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH HEAL IMPOWR BEACON Center (RFA-DA-27-006\, forecast) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH HEAL IMPOWR BEACON Center (RFA-DA-27-006\, forecast) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:allegheny-osf-2026-watch-20260908@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260908
+SUMMARY:[Grant Radar] Allegheny County OSF — annual RFP — cycle watch
+DESCRIPTION:Annual county settlement RFP — opens around November\, due January. Calendar it\; the county pattern of 3–6-week windows is the volume play nationwide.\n\nPath: Direct/Sub · Priority 17.1\nhttps://solicitations.alleghenycounty.us/
+URL:https://solicitations.alleghenycounty.us/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Allegheny County OSF — annual RFP — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Allegheny County OSF — annual RFP — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:va-oaa-fy28-due-20261022@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261022
+SUMMARY:[Grant Radar] Virginia OAA — locality grants (FY27 window open / FY28) — due
+DESCRIPTION:Every VA city and county has an entitled settlement allocation it can only unlock by submitting an approved abatement project — get MORE named as the evidence-based training contractor inside locality applications before the Oct 22 new-award cutoff.\n\nPath: Sub · Priority 15.9\nhttps://www.oaa.virginia.gov/media/governorvirginiagov/oaa/documents/Guidance-Individual-Distribution-Gold-Standard.pdf
+URL:https://www.oaa.virginia.gov/media/governorvirginiagov/oaa/documents/Guidance-Individual-Distribution-Gold-Standard.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Virginia OAA — locality grants (FY27 window open / FY28) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Virginia OAA — locality grants (FY27 window open / FY28) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:oh-ag-jail-remediation-cy26-due-20261201@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261201
+SUMMARY:[Grant Radar] Ohio AG Opioid Remediation — jail addiction programs (CY2026) — due
+DESCRIPTION:$20M/yr for county jails and CBCFs to stand up addiction programming — 'new contract services related to OUD' explicitly qualifies\, so a jail grantee contracts More Therapy to train its treatment staff in MORE. Rolling review through Dec 1.\n\nPath: Line-item · Priority 15.9\nhttps://www.ohioattorneygeneral.gov/getattachment/ed88813d-94c9-4e90-ba0f-7d43614444e2/ed88813d-94c9-4e90-ba0f-7d43614444e2.aspx
+URL:https://www.ohioattorneygeneral.gov/getattachment/ed88813d-94c9-4e90-ba0f-7d43614444e2/ed88813d-94c9-4e90-ba0f-7d43614444e2.aspx
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Ohio AG Opioid Remediation — jail addiction programs (CY2026) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Ohio AG Opioid Remediation — jail addiction programs (CY2026) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:oneohio-c3-watch-20261115@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261115
+SUMMARY:[Grant Radar] OneOhio Recovery Foundation — Cycle 3 — cycle watch
+DESCRIPTION:For-profits eligible\; Cycle 2 was $45.7M. Roughly annual — verify More Therapy's 2-year Ohio registration now so eligibility is ready when it opens.\n\nPath: Direct · Priority 15.8\nhttps://www.oneohiofoundation.com/grants
+URL:https://www.oneohiofoundation.com/grants
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] OneOhio Recovery Foundation — Cycle 3 — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] OneOhio Recovery Foundation — Cycle 3 — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nih-heal-impowr-rm1-due-20261102@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261102
+SUMMARY:[Grant Radar] NIH HEAL IMPOWR — chronic pain + OUD health systems (RFA-DA-27-001\, forecast) — due
+DESCRIPTION:Health-systems implementation of integrative interventions for co-occurring chronic pain + OUD — MORE's exact dyad and evidence space\, and clinician training is a core implementation strategy this NOFO funds. Team with Garland/U. Utah.\n\nPath: Direct/Sub · Priority 4.0\nhttps://www.grants.gov/search-results-detail/360048
+URL:https://www.grants.gov/search-results-detail/360048
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH HEAL IMPOWR — chronic pain + OUD health systems (RFA-DA-27-001\, forecast) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH HEAL IMPOWR — chronic pain + OUD health systems (RFA-DA-27-001\, forecast) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:oh-sos-passthrough-watch-watch-20261001@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261001
+SUMMARY:[Grant Radar] Ohio SOS 4.0 (SOR pass-through) — Year 3 RFA watch — cycle watch
+DESCRIPTION:Ohio's ~$100M/yr SOR pass-through explicitly funds 'expanding evidence-based practices' and names for-profit licensed community BH providers as eligible applicants — MORE training fits as the EBP line item in provider and ADAMH board applications when Year-3 RFAs post (~fall).\n\nPath: Line-item · Priority 3.0\nhttps://dbh.ohio.gov/supporting-providers/apply-for-funding/funding-opportunities/20-rfi-109-sos-4-0-grant
+URL:https://dbh.ohio.gov/supporting-providers/apply-for-funding/funding-opportunities/20-rfi-109-sos-4-0-grant
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Ohio SOS 4.0 (SOR pass-through) — Year 3 RFA watch — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Ohio SOS 4.0 (SOR pass-through) — Year 3 RFA watch — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-hcai-wet-obj1-watch-20261001@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261001
+SUMMARY:[Grant Radar] CA HCAI BHSA WET Plan — workforce training vendor watch — cycle watch
+DESCRIPTION:HCAI will fund development and statewide delivery of training modules cross-training MH and SUD providers in substance-use treatment\, MAT\, and harm reduction for LCSW/LMFT/LPCC/psychologists — a near-exact description of MORE clinician training\, with CEU alignment planned. No RFP yet\; implementation began 7/1/2026.\n\nPath: Sub · Priority 3.0\nhttps://hcai.ca.gov/document/bhsa-2026-2030-wet-plan/
+URL:https://hcai.ca.gov/document/bhsa-2026-2030-wet-plan/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] CA HCAI BHSA WET Plan — workforce training vendor watch — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] CA HCAI BHSA WET Plan — workforce training vendor watch — cycle watch
+END:VALARM
+END:VEVENT
+END:VCALENDAR
