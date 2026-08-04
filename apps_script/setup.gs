@@ -44,6 +44,16 @@ var STATE_DIRECTORY_CSV = "state,agency,url,settlement_url,notes\nAlabama,Alabam
 
 var DATA_COLS = 30; // Data_Auto schema width (A..AD)
 var STATUS_LIST = ['New', 'Reviewing', 'Pursuing-Direct', 'Pursuing-Sub', 'Submitted', 'Won', 'Lost', 'Passed'];
+var OWNER_LIST = ['Jon', 'Asha', 'Dr. Garland', 'Rhea'];  // people who work the grants
+
+/** Owner-column dropdown on the Team tab. Warning (not reject) so a part-time
+ * writer's name can still be typed. Safe to run standalone anytime. */
+function addOwnerDropdown() {
+  var sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Team');
+  var rule = SpreadsheetApp.newDataValidation().requireValueInList(OWNER_LIST, true).setAllowInvalid(true).build();
+  sh.getRange(2, 3, 999, 1).setDataValidation(rule);
+  Logger.log('Owner dropdown applied to Team!C2:C1000 — ' + OWNER_LIST.join(', '));
+}
 
 function setup() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -95,6 +105,8 @@ function buildTeam(ss) {
   sh.getRange(1, 1, 1, 6).setFontWeight('bold');
   var rule = SpreadsheetApp.newDataValidation().requireValueInList(STATUS_LIST, true).setAllowInvalid(false).build();
   sh.getRange(2, 2, 999, 1).setDataValidation(rule);
+  var ownerRule = SpreadsheetApp.newDataValidation().requireValueInList(OWNER_LIST, true).setAllowInvalid(true).build();
+  sh.getRange(2, 3, 999, 1).setDataValidation(ownerRule);
   sh.setColumnWidth(4, 320);
   sh.setColumnWidth(5, 260);
   sh.setColumnWidth(6, 260);
