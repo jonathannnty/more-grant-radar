@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:heal-translation-rfa-da-27-016-20261009@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261009
+SUMMARY:NIH HEAL — Translating Addiction Research into Practice (RFA-DA-27-016) due — MORE Grant Radar
+URL:https://files.simpler.grants.gov/opportunities/c33f1e5e-0354-4976-adca-9aa7240778d3/attachments/d20bcf8b-9221-47b2-93d3-2351a3eac1a4/RFA-DA-27-016-Full-Announcement.html
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:NIH HEAL — Translating Addiction Research into Practice (RFA-DA-27-016) due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

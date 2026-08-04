@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:nih-heal-impowr-rm1-20261102@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261102
+SUMMARY:NIH HEAL IMPOWR — chronic pain + OUD health systems (RFA-DA-27-001, forecast) due — MORE Grant Radar
+URL:https://www.grants.gov/search-results-detail/360048
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:NIH HEAL IMPOWR — chronic pain + OUD health systems (RFA-DA-27-001, forecast) due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

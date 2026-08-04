@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:va-oaa-fy28-20261022@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261022
+SUMMARY:Virginia OAA — locality grants (FY27 window open / FY28) due — MORE Grant Radar
+URL:https://www.oaa.virginia.gov/media/governorvirginiagov/oaa/documents/Guidance-Individual-Distribution-Gold-Standard.pdf
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:Virginia OAA — locality grants (FY27 window open / FY28) due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

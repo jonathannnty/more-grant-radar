@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:oh-ag-jail-remediation-cy26-20261201@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20261201
+SUMMARY:Ohio AG Opioid Remediation — jail addiction programs (CY2026) due — MORE Grant Radar
+URL:https://www.ohioattorneygeneral.gov/getattachment/ed88813d-94c9-4e90-ba0f-7d43614444e2/ed88813d-94c9-4e90-ba0f-7d43614444e2.aspx
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:Ohio AG Opioid Remediation — jail addiction programs (CY2026) due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

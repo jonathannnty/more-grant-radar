@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:york-county-pa-2027-20260814@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260814
+SUMMARY:York County PA opioid settlement — 2027 cycle due — MORE Grant Radar
+URL:https://www.ycpc.org/691/How-to-Apply
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:York County PA opioid settlement — 2027 cycle due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

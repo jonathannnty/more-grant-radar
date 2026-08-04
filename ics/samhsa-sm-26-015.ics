@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:samhsa-sm-26-015-20260817@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260817
+SUMMARY:CCBHC Improvement & Advancement (SM-26-015) due — MORE Grant Radar
+URL:https://www.samhsa.gov/grants/grant-announcements/sm-26-015
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:CCBHC Improvement & Advancement (SM-26-015) due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

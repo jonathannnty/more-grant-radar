@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:md-orf-2027-moor-20260915@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260915
+SUMMARY:Maryland Opioid Restitution Fund 2027 (MOOR NOFA) due — MORE Grant Radar
+URL:https://stopoverdose.maryland.gov/wp-content/uploads/sites/34/2026/07/MOOR-2027-ORF-NOFA-Revised.pdf
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:Maryland Opioid Restitution Fund 2027 (MOOR NOFA) due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

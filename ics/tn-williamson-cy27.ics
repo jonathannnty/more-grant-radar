@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:tn-williamson-cy27-20260817@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260817
+SUMMARY:Williamson County TN opioid settlement — CY27 cycle due — MORE Grant Radar
+URL:https://chhs.mtsu.edu/wp-content/uploads/sites/83/2026/07/Williamson-CY27-RFP-APD-3.pdf
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:Williamson County TN opioid settlement — CY27 cycle due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

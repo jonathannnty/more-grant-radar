@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:al-admh-settlement-r4-20260824@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260824
+SUMMARY:Alabama ADMH Opioid Settlement Round 4 (RFP 2027-04) due — MORE Grant Radar
+URL:https://mh.alabama.gov/wp-content/uploads/2026/07/RFP-2027-04-Opioid-Settlement-Round-4.pdf
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:Alabama ADMH Opioid Settlement Round 4 (RFP 2027-04) due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR

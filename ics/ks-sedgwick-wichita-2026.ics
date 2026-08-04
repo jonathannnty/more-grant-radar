@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:ks-sedgwick-wichita-2026-20260915@more-grant-radar
+DTSTAMP:20260804T120000Z
+DTSTART;VALUE=DATE:20260915
+SUMMARY:Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) due — MORE Grant Radar
+URL:https://www.sedgwickcounty.org/media/73833/26-0081-integrated-care.pdf
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) due — MORE Grant Radar
+END:VALARM
+END:VEVENT
+END:VCALENDAR
