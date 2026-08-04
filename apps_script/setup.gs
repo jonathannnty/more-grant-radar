@@ -11,11 +11,20 @@
  * only missing grant_ids are appended.
  *
  * Rail A: set RAW_CSV_URL to the raw.githubusercontent.com URL of data/radar.csv
- * and re-run setup() — Data_Auto becomes a live IMPORTDATA feed (Google refreshes
- * roughly hourly). Leave it blank to use the embedded seed snapshot (Rail B).
+ * and run switchToRailA() — Data_Auto becomes a live IMPORTDATA feed (Google
+ * refreshes roughly hourly) without touching any other tab. Blank = embedded
+ * seed snapshot (Rail B).
+ *
+ * Custom styling: humans may restyle Radar/Playbook freely — but a full setup()
+ * re-run rebuilds those tabs and wipes custom formatting. Under Rail A you never
+ * need setup() for data refresh, so styling is safe in normal operation.
+ *
+ * Filter views: enable the Advanced Sheets Service once (editor left sidebar →
+ * Services + → "Google Sheets API" → Add, identifier "Sheets"), then run
+ * addFilterViews() — creates Jon / Asha / Dr. Garland / Rhea / Unassigned views.
  */
 
-var RAW_CSV_URL = '';
+var RAW_CSV_URL = 'https://raw.githubusercontent.com/jonathannnty/more-grant-radar/main/data/radar.csv';
 
 // ——— payloads injected by scripts/generate.py — do not hand-edit ———
 // <<RADAR_CSV>>
@@ -244,6 +253,46 @@ function buildArchive(ss) {
     sh.getRange(1, 1, 1, headers.length).setValues([headers]).setFontWeight('bold');
     sh.setFrozenRows(1);
   }
+}
+
+/** Rail A switch: rebuild ONLY Data_Auto as a live IMPORTDATA feed. Leaves
+ * Radar/Playbook/Team (and any human styling) untouched. */
+function switchToRailA() {
+  if (!RAW_CSV_URL) throw new Error('Set RAW_CSV_URL first.');
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sh = ss.getSheetByName('Data_Auto');
+  sh.clearContents();
+  sh.getRange('A1').setFormula('=IMPORTDATA("' + RAW_CSV_URL + '")');
+  SpreadsheetApp.flush();
+  Logger.log('Data_Auto now feeds from ' + RAW_CSV_URL + ' (Google refreshes ~hourly). Run syncTeam() after it loads.');
+}
+
+/** Per-owner filter views on Radar via the Advanced Sheets Service (enable
+ * "Google Sheets API" under Services first). Safe to re-run — skips existing. */
+function addFilterViews() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheetId = ss.getSheetByName('Radar').getSheetId();
+  var existing = {};
+  var meta = Sheets.Spreadsheets.get(ss.getId(), { fields: 'sheets(filterViews(title))' });
+  (meta.sheets || []).forEach(function (s) {
+    (s.filterViews || []).forEach(function (v) { existing[v.title] = true; });
+  });
+  var wanted = ['Jon', 'Asha', 'Dr. Garland', 'Rhea', 'Unassigned'];
+  var requests = [];
+  wanted.forEach(function (name) {
+    if (existing[name]) return;
+    var criteria = name === 'Unassigned'
+      ? { condition: { type: 'BLANK' } }
+      : { condition: { type: 'TEXT_EQ', values: [{ userEnteredValue: name }] } };
+    requests.push({ addFilterView: { filter: {
+      title: name,
+      range: { sheetId: sheetId, startRowIndex: 2, endRowIndex: 1000, startColumnIndex: 0, endColumnIndex: 17 },
+      criteria: { '12': criteria }
+    } } });
+  });
+  if (requests.length) Sheets.Spreadsheets.batchUpdate({ requests: requests }, ss.getId());
+  Logger.log('Filter views: ' + (requests.length ? requests.length + ' created' : 'all already present') +
+    '. Owner names in Team must match exactly: Jon, Asha, Dr. Garland, Rhea.');
 }
 
 function orderTabs(ss) {

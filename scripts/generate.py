@@ -212,8 +212,11 @@ def main():
         ensure_ascii=False) + ";"
     html = (ROOT / "site" / "template.html").read_text(encoding="utf-8")
     html = html.replace("/*__RADAR_DATA__*/", payload).replace("__BUILD_STAMP__", stamp)
-    (ROOT / "site" / "index.html").write_text(html, encoding="utf-8")
-    print("  ✓ site/index.html")
+    docs = ROOT / "docs"
+    docs.mkdir(exist_ok=True)
+    (docs / ".nojekyll").touch()
+    (docs / "index.html").write_text(html, encoding="utf-8")
+    print("  ✓ docs/index.html (GitHub Pages)")
 
     # Apps Script seed payload
     gs = ROOT / "apps_script" / "setup.gs"
