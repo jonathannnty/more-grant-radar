@@ -21,6 +21,9 @@ scripts/generate.py   grants.json → radar.csv + ics/ + site/index.html + setup
 scripts/scan_grants_gov.py   Grants.gov Search2 sweep, diffs against known rows
 scripts/scan_sam.py   SAM.gov contract sweep (needs SAM_API_KEY env var)
 scripts/winners_feed.py      L4: new SOR/RCORP awardees → data/winners.csv
+scripts/partner_match.py     Partner Finder — matches each Sub/Line-item row to candidate
+                             partner orgs from the MORE Contact Workflow's enriched export;
+                             writes data/partners/ (GIT-IGNORED — contact PII, never on the site)
 apps_script/setup.gs  one-shot Google Sheet builder (paste into Apps Script, run setup())
 site/template.html    data-driven Cobalt ledger (design per Website Mockup)
 site/index.html       generated — deployable to GitHub Pages
