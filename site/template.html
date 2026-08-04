@@ -515,6 +515,18 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
   const TODAY = new Date(RADAR.today + 'T12:00:00');
   const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
+  // Canonical filter lists — mirror the Team-tab dropdowns so every choice shows,
+  // even with no grant currently on it. (Keep in sync with OWNER_LIST/STATUS_LIST
+  // in apps_script/setup.gs.) Any value present in the data but not listed is appended.
+  const OWNER_LIST = ['Jon', 'Asha', 'Dr. Garland', 'Rhea'];
+  const STATUS_LIST = ['New', 'Reviewing', 'Pursuing-Direct', 'Pursuing-Sub', 'Submitted', 'Won', 'Lost', 'Passed'];
+  const unionKeep = (canon, present) => { const l = canon.slice(); present.forEach(x => { if (x && !l.includes(x)) l.push(x); }); return l; };
+  const ownerOptions = () => '<option value="">All owners</option>' +
+    unionKeep(OWNER_LIST, RADAR.rows.map(r => r.owner)).map(o => '<option>' + esc(o) + '</option>').join('') +
+    '<option>Unassigned</option>';
+  const statusOptions = () => '<option value="">All statuses</option>' +
+    unionKeep(STATUS_LIST, RADAR.rows.map(r => r.status || 'New')).map(s => '<option>' + esc(s) + '</option>').join('');
+
   function money(n) {
     if (n == null || isNaN(n)) return null;
     if (n >= 1e9) return '$' + (n / 1e9).toFixed(n % 1e9 ? 1 : 0).replace(/\.0$/, '') + 'B';
@@ -663,11 +675,9 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
   ).join('');
   $('covCount').textContent = RADAR.coverage.length + ' channels';
 
-  // Filters — owner + status options from data
-  const owners = [...new Set(RADAR.rows.map(r => r.owner).filter(Boolean))].sort();
-  $('fOwner').innerHTML = '<option value="">All owners</option>' + owners.map(o => '<option>' + esc(o) + '</option>').join('') + '<option>Unassigned</option>';
-  const statuses = [...new Set(RADAR.rows.map(r => r.status || 'New'))].sort();
-  $('fStatus').innerHTML = '<option value="">All statuses</option>' + statuses.map(s => '<option>' + esc(s) + '</option>').join('');
+  // Filters — full canonical owner + status lists (see helpers above)
+  $('fOwner').innerHTML = ownerOptions();
+  $('fStatus').innerHTML = statusOptions();
 
   const rows = [...document.querySelectorAll('article.row')];
   const fPath = $('fPath'), fStatus = $('fStatus'), fOwner = $('fOwner'), fSearch = $('fSearch');
@@ -796,14 +806,8 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
       }
     });
 
-    const ownerOpts = [...new Set(RADAR.rows.map(r => r.owner).filter(Boolean))].sort();
-    const curO = fOwner.value;
-    fOwner.innerHTML = '<option value="">All owners</option>' + ownerOpts.map(o => '<option>' + esc(o) + '</option>').join('') + '<option>Unassigned</option>';
-    fOwner.value = curO;
-    const statusOpts = [...new Set(RADAR.rows.map(r => r.status || 'New'))].sort();
-    const curS = fStatus.value;
-    fStatus.innerHTML = '<option value="">All statuses</option>' + statusOpts.map(s => '<option>' + esc(s) + '</option>').join('');
-    fStatus.value = curS;
+    const curO = fOwner.value; fOwner.innerHTML = ownerOptions(); fOwner.value = curO;
+    const curS = fStatus.value; fStatus.innerHTML = statusOptions(); fStatus.value = curS;
 
     const hot14b = RADAR.rows.filter(r => { const d = runway(r); return d != null && d >= 0 && d <= 14; });
     const pursuingB = RADAR.rows.filter(r => /^pursuing|^submitted|campaign/i.test(r.status || ''));
