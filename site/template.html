@@ -266,6 +266,21 @@
   .tag.path-direct { background: var(--color-accent-wash); color: var(--color-accent-ink); font-weight: 600; }
   .tag.path-line { background: var(--color-line-item-wash); color: var(--color-line-item); font-weight: 600; }
   .tag.path-sub { background: var(--color-sub-wash); color: var(--color-sub); font-weight: 600; }
+  .elig { font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: 600; padding: 2px var(--space-2); border-radius: var(--radius-1); }
+  .elig .elig-note { font-weight: 400; opacity: 0.75; }
+  .elig.elig-ok { background: oklch(60% 0.15 150 / 0.14); color: var(--color-good); }
+  .elig.elig-sub { background: var(--color-line-item-wash); color: var(--color-line-item); }
+  .elig.elig-verify { background: var(--color-warning-wash); color: var(--color-warning-ink); }
+  .regalert { font-size: var(--text-sm); font-weight: 600; color: var(--color-critical); background: var(--color-critical-wash); border-radius: var(--radius-1); padding: var(--space-2) var(--space-3); }
+  .checklist h4 { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; color: var(--color-ink-3); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: var(--space-2); }
+  .checklist ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-1); }
+  .checklist li { font-size: var(--text-sm); color: var(--color-ink-2); padding-left: var(--space-4); position: relative; text-wrap: pretty; }
+  .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--color-ink-3); }
+  .checklist li.warn { color: var(--color-critical); font-weight: 500; }
+  .checklist li.warn::before { content: "⚠"; color: var(--color-critical); }
+  .checklist li b { color: var(--color-ink); font-weight: 600; }
+  .draft h4 { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; color: var(--color-ink-3); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: var(--space-2); }
+  .draft p { font-size: var(--text-sm); color: var(--color-ink-2); line-height: 1.55; text-wrap: pretty; border-left: var(--rule-2) solid var(--color-accent-border); padding-left: var(--space-3); }
 
   .right { text-align: right; min-width: 150px; display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-2); }
   .money { font-family: var(--font-mono); font-size: var(--text-lg); font-weight: 600; font-variant-numeric: tabular-nums; }
@@ -598,6 +613,19 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
     return bits.join(' · ');
   }
 
+  function eligBadge(r) {
+    if (!r.elig_label) return '';
+    const l = r.elig_label;
+    const cls = /direct-eligible|eligible \(/i.test(l) ? 'elig-ok' : /only/i.test(l) ? 'elig-sub' : 'elig-verify';
+    return '<span class="elig ' + cls + '"' + (r.elig_note ? ' title="' + esc(r.elig_note) + '"' : '') + '>' + esc(l) + (r.elig_note ? ' <span class="elig-note">· ' + esc(r.elig_note) + '</span>' : '') + '</span>';
+  }
+  function checklistHTML(r) {
+    if (!r.checklist || !r.checklist.length) return '';
+    return '<div class="checklist" style="grid-column:1/-1"><h4>Application checklist</h4><ul>' +
+      r.checklist.map(function (kv) { return '<li' + (kv[0].indexOf('⚠') === 0 ? ' class="warn"' : '') + '><b>' + esc(kv[0]) + ':</b> ' + esc(kv[1]) + '</li>'; }).join('') +
+      '</ul></div>';
+  }
+
   function rowHTML(r, band) {
     const like = Math.max(1, Math.min(5, Math.round(r.likelihood || 1)));
     const dots = '●'.repeat(like) + (like < 5 ? '<span class="off">' + '●'.repeat(5 - like) + '</span>' : '');
@@ -625,14 +653,16 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
         '<h3 class="name">' + esc(r.name) + ' <button class="chev" aria-expanded="false" aria-label="Show details">▾</button></h3>' +
         '<p class="funder">' + esc([r.funder, r.channel, r.state === 'US' ? 'national' : r.state].filter(Boolean).join(' · ')) + '</p>' +
         '<p class="heart">' + heartHTML(r.heart) + '</p>' +
-        '<div class="tags">' + pathTags(r.path) + (r.category ? '<span class="tag">' + esc(r.category) + '</span>' : '') + (r.channel ? '<span class="tag">' + esc(r.channel.toLowerCase()) + '</span>' : '') + '</div>' +
+        '<div class="tags">' + eligBadge(r) + pathTags(r.path) + (r.category ? '<span class="tag">' + esc(r.category) + '</span>' : '') + (r.channel ? '<span class="tag">' + esc(r.channel.toLowerCase()) + '</span>' : '') + '</div>' +
       '</div>' +
       '<div class="right">' + moneyBlock(r) + dueChip(r) + statusBlock(r) + link + '</div>' +
       '<div class="details"><div class="details-inner"><div class="details-body">' +
+        (r.reg_alert ? '<div class="regalert" style="grid-column:1/-1">⏱ ' + esc(r.reg_alert) + '</div>' : '') +
         detailCell('Eligibility', r.eligibility ? esc(r.eligibility) : null) +
         detailCell('Next action', r.next_action ? esc(r.next_action) : (r.notes ? esc(r.notes) : null)) +
-        detailCell('Fine print', fitBrief(r)) +
         detailCell('Scoring fit', r.scoring_map ? esc(r.scoring_map) : null) +
+        checklistHTML(r) +
+        (r.fit_draft ? '<div class="draft" style="grid-column:1/-1"><h4>Draft opener — edit before use</h4><p>' + esc(r.fit_draft) + '</p></div>' : '') +
         '<div class="actions">' + calBtn + kit + '</div>' + verif +
       '</div></div></div>' +
     '</article>';

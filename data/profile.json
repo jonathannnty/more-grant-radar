@@ -1,0 +1,16 @@
+{
+  "_comment": "More Therapy attributes used by the eligibility auto-screen (scripts/accelerators.py). Set a gate to true/false once known; null = unknown (the screen then flags it to verify rather than guessing). See open decisions in the build docs.",
+  "org": "More Therapy LLC",
+  "ownership": "for-profit",
+  "gates": {
+    "ohio_registration_2yr": null,
+    "provider_cert": false,
+    "info_session": null,
+    "tx_presence": null
+  },
+  "registrations": {
+    "sam_uei": "unknown",
+    "era_commons": "unknown",
+    "sba_registry": "unknown"
+  }
+}

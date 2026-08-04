@@ -4,3 +4,4 @@ __pycache__/
 data/winners.csv
 data/channels_result.json
 data/partners/
+data/waves/

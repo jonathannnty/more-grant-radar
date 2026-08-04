@@ -181,7 +181,7 @@ def why(reasons, c):
 
 OUT_COLS = ["grant_id", "grant_name", "rank", "match", "fit", "org", "city", "state",
             "contact", "job_title", "role", "email", "email_confidence",
-            "in_training_outreach", "why"]
+            "in_training_outreach", "partner_status", "why"]  # partner_status: Rhea fills (interested/secured/declined) — item 1c
 
 
 def main():
@@ -222,6 +222,7 @@ def main():
                 "job_title": c.get("jobtitle"), "role": c.get("role_category"),
                 "email": c.get("email"), "email_confidence": c.get("confidence_tier"),
                 "in_training_outreach": c.get("previously_sent") or "No",
+                "partner_status": "",
                 "why": why(reasons, c),
             })
     fc.close()

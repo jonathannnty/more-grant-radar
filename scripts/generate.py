@@ -27,6 +27,9 @@ from pathlib import Path
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import accelerators  # noqa: E402  (feature 3c/4a/4b: eligibility, reg alerts, fit drafts, checklist)
+
 ROOT = Path(__file__).resolve().parents[1]
 
 COLS = [
@@ -241,13 +244,20 @@ def main():
     n_feed = write_combined_ics(active, docs_dir / "deadlines.ics")
     print(f"  ✓ docs/deadlines.ics — subscribable feed, {n_feed} event(s)")
 
-    # Site — template + payload (+ optional Team overlay for status/owner)
+    # Site — template + payload (+ optional Team overlay for status/owner + v2 accelerators)
     team = load_team(ROOT / "data" / "team.csv")
+    profile_file = ROOT / "data" / "profile.json"
+    profile = json.loads(profile_file.read_text(encoding="utf-8")) if profile_file.exists() else {"gates": {}}
     site_rows = []
     for r in active:
         t = team.get(r["grant_id"], {})
+        elig_label, elig_note = accelerators.eligibility_label(r, profile)
         site_rows.append({**r, "status": t.get("status") or "New", "owner": t.get("owner") or "",
-                          "next_action": t.get("next_action") or ""})
+                          "next_action": t.get("next_action") or "",
+                          "elig_label": elig_label, "elig_note": elig_note,
+                          "reg_alert": accelerators.reg_alert(r, today),
+                          "fit_draft": accelerators.fit_draft(r),
+                          "checklist": accelerators.checklist(r, today)})
     stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
     payload = "const RADAR = " + json.dumps(
         {"today": today.isoformat(), "rows": site_rows, "coverage": coverage},

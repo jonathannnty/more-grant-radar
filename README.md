@@ -21,9 +21,19 @@ scripts/generate.py   grants.json → radar.csv + ics/ + site/index.html + setup
 scripts/scan_grants_gov.py   Grants.gov Search2 sweep, diffs against known rows
 scripts/scan_sam.py   SAM.gov contract sweep (needs SAM_API_KEY env var)
 scripts/winners_feed.py      L4: new SOR/RCORP awardees → data/winners.csv
+data/profile.json     More Therapy's eligibility profile (registrations, certs, presence)
+scripts/accelerators.py      writing accelerators — per-row eligibility label, registration
+                             lead-time alert, tailored fit paragraph, deadline checklist
+                             (imported by generate.py; the site renders each per opportunity)
 scripts/partner_match.py     Partner Finder — matches each Sub/Line-item row to candidate
                              partner orgs from the MORE Contact Workflow's enriched export;
                              writes data/partners/ (GIT-IGNORED — contact PII, never on the site)
+scripts/outreach_wave.py     turns a partner shortlist into per-contact draft emails →
+                             data/waves/ (GIT-IGNORED — PII; DRAFTS ONLY, never auto-sent)
+scripts/nofo_watch.py        change detection — fingerprints each row's NOFO page, diffs vs
+                             data/nofo_snapshots.json, flags NEW/CHANGED/UNREACHABLE for review
+scripts/learning_loop.py     win/loss calibration — aggregates decided Team/archive outcomes
+                             by channel/path/eligibility/category → data/learning_report.md
 apps_script/setup.gs  one-shot Google Sheet builder (paste into Apps Script, run setup())
 site/template.html    data-driven Cobalt ledger (design per Website Mockup)
 site/index.html       generated — deployable to GitHub Pages
@@ -36,7 +46,30 @@ ics/                  generated — one .ics per dated row (all-day + −3d alar
 python scripts/generate.py            # rebuild everything from grants.json
 python scripts/scan_grants_gov.py    # what's new on Grants.gov (report only)
 python scripts/winners_feed.py       # monthly: awardees for the contact pipeline
+python scripts/nofo_watch.py --update # refresh NOFO change-detection baseline
+python scripts/learning_loop.py      # win/loss calibration report
 ```
+
+## v2: partner outreach + writing accelerators
+
+Two capabilities layer on top of the radar, both reusing the MORE Contact
+Workflow's enriched org universe:
+
+1. **Partner Finder → outreach wave.** `partner_match.py` ranks contactable
+   partner orgs for every Sub/Line-item opportunity (a for-profit LLC can't win
+   these directly, so the play is to be the training line item on someone else's
+   application). `outreach_wave.py` then drafts a grant-specific email per
+   contact. Both write to git-ignored dirs (`data/partners/`, `data/waves/`) —
+   contact PII never touches the public repo or site — and the wave is
+   **drafts only**; the compliant send (CAN-SPAM footer, suppression) happens in
+   the Contact Workflow's sender, or a human sends. A `partner_status` column
+   feeds partner outcomes back for the learning loop.
+2. **Writing accelerators** (`accelerators.py`, rendered on the site): each row
+   shows whether More Therapy can apply directly vs. sub-only, a registration
+   lead-time alert (SAM.gov / eRA Commons take weeks) when a deadline is near, a
+   tailored MORE-fit paragraph a writer can drop into the application, and a
+   deadline checklist. Evidence figures come from the vetted `MORE_EVIDENCE`
+   block — never invented.
 
 The engine (Claude Code on Ty's machine) edits `data/grants.json` only after
 verifying a row against its primary source, then runs `generate.py` and pushes.
