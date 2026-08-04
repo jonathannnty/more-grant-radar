@@ -22,6 +22,14 @@
  * Filter views: enable the Advanced Sheets Service once (editor left sidebar →
  * Services + → "Google Sheets API" → Add, identifier "Sheets"), then run
  * addFilterViews() — creates Jon / Asha / Dr. Garland / Rhea / Unassigned views.
+ * NOTE: filter views are INCOMPATIBLE with a Table. If Radar has been converted
+ * to a Table (Format → Convert to table), addFilterViews() fails with "can't
+ * apply a filter to a range that partially intersects a table" — in that case
+ * use the Table's own owner-column dropdown filter instead (shared state).
+ *
+ * Under Rail A you should NOT re-run setup() (it rebuilds Radar and fights human
+ * styling). Refresh happens automatically via IMPORTDATA; run syncTeam() when
+ * new grant_ids appear, and switchToRailA() only if the feed URL changes.
  */
 
 var RAW_CSV_URL = 'https://raw.githubusercontent.com/jonathannnty/more-grant-radar/main/data/radar.csv';
@@ -154,29 +162,39 @@ function buildRadar(ss) {
   };
   for (var col in f) sh.getRange(col + '4').setFormula(f[col]);
 
-  sh.getRange('K4:K1000').setNumberFormat('$#,##0');
-  sh.getRange('H4:H1000').setNumberFormat('0');
-  sh.getRange('G4:G1000').setNumberFormat('yyyy-mm-dd');
-  sh.setColumnWidth(2, 300);
-  sh.setColumnWidth(15, 420);
-  sh.setColumnWidth(14, 220);
+  // Cosmetic layer — skipped gracefully if the human converted Radar to a Table
+  // (typed columns reject setNumberFormat, and a Table brings its own formatting +
+  // per-column filtering). The data formulas above are what matter; formatting is
+  // best-effort so setup() never aborts on a styled sheet.
+  try {
+    sh.getRange('K4:K1000').setNumberFormat('$#,##0');
+    sh.getRange('H4:H1000').setNumberFormat('0');
+    sh.getRange('G4:G1000').setNumberFormat('yyyy-mm-dd');
+    sh.setColumnWidth(2, 300);
+    sh.setColumnWidth(15, 420);
+    sh.setColumnWidth(14, 220);
 
-  var full = sh.getRange('A4:Q1000');
-  var rules = [
-    SpreadsheetApp.newConditionalFormatRule()
-      .whenFormulaSatisfied('=AND($H4<>"",$H4>=0,$H4<=14)')
-      .setBackground('#fbe7e5').setRanges([full]).build(),
-    SpreadsheetApp.newConditionalFormatRule()
-      .whenFormulaSatisfied('=AND($H4<>"",$H4>14,$H4<=45)')
-      .setBackground('#fdf3d8').setRanges([full]).build(),
-    SpreadsheetApp.newConditionalFormatRule()
-      .setGradientMinpoint('#ffffff').setGradientMaxpoint('#c7d2f2')
-      .setRanges([sh.getRange('J4:J1000')]).build()
-  ];
-  sh.setConditionalFormatRules(rules);
+    var full = sh.getRange('A4:Q1000');
+    var rules = [
+      SpreadsheetApp.newConditionalFormatRule()
+        .whenFormulaSatisfied('=AND($H4<>"",$H4>=0,$H4<=14)')
+        .setBackground('#fbe7e5').setRanges([full]).build(),
+      SpreadsheetApp.newConditionalFormatRule()
+        .whenFormulaSatisfied('=AND($H4<>"",$H4>14,$H4<=45)')
+        .setBackground('#fdf3d8').setRanges([full]).build(),
+      SpreadsheetApp.newConditionalFormatRule()
+        .setGradientMinpoint('#ffffff').setGradientMaxpoint('#c7d2f2')
+        .setRanges([sh.getRange('J4:J1000')]).build()
+    ];
+    sh.setConditionalFormatRules(rules);
+  } catch (e) {
+    Logger.log('buildRadar: skipped default formatting (Radar is likely a Table) — ' + e.message);
+  }
 
-  var prot = sh.protect().setDescription('View tab — formulas only. Statuses/owners live in Team.');
-  prot.setWarningOnly(true);
+  try {
+    var prot = sh.protect().setDescription('View tab — formulas only. Statuses/owners live in Team.');
+    prot.setWarningOnly(true);
+  } catch (e) { /* protection optional */ }
 }
 
 // ————— Playbook: source map, rubric, agency directory, how-to —————
