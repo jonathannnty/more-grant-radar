@@ -1,0 +1,106 @@
+# Self-updating radar — one daily job, two phases (Refresh, then Detect).
+# Phase 1 commits the freshly generated site so it publishes even if a later
+# detection step errors; Phase 2 sweeps for new/changed opportunities and queues
+# them in a GitHub Issue for human verification. grants.json is never staged.
+# See specs/2026-08-05-self-updating-radar-design.md.
+name: radar
+
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Configure git bot identity
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+
+      # ── Phase 1: Refresh (always) ─────────────────────────────────────
+      # Rebuild docs/, data/radar.csv, ics/ so time-sensitive fields stay
+      # accurate. grants.json is read-only here.
+      - name: Phase 1 — regenerate site
+        run: python scripts/generate.py --today "$(date -u +%F)"
+
+      - name: Phase 1 — commit + push generated files
+        run: |
+          git add docs data/radar.csv ics data/nofo_snapshots.json
+          git diff --cached --quiet || git commit -m "radar: refresh site $(date -u +%F)"
+          git push
+
+      # ── Phase 2: Detect (surface for review) ──────────────────────────
+      # Each scanner also writes a findings JSON (the shared contract) into
+      # finds/. Fetch errors are modelled as findings, not workflow failures.
+      - name: Phase 2 — run detection sweeps
+        env:
+          SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
+        run: |
+          mkdir -p finds
+          python scripts/scan_grants_gov.py --json finds/grants_gov.json
+          if [ -n "$SAM_API_KEY" ]; then
+            python scripts/scan_sam.py --json finds/sam.json
+          else
+            echo "SAM_API_KEY not set — skipping SAM sweep."
+          fi
+          python scripts/nofo_watch.py --update --json finds/nofo.json
+          if [ "$(date -u +%d)" = "01" ]; then
+            python scripts/winners_feed.py --json finds/winners.json
+          else
+            echo "Not the 1st of the month — skipping winners feed."
+          fi
+
+      # Aggregate + dedup vs data/seen_finds.json. The script prints
+      # has_findings and title to $GITHUB_OUTPUT and updates seen_finds.json
+      # in the working copy (committed only after the issue is created below).
+      - name: Phase 2 — aggregate findings
+        id: review
+        run: |
+          python scripts/radar_review.py \
+            --finds finds \
+            --seen data/seen_finds.json \
+            --out issue_body.md \
+            --today "$(date -u +%F)"
+
+      # Only when there are un-seen deltas. Ensure the label exists first —
+      # gh issue create --label fails on a missing label.
+      - name: Phase 2 — open review issue
+        if: steps.review.outputs.has_findings == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_TITLE: ${{ steps.review.outputs.title }}
+        run: |
+          gh label create radar-review \
+            --color BFD4F2 \
+            --description "Radar sweep findings awaiting human verification" || true
+          gh issue create \
+            --title "$ISSUE_TITLE" \
+            --body-file issue_body.md \
+            --label radar-review
+
+      # Runs AFTER the issue step: if issue-create failed the job stops here,
+      # so seen_finds stays unwritten and the finds resurface next run. Never
+      # stages grants.json.
+      - name: Phase 2 — commit + push seen state and NOFO baseline
+        run: |
+          git add data/seen_finds.json data/nofo_snapshots.json
+          git diff --cached --quiet || git commit -m "radar: update seen finds + NOFO baseline $(date -u +%F)"
+          git push

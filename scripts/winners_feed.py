@@ -39,27 +39,60 @@ def page(program, start, end, page_num):
         return json.load(resp)
 
 
+def write_findings(path, source, generated, findings):
+    """Also-emit the shared findings JSON contract (stdout stays unchanged)."""
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(
+        {"source": source, "generated": generated, "findings": findings},
+        indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--months", type=int, default=12)
     ap.add_argument("--out", default="data/winners.csv")
+    ap.add_argument("--json", dest="json_path", metavar="PATH",
+                    help="also write findings to PATH (shared JSON contract)")
     args = ap.parse_args()
 
     end = date.today()
     start = end - timedelta(days=args.months * 30)
     rows = []
+    findings = []
     for program, label in (("93.788", "SOR"), ("93.912", "RCORP")):
         p = 1
         while True:
-            data = page(program, start.isoformat(), end.isoformat(), p)
+            try:
+                data = page(program, start.isoformat(), end.isoformat(), p)
+            except Exception as e:  # network/API — keep partial results, never fail the run
+                print(f"  ! {label} page {p} fetch failed ({type(e).__name__}: {str(e)[:80]}) "
+                      "— keeping partial.", file=sys.stderr)
+                break
             for r in data.get("results", []):
+                agency = r.get("Awarding Sub Agency") or r.get("Awarding Agency")
                 rows.append({
                     "program": label, "aln": program,
                     "recipient": r.get("Recipient Name"),
                     "award_id": r.get("Award ID"),
                     "amount": r.get("Award Amount"),
                     "start_date": r.get("Start Date"), "end_date": r.get("End Date"),
-                    "agency": r.get("Awarding Sub Agency") or r.get("Awarding Agency"),
+                    "agency": agency,
+                })
+                gid = r.get("generated_internal_id")
+                rid = r.get("prime_award_recipient_id") or r.get("recipient_id")
+                findings.append({
+                    "kind": "winner",
+                    "id": r.get("Award ID") or r.get("Recipient Name") or "",
+                    "title": r.get("Recipient Name") or "",
+                    "detail": (f"{label} · {agency} · {r.get('Award Amount')} "
+                               f"· {r.get('Start Date')}–{r.get('End Date')} · ALN {program}"),
+                    # deep-link to the award; fall back to the recipient's own record,
+                    # only then to the site root — keep every finding on a primary source.
+                    "url": (f"https://www.usaspending.gov/award/{gid}/" if gid
+                            else f"https://www.usaspending.gov/recipient/{rid}/latest" if rid
+                            else "https://www.usaspending.gov/"),
+                    "fingerprint": "",
                 })
             if not data.get("page_metadata", {}).get("hasNext"):
                 break
@@ -74,6 +107,9 @@ def main():
         w.writeheader()
         w.writerows(rows)
     print(f"  ✓ {out.relative_to(ROOT)} — {len(rows)} awardees for the contact pipeline")
+
+    if args.json_path:
+        write_findings(args.json_path, "winners", end.isoformat(), findings)
 
 
 if __name__ == "__main__":

@@ -13,6 +13,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import json
 import urllib.request
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -56,9 +57,20 @@ def search(body):
         return json.load(resp)["data"].get("oppHits", [])
 
 
+def write_findings(path, source, generated, findings):
+    """Also-emit the shared findings JSON contract (stdout stays unchanged)."""
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(
+        {"source": source, "generated": generated, "findings": findings},
+        indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--rows", type=int, default=40)
+    ap.add_argument("--json", dest="json_path", metavar="PATH",
+                    help="also write findings to PATH (shared JSON contract)")
     args = ap.parse_args()
 
     src = json.loads((ROOT / "data" / "grants.json").read_text(encoding="utf-8"))
@@ -90,6 +102,19 @@ def main():
         print(f"  https://www.grants.gov/search-results-detail/{h['id']}")
     if not fresh:
         print("Nothing new — all hits already tracked or out of scope.")
+
+    if args.json_path:
+        findings = [{
+            "kind": "new",
+            "id": h["number"],
+            "title": h["title"],
+            "detail": (f"{h['agency']} · open {h.get('openDate') or '?'} "
+                       f"· close {h.get('closeDate') or 'rolling'} · {h['oppStatus']} "
+                       f"· ALN {','.join(h.get('cfdaList', []))}"),
+            "url": f"https://www.grants.gov/search-results-detail/{h['id']}",
+            "fingerprint": "",
+        } for q, h in sorted(fresh, key=lambda x: x[1].get("closeDate") or "9999")]
+        write_findings(args.json_path, "grants_gov", date.today().isoformat(), findings)
 
 
 if __name__ == "__main__":

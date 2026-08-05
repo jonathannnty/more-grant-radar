@@ -44,12 +44,24 @@ def fingerprint(text):
     return {"hash": hashlib.sha256(text.encode()).hexdigest()[:16], "len": len(text), "dates": dates[:40]}
 
 
+def write_findings(path, source, generated, findings):
+    """Also-emit the shared findings JSON contract (stdout stays unchanged)."""
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(
+        {"source": source, "generated": generated, "findings": findings},
+        indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--update", action="store_true", help="write the fetched fingerprints as the new baseline")
+    ap.add_argument("--json", dest="json_path", metavar="PATH",
+                    help="also write findings to PATH (shared JSON contract)")
     args = ap.parse_args()
 
     rows = json.loads((ROOT / "data" / "grants.json").read_text(encoding="utf-8"))["rows"]
+    names = {r["grant_id"]: (r.get("name") or r["grant_id"]) for r in rows}
     old = json.loads(SNAP.read_text(encoding="utf-8")) if SNAP.exists() else {}
     new, changes = {}, []
 
@@ -90,6 +102,23 @@ def main():
         print(f"\n  ✓ baseline written to {SNAP.relative_to(ROOT)}")
     else:
         print("\n  (run with --update to save this as the new baseline)")
+
+    if args.json_path:
+        kind_map = {"CHANGED": "changed", "UNREACHABLE": "unreachable"}
+        findings = []
+        for kind, gid, detail, url in changes:
+            if kind not in kind_map:  # omit NEW first-seen baseline entries
+                continue
+            fp_hash = new.get(gid, {}).get("hash", "") if kind == "CHANGED" else ""
+            findings.append({
+                "kind": kind_map[kind],
+                "id": gid,
+                "title": names.get(gid, gid),
+                "detail": detail,
+                "url": url,
+                "fingerprint": fp_hash,
+            })
+        write_findings(args.json_path, "nofo_watch", date.today().isoformat(), findings)
 
 
 if __name__ == "__main__":
