@@ -38,6 +38,7 @@ SOURCE_LABEL = {
     "winners": "Winners",
 }
 FOOTER = "Confirm against the primary source before adding to `grants.json`."
+BODY_CAP = 60000  # keep the composed body well under GitHub's 65,536-char issue limit
 
 
 def emit(pairs):
@@ -161,18 +162,43 @@ def main():
         segs.append(f"{p_winner} winner" + ("s" if p_winner != 1 else ""))
     summary = " · ".join(segs) if segs else f"{len(delta_keys)} findings"
 
-    # Compose the Issue body.
-    lines = [summary, ""]
+    # Compose the Issue body, staying under GitHub's issue-body limit. If the
+    # deltas overflow BODY_CAP, include as many as fit and let the rest resurface
+    # next run — they are NOT marked seen below, so nothing is ever dropped.
     ordered = [s for s in SOURCE_ORDER if s in delta_by_source]
     ordered += sorted(s for s in delta_by_source if s not in SOURCE_ORDER)
+    reserve = len(FOOTER) + 240  # room for the footer + a truncation notice
+    lines = [summary, ""]
+    included_keys = []
+    truncated = False
+
+    def size(ls):
+        return sum(len(x) + 1 for x in ls)  # +1 for each newline join
+
     for source in ordered:
-        lines.append(f"## {SOURCE_LABEL.get(source, source)}")
+        if truncated:
+            break
+        header = f"## {SOURCE_LABEL.get(source, source)}"
+        section_open = False
         for f in delta_by_source[source]:
-            title = f.get("title") or f.get("id")
-            detail = f.get("detail") or ""
-            url = f.get("url") or ""
-            lines.append(f"- **{title}** — {detail}  ")
-            lines.append(f"  {url}")
+            entry = [f"- **{f.get('title') or f.get('id')}** — {f.get('detail') or ''}  ",
+                     f"  {f.get('url') or ''}"]
+            trial = lines + ([header] if not section_open else []) + entry
+            if size(trial) + reserve > BODY_CAP:
+                truncated = True
+                break
+            if not section_open:
+                lines.append(header)
+                section_open = True
+            lines += entry
+            included_keys.append(key_of(source, f))
+        if section_open:
+            lines.append("")
+
+    if truncated:
+        remaining = len(delta_keys) - len(included_keys)
+        lines.append(f"_Showing {len(included_keys)} of {len(delta_keys)} findings — GitHub caps "
+                     f"an issue body at 64 KB. The remaining {remaining} resurface next run._")
         lines.append("")
     lines.append(FOOTER)
     body = "\n".join(lines) + "\n"
@@ -180,11 +206,11 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(body, encoding="utf-8")
 
-    # Update the working-copy seen list in place (seen UNION delta keys),
-    # preserving prior order and appending new keys. The workflow commits this
-    # only after the issue is created.
+    # Mark only the findings actually shown as seen; any overflow stays unseen and
+    # reappears next run. In the normal (untruncated) case this is every delta.
+    # The workflow commits this only after the issue is created.
     seen_path.parent.mkdir(parents=True, exist_ok=True)
-    updated = seen + delta_keys
+    updated = seen + included_keys
     seen_path.write_text(json.dumps(updated, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     title = f"Radar review {today}: {summary}"

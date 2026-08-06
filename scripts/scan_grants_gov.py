@@ -48,6 +48,16 @@ QUERIES = [
 # HHS=93 · USDOJ=16 · DOL=17 · DoD=12 (CDMRP) · CDC rolls under HHS
 RELEVANT_AGENCIES = ("HHS", "USDOJ", "DOJ", "DOL", "DOD", "DOD-")
 
+# Broad keyword sweeps surface tangential grants; require the title to hit one of
+# these MORE-relevant terms. ALN-based queries are precise program codes (SOR,
+# RCORP, …) and skip this gate.
+RELEVANT_TERMS = (
+    "opioid", "substance use", "substance abuse", "substance misuse",
+    "addiction", "overdose", "medication assisted", "medication-assisted",
+    "opioid use disorder", "drug court", "behavioral health workforce",
+    "mindfulness", "chronic pain", "recovery housing",
+)
+
 
 def search(body):
     req = urllib.request.Request(
@@ -69,6 +79,9 @@ def write_findings(path, source, generated, findings):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--rows", type=int, default=40)
+    ap.add_argument("--statuses", default="posted",
+                    help='grants.gov oppStatuses filter (default "posted" = actionable; '
+                         'pass "forecasted|posted" to include forecasts)')
     ap.add_argument("--json", dest="json_path", metavar="PATH",
                     help="also write findings to PATH (shared JSON contract)")
     args = ap.parse_args()
@@ -79,17 +92,21 @@ def main():
 
     seen, fresh = set(), []
     for q in QUERIES:
-        body = {"oppStatuses": "forecasted|posted", "rows": args.rows, **q}
+        body = {"oppStatuses": args.statuses, "rows": args.rows, **q}
         try:
             hits = search(body)
         except Exception as e:  # network hiccups shouldn't kill the sweep
             print(f"  ! query {q} failed: {e}")
             continue
+        is_aln = "aln" in q
         for h in hits:
             num = (h.get("number") or "").lower()
             if not num or num in known or h["id"] in seen:
                 continue
             if not any(h.get("agencyCode", "").startswith(a) for a in RELEVANT_AGENCIES):
+                continue
+            # Broad keyword hits must match a relevant term; trust ALN-coded hits.
+            if not is_aln and not any(t in (h.get("title") or "").lower() for t in RELEVANT_TERMS):
                 continue
             seen.add(h["id"])
             fresh.append((q, h))
