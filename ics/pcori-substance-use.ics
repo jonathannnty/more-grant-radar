@@ -1,22 +1,22 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//MORE Grant Radar//EN
-BEGIN:VEVENT
-UID:pcori-substance-use-due-20260909@more-grant-radar
-DTSTAMP:20260804T120000Z
-DTSTART;VALUE=DATE:20260909
-SUMMARY:[Grant Radar] PCORI — Addressing Substance Use (Cycle 3 2026) — due
-DESCRIPTION:The cleanest research fit we've found: a head-to-head trial of MORE vs CBT (or MORE + usual care/MOUD) for opioid use disorder is exactly what this funds — and for-profits can apply directly. Opened today\; the LOI gate is Sep 9.\n\nPath: Direct · Priority 25.2\nhttps://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026
-URL:https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] PCORI — Addressing Substance Use (Cycle 3 2026) — due
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] PCORI — Addressing Substance Use (Cycle 3 2026) — due
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:pcori-substance-use-due-20260909@more-grant-radar
+DTSTAMP:20260806T120000Z
+DTSTART;VALUE=DATE:20260909
+SUMMARY:[Grant Radar] PCORI — Addressing Substance Use (Cycle 3 2026) — due
+DESCRIPTION:The cleanest research fit we've found: a head-to-head trial of MORE vs CBT (or MORE + usual care/MOUD) for opioid use disorder is exactly what this funds — and for-profits can apply directly. Opened today\; the LOI gate is Sep 9.\n\nPath: Direct · Priority 25.2\nhttps://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026
+URL:https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] PCORI — Addressing Substance Use (Cycle 3 2026) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] PCORI — Addressing Substance Use (Cycle 3 2026) — due
+END:VALARM
+END:VEVENT
+END:VCALENDAR

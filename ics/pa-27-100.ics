@@ -1,22 +1,22 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//MORE Grant Radar//EN
-BEGIN:VEVENT
-UID:pa-27-100-due-20260905@more-grant-radar
-DTSTAMP:20260804T120000Z
-DTSTART;VALUE=DATE:20260905
-SUMMARY:[Grant Radar] NIH/NIDA SBIR Phase I (PA-27-100) — due
-DESCRIPTION:The one big pot built for for-profits — R&D money for the MORE app and training platform. Eric wants the ~$2M path\; Phase I is the door\, first standard due date Sep 5.\n\nPath: Direct · Priority 28.0\nhttps://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e
-URL:https://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] NIH/NIDA SBIR Phase I (PA-27-100) — due
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] NIH/NIDA SBIR Phase I (PA-27-100) — due
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:pa-27-100-due-20260905@more-grant-radar
+DTSTAMP:20260806T120000Z
+DTSTART;VALUE=DATE:20260905
+SUMMARY:[Grant Radar] NIH/NIDA SBIR Phase I (PA-27-100) — due
+DESCRIPTION:The one big pot built for for-profits — R&D money for the MORE app and training platform. Eric wants the ~$2M path\; Phase I is the door\, first standard due date Sep 5.\n\nPath: Direct · Priority 28.0\nhttps://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e
+URL:https://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH/NIDA SBIR Phase I (PA-27-100) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH/NIDA SBIR Phase I (PA-27-100) — due
+END:VALARM
+END:VEVENT
+END:VCALENDAR

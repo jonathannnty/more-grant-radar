@@ -1,22 +1,22 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//MORE Grant Radar//EN
-BEGIN:VEVENT
-UID:samhsa-sm-26-015-due-20260817@more-grant-radar
-DTSTAMP:20260804T120000Z
-DTSTART;VALUE=DATE:20260817
-SUMMARY:[Grant Radar] CCBHC Improvement & Advancement (SM-26-015) — due
-DESCRIPTION:117 existing CCBHCs are applying for $1M/yr improvement money right now — same 8/17 deadline\, same insert-kit: MORE named as the Section C EBP and a Section B workforce-training line.\n\nPath: Line-item · Priority 21.2\nhttps://www.samhsa.gov/grants/grant-announcements/sm-26-015
-URL:https://www.samhsa.gov/grants/grant-announcements/sm-26-015
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] CCBHC Improvement & Advancement (SM-26-015) — due
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] CCBHC Improvement & Advancement (SM-26-015) — due
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:samhsa-sm-26-015-due-20260817@more-grant-radar
+DTSTAMP:20260806T120000Z
+DTSTART;VALUE=DATE:20260817
+SUMMARY:[Grant Radar] CCBHC Improvement & Advancement (SM-26-015) — due
+DESCRIPTION:117 existing CCBHCs are applying for $1M/yr improvement money right now — same 8/17 deadline\, same insert-kit: MORE named as the Section C EBP and a Section B workforce-training line.\n\nPath: Line-item · Priority 21.2\nhttps://www.samhsa.gov/grants/grant-announcements/sm-26-015
+URL:https://www.samhsa.gov/grants/grant-announcements/sm-26-015
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] CCBHC Improvement & Advancement (SM-26-015) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] CCBHC Improvement & Advancement (SM-26-015) — due
+END:VALARM
+END:VEVENT
+END:VCALENDAR
