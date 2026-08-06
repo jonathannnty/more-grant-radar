@@ -58,6 +58,11 @@ RELEVANT_TERMS = (
     "mindfulness", "chronic pain", "recovery housing",
 )
 
+# The program codes we actually track (kept in sync with the ALN queries). A hit
+# counts as relevant if it carries one of these — grants.gov's ALN search is fuzzy
+# and otherwise returns broad NIH R01s that share an agency but not our programs.
+RELEVANT_ALNS = {q["aln"] for q in QUERIES if "aln" in q}
+
 
 def search(body):
     req = urllib.request.Request(
@@ -98,15 +103,18 @@ def main():
         except Exception as e:  # network hiccups shouldn't kill the sweep
             print(f"  ! query {q} failed: {e}")
             continue
-        is_aln = "aln" in q
         for h in hits:
             num = (h.get("number") or "").lower()
             if not num or num in known or h["id"] in seen:
                 continue
             if not any(h.get("agencyCode", "").startswith(a) for a in RELEVANT_AGENCIES):
                 continue
-            # Broad keyword hits must match a relevant term; trust ALN-coded hits.
-            if not is_aln and not any(t in (h.get("title") or "").lower() for t in RELEVANT_TERMS):
+            # Keep only hits that carry one of our tracked program codes, or whose
+            # title matches a MORE-relevant term. This drops fuzzy ALN-search results
+            # (broad NIH R01s) that share an agency but neither our programs nor scope.
+            cfdas = {c.strip() for c in h.get("cfdaList", [])}
+            title = (h.get("title") or "").lower()
+            if not (cfdas & RELEVANT_ALNS or any(t in title for t in RELEVANT_TERMS)):
                 continue
             seen.add(h["id"])
             fresh.append((q, h))
