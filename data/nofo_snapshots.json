@@ -1,7 +1,7 @@
 {
  "sm-26-014": {
-  "hash": "c8b201bdd946da92",
-  "len": 47531,
+  "hash": "30551694c47f3c5b",
+  "len": 47681,
   "dates": [
    "07/16/2026",
    "august 17, 2026",
@@ -39,8 +39,8 @@
   "url": "https://simpler.grants.gov/opportunity/e779b908-4f8c-48ce-9485-1345475cdbaf"
  },
  "oneohio-c3": {
-  "hash": "8941edb751b21e11",
-  "len": 10363,
+  "hash": "b72e62ff473427a6",
+  "len": 4725,
   "dates": [
    "1/21/26",
    "1/26/26",
@@ -108,8 +108,8 @@
   "url": "https://www.grants.gov/search-results-detail/360366"
  },
  "samhsa-sm-26-015": {
-  "hash": "c0f6a13b50f2b0b1",
-  "len": 47856,
+  "hash": "a701e7ae27c04445",
+  "len": 47556,
   "dates": [
    "07/16/2026",
    "august 17, 2026",
@@ -118,8 +118,8 @@
   "url": "https://www.samhsa.gov/grants/grant-announcements/sm-26-015"
  },
  "samhsa-sm-26-016": {
-  "hash": "28421ce4154511d8",
-  "len": 47144,
+  "hash": "6a55f5b3c7499597",
+  "len": 47278,
   "dates": [
    "06/17/2026",
    "august 17, 2026",
@@ -193,7 +193,18 @@
   "dates": [],
   "url": "https://hcai.ca.gov/document/bhsa-2026-2030-wet-plan/"
  },
- "dod-cdmrp-prmrp": {},
+ "dod-cdmrp-prmrp": {
+  "hash": "ca043acdcfb60d81",
+  "len": 6197,
+  "dates": [
+   "august 6, 2026",
+   "july 23, 2026",
+   "july 31, 2026",
+   "may 8, 2026",
+   "september 22, 2026"
+  ],
+  "url": "https://cdmrp.health.mil/funding/prmrp"
+ },
  "pcori-substance-use": {
   "hash": "7e67733842b3d52a",
   "len": 13322,
