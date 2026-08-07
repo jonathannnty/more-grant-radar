@@ -21,7 +21,9 @@ data/seen_finds.json  dedup state (committed) — finding keys already surfaced 
 scripts/generate.py   grants.json → radar.csv + ics/ + site/index.html + setup.gs payloads
 scripts/scan_grants_gov.py   Grants.gov Search2 sweep, diffs against known rows; --json → findings
 scripts/scan_sam.py   SAM.gov contract sweep (needs SAM_API_KEY env var); --json → findings
-scripts/winners_feed.py      L4: new SOR/RCORP awardees → data/winners.csv; --json → findings
+scripts/winners_feed.py      L4: new SOR/RCORP/CCBHC-Expansion (93.696) awardees →
+                             data/winners.csv; --json → findings. CCBHC = the funded
+                             cohort for the SM-26-014/015 post-award play
 data/profile.json     More Therapy's eligibility profile (registrations, certs, presence)
 scripts/accelerators.py      writing accelerators — per-row eligibility label, registration
                              lead-time alert, tailored fit paragraph, deadline checklist
@@ -127,6 +129,10 @@ whole pipeline switches these rows to that date: the site shows a "Post-award pl
 treatment instead of the misleading application-deadline countdown, the `.ics`
 reminder lands on `outreach_by`, "act now" keys off it, and the row survives past
 its application deadline (it expires at award_date + 60d, not the deadline).
+
+To close the loop, `winners_feed.py` tracks the CCBHC-Expansion assistance listing
+(**93.696**), so once SAMHSA's awards post to USASpending the funded ~94 clinics
+surface automatically for warm outreach — no manual dashboard check.
 
 ## Non-negotiables
 

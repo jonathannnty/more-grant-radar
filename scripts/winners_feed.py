@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
-"""L4 winners feed — new SOR (93.788) and RCORP (93.912) awardees via USASpending.
+"""L4 winners feed — new SOR (93.788), RCORP (93.912), and CCBHC-Expansion
+(93.696) awardees via USASpending.
 
 These awardees just received money that can buy MORE training — the output CSV
-feeds the contact pipeline for warm outreach.
+feeds the contact pipeline for warm outreach. CCBHC (93.696) is the funded
+cohort for the SM-26-014/015 post-award play: once SAMHSA's ~Nov awards post to
+USASpending, this surfaces the ~94 funded clinics automatically instead of a
+manual dashboard check. (93.829, the state Section-223 demonstration track, is
+deliberately excluded — that's SM-26-016, not a MORE fit.)
 
 Usage: python scripts/winners_feed.py [--months 12] [--out data/winners.csv]
 """
@@ -60,7 +65,7 @@ def main():
     start = end - timedelta(days=args.months * 30)
     rows = []
     findings = []
-    for program, label in (("93.788", "SOR"), ("93.912", "RCORP")):
+    for program, label in (("93.788", "SOR"), ("93.912", "RCORP"), ("93.696", "CCBHC")):
         p = 1
         while True:
             try:
