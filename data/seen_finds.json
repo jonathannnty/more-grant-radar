@@ -62,5 +62,13 @@
   "grants_gov:new:HT942526ARPCTA:",
   "grants_gov:new:HT942526TBDRPTDRA:",
   "grants_gov:new:HT942526VRPCTA:",
-  "grants_gov:new:HT942526TERPCTA:"
+  "grants_gov:new:HT942526TERPCTA:",
+  "sam:new:978ddcff41bd442382726ca344c9f2dc:",
+  "sam:new:3991c55bb5f946d789f1cdf522eabf98:",
+  "nofo_watch:changed:sm-26-014:6b1f364c9319c207",
+  "nofo_watch:changed:tx-oafc-core-2026f:ccfb879b2e4a89a0",
+  "nofo_watch:changed:allegheny-osf-2026:4bc680770e51bf16",
+  "nofo_watch:changed:samhsa-sm-26-015:5b61900e276a8c44",
+  "nofo_watch:changed:samhsa-sm-26-016:809b358859b63e15",
+  "nofo_watch:changed:dod-cdmrp-prmrp:14fbcc735d17c6ee"
 ]

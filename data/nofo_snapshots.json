@@ -1,7 +1,7 @@
 {
  "sm-26-014": {
-  "hash": "30551694c47f3c5b",
-  "len": 47681,
+  "hash": "6b1f364c9319c207",
+  "len": 47458,
   "dates": [
    "07/16/2026",
    "august 17, 2026",
@@ -21,8 +21,8 @@
   "url": "https://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e"
  },
  "tx-oafc-core-2026f": {
-  "hash": "320d2f85a271a716",
-  "len": 11374,
+  "hash": "ccfb879b2e4a89a0",
+  "len": 11400,
   "dates": [
    "may 31, 2025"
   ],
@@ -52,13 +52,13 @@
   "url": "https://www.oneohiofoundation.com/grants"
  },
  "allegheny-osf-2026": {
-  "hash": "5224426b5df6be10",
-  "len": 1696,
+  "hash": "4bc680770e51bf16",
+  "len": 1697,
   "dates": [
    "august 10, 2026",
+   "august 6, 2026",
    "august 7, 2025",
    "july 14, 2022",
-   "july 23, 2026",
    "july 30, 2026",
    "june 11, 2026",
    "june 24, 2025",
@@ -108,8 +108,8 @@
   "url": "https://www.grants.gov/search-results-detail/360366"
  },
  "samhsa-sm-26-015": {
-  "hash": "a701e7ae27c04445",
-  "len": 47556,
+  "hash": "5b61900e276a8c44",
+  "len": 47765,
   "dates": [
    "07/16/2026",
    "august 17, 2026",
@@ -118,8 +118,8 @@
   "url": "https://www.samhsa.gov/grants/grant-announcements/sm-26-015"
  },
  "samhsa-sm-26-016": {
-  "hash": "6a55f5b3c7499597",
-  "len": 47278,
+  "hash": "809b358859b63e15",
+  "len": 47055,
   "dates": [
    "06/17/2026",
    "august 17, 2026",
@@ -194,12 +194,11 @@
   "url": "https://hcai.ca.gov/document/bhsa-2026-2030-wet-plan/"
  },
  "dod-cdmrp-prmrp": {
-  "hash": "ca043acdcfb60d81",
-  "len": 6197,
+  "hash": "14fbcc735d17c6ee",
+  "len": 6200,
   "dates": [
    "august 6, 2026",
    "july 23, 2026",
-   "july 31, 2026",
    "may 8, 2026",
    "september 22, 2026"
   ],
