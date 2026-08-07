@@ -115,6 +115,19 @@ Two rails stay intact:
 - **`partner_match` / `outreach_wave` stay local (PII).** They read the enriched
   contacts export and are out of scope for CI — they never run in the workflow.
 
+## Subcontract / post-award tracking
+
+Some rows aren't ours to apply for, but MORE can be a named EBP/training partner
+on the awardees' work — the real moment is *after* the award list publishes, not
+the application deadline. Set `subcontract_path: true` + `award_date` (the award
+announcement, e.g. SM-26-014's `2026-11-15`) on those rows; optional `prep_needed`
+and `funded_list_source` note the pitch to have ready and where to find the funded
+orgs. `generate.py` then computes `outreach_by` (award_date − ~5 weeks), and the
+whole pipeline switches these rows to that date: the site shows a "Post-award play"
+treatment instead of the misleading application-deadline countdown, the `.ics`
+reminder lands on `outreach_by`, "act now" keys off it, and the row survives past
+its application deadline (it expires at award_date + 60d, not the deadline).
+
 ## Non-negotiables
 
 Primary sources only (no grantfinder/grantsights/grantarchive). Verify before a

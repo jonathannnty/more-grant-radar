@@ -39,9 +39,11 @@ COLS = [
     "portal", "accounts_needed", "match_required", "page_limit", "attachments",
     "scoring_map", "effort_hrs", "kit_type", "kit_url", "last_verified",
     "next_check", "found_date",
+    "subcontract_path", "award_date", "outreach_by", "prep_needed", "funded_list_source",
 ]
 
-DATE_FIELDS = ["deadline", "cycle_watch", "last_verified", "next_check", "found_date"]
+DATE_FIELDS = ["deadline", "cycle_watch", "last_verified", "next_check", "found_date",
+               "award_date", "outreach_by"]
 DIR_COLS = ["state", "agency", "url", "settlement_url", "notes"]
 
 
@@ -80,15 +82,46 @@ def priority(row):
     return round(row["likelihood"] * math.log10(max(acc, 10)), 1)
 
 
+OUTREACH_LEAD_DAYS = 35  # ~5 weeks before the award list, to reach the funded cohort first
+
+
+def outreach_date(r):
+    """When to start reaching the funded cohort: an explicit outreach_by if set,
+    else award_date minus the lead time (subcontract / post-award rows only)."""
+    if r.get("outreach_by"):
+        return parse_date(r["outreach_by"])
+    if r.get("subcontract_path") and r.get("award_date"):
+        return parse_date(r["award_date"]) - timedelta(days=OUTREACH_LEAD_DAYS)
+    return None
+
+
+def effective_date(r):
+    """The date that drives urgency/sorting. For a subcontract row it's the
+    outreach window (its application deadline isn't MORE's window); else the deadline."""
+    if r.get("subcontract_path"):
+        od = outreach_date(r)
+        if od:
+            return od
+    return parse_date(r.get("deadline"))
+
+
+def effective_expiry(r):
+    """When a row leaves the radar. A subcontract row lives through the post-award
+    outreach window (award_date + 60d), not its application deadline."""
+    if r.get("subcontract_path") and r.get("award_date"):
+        return parse_date(r["award_date"]) + timedelta(days=60)
+    return parse_date(r.get("deadline"))
+
+
 def sort_rows(rows, today):
     act, watch = [], []
     for r in rows:
-        d = parse_date(r.get("deadline"))
+        d = effective_date(r)
         if d and 0 <= (d - today).days <= 45:
             act.append(r)
         else:
             watch.append(r)
-    act.sort(key=lambda r: r["deadline"])
+    act.sort(key=lambda r: effective_date(r))
     watch.sort(key=lambda r: r["priority"], reverse=True)
     return act + watch
 
@@ -127,9 +160,16 @@ def vevent(row, dtstart, title, kind):
 
 
 def write_ics(row, out_dir):
-    d = row["deadline"].replace("-", "")
+    if row.get("subcontract_path") and row.get("outreach_by"):
+        d = row["outreach_by"].replace("-", "")
+        title = f"[Grant Radar] {row['name']} — outreach window (award list ~{row.get('award_date', 'TBD')})"
+        kind = "outreach"
+    else:
+        d = row["deadline"].replace("-", "")
+        title = f"[Grant Radar] {row['name']} — due"
+        kind = "due"
     ics = "\r\n".join(["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//MORE Grant Radar//EN"]
-                      + vevent(row, d, f"[Grant Radar] {row['name']} — due", "due")
+                      + vevent(row, d, title, kind)
                       + ["END:VCALENDAR", ""])
     (out_dir / f"{row['grant_id']}.ics").write_text(ics, encoding="utf-8")
 
@@ -145,7 +185,11 @@ def write_combined_ics(rows, out_path):
             "REFRESH-INTERVAL;VALUE=DURATION:PT12H", "X-PUBLISHED-TTL:PT12H"]
     n = 0
     for r in rows:
-        if r.get("deadline"):
+        if r.get("subcontract_path") and r.get("outreach_by"):
+            body += vevent(r, r["outreach_by"].replace("-", ""),
+                           f"[Grant Radar] {r['name']} — outreach window (award ~{r.get('award_date', 'TBD')})", "outreach")
+            n += 1
+        elif r.get("deadline"):
             body += vevent(r, r["deadline"].replace("-", ""), f"[Grant Radar] {r['name']} — due", "due")
             n += 1
         elif r.get("cycle_watch"):
@@ -197,7 +241,7 @@ def main():
     # Expire → archive with a reason, never silent deletion.
     active, expired = [], []
     for r in rows:
-        d = parse_date(r.get("deadline"))
+        d = effective_expiry(r)
         if d and d < today:
             expired.append(r)
         else:
@@ -216,6 +260,9 @@ def main():
 
     for r in active:
         r["priority"] = priority(r)
+        od = outreach_date(r)
+        if od:
+            r["outreach_by"] = od.isoformat()
     active = sort_rows(active, today)
 
     # Freshness check (warn — the Monday sync fixes these).
@@ -255,7 +302,7 @@ def main():
         site_rows.append({**r, "status": t.get("status") or "New", "owner": t.get("owner") or "",
                           "next_action": t.get("next_action") or "",
                           "elig_label": elig_label, "elig_note": elig_note,
-                          "reg_alert": accelerators.reg_alert(r, today),
+                          "reg_alert": "" if r.get("subcontract_path") else accelerators.reg_alert(r, today),
                           "fit_draft": accelerators.fit_draft(r),
                           "checklist": accelerators.checklist(r, today)})
     stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -287,7 +334,7 @@ def main():
         inject(gs, "// <<DIRECTORY_CSV>>", "// <<END_DIRECTORY_CSV>>",
                "var STATE_DIRECTORY_CSV = " + json.dumps(dir_csv) + ";", "state directory")
 
-    hot = [r for r in active if r.get("deadline") and (parse_date(r["deadline"]) - today).days <= 14]
+    hot = [r for r in active if effective_date(r) and (effective_date(r) - today).days <= 14]
     print(f"Done. {len(active)} active rows · {len(hot)} inside 14 days" +
           (f" ({', '.join(r['grant_id'] for r in hot)})" if hot else ""))
 

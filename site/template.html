@@ -281,6 +281,9 @@
   .checklist li b { color: var(--color-ink); font-weight: 600; }
   .draft h4 { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; color: var(--color-ink-3); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: var(--space-2); }
   .draft p { font-size: var(--text-sm); color: var(--color-ink-2); line-height: 1.55; text-wrap: pretty; border-left: var(--rule-2) solid var(--color-accent-border); padding-left: var(--space-3); }
+  .postaward h4 { font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; color: var(--color-ink-3); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: var(--space-2); }
+  .postaward p { font-size: var(--text-sm); color: var(--color-ink-2); line-height: 1.55; text-wrap: pretty; background: var(--color-line-item-wash); border-radius: var(--radius-1); padding: var(--space-2) var(--space-3); }
+  .postaward p b { color: var(--color-ink); font-weight: 600; }
 
   .right { text-align: right; min-width: 150px; display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-2); }
   .money { font-family: var(--font-mono); font-size: var(--text-lg); font-weight: 600; font-variant-numeric: tabular-nums; }
@@ -559,9 +562,15 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
     const d = new Date(iso + 'T12:00:00');
     return MONTHS[d.getMonth()] + ' ' + d.getFullYear();
   }
+  // The date that drives urgency: the outreach window for subcontract/post-award
+  // rows (their application deadline isn't MORE's window), else the deadline.
+  function effDate(r) {
+    return (r.subcontract_path && r.outreach_by) ? r.outreach_by : r.deadline;
+  }
   function runway(r) {
-    if (!r.deadline) return null;
-    return Math.round((new Date(r.deadline + 'T12:00:00') - TODAY) / 86400000);
+    const d = effDate(r);
+    if (!d) return null;
+    return Math.round((new Date(d + 'T12:00:00') - TODAY) / 86400000);
   }
 
   function pathTags(path) {
@@ -574,6 +583,12 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
 
   function dueChip(r) {
     const d = runway(r);
+    if (r.subcontract_path && r.outreach_by) {
+      const lbl = 'outreach by ' + fmtDate(r.outreach_by) + (r.award_date ? ' · award ~' + fmtDate(r.award_date) : '');
+      if (d != null && d <= 14) return '<div class="due critical">● ' + lbl + ' · ' + d + 'd</div>';
+      if (d != null && d <= 45) return '<div class="due warning">▲ ' + lbl + ' · ' + d + 'd</div>';
+      return '<div class="due quiet">◆ ' + lbl + '</div>';
+    }
     if (d != null && d <= 14) return '<div class="due critical">● due ' + fmtDate(r.deadline) + ' · ' + d + 'd</div>';
     if (d != null && d <= 45) return '<div class="due warning">▲ due ' + fmtDate(r.deadline) + ' · ' + d + 'd</div>';
     if (d != null) return '<div class="due quiet">due ' + fmtDate(r.deadline) + ', ' + r.deadline.slice(0, 4) + '</div>';
@@ -634,8 +649,12 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
     const link = band === 'act'
       ? '<a class="nofo" href="' + esc(r.nofo_url || r.source_url) + '" target="_blank" rel="noopener">Open NOFO →</a>'
       : '<a class="watchlink" href="' + esc(r.nofo_url || r.source_url) + '" target="_blank" rel="noopener">' + (r.deadline ? 'Open NOFO →' : 'Watch page →') + '</a>';
-    const calBtn = r.deadline
-      ? '<button type="button" class="cal" data-date="' + r.deadline.replace(/-/g, '') + '" data-title="' + esc(r.name) + ' due — MORE Grant Radar">Add to calendar</button>'
+    const calDate = (r.subcontract_path && r.outreach_by) ? r.outreach_by : r.deadline;
+    const calTitle = (r.subcontract_path && r.outreach_by)
+      ? esc(r.name) + ' — outreach window (award ~' + (r.award_date ? fmtDate(r.award_date) : 'TBD') + ') — MORE Grant Radar'
+      : esc(r.name) + ' due — MORE Grant Radar';
+    const calBtn = calDate
+      ? '<button type="button" class="cal" data-date="' + calDate.replace(/-/g, '') + '" data-title="' + calTitle + '">Add to calendar</button>'
       : (r.cycle_watch ? '<span class="remind">engine reminder · re-check ' + fmtMonth(r.cycle_watch) + '</span>' : '');
     const kit = r.kit_url
       ? '<a class="kitbtn" href="' + esc(r.kit_url) + '" target="_blank" rel="noopener">' + esc(r.kit_type || 'insert kit') + '</a>'
@@ -658,6 +677,12 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
       '<div class="right">' + moneyBlock(r) + dueChip(r) + statusBlock(r) + link + '</div>' +
       '<div class="details"><div class="details-inner"><div class="details-body">' +
         (r.reg_alert ? '<div class="regalert" style="grid-column:1/-1">⏱ ' + esc(r.reg_alert) + '</div>' : '') +
+        (r.subcontract_path ? '<div class="postaward" style="grid-column:1/-1"><h4>Post-award play</h4><p>' +
+          (r.award_date ? '<b>Award list ~' + esc(fmtDate(r.award_date)) + ' ' + esc(r.award_date.slice(0, 4)) + '.</b> ' : '') +
+          (r.outreach_by ? 'Start outreach to the funded cohort by <b>' + esc(fmtDate(r.outreach_by)) + '</b>. ' : '') +
+          (r.prep_needed ? esc(r.prep_needed) : '') +
+          (r.funded_list_source ? '<br><b>Funded-list source:</b> ' + esc(r.funded_list_source) : '') +
+          '</p></div>' : '') +
         detailCell('Eligibility', r.eligibility ? esc(r.eligibility) : null) +
         detailCell('Next action', r.next_action ? esc(r.next_action) : (r.notes ? esc(r.notes) : null)) +
         detailCell('Scoring fit', r.scoring_map ? esc(r.scoring_map) : null) +
