@@ -1,22 +1,22 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//MORE Grant Radar//EN
-BEGIN:VEVENT
-UID:tn-williamson-cy27-due-20260817@more-grant-radar
-DTSTAMP:20260807T120000Z
-DTSTART;VALUE=DATE:20260817
-SUMMARY:[Grant Radar] Williamson County TN opioid settlement — CY27 cycle — due
-DESCRIPTION:For-profits are explicitly eligible to apply directly\, and remediation item FF4 funds 'training providers to offer multi-modal\, evidence-informed treatment of pain' — MORE training for Williamson County clinicians is a verbatim allowable activity. Open now\, due Aug 17.\n\nPath: Direct · Priority 5.0\nhttps://chhs.mtsu.edu/wp-content/uploads/sites/83/2026/07/Williamson-CY27-RFP-APD-3.pdf
-URL:https://chhs.mtsu.edu/wp-content/uploads/sites/83/2026/07/Williamson-CY27-RFP-APD-3.pdf
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] Williamson County TN opioid settlement — CY27 cycle — due
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] Williamson County TN opioid settlement — CY27 cycle — due
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:tn-williamson-cy27-due-20260817@more-grant-radar
+DTSTAMP:20260808T120000Z
+DTSTART;VALUE=DATE:20260817
+SUMMARY:[Grant Radar] Williamson County TN opioid settlement — CY27 cycle — due
+DESCRIPTION:For-profits are explicitly eligible to apply directly\, and remediation item FF4 funds 'training providers to offer multi-modal\, evidence-informed treatment of pain' — MORE training for Williamson County clinicians is a verbatim allowable activity. Open now\, due Aug 17.\n\nPath: Direct · Priority 5.0\nhttps://chhs.mtsu.edu/wp-content/uploads/sites/83/2026/07/Williamson-CY27-RFP-APD-3.pdf
+URL:https://chhs.mtsu.edu/wp-content/uploads/sites/83/2026/07/Williamson-CY27-RFP-APD-3.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Williamson County TN opioid settlement — CY27 cycle — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Williamson County TN opioid settlement — CY27 cycle — due
+END:VALARM
+END:VEVENT
+END:VCALENDAR

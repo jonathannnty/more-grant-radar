@@ -1,22 +1,22 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//MORE Grant Radar//EN
-BEGIN:VEVENT
-UID:ks-sedgwick-wichita-2026-due-20260915@more-grant-radar
-DTSTAMP:20260807T120000Z
-DTSTART;VALUE=DATE:20260915
-SUMMARY:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) — due
-DESCRIPTION:For-profits check a box on the response form and apply directly — and RFP 26-0081's Workforce Support goal ($580K\, awards to $200K) explicitly funds 'continuing education and skill-building training' for behavioral-health clinicians. A straight MORE training proposal.\n\nPath: Direct · Priority 26.5\nhttps://www.sedgwickcounty.org/media/73833/26-0081-integrated-care.pdf
-URL:https://www.sedgwickcounty.org/media/73833/26-0081-integrated-care.pdf
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) — due
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) — due
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:ks-sedgwick-wichita-2026-due-20260915@more-grant-radar
+DTSTAMP:20260808T120000Z
+DTSTART;VALUE=DATE:20260915
+SUMMARY:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) — due
+DESCRIPTION:For-profits check a box on the response form and apply directly — and RFP 26-0081's Workforce Support goal ($580K\, awards to $200K) explicitly funds 'continuing education and skill-building training' for behavioral-health clinicians. A straight MORE training proposal.\n\nPath: Direct · Priority 26.5\nhttps://www.sedgwickcounty.org/media/73833/26-0081-integrated-care.pdf
+URL:https://www.sedgwickcounty.org/media/73833/26-0081-integrated-care.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) — due
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,22 +1,22 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//MORE Grant Radar//EN
-BEGIN:VEVENT
-UID:nih-heal-impowr-beacon-due-20261102@more-grant-radar
-DTSTAMP:20260807T120000Z
-DTSTART;VALUE=DATE:20261102
-SUMMARY:[Grant Radar] NIH HEAL IMPOWR BEACON Center (RFA-DA-27-006\, forecast) — due
-DESCRIPTION:The single capacity-building hub for scaling evidence-based practices across the chronic pain + OUD consortium — one award\, $1.75M\, and clinician training at the EBP/implementation intersection is its core duty.\n\nPath: Direct/Sub · Priority 18.7\nhttps://www.grants.gov/search-results-detail/360366
-URL:https://www.grants.gov/search-results-detail/360366
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] NIH HEAL IMPOWR BEACON Center (RFA-DA-27-006\, forecast) — due
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] NIH HEAL IMPOWR BEACON Center (RFA-DA-27-006\, forecast) — due
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:nih-heal-impowr-beacon-due-20261102@more-grant-radar
+DTSTAMP:20260808T120000Z
+DTSTART;VALUE=DATE:20261102
+SUMMARY:[Grant Radar] NIH HEAL IMPOWR BEACON Center (RFA-DA-27-006\, forecast) — due
+DESCRIPTION:The single capacity-building hub for scaling evidence-based practices across the chronic pain + OUD consortium — one award\, $1.75M\, and clinician training at the EBP/implementation intersection is its core duty.\n\nPath: Direct/Sub · Priority 18.7\nhttps://www.grants.gov/search-results-detail/360366
+URL:https://www.grants.gov/search-results-detail/360366
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH HEAL IMPOWR BEACON Center (RFA-DA-27-006\, forecast) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH HEAL IMPOWR BEACON Center (RFA-DA-27-006\, forecast) — due
+END:VALARM
+END:VEVENT
+END:VCALENDAR
