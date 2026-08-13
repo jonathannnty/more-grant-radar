@@ -1,7 +1,7 @@
 {
  "sm-26-014": {
-  "hash": "51e9afbad628211c",
-  "len": 47464,
+  "hash": "f4175512d463a754",
+  "len": 47448,
   "dates": [
    "07/16/2026",
    "august 17, 2026",
@@ -39,9 +39,16 @@
   "url": "https://simpler.grants.gov/opportunity/e779b908-4f8c-48ce-9485-1345475cdbaf"
  },
  "oneohio-c3": {
-  "hash": "2046e4c6e4e7ca27",
-  "len": 2066,
-  "dates": [],
+  "hash": "8941edb751b21e11",
+  "len": 10363,
+  "dates": [
+   "1/21/26",
+   "1/26/26",
+   "1/7/26",
+   "december 10, 2025",
+   "february 11, 2026",
+   "january 14, 2026"
+  ],
   "url": "https://www.oneohiofoundation.com/grants"
  },
  "allegheny-osf-2026": {
@@ -101,8 +108,8 @@
   "url": "https://www.grants.gov/search-results-detail/360366"
  },
  "samhsa-sm-26-015": {
-  "hash": "2d616af101d8b8e0",
-  "len": 47506,
+  "hash": "8ef0a839e33cd43f",
+  "len": 47491,
   "dates": [
    "07/16/2026",
    "august 17, 2026",
@@ -156,8 +163,8 @@
   "url": "https://comptroller.texas.gov/programs/opioid-council/docs/grants/Amended-2026-OAFC-grant-issuance-plan.pdf"
  },
  "oh-sos-passthrough-watch": {
-  "hash": "398ecf4eee385f07",
-  "len": 38024,
+  "hash": "1d12354aeae46dbf",
+  "len": 38053,
   "dates": [
    "06/12/2026",
    "06/17/2026",
