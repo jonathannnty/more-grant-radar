@@ -454,5 +454,7 @@
   "sam:new:cef7951c601f433e8d3dd4fda7c6df59:",
   "sam:new:1ed77f6ca1e34dbfaa9d87cc9f27bf78:",
   "nofo_watch:unreachable:sm-26-014:",
-  "nofo_watch:unreachable:samhsa-sm-26-015:"
+  "nofo_watch:unreachable:samhsa-sm-26-015:",
+  "nofo_watch:changed:sm-26-014:ee84c3558b6c8524",
+  "nofo_watch:changed:samhsa-sm-26-015:73c1f5311556798d"
 ]
