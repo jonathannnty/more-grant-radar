@@ -21,8 +21,8 @@
   "url": "https://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e"
  },
  "tx-oafc-core-2026f": {
-  "hash": "6bf4cb0e943f0058",
-  "len": 11444,
+  "hash": "3f78b5f2857a5044",
+  "len": 11431,
   "dates": [
    "may 31, 2025"
   ],
@@ -183,7 +183,7 @@
   "url": "https://cdmrp.health.mil/funding/prmrp"
  },
  "pcori-substance-use": {
-  "hash": "c758c066236a29f1",
+  "hash": "7e5db3a51f05b5b2",
   "len": 13374,
   "dates": [],
   "url": "https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026"
