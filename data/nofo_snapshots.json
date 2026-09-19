@@ -93,15 +93,63 @@
   "url": "https://files.simpler.grants.gov/opportunities/c33f1e5e-0354-4976-adca-9aa7240778d3/attachments/d20bcf8b-9221-47b2-93d3-2351a3eac1a4/RFA-DA-27-016-Full-Announcement.html"
  },
  "nih-heal-impowr-rm1": {
-  "hash": "e0d24c18c10e0bcf",
-  "len": 1021,
-  "dates": [],
+  "hash": "17aeaa9d9415873f",
+  "len": 13601,
+  "dates": [
+   "february 21, 2026",
+   "february 23, 2026",
+   "february 9, 2026",
+   "july 14, 2025",
+   "july 19, 2025",
+   "july 20, 2025",
+   "july 21, 2025",
+   "july 7, 2025",
+   "june 1, 2026",
+   "june 20, 2026",
+   "june 22, 2026",
+   "march 17, 2025",
+   "may 16, 2025",
+   "november 15, 2025",
+   "november 17, 2025",
+   "november 3, 2025",
+   "october 13, 2025",
+   "october 17, 2025",
+   "october 18, 2025",
+   "october 20, 2025",
+   "september 11, 2026",
+   "september 19, 2026",
+   "september 21, 2026"
+  ],
   "url": "https://www.grants.gov/search-results-detail/360048"
  },
  "nih-heal-impowr-beacon": {
-  "hash": "e0d24c18c10e0bcf",
-  "len": 1021,
-  "dates": [],
+  "hash": "17aeaa9d9415873f",
+  "len": 13601,
+  "dates": [
+   "february 21, 2026",
+   "february 23, 2026",
+   "february 9, 2026",
+   "july 14, 2025",
+   "july 19, 2025",
+   "july 20, 2025",
+   "july 21, 2025",
+   "july 7, 2025",
+   "june 1, 2026",
+   "june 20, 2026",
+   "june 22, 2026",
+   "march 17, 2025",
+   "may 16, 2025",
+   "november 15, 2025",
+   "november 17, 2025",
+   "november 3, 2025",
+   "october 13, 2025",
+   "october 17, 2025",
+   "october 18, 2025",
+   "october 20, 2025",
+   "september 11, 2026",
+   "september 19, 2026",
+   "september 21, 2026"
+  ],
   "url": "https://www.grants.gov/search-results-detail/360366"
  },
  "samhsa-sm-26-015": {
@@ -183,8 +231,8 @@
   "url": "https://cdmrp.health.mil/funding/prmrp"
  },
  "pcori-substance-use": {
-  "hash": "7e5db3a51f05b5b2",
-  "len": 13374,
+  "hash": "7699d3c8f268f85c",
+  "len": 13403,
   "dates": [],
   "url": "https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026"
  }
