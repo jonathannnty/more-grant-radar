@@ -38,12 +38,9 @@
   "url": "https://simpler.grants.gov/opportunity/e779b908-4f8c-48ce-9485-1345475cdbaf"
  },
  "oneohio-c3": {
-  "hash": "9312581ac494b67a",
-  "len": 10819,
+  "hash": "078e1f5e017243de",
+  "len": 2828,
   "dates": [
-   "1/21/26",
-   "1/26/26",
-   "1/7/26",
    "december 10, 2025",
    "february 11, 2026",
    "january 14, 2026"
@@ -51,8 +48,8 @@
   "url": "https://www.oneohiofoundation.com/grants"
  },
  "allegheny-osf-2026": {
-  "hash": "a1cd2b7168488a2a",
-  "len": 1502,
+  "hash": "baf2d3f279d1c17c",
+  "len": 1663,
   "dates": [
    "august 7, 2025",
    "july 14, 2022",
@@ -60,6 +57,8 @@
    "june 25, 2026",
    "march 12, 2026",
    "may 8, 2025",
+   "november 13, 2026",
+   "october 16, 2026",
    "september 10, 2026",
    "september 3, 2026"
   ],
