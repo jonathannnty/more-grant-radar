@@ -167,8 +167,8 @@
   "url": "https://cdmrp.health.mil/funding/prmrp"
  },
  "pcori-substance-use": {
-  "hash": "6686b3a3c70c7470",
-  "len": 13403,
+  "hash": "70d6241b72f0733f",
+  "len": 13377,
   "dates": [],
   "url": "https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026"
  },
@@ -277,8 +277,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "7f4a031fdc9c13a6",
-  "len": 3026,
+  "hash": "d60d2f0f58f4cf21",
+  "len": 2987,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -287,8 +287,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "5b2240f72a4763df",
-  "len": 2864,
+  "hash": "f79d5f3f51f922b6",
+  "len": 2917,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -459,5 +459,14 @@
   "dates": [],
   "url": "https://www.springfield-ma.gov/hhs/fileadmin/health/ORRF/Mini_Grants/Mini_Grant_RFP_-_FINAL.pdf"
  },
- "tn-oac-community-cycle4": {}
+ "tn-oac-community-cycle4": {
+  "hash": "fb3d5a9db229f187",
+  "len": 4263,
+  "dates": [
+   "december 5, 2022",
+   "july 31, 2024",
+   "june 15, 2026"
+  ],
+  "url": "https://www.tn.gov/oac/community.html"
+ }
 }
