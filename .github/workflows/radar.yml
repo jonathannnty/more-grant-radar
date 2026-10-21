@@ -7,6 +7,9 @@ name: radar
 on:
   schedule:
     - cron: "0 11 * * *"   # daily, 4am PT
+  push:                    # code changes run the radar once (bot commits don't retrigger)
+    branches: [main]
+    paths: ["scripts/**", "site/**", "agent/**", ".github/workflows/radar.yml"]
   workflow_dispatch:
     inputs:
       ai_pass:
