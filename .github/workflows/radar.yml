@@ -94,9 +94,11 @@ jobs:
           AI_PASS_MAX_USD: ${{ vars.AI_PASS_MAX_USD || '12' }}
           FORCE: ${{ github.event.inputs.ai_pass }}
         run: |
-          if [ "$(date -u +%u)" = "1" ] || [ "$FORCE" = "true" ]; then
+          # On demand without the CLI: push a file named agent/RUN_AI_PASS_NOW.
+          if [ "$(date -u +%u)" = "1" ] || [ "$FORCE" = "true" ] || [ -f agent/RUN_AI_PASS_NOW ]; then
             python scripts/ai_pass.py --today "$(date -u +%F)" \
               || python scripts/runlog.py ai_pass error --note "ai_pass crashed"
+            git rm -q --ignore-unmatch agent/RUN_AI_PASS_NOW
           else
             echo "Not Monday: AI pass runs weekly."
           fi
