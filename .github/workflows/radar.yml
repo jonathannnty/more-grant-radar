@@ -91,7 +91,7 @@ jobs:
       - name: AI verification pass
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          AI_PASS_MAX_USD: ${{ vars.AI_PASS_MAX_USD || '12' }}
+          AI_PASS_MAX_USD: ${{ vars.AI_PASS_MAX_USD || '8' }}
           FORCE: ${{ github.event.inputs.ai_pass }}
         run: |
           # On demand without the CLI: push a file named agent/RUN_AI_PASS_NOW.
