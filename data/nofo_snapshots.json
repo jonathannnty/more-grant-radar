@@ -25,21 +25,22 @@
   "url": "https://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php"
  },
  "hrsa-rcorp-fy27": {
-  "hash": "77a82cb037eecb06",
-  "len": 5929,
+  "hash": "c189668bc61d1b49",
+  "len": 4722,
   "dates": [
-   "june 5, 2026",
-   "september 30, 2026"
+   "april 9, 2027",
+   "august 1, 2027",
+   "august 21, 2026",
+   "january 11, 2027",
+   "march 10, 2027",
+   "september 1, 2027"
   ],
-  "url": "https://simpler.grants.gov/opportunity/e779b908-4f8c-48ce-9485-1345475cdbaf"
+  "url": "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
  },
  "oneohio-c3": {
-  "hash": "9312581ac494b67a",
-  "len": 10819,
+  "hash": "0dc7522dd92c795c",
+  "len": 4622,
   "dates": [
-   "1/21/26",
-   "1/26/26",
-   "1/7/26",
    "december 10, 2025",
    "february 11, 2026",
    "january 14, 2026"
@@ -47,21 +48,10 @@
   "url": "https://www.oneohiofoundation.com/grants"
  },
  "allegheny-osf-2026": {
-  "hash": "baf2d3f279d1c17c",
-  "len": 1663,
-  "dates": [
-   "august 7, 2025",
-   "july 14, 2022",
-   "june 24, 2025",
-   "june 25, 2026",
-   "march 12, 2026",
-   "may 8, 2025",
-   "november 13, 2026",
-   "october 16, 2026",
-   "september 10, 2026",
-   "september 3, 2026"
-  ],
-  "url": "https://solicitations.alleghenycounty.us/"
+  "hash": "a99e1f2ab3b8e28c",
+  "len": 204142,
+  "dates": [],
+  "url": "https://solicitations.alleghenycounty.us/wp-content/uploads/2025/09/REFERENCE-ONLY-1.-OSF-RFP_Amended-08-13-26.pdf"
  },
  "va-oaa-fy28": {
   "hash": "b987a3099df32212",
@@ -112,10 +102,10 @@
   "url": "https://www.samhsa.gov/grants/grant-announcements/sm-26-015"
  },
  "md-orf-2027-moor": {
-  "hash": "a3fac2cffe263cdf",
-  "len": 284019,
+  "hash": "11d7130bbd295a2f",
+  "len": 283331,
   "dates": [],
-  "url": "https://stopoverdose.maryland.gov/wp-content/uploads/sites/34/2026/07/MOOR-2027-ORF-NOFA-Revised.pdf"
+  "url": "https://stopoverdose.maryland.gov/wp-content/uploads/sites/34/2026/08/MOOR-2027-ORF-NOFA-Revised-v2.pdf"
  },
  "al-admh-settlement-r4": {
   "hash": "74d68f91518c8861",
@@ -124,10 +114,10 @@
   "url": "https://mh.alabama.gov/wp-content/uploads/2026/07/RFP-2027-04-Opioid-Settlement-Round-4.pdf"
  },
  "ks-sedgwick-wichita-2026": {
-  "hash": "692a788a4e2a698f",
-  "len": 246528,
+  "hash": "396438852b9417f9",
+  "len": 243628,
   "dates": [],
-  "url": "https://www.sedgwickcounty.org/media/73833/26-0081-integrated-care.pdf"
+  "url": "https://www.sedgwickcounty.org/media/73907/26-0081-integrated-care_aod.pdf"
  },
  "tn-williamson-cy27": {
   "hash": "40a9f926d69f07d2",
@@ -287,8 +277,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "7b8364d6a89e337c",
-  "len": 3074,
+  "hash": "7f4a031fdc9c13a6",
+  "len": 3026,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -297,8 +287,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "ae9a249d7bcb7d89",
-  "len": 2914,
+  "hash": "5b2240f72a4763df",
+  "len": 2864,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -331,5 +321,143 @@
    "september 1, 2027"
   ],
   "url": "https://simpler.grants.gov/opportunity/02b2d236-f596-4aca-874d-b8e364156ddc"
- }
+ },
+ "nida-pilot-feasibility-r34-par-28-093": {
+  "hash": "1effe45d9e0f52d5",
+  "len": 60882,
+  "dates": [
+   "february 16, 2027",
+   "february 16, 2028",
+   "february 16, 2029",
+   "january 16, 2027",
+   "july 16, 2027",
+   "july 16, 2028",
+   "july 16, 2029",
+   "july 17, 2029",
+   "june 16, 2027",
+   "june 16, 2028",
+   "june 16, 2029",
+   "march 16, 2027",
+   "march 16, 2028",
+   "march 16, 2029",
+   "november 16, 2027",
+   "november 16, 2028",
+   "october 1, 2025",
+   "october 16, 2027",
+   "october 16, 2028",
+   "october 19, 2026"
+  ],
+  "url": "https://files.simpler.grants.gov/opportunities/3820f2c5-4b44-47ad-8a29-9f6084d60bb2/attachments/ff757909-ab97-4782-8f40-2ba1c9731e1f/PAR-28-093-Full-Announcement.html"
+ },
+ "ojjdp-opioid-affected-youth-fy26": {
+  "hash": "4ed91c1c046f3394",
+  "len": 134909,
+  "dates": [],
+  "url": "https://www.ojp.gov/funding/docs/ojjdp-2026-172748.pdf"
+ },
+ "cdc-ncipc-rfa-ce-27-017": {
+  "hash": "b524db78aa9dd4ba",
+  "len": 5228,
+  "dates": [
+   "august 29, 2027",
+   "december 1, 2026",
+   "december 31, 2026",
+   "july 18, 2026",
+   "july 2, 2026",
+   "october 1, 2026",
+   "september 30, 2027"
+  ],
+  "url": "https://simpler.grants.gov/opportunity/04e6fd79-8789-47c8-be6f-646c0e686087"
+ },
+ "hrsa-rcorp-overdose-response-fy27": {
+  "hash": "c189668bc61d1b49",
+  "len": 4722,
+  "dates": [
+   "april 9, 2027",
+   "august 1, 2027",
+   "august 21, 2026",
+   "january 11, 2027",
+   "march 10, 2027",
+   "september 1, 2027"
+  ],
+  "url": "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
+ },
+ "hrsa-rcorp-cabh-fy27": {
+  "hash": "896f0171b2d025fd",
+  "len": 4686,
+  "dates": [
+   "april 22, 2027",
+   "august 1, 2027",
+   "august 21, 2026",
+   "january 22, 2027",
+   "march 23, 2027",
+   "september 1, 2027"
+  ],
+  "url": "https://simpler.grants.gov/opportunity/579974eb-28f3-4ba0-8741-fa1a1183cd3e"
+ },
+ "samhsa-ed-alt-ti-27-005": {
+  "hash": "eb373b5d579c8885",
+  "len": 45654,
+  "dates": [
+   "09/04/2026"
+  ],
+  "url": "https://www.samhsa.gov/grants/grants-dashboard/forecasts"
+ },
+ "ojjdp-jdtc-fy26": {
+  "hash": "d7f15c426ab29942",
+  "len": 156626,
+  "dates": [],
+  "url": "https://www.ojp.gov/funding/docs/ojjdp-2026-172741.pdf"
+ },
+ "ojjdp-family-treatment-court-fy26": {
+  "hash": "b8abadeeefc213a6",
+  "len": 165710,
+  "dates": [],
+  "url": "https://www.ojp.gov/funding/docs/ojjdp-2026-172738.pdf"
+ },
+ "va-richmond-oosur-osf-2027": {
+  "hash": "43ffb29bad222e6c",
+  "len": 147439,
+  "dates": [],
+  "url": "https://rva.gov/sites/default/files/2026-01/Request_for_Applications_%28Open_Application%29_%20UPDATED.pdf"
+ },
+ "az-ahcccs-sor-iv-passthrough": {
+  "hash": "58c6ace71cea6bce",
+  "len": 11034,
+  "dates": [
+   "06/30/2027",
+   "07/01/2026",
+   "09/29/2026",
+   "09/29/2027",
+   "09/30/2024",
+   "10/16/2022",
+   "3/14/2025",
+   "9/30/2024"
+  ],
+  "url": "https://www.azahcccs.gov/Resources/Grants/"
+ },
+ "az-state-opioid-settlement-watch": {
+  "hash": "8f65192556c0b73e",
+  "len": 9771,
+  "dates": [
+   "6/30/26",
+   "7/1/25",
+   "july 1, 2022",
+   "july 1, 2023",
+   "july 1, 2024",
+   "july 1, 2025",
+   "june 30, 2023",
+   "june 30, 2024",
+   "june 30, 2025",
+   "june 30, 2026"
+  ],
+  "url": "https://www.azag.gov/issues/opioids/one-arizona-agreement/state"
+ },
+ "ma-springfield-orrf-minigrant-2026-27": {
+  "hash": "8d5e50962e6042d7",
+  "len": 285027,
+  "dates": [],
+  "url": "https://www.springfield-ma.gov/hhs/fileadmin/health/ORRF/Mini_Grants/Mini_Grant_RFP_-_FINAL.pdf"
+ },
+ "tn-oac-community-cycle4": {}
 }
