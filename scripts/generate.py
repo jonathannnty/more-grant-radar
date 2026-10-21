@@ -283,14 +283,17 @@ def main():
     rows, coverage = src["rows"], src.get("coverage", [])
 
     # Validate — a bad row stops the build rather than shipping bad data.
-    failed = False
+    # A bad row is left off the site (never shipped) instead of taking the whole
+    # site down; the skip is recorded in data/runs.json so the health panel shows it.
+    good, skipped = [], []
     for r in rows:
         errs = validate(r, today)
         if errs:
-            failed = True
-            print(f"INVALID {r.get('grant_id', '<no id>')}: {'; '.join(errs)}")
-    if failed:
-        sys.exit("Aborting: fix data/grants.json (nothing was written).")
+            skipped.append(r.get("grant_id", "<no id>"))
+            print(f"INVALID (skipped) {r.get('grant_id', '<no id>')}: {'; '.join(errs)}")
+        else:
+            good.append(r)
+    rows = good
 
     # Expire → archive with a reason, never silent deletion.
     active, expired = [], []
@@ -357,14 +360,27 @@ def main():
     site_rows = []
     for r in active:
         t = team.get(r["grant_id"], {})
-        elig_label, elig_note = accelerators.eligibility_label(r, profile)
+        try:
+            elig_label, elig_note = accelerators.eligibility_label(r, profile)
+            extras = {"elig_label": elig_label, "elig_note": elig_note,
+                      "reg_alert": "" if r.get("subcontract_path") else accelerators.reg_alert(r, today),
+                      "fit_draft": accelerators.fit_draft(r),
+                      "checklist": accelerators.checklist(r, today)}
+        except Exception as e:  # malformed field: show the row plainly rather than crash the site
+            print(f"  ⚠ accelerators failed for {r['grant_id']}: {type(e).__name__}: {e}")
+            skipped.append(r["grant_id"] + " (partial)")
+            extras = {"elig_label": "Verify eligibility", "elig_note": "", "reg_alert": "",
+                      "fit_draft": "", "checklist": []}
         site_rows.append({**r, "status": t.get("status") or "New", "owner": t.get("owner") or "",
-                          "next_action": t.get("next_action") or "",
-                          "elig_label": elig_label, "elig_note": elig_note,
-                          "reg_alert": "" if r.get("subcontract_path") else accelerators.reg_alert(r, today),
-                          "fit_draft": accelerators.fit_draft(r),
-                          "checklist": accelerators.checklist(r, today)})
+                          "next_action": t.get("next_action") or "", **extras})
     stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+    try:
+        import runlog
+        runlog.record("generate", "ok" if not skipped else "partial",
+                      note=("skipped: " + ", ".join(skipped)) if skipped else "", rows=len(site_rows),
+                      skipped=len(skipped))
+    except Exception:
+        pass
     health = build_health(today)
     flags = read_json(ROOT / "data" / "row_flags.json", {})
     for r in site_rows:

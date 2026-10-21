@@ -105,9 +105,11 @@ jobs:
 
       # 4. Publish everything the run learned.
       - name: Rebuild site with new leads and run stamps
+        continue-on-error: true   # never lose the scan/AI results below because of a build error
         run: python scripts/generate.py --today "$(date -u +%F)"
 
       - name: Commit data and site
+        if: always()
         run: |
           git add docs data ics apps_script/setup.gs
           git reset -q data/winners.csv 2>/dev/null || true

@@ -35,7 +35,51 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import runlog  # noqa: E402
-from generate import validate  # noqa: E402
+from generate import validate, priority  # noqa: E402
+import accelerators  # noqa: E402
+
+STR_FIELDS = ("name", "funder", "program", "channel", "state", "path", "forprofit_direct", "category",
+              "heart", "eligibility", "nofo_url", "source_url", "portal", "accounts_needed",
+              "match_required", "page_limit", "attachments", "scoring_map", "kit_type", "notes")
+NUM_FIELDS = ("accessible_usd", "pool_usd", "effort_hrs")
+
+
+def normalize(row):
+    """Coerce model output to the shapes the site code expects (strings, numbers)."""
+    for k in STR_FIELDS:
+        v = row.get(k)
+        if isinstance(v, list):
+            row[k] = "; ".join(str(x) for x in v)
+        elif isinstance(v, dict):
+            row[k] = "; ".join(f"{a}: {b}" for a, b in v.items())
+        elif v is not None and not isinstance(v, str):
+            row[k] = str(v)
+    for k in NUM_FIELDS:
+        v = row.get(k)
+        if isinstance(v, str):
+            digits = re.sub(r"[^0-9.]", "", v)
+            row[k] = float(digits) if digits.count(".") == 1 else (int(digits) if digits else None)
+        elif v is not None and not isinstance(v, (int, float)):
+            row[k] = None
+    if isinstance(row.get("likelihood"), (int, float, str)):
+        try:
+            row["likelihood"] = max(1, min(5, int(round(float(row["likelihood"])))))
+        except ValueError:
+            pass
+    if isinstance(row.get("aliases"), str):
+        row["aliases"] = [row["aliases"]]
+    return row
+
+
+def smoke(row, today):
+    """Run the same per-row code the site build runs; any crash rejects the row."""
+    r = dict(row)
+    r["priority"] = priority(r)
+    accelerators.eligibility_label(r, {"gates": {}})
+    accelerators.reg_alert(r, today)
+    accelerators.fit_draft(r)
+    accelerators.checklist(r, today)
+    json.dumps(r, ensure_ascii=False)
 
 ROOT = Path(__file__).resolve().parents[1]
 GRANTS = ROOT / "data" / "grants.json"
@@ -175,6 +219,7 @@ def apply_row(src, row, today, fetched, allowed_urls, log):
                 continue
             merged[k] = v
         row = merged
+    row = normalize(row)
     row.setdefault("aliases", [])
     row.setdefault("kit_url", None)
     row["last_verified"] = today.isoformat()
@@ -184,6 +229,11 @@ def apply_row(src, row, today, fetched, allowed_urls, log):
     errs = validate(row, today)
     if errs:
         log.append(f"refused {row.get('grant_id')}: {'; '.join(errs)}")
+        return None
+    try:
+        smoke(row, today)
+    except Exception as e:
+        log.append(f"refused {row.get('grant_id')}: site build would crash ({type(e).__name__}: {e})")
         return None
     if cur:
         cur.clear()
@@ -272,6 +322,10 @@ def main():
     log, added, updated, rejected, watched, errors = [], [], [], 0, 0, 0
     tracked = sorted(r["grant_id"] for r in src["rows"])
 
+    def checkpoint():
+        GRANTS.write_text(json.dumps(src, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        LEADS.write_text(json.dumps(leads_doc, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+
     def handle(verdicts, fetched, allowed, lead=None):
         nonlocal rejected, watched
         outcome = None
@@ -300,6 +354,7 @@ def main():
             elif d == "reject":
                 rejected += 1
                 outcome = outcome or ("rejected", v.get("reason", "")[:200])
+        checkpoint()
         if lead is not None:
             lead["ai_checked"] = today.isoformat()
             if outcome:
