@@ -179,5 +179,59 @@
    "errors": 35,
    "swept": 5
   }
+ },
+ {
+  "phase": "scan_grants_gov",
+  "ts": "2026-10-21T00:46:30Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "queries": 23,
+   "unknown": 35
+  }
+ },
+ {
+  "phase": "scan_sam",
+  "ts": "2026-10-21T00:46:31Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "relevant": 0
+  }
+ },
+ {
+  "phase": "scan_states",
+  "ts": "2026-10-21T00:46:42Z",
+  "status": "ok",
+  "note": "119/138 pages read · tracker list updated 2026-08-02",
+  "counts": {
+   "pages": 138,
+   "read": 119,
+   "unreachable": 19,
+   "new_links": 0,
+   "tracker_open": 18
+  }
+ },
+ {
+  "phase": "nofo_watch",
+  "ts": "2026-10-21T00:46:52Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "checked": 30,
+   "changed": 0,
+   "unreachable": 0
+  }
+ },
+ {
+  "phase": "promote_leads",
+  "ts": "2026-10-21T00:46:52Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "added": 0,
+   "active": 47,
+   "expired": 0
+  }
  }
 ]
