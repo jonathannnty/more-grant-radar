@@ -21,7 +21,7 @@ import io
 import json
 import math
 import sys
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
@@ -209,6 +209,57 @@ def load_team(path):
         return {r["grant_id"].strip(): r for r in csv.DictReader(f) if r.get("grant_id")}
 
 
+def read_json(path, default):
+    try:
+        return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
+    except (json.JSONDecodeError, OSError):
+        return default
+
+
+# Every automated job and how old its last run may be before the site calls it stalled.
+JOBS = [
+    ("scan_grants_gov", "Federal grants · grants.gov", 2),
+    ("scan_sam", "Federal contracts · SAM.gov", 2),
+    ("scan_states", "States, counties & settlement funds", 2),
+    ("nofo_watch", "Tracked pages · deadline changes", 2),
+    ("promote_leads", "New-lead intake", 2),
+    ("ai_pass", "AI verification + state sweep · weekly", 8),
+    ("winners", "Funded-cohort feed · monthly", 32),
+]
+
+
+def build_health(today):
+    """Latest run of every job from data/runs.json, judged against its cadence."""
+    runs = read_json(ROOT / "data" / "runs.json", [])
+    latest = {}
+    for r in runs:
+        latest[r.get("phase")] = r
+    out = []
+    for phase, label, max_age in JOBS:
+        r = latest.get(phase)
+        if not r:
+            out.append({"phase": phase, "label": label, "last": None, "status": "never", "note": "",
+                        "counts": {}, "max_age": max_age, "ok": False})
+            continue
+        last = r["ts"][:10]
+        age = (today - date.fromisoformat(last)).days
+        ok = r.get("status") in ("ok", "partial") and age <= max_age
+        out.append({"phase": phase, "label": label, "last": r["ts"], "status": r.get("status"),
+                    "note": r.get("note", ""), "counts": r.get("counts", {}), "max_age": max_age, "ok": ok})
+    return out
+
+
+def coverage_stamp(c, health, fallback):
+    h = next((x for x in health if x["phase"] == c.get("phase")), None)
+    if not h:
+        return fallback
+    if not h["last"]:
+        return "not running yet"
+    counts = ", ".join(f"{k.replace('_', ' ')} {v}" for k, v in list(h["counts"].items())[:3])
+    flag = "" if h["ok"] else " · ⚠ overdue" if h["status"] != "skipped" else " · ⚠ skipped"
+    return f"last run {h['last'][:10]}" + (f" · {counts}" if counts else "") + flag
+
+
 def inject(path, start, end, payload, label):
     text = path.read_text(encoding="utf-8")
     i, j = text.find(start), text.find(end)
@@ -249,14 +300,19 @@ def main():
     if expired:
         arch = ROOT / "data" / "archive.csv"
         new_file = not arch.exists()
+        already = set()
+        if not new_file:
+            with arch.open(encoding="utf-8", newline="") as f:
+                already = {(r.get("grant_id"), r.get("deadline")) for r in csv.DictReader(f)}
+        fresh = [r for r in expired if (r["grant_id"], r.get("deadline") or "") not in already]
         with arch.open("a", encoding="utf-8", newline="") as f:
             w = csv.DictWriter(f, fieldnames=COLS + ["archived_on", "reason"], extrasaction="ignore", lineterminator="\n")
             if new_file:
                 w.writeheader()
-            for r in expired:
+            for r in fresh:  # once per (row, cycle): the daily rebuild must not re-append
                 w.writerow({**{c: r.get(c, "") for c in COLS}, "archived_on": today.isoformat(), "reason": "expired"})
-        ids = ", ".join(r["grant_id"] for r in expired)
-        print(f"  → archived {len(expired)} expired row(s): {ids}")
+        ids = ", ".join(r["grant_id"] for r in fresh)
+        print(f"  → archived {len(fresh)} newly expired row(s){': ' + ids if ids else ''}")
 
     for r in active:
         r["priority"] = priority(r)
@@ -281,7 +337,7 @@ def main():
     ics_dir.mkdir(exist_ok=True)
     for old in ics_dir.glob("*.ics"):
         old.unlink()
-    dated = [r for r in active if r.get("deadline")]
+    dated = [r for r in active if r.get("deadline") or (r.get("subcontract_path") and r.get("outreach_by"))]
     for r in dated:
         write_ics(r, ics_dir)
     print(f"  ✓ ics/ — {len(dated)} calendar file(s)")
@@ -306,9 +362,24 @@ def main():
                           "fit_draft": accelerators.fit_draft(r),
                           "checklist": accelerators.checklist(r, today)})
     stamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+    health = build_health(today)
+    flags = read_json(ROOT / "data" / "row_flags.json", {})
+    for r in site_rows:
+        if r["grant_id"] in flags:
+            r["page_flag"] = flags[r["grant_id"]]
+    leads_doc = read_json(ROOT / "data" / "leads.json", {"leads": []})
+    site_leads = [l for l in leads_doc.get("leads", []) if l.get("status") == "new"]
+    site_leads.sort(key=lambda l: (l.get("deadline") or "9999", -len(l.get("fit_terms") or [])))
+    closed_recent = sum(1 for l in leads_doc.get("leads", []) if l.get("status") == "expired")
+    for c in coverage:
+        c["stamp"] = coverage_stamp(c, health, c.get("stamp", ""))
     payload = "const RADAR = " + json.dumps(
-        {"today": today.isoformat(), "rows": site_rows, "coverage": coverage},
+        {"today": today.isoformat(),
+         "built_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+         "rows": site_rows, "coverage": coverage, "health": health,
+         "leads": site_leads, "leads_closed": closed_recent},
         ensure_ascii=False) + ";"
+    print(f"  ✓ payload: {len(site_leads)} open leads · health for {len(health)} jobs")
     # Optional live feed URL (Apps Script Web App /exec) — one line in data/feed_url.txt.
     feed_file = ROOT / "data" / "feed_url.txt"
     feed_url = feed_file.read_text(encoding="utf-8").strip() if feed_file.exists() else ""

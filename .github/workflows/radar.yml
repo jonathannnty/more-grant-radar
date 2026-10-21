@@ -1,14 +1,18 @@
-# Self-updating radar — one daily job, two phases (Refresh, then Detect).
-# Phase 1 commits the freshly generated site so it publishes even if a later
-# detection step errors; Phase 2 sweeps for new/changed opportunities and queues
-# them in a GitHub Issue for human verification. grants.json is never staged.
-# See specs/2026-08-05-self-updating-radar-design.md.
+# Autonomous radar (v4): scan, promote, verify, publish. No human step.
+# See specs/2026-10-20-autonomous-radar-design.md. v3 queued finds in GitHub
+# Issues for a human; nobody triaged them for two months. Now every find lands on
+# the site the same day, and the weekly AI pass verifies it into grants.json.
 name: radar
 
 on:
   schedule:
-    - cron: "0 11 * * *"
+    - cron: "0 11 * * *"   # daily, 4am PT
   workflow_dispatch:
+    inputs:
+      ai_pass:
+        description: "Run the AI verification pass now (normally Mondays)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -21,6 +25,7 @@ concurrency:
 jobs:
   radar:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -28,79 +33,88 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: "3.x"
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet pypdf anthropic
 
       - name: Configure git bot identity
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
 
-      # ── Phase 1: Refresh (always) ─────────────────────────────────────
-      # Rebuild docs/, data/radar.csv, ics/ so time-sensitive fields stay
-      # accurate. grants.json is read-only here.
-      - name: Phase 1 — regenerate site
+      # 1. Refresh: republish first so countdowns stay right even if a scan fails.
+      - name: Refresh site
         run: python scripts/generate.py --today "$(date -u +%F)"
 
-      - name: Phase 1 — commit + push generated files
+      - name: Commit refreshed site
         run: |
-          git add docs data/radar.csv ics data/nofo_snapshots.json
+          git add docs data/radar.csv data/archive.csv ics apps_script/setup.gs
           git diff --cached --quiet || git commit -m "radar: refresh site $(date -u +%F)"
           git push
 
-      # ── Phase 2: Detect (surface for review) ──────────────────────────
-      # Each scanner also writes a findings JSON (the shared contract) into
-      # finds/. Fetch errors are modelled as findings, not workflow failures.
-      - name: Phase 2 — run detection sweeps
+      # 2. Scan. Each scanner writes finds/*.json and a run stamp. A crashing
+      # scanner is recorded as an error stamp (shown on the site), never fatal.
+      - name: Scan federal, state, county and settlement sources
         env:
           SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
         run: |
           mkdir -p finds
-          python scripts/scan_grants_gov.py --json finds/grants_gov.json
+          python scripts/scan_grants_gov.py --json finds/grants_gov.json > /dev/null \
+            || python scripts/runlog.py scan_grants_gov error --note "scanner crashed"
           if [ -n "$SAM_API_KEY" ]; then
-            python scripts/scan_sam.py --json finds/sam.json
+            python scripts/scan_sam.py --json finds/sam.json > /dev/null \
+              || python scripts/runlog.py scan_sam error --note "scanner crashed"
           else
-            echo "SAM_API_KEY not set — skipping SAM sweep."
+            python scripts/runlog.py scan_sam skipped --note "no SAM_API_KEY secret"
           fi
-          python scripts/nofo_watch.py --update --json finds/nofo.json
+          python scripts/scan_states.py --out finds \
+            || python scripts/runlog.py scan_states error --note "scanner crashed"
+          python scripts/nofo_watch.py --update --json finds/nofo.json > /dev/null \
+            || python scripts/runlog.py nofo_watch error --note "scanner crashed"
           if [ "$(date -u +%d)" = "01" ]; then
-            python scripts/winners_feed.py --json finds/winners.json
-          else
-            echo "Not the 1st of the month — skipping winners feed."
+            if python scripts/winners_feed.py --json finds/winners.json > /dev/null; then
+              python scripts/runlog.py winners ok
+            else
+              python scripts/runlog.py winners error --note "winners feed crashed"
+            fi
           fi
 
-      # Aggregate + dedup vs data/seen_finds.json. The script prints
-      # has_findings and title to $GITHUB_OUTPUT and updates seen_finds.json
-      # in the working copy (committed only after the issue is created below).
-      - name: Phase 2 — aggregate findings
-        id: review
-        run: |
-          python scripts/radar_review.py \
-            --finds finds \
-            --seen data/seen_finds.json \
-            --out issue_body.md \
-            --today "$(date -u +%F)"
+      - name: Promote finds to leads
+        run: python scripts/promote_leads.py --finds finds --today "$(date -u +%F)"
 
-      # Only when there are un-seen deltas. Ensure the label exists first —
-      # gh issue create --label fails on a missing label.
-      - name: Phase 2 — open review issue
-        if: steps.review.outputs.has_findings == 'true'
+      # 3. Verify: Mondays, or on demand. Needs the ANTHROPIC_API_KEY secret.
+      # Without it, ai_pass.py records "skipped" and the site's banner says so.
+      - name: AI verification pass
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AI_PASS_MAX_USD: ${{ vars.AI_PASS_MAX_USD || '12' }}
+          FORCE: ${{ github.event.inputs.ai_pass }}
+        run: |
+          if [ "$(date -u +%u)" = "1" ] || [ "$FORCE" = "true" ]; then
+            python scripts/ai_pass.py --today "$(date -u +%F)" \
+              || python scripts/runlog.py ai_pass error --note "ai_pass crashed"
+          else
+            echo "Not Monday: AI pass runs weekly."
+          fi
+
+      # 4. Publish everything the run learned.
+      - name: Rebuild site with new leads and run stamps
+        run: python scripts/generate.py --today "$(date -u +%F)"
+
+      - name: Commit data and site
+        run: |
+          git add docs data ics apps_script/setup.gs
+          git reset -q data/winners.csv 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "radar: scan + leads $(date -u +%F)"
+          git pull --rebase -q || true
+          git push
+
+      # Idempotent cleanup: the v3 review Issues are obsolete. Close any still open.
+      - name: Close obsolete v3 review issues
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ISSUE_TITLE: ${{ steps.review.outputs.title }}
         run: |
-          gh label create radar-review \
-            --color BFD4F2 \
-            --description "Radar sweep findings awaiting human verification" || true
-          gh issue create \
-            --title "$ISSUE_TITLE" \
-            --body-file issue_body.md \
-            --label radar-review
-
-      # Runs AFTER the issue step: if issue-create failed the job stops here,
-      # so seen_finds stays unwritten and the finds resurface next run. Never
-      # stages grants.json.
-      - name: Phase 2 — commit + push seen state and NOFO baseline
-        run: |
-          git add data/seen_finds.json data/nofo_snapshots.json
-          git diff --cached --quiet || git commit -m "radar: update seen finds + NOFO baseline $(date -u +%F)"
-          git push
+          for n in $(gh issue list --label radar-review --state open --limit 200 --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "Superseded by the autonomous radar (v4). New finds now appear on the site the same day under \"Found by the radar\" and are verified weekly. Nothing to triage here." || true
+          done

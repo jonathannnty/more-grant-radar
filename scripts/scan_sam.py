@@ -22,6 +22,12 @@ from pathlib import Path
 API = "https://api.sam.gov/opportunities/v2/search"
 NAICS = ["611430", "621420", "611710", "624190"]
 PSC = {"U008", "U009", "U099", "G004"}
+# NAICS 611430 alone surfaced fiber-optic and Dale Carnegie courses (104 junk finds in
+# v3). A contract only counts if its title is in MORE's world.
+import re
+TITLE_GATE = re.compile(r"(behavioral|substance|opioid|addiction|mental health|counsel|clinic|"
+                        r"pain|mindful|recovery|treatment|psych|suicide|overdose|wellness|"
+                        r"resilien|stress|trauma|ptsd|medical training|health care training)", re.I)
 
 
 def write_findings(path, source, generated, findings):
@@ -66,6 +72,8 @@ def main():
                   file=sys.stderr)
             continue
         for opp in data.get("opportunitiesData", []):
+            if not TITLE_GATE.search(opp.get("title") or ""):
+                continue
             psc = opp.get("classificationCode") or ""
             print(f"- **{opp.get('solicitationNumber')}** — {opp.get('title')}")
             print(f"  {opp.get('fullParentPathName')} · posted {opp.get('postedDate')} · "
@@ -87,6 +95,9 @@ def main():
 
     if args.json_path:
         write_findings(args.json_path, "sam", today, findings)
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import runlog
+    runlog.record("scan_sam", "ok", relevant=len(findings))
 
 
 if __name__ == "__main__":

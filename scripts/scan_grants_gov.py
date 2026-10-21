@@ -84,7 +84,7 @@ def write_findings(path, source, generated, findings):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--rows", type=int, default=40)
-    ap.add_argument("--statuses", default="posted",
+    ap.add_argument("--statuses", default="forecasted|posted",
                     help='grants.gov oppStatuses filter (default "posted" = actionable; '
                          'pass "forecasted|posted" to include forecasts)')
     ap.add_argument("--json", dest="json_path", metavar="PATH",
@@ -140,6 +140,9 @@ def main():
             "fingerprint": "",
         } for q, h in sorted(fresh, key=lambda x: x[1].get("closeDate") or "9999")]
         write_findings(args.json_path, "grants_gov", date.today().isoformat(), findings)
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import runlog
+    runlog.record("scan_grants_gov", "ok", queries=len(QUERIES), unknown=len(fresh))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,61 @@
+[
+ {
+  "phase": "scan_states",
+  "ts": "2026-10-20T23:57:44Z",
+  "status": "ok",
+  "note": "122/138 pages read · tracker list updated 2026-08-02",
+  "counts": {
+   "pages": 138,
+   "read": 122,
+   "unreachable": 16,
+   "new_links": 23,
+   "tracker_open": 18
+  }
+ },
+ {
+  "phase": "scan_grants_gov",
+  "ts": "2026-10-21T00:04:41Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "queries": 23,
+   "unknown": 37
+  }
+ },
+ {
+  "phase": "promote_leads",
+  "ts": "2026-10-21T00:05:24Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "added": 63,
+   "active": 50,
+   "expired": 13
+  }
+ },
+ {
+  "phase": "promote_leads",
+  "ts": "2026-10-21T00:07:48Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "added": 0,
+   "active": 49,
+   "expired": 0
+  }
+ },
+ {
+  "phase": "ai_pass",
+  "ts": "2026-10-21T00:11:39Z",
+  "status": "ok",
+  "note": "$1.02 spent · swept ",
+  "counts": {
+   "added": 3,
+   "updated": 0,
+   "rejected": 0,
+   "watch": 1,
+   "errors": 0,
+   "swept": 0
+  }
+ }
+]

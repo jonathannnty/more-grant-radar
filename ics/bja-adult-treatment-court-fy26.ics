@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:bja-adult-treatment-court-fy26-due-20261030@more-grant-radar
+DTSTAMP:20261020T120000Z
+DTSTART;VALUE=DATE:20261030
+SUMMARY:[Grant Radar] BJA Adult Treatment Court Program (FY26) — due
+DESCRIPTION:About $49M for courts and counties to plan\, run\, or expand adult treatment courts. Clinical training for court treatment providers is a natural budget line\, so MORE gets in through a county or court applicant.\n\nPath: Line-item · Priority 12.8\nhttps://bja.ojp.gov/funding/opportunities/o-bja-2026-172721
+URL:https://bja.ojp.gov/funding/opportunities/o-bja-2026-172721
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] BJA Adult Treatment Court Program (FY26) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] BJA Adult Treatment Court Program (FY26) — due
+END:VALARM
+END:VEVENT
+END:VCALENDAR

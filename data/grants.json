@@ -14,32 +14,45 @@
    "path": "Line-item",
    "forprofit_direct": "N",
    "category": "MAT-MOUD",
-   "accessible_usd": 9400000,
+   "accessible_usd": 1000000,
    "pool_usd": 94000000,
-   "deadline": "2026-08-17",
-   "cycle_watch": null,
+   "deadline": null,
+   "cycle_watch": "2026-11-16",
    "subcontract_path": true,
    "award_date": "2026-11-15",
    "prep_needed": "MORE-for-CCBHC one-pager tied to Allowable Activities #3/#10; pull the funded-org contact list once the award list publishes.",
    "funded_list_source": "SAMHSA grant awards (samhsa.gov/grants) + USASpending.gov — search CCBHC-PDI/IA FY26 grantees; check monthly from ~Nov 2026.",
-   "likelihood": 3,
-   "heart": "The real play here is post-award, not the Aug 17 deadline. MORE can't apply directly, and cold outreach to unknown applicants this week is low-yield — instead reach the ~94 funded CCBHCs directly once SAMHSA's award list publishes (~Nov 15) as their EBP/training partner under Allowable Activities #3/#10. Pre-name MORE in a known applicant's Section C before 8/17 only where we already have the relationship.",
-   "eligibility": "Statutorily limited: community-based BH nonprofits; local-government behavioral health authorities; IHS/tribal orgs; Urban Indian Organizations. Must be Medicaid-enrolled and serve ≥200 unduplicated clients/yr. For-profits cannot apply.",
-   "nofo_url": "https://www.samhsa.gov/grants/grant-announcements/sm-26-014",
-   "source_url": "https://www.grants.gov/search-results-detail/360977",
-   "portal": "Grants.gov (partners apply; MORE rides as line item)",
-   "accounts_needed": "Partner needs SAM/UEI + Grants.gov + eRA Commons (NOFO: register ≥6 weeks before deadline)",
+   "likelihood": 2,
+   "heart": "The application window closed 2026-08-17 and SAMHSA's FY27 forecast has no CCBHC successor. What's left is the post-award play: about 94 new CCBHCs are expected to be funded around Nov 15, 2026, with up to $1M/yr for up to 4 years. Allowable Activity #3 (training partnerships, continuing education) lets them buy MORE training as a line item.",
+   "eligibility": "Statutorily limited to community-based behavioral health non-profits; local government BH authorities; IHS/tribal orgs; Urban Indian Organizations. For-profits cannot apply.",
+   "nofo_url": "https://www.samhsa.gov/sites/default/files/grants/pdf/fy-2026-ccbhc-pdi-sm-26-014.pdf",
+   "source_url": "https://www.samhsa.gov/grants/grant-announcements/sm-26-014",
+   "portal": "Grants.gov (closed); post-award outreach to grantees",
+   "accounts_needed": null,
    "match_required": "No",
-   "page_limit": "Project Narrative 15 pp (over = not reviewed); Abstract 1 pp; timeline attachment ≤2 pp",
-   "attachments": "16 attachments incl. letters of commitment (#1), licensure + Medicaid proof (#11 — application not reviewed without it), state BH authority approval letter (#16)",
-   "scoring_map": "Criterion C names the EBP (5 pts, ~1 page — the MORE slot) + Criterion B implementation/staffing (35 pts, mandated workforce training on evidence-based non-pharmacological interventions); +5 priority pts for the 100 highest overdose-death counties (NOFO Appendix C) — that county list is the campaign targeting list",
-   "effort_hrs": 20,
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": null,
+   "effort_hrs": null,
    "kit_type": "line-item-kit",
    "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
-   "last_verified": "2026-08-04",
-   "next_check": "2026-08-06",
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
    "found_date": "2026-08-01",
-   "notes": "Award up to $1M/yr for up to 4 yrs; expected award 2026-11-15. Companion NOFOs same 8/17 deadline: SM-26-015 (117 existing clinics) and SM-26-016 (12 state planning grants) — tracked as separate rows; ONE insert-kit campaign covers all three. Campaign go/no-go = open decision #5."
+   "notes": "CLOSED 2026-08-17. NOFO: Expected Award Date 2026-11-15, Expected Start Date 2026-11-30, project period 11/30/2026–11/29/2030. On 2026-11-16, check SAMHSA grant awards / USASpending for FY26 CCBHC-PDI grantees and start outreach. Check the FY27 forecast dashboard again for any CCBHC successor (none as of the 09/04/2026 update). Companion rows SM-26-015 and SM-26-016 had the same 8/17 deadline and are likely closed too; re-verify them separately.",
+   "evidence": {
+    "deadline_quote": "Application Due Date: Monday, August 17, 2026 | NOFO: Expected Award Date: November 15, 2026",
+    "amount_quote": "Anticipated Total Available Funding: $94,000,000 ... Anticipated Number of Awards: 94 ... Up to $1,000,000 per year per award",
+    "eligibility_quote": "Eligibility is statutorily limited to community-based behavioral health non-profit organizations",
+    "fetched": [
+     "https://www.samhsa.gov/grants/grant-announcements/sm-26-014",
+     "https://www.samhsa.gov/sites/default/files/grants/pdf/fy-2026-ccbhc-pdi-sm-26-014.pdf",
+     "https://www.samhsa.gov/grants/grants-dashboard",
+     "https://www.samhsa.gov/grants/grants-dashboard/forecasts",
+     "https://www.grants.gov/search-results-detail/360977 (did not render; JS shell only)"
+    ]
+   },
+   "verified_by": "ai_pass"
   },
   {
    "grant_id": "pa-27-100",
@@ -56,10 +69,10 @@
    "category": "SUD",
    "accessible_usd": 400000,
    "pool_usd": null,
-   "deadline": "2026-09-05",
+   "deadline": "2027-01-05",
    "cycle_watch": null,
    "likelihood": 5,
-   "heart": "The one big pot built for for-profits — R&D money for the MORE app and training platform. Eric wants the ~$2M path; Phase I is the door, first standard due date Sep 5.",
+   "heart": "The one big pot built for for-profits — R&D money for the MORE app and training platform. Eric wants the ~$2M path; Phase I is the door. The Sep 5 date passed; the next standard due date is Jan 5, 2027.",
    "eligibility": "US for-profit small business, ≤500 employees, majority US-owned — More Therapy qualifies as-is.",
    "nofo_url": "https://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e",
    "source_url": "https://www.grants.gov/search-results-detail/359671",
@@ -72,10 +85,16 @@
    "effort_hrs": 120,
    "kit_type": "direct-template",
    "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
-   "last_verified": "2026-08-04",
-   "next_check": "2026-08-06",
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
    "found_date": "2026-08-01",
-   "notes": "Dr. Garland owns; Phase I outline this week. Stated due date is Sep 5 (a Saturday; NIH next-business-day rollover lands Tue Sep 8 — plan for Sep 5). Earliest submission 2026-08-05. Later standard dates: 2027-01-05, 2027-04-05; announcement expires 2027-04-06. NIH Guide URL PA-27-100.html 404s — simpler.grants.gov link is the live authoritative text."
+   "notes": "Next standard due dates 2027-01-05 and 2027-04-05 (announcement expires after Apr 5, 2027 per grants.gov close date). Dr. Garland owns. SBIR requires SAM/UEI, eRA Commons and SBA company registration well ahead.",
+   "evidence": {
+    "deadline_quote": "Application Due Dates: September 05, 2026 * | January 05, 2027 * | April 05, 2027 *",
+    "fetched": [
+     "https://www.grants.gov/search-results-detail/359671"
+    ]
+   }
   },
   {
    "grant_id": "tx-oafc-core-2026f",
@@ -288,9 +307,10 @@
   {
    "grant_id": "nih-heal-impowr-rm1",
    "aliases": [
+    "RFA-DA-28-011",
     "RFA-DA-27-001"
    ],
-   "name": "NIH HEAL IMPOWR — chronic pain + OUD health systems (RFA-DA-27-001, forecast)",
+   "name": "NIH HEAL IMPOWR Research Centers — chronic pain + OUD (RFA-DA-28-011)",
    "funder": "NIH / NIDA (HEAL Initiative)",
    "program": "IMPOWR Health Systems, RM1 team award",
    "channel": "Federal-discretionary",
@@ -298,14 +318,14 @@
    "path": "Direct/Sub",
    "forprofit_direct": "Y",
    "category": "pain",
-   "accessible_usd": null,
-   "pool_usd": null,
-   "deadline": "2026-11-02",
+   "accessible_usd": 900000,
+   "pool_usd": 12000000,
+   "deadline": "2027-01-26",
    "cycle_watch": null,
    "likelihood": 4,
    "heart": "Health-systems implementation of integrative interventions for co-occurring chronic pain + OUD — MORE's exact dyad and evidence space, and clinician training is a core implementation strategy this NOFO funds. Team with Garland/U. Utah.",
    "eligibility": "Forecast lists small businesses AND for-profit organizations as eligible.",
-   "nofo_url": null,
+   "nofo_url": "https://www.grants.gov/search-results-detail/360048",
    "source_url": "https://www.grants.gov/search-results-detail/360048",
    "portal": "Grants.gov / NIH ASSIST",
    "accounts_needed": "SAM/UEI + eRA Commons + Grants.gov",
@@ -316,17 +336,26 @@
    "effort_hrs": 120,
    "kit_type": null,
    "kit_url": null,
-   "last_verified": "2026-08-04",
-   "next_check": "2026-08-18",
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
    "found_date": "2026-08-04",
-   "notes": "FORECAST ONLY — est. due 2026-11-02, est. start 2027-04-01; the estimated NOFO posting date (2026-04-20) has already slipped (NIH Guide RFA-DA-27-001 404s) so dates may move. No dollar amounts stated. RM1 = large multi-component team award; realistic play is partnering with academic collaborators."
+   "notes": "POSTED (was a forecast; renumbered RFA-DA-28-011). Due 2027-01-26, 5:00 PM local; no LOI date stated; earliest start Dec 2027. Direct costs capped at $900,000/yr over 5 years; HEAL intends $12M in FY2027 for 6-8 awards. For-profits eligible; foreign orgs not. RM1 = multi-component center: realistic play is Dr. Garland/UCSD as lead or a component with an academic health-system partner.",
+   "evidence": {
+    "deadline_quote": "Application Due Dates ... January 26, 2027 · grants.gov close date Jan 26, 2027",
+    "amount_quote": "Direct costs are limited to $900,000 per year over the 5-year project period. The HEAL Initiative intends to commit $12,000,000 in FY 2027 to fund six-eight awards.",
+    "eligibility_quote": "For-Profit Organizations: Small Businesses; For-Profit Organizations (Other than Small Businesses)",
+    "fetched": [
+     "https://www.grants.gov/search-results-detail/360048"
+    ]
+   }
   },
   {
    "grant_id": "nih-heal-impowr-beacon",
    "aliases": [
+    "RFA-DA-28-012",
     "RFA-DA-27-006"
    ],
-   "name": "NIH HEAL IMPOWR BEACON Center (RFA-DA-27-006, forecast)",
+   "name": "NIH HEAL IMPOWR BEACON Coordination Center (RFA-DA-28-012)",
    "funder": "NIH / NIDA (HEAL Initiative)",
    "program": "BEACON network coordination + capacity-building center (U2C; ALN 93.279)",
    "channel": "Federal-discretionary",
@@ -334,14 +363,14 @@
    "path": "Direct/Sub",
    "forprofit_direct": "Y",
    "category": "pain",
-   "accessible_usd": 1750000,
-   "pool_usd": 1750000,
-   "deadline": "2026-11-02",
+   "accessible_usd": 1500000,
+   "pool_usd": 2500000,
+   "deadline": "2027-01-26",
    "cycle_watch": null,
    "likelihood": 3,
    "heart": "The single capacity-building hub for scaling evidence-based practices across the chronic pain + OUD consortium — one award, $1.75M, and clinician training at the EBP/implementation intersection is its core duty.",
    "eligibility": "Forecast lists for-profit organizations as eligible.",
-   "nofo_url": null,
+   "nofo_url": "https://www.grants.gov/search-results-detail/360366",
    "source_url": "https://www.grants.gov/search-results-detail/360366",
    "portal": "Grants.gov",
    "accounts_needed": "SAM/UEI + eRA Commons + Grants.gov",
@@ -352,10 +381,17 @@
    "effort_hrs": 100,
    "kit_type": null,
    "kit_url": null,
-   "last_verified": "2026-08-04",
-   "next_check": "2026-08-18",
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
    "found_date": "2026-08-04",
-   "notes": "FORECAST ONLY (est. due 2026-11-02; NOFO overdue — est. posting 2026-04-20 passed). Funds the network coordination center, NOT the companion implementation trials; single award = competitive."
+   "notes": "POSTED (renumbered RFA-DA-28-012). Due 2027-01-26; one award in FY2027 (~$2.5M total); budgets capped at $1.50M direct/yr, up to 5 years. Multi-Project (M) application instructions. Funds the network's coordination/capacity center, not the trials.",
+   "evidence": {
+    "deadline_quote": "Application Due Dates ... January 26, 2027 · grants.gov close date Jan 26, 2027",
+    "amount_quote": "Application budgets are limited to $1.50 million direct costs per year ... intends to commit an estimated total of $2.5 million to fund one award in FY2027",
+    "fetched": [
+     "https://www.grants.gov/search-results-detail/360366"
+    ]
+   }
   },
   {
    "grant_id": "samhsa-sm-26-015",
@@ -782,74 +818,424 @@
    "next_check": "2026-08-11",
    "found_date": "2026-08-04",
    "notes": "Opened 2026-08-04. LOI due 2026-09-09 (required gate); full application 2027-01-12; up to $12M total direct costs/award over 5 yrs, ~$60M available; awards ~Aug 2027, start ~Dec 2027. Applicant Town Hall 2026-08-18. Garland-led CER trial; likely needs an academic site partner. Companion 'Broad Pragmatic Studies' PFA (same dates) has a 'Management of Neuropathic Pain' topic — a fallback framing if the pain phenotype fits."
+  },
+  {
+   "grant_id": "nccih-mind-body-ewb-par-25-449",
+   "aliases": [
+    "PAR-25-449"
+   ],
+   "name": "NCCIH — Mind and Body Interventions via Emotional Well-Being (R61/R33, PAR-25-449)",
+   "funder": "NIH / NCCIH",
+   "program": "R61/R33 exploratory/developmental clinical trial",
+   "channel": "Federal-discretionary",
+   "state": "US",
+   "path": "Direct/Sub",
+   "forprofit_direct": "Y",
+   "category": "pain",
+   "accessible_usd": 475000,
+   "pool_usd": 2000000,
+   "deadline": "2027-02-08",
+   "cycle_watch": null,
+   "likelihood": 4,
+   "heart": "NCCIH wants trials of mind and body practices, naming mindfulness meditation first, that work through emotional well-being. MORE's positive-affect and savoring mechanism is a direct match, and for-profits can apply.",
+   "eligibility": "Higher-ed, nonprofits, for-profit organizations (small businesses and others), governments; foreign organizations not eligible.",
+   "nofo_url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-449.html",
+   "source_url": "https://www.grants.gov/search-results-detail/359155",
+   "portal": "Grants.gov / eRA ASSIST",
+   "accounts_needed": "SAM/UEI, Grants.gov, eRA Commons",
+   "match_required": "None",
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": "R61 milestones must justify the R33 phase; frame MORE's emotional well-being mechanism (savoring/positive affect) as the target.",
+   "effort_hrs": 160,
+   "kit_type": "direct-template",
+   "kit_url": null,
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
+   "found_date": "2026-10-20",
+   "notes": "Recurring due dates: Feb 8, Jun 8, Oct 7 each year through Jun 7, 2028 (Oct 7, 2026 just passed; next Feb 8, 2027). Budgets up to $475,000/yr direct; R61+R33 up to 5 years. NCCIH stated $2M in FY2026 for three awards.",
+   "evidence": {
+    "deadline_quote": "October 07, 2026 | ... | February 08, 2027 | February 08, 2027 | Not Applicable",
+    "amount_quote": "Application budgets may not exceed $475,000 per year in direct costs. NCCIH intends to commit $2,000,000 in FY 2026 to fund three awards.",
+    "eligibility_quote": "For-Profit Organizations: Small Businesses; For-Profit Organizations (Other than Small Businesses)",
+    "fetched": [
+     "https://www.grants.gov/search-results-detail/359155",
+     "http://grants.nih.gov/grants/guide/pa-files/PAR-25-449.html"
+    ]
+   }
+  },
+  {
+   "grant_id": "nida-sud-interventions-par-25-446",
+   "aliases": [
+    "PAR-25-446"
+   ],
+   "name": "NIDA — Interventions to Prevent and Treat SUD and Overdose (UG3/UH3, PAR-25-446)",
+   "funder": "NIH / NIDA",
+   "program": "UG3/UH3 cooperative agreement, clinical trial optional",
+   "channel": "Federal-discretionary",
+   "state": "US",
+   "path": "Direct/Sub",
+   "forprofit_direct": "Y",
+   "category": "SUD",
+   "accessible_usd": 3000000,
+   "pool_usd": null,
+   "deadline": "2027-02-22",
+   "cycle_watch": null,
+   "likelihood": 3,
+   "heart": "NIDA's standing mechanism for developing and testing SUD and overdose treatments, including co-morbid SUD. It suits a MORE trial for OUD or for a stimulant or polysubstance population, and for-profits can lead.",
+   "eligibility": "Higher-ed, nonprofits, for-profit organizations (small and other), governments, tribes.",
+   "nofo_url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-446.html",
+   "source_url": "https://www.grants.gov/search-results-detail/358937",
+   "portal": "Grants.gov / eRA ASSIST",
+   "accounts_needed": "SAM/UEI, Grants.gov, eRA Commons",
+   "match_required": "None",
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": "Milestone-driven UG3 to UH3 transition; needs a development-stage aim (e.g., adapting MORE for a new SUD population or delivery mode).",
+   "effort_hrs": 200,
+   "kit_type": "direct-template",
+   "kit_url": null,
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
+   "found_date": "2026-10-20",
+   "notes": "New-application due dates Feb 20/22, Jun 20/22, Oct 20 each year through Jun 20, 2028; next is Feb 22, 2027 (Oct 20, 2026 is today). Direct costs up to $3M/yr; up to 5 yrs (UG3 2 + UH3 3).",
+   "evidence": {
+    "deadline_quote": "October 20, 2026 | November 20, 2026 | Not Applicable | ... | February 22, 2027 | March 22, 2027 | Not Applicable",
+    "amount_quote": "Application budgets are limited to $3 million per year for direct costs.",
+    "fetched": [
+     "https://www.grants.gov/search-results-detail/358937",
+     "http://grants.nih.gov/grants/guide/pa-files/PAR-25-446.html"
+    ]
+   }
+  },
+  {
+   "grant_id": "nih-dissemination-implementation-par-25-144",
+   "aliases": [
+    "PAR-25-144",
+    "PAR-25-143"
+   ],
+   "name": "NIH Dissemination & Implementation Research in Health (R01, PAR-25-144)",
+   "funder": "NIH (multi-institute, incl. NIDA/NCCIH)",
+   "program": "R01, clinical trial optional (R21 companion PAR-25-143)",
+   "channel": "Federal-discretionary",
+   "state": "US",
+   "path": "Direct/Sub",
+   "forprofit_direct": "Y",
+   "category": "workforce",
+   "accessible_usd": null,
+   "pool_usd": null,
+   "deadline": "2027-02-05",
+   "cycle_watch": null,
+   "likelihood": 3,
+   "heart": "Funds research on how evidence-based treatments get adopted and scaled. That is exactly the question of clinician training and implementation for MORE in health systems, so the study's implementation strategy can be MORE training itself.",
+   "eligibility": "Higher-ed, nonprofits, for-profit organizations, governments; foreign organizations eligible for this one.",
+   "nofo_url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html",
+   "source_url": "https://www.grants.gov/search-results-detail/356893",
+   "portal": "Grants.gov / eRA ASSIST",
+   "accounts_needed": "SAM/UEI, Grants.gov, eRA Commons",
+   "match_required": "None",
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": "Implementation-science framing (strategy, outcomes, framework); MORE as the EBP, training/facilitation as the strategy under test.",
+   "effort_hrs": 200,
+   "kit_type": "direct-template",
+   "kit_url": null,
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
+   "found_date": "2026-10-20",
+   "notes": "Standard due dates (Feb 5 / Jun 5 / Oct 5) through Nov 2027; next new-application date Feb 5, 2027. Budget not capped (5 yr max). R21 version PAR-25-143 has the same dates.",
+   "evidence": {
+    "deadline_quote": "October 05, 2026 * | November 05, 2026 * | Not Applicable | ... | February 05, 2027 * | March 05, 2027 *",
+    "amount_quote": "Application budgets are not limited but need to reflect the actual needs of the proposed project.",
+    "fetched": [
+     "https://www.grants.gov/search-results-detail/356893",
+     "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
+    ]
+   }
+  },
+  {
+   "grant_id": "bja-cossup-tta-fy26",
+   "aliases": [
+    "O-BJA-2026-172724"
+   ],
+   "name": "BJA COSSUP Training & Technical Assistance (FY26)",
+   "funder": "U.S. DOJ — Bureau of Justice Assistance",
+   "program": "COSSUP TTA cooperative agreement",
+   "channel": "Federal-discretionary",
+   "state": "US",
+   "path": "Direct/Sub",
+   "forprofit_direct": "Y",
+   "category": "SUD",
+   "accessible_usd": 2000000,
+   "pool_usd": 2000000,
+   "deadline": "2026-11-02",
+   "cycle_watch": null,
+   "likelihood": 2,
+   "heart": "One national award to train and advise COSSUP grantees on overdose and substance-use responses in the justice system, and for-profits may apply. MORE fits best as the clinical-training partner inside a national TTA provider's bid.",
+   "eligibility": "Higher-ed, nonprofits (501c3 and non-501c3), for-profit organizations incl. small businesses (grants.gov applicant types).",
+   "nofo_url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724",
+   "source_url": "https://www.grants.gov/search-results-detail/363891",
+   "portal": "Grants.gov (SF-424) then JustGrants",
+   "accounts_needed": "SAM/UEI, Grants.gov, JustGrants",
+   "match_required": null,
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": "TTA in four core areas starting with pre-booking operations; position MORE as the treatment-side curriculum.",
+   "effort_hrs": 120,
+   "kit_type": "letter-of-support",
+   "kit_url": null,
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
+   "found_date": "2026-10-20",
+   "notes": "Two-step: Grants.gov by 11:59 pm ET Nov 2, 2026, then JustGrants by 8:59 pm ET Nov 9, 2026. 1 award, up to $2,000,000, 24 months from Jan 1, 2027. Too tight to lead; worth a call to likely national TTA bidders this week.",
+   "evidence": {
+    "deadline_quote": "Step 1: Grants.gov Deadline ... Step 2: JustGrants Deadline 11:59 p.m. ET on November 2, 2026 8:59 p.m. ET on November 9, 2026",
+    "amount_quote": "Anticipated Number of Awards 1 ... Anticipated Award Amount Up to $2,000,000",
+    "fetched": [
+     "https://www.grants.gov/search-results-detail/363891",
+     "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
+    ]
+   }
+  },
+  {
+   "grant_id": "bja-adult-treatment-court-fy26",
+   "aliases": [
+    "O-BJA-2026-172721"
+   ],
+   "name": "BJA Adult Treatment Court Program (FY26)",
+   "funder": "U.S. DOJ — Bureau of Justice Assistance",
+   "program": "Treatment Court Discretionary Grant (ALN 16.585)",
+   "channel": "Federal-discretionary",
+   "state": "US",
+   "path": "Line-item",
+   "forprofit_direct": "N",
+   "category": "SUD",
+   "accessible_usd": 2500000,
+   "pool_usd": 49322500,
+   "deadline": "2026-10-30",
+   "cycle_watch": null,
+   "likelihood": 2,
+   "heart": "About $49M for courts and counties to plan, run, or expand adult treatment courts. Clinical training for court treatment providers is a natural budget line, so MORE gets in through a county or court applicant.",
+   "eligibility": "States, counties, cities, federally recognized tribes and other units of local government (Categories 1-2); statewide category for state agencies.",
+   "nofo_url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172721",
+   "source_url": "https://www.grants.gov/search-results-detail/363888",
+   "portal": "Grants.gov then JustGrants",
+   "accounts_needed": "partner's SAM/Grants.gov/JustGrants",
+   "match_required": "Yes (cost sharing per grants.gov)",
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": null,
+   "effort_hrs": 20,
+   "kit_type": "line-item-kit",
+   "kit_url": null,
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
+   "found_date": "2026-10-20",
+   "notes": "Grants.gov step closes Oct 30, 2026; JustGrants Nov 6, 2026 (8:59 pm ET). Categories: 9 planning/implementation, 30 enhancement, 4 statewide awards. Only useful if a court partner is already applying; otherwise note for FY27.",
+   "evidence": {
+    "deadline_quote": "grants.gov close date Oct 30, 2026 · 8:59 p.m. ET on November 6, 2026 Step 2: JustGrants Deadline",
+    "amount_quote": "Approximately $49,322,500 Category 1: 9 Category 2: 30 Category 3: 4 · award ceiling 2,500,000",
+    "fetched": [
+     "https://www.grants.gov/search-results-detail/363888",
+     "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172721"
+    ]
+   }
+  },
+  {
+   "grant_id": "ct-dmhas-recovery-centers-2027",
+   "aliases": [
+    "DMHAS-OSU-RECOVERY CENTERS-2027"
+   ],
+   "name": "Connecticut DMHAS — Recovery Community Centers (opioid settlement RFP)",
+   "funder": "Connecticut Dept. of Mental Health and Addiction Services (Opioid Services Unit)",
+   "program": "RFP DMHAS-OSU-RECOVERY CENTERS-2027",
+   "channel": "Settlement-state",
+   "state": "CT",
+   "path": "Line-item",
+   "forprofit_direct": "Y",
+   "category": "SUD",
+   "accessible_usd": 1247611,
+   "pool_usd": 3742834,
+   "deadline": "2026-12-18",
+   "cycle_watch": null,
+   "likelihood": 2,
+   "heart": "CT is spending opioid settlement money on three low-barrier Recovery Community Centers, at $1.25M per contract over 3 years, and proprietary companies may propose. MORE fits as the evidence-based group and staff-training component inside a provider's bid.",
+   "eligibility": "Private provider organizations (nonprofit or proprietary corporations or partnerships), CT state agencies, and municipalities.",
+   "nofo_url": "https://portal.ct.gov/-/media/dmhas/publications/dmhas-osu-recovery-centers-2027-rfp.pdf",
+   "source_url": "https://portal.ct.gov/DMHAS/RFPs/Index/RFPs-and-RFQs",
+   "portal": "Email/electronic submission per RFP",
+   "accounts_needed": "CT Secretary of State registration (partner)",
+   "match_required": null,
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": "Centers must be stigma-free, low-barrier drop-in for people who use drugs, without requiring abstinence; pitch MORE as optional skills groups plus staff training.",
+   "effort_hrs": 15,
+   "kit_type": "line-item-kit",
+   "kit_url": null,
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
+   "found_date": "2026-10-20",
+   "notes": "Responses due Fri Dec 18, 2026, 3:00 PM EST. Virtual bidders' conference Fri Nov 6, 2026, 10:00 AM: attend to meet likely bidders. Funding source: Opioid Settlement Funds. 3 awards, 3-year term.",
+   "evidence": {
+    "deadline_quote": "RESPONSES MUST BE RECEIVED NO LATER THAN Friday, December 18, 2026, 3:00 PM EST",
+    "amount_quote": "$3,742,834.00 • Number of Awards: 3 Awards • Total Contract Cost: $1,247,611.00 per contract • Contract Term: 3-year term",
+    "eligibility_quote": "Private provider organizations (defined as non-state entities that are either nonprofit or proprietary corporations or partnerships), CT State agencies, and municipalities are eligible",
+    "fetched": [
+     "https://portal.ct.gov/-/media/dmhas/publications/dmhas-osu-recovery-centers-2027-rfp.pdf"
+    ]
+   }
+  },
+  {
+   "grant_id": "bja-rsat-formula-fy26",
+   "aliases": [
+    "O-BJA-2026-172763",
+    "ALN 16.593"
+   ],
+   "name": "BJA FY 2026 Residential Substance Abuse Treatment (RSAT) for State Prisoners Formula Grants Program",
+   "funder": "U.S. DOJ, Office of Justice Programs, Bureau of Justice Assistance",
+   "program": "RSAT for State Prisoners (formula)",
+   "channel": "Fed-state-passthrough",
+   "state": "US",
+   "path": "Line-item",
+   "forprofit_direct": "N",
+   "category": "SUD",
+   "accessible_usd": null,
+   "pool_usd": 26285604,
+   "deadline": "2026-11-20",
+   "cycle_watch": "2027-03-01",
+   "likelihood": 2,
+   "heart": "Formula money to every state for SUD treatment in prisons and jails (residential, pretrial, and aftercare tracks), with a required pass-through to local jails. 'Training curricula' is a listed allowable cost, and MORE is an evidence-based treatment for OUD and co-occurring conditions that fits RSAT residential and aftercare programs as a training line item.",
+   "eligibility": "Government Entities: State governments only. States must coordinate between state corrections and the state alcohol/SUD agency. At least 10% of the state allocation must go to local correctional facilities (if such facilities exist).",
+   "nofo_url": "https://www.ojp.gov/funding/docs/bja-2026-172763.pdf",
+   "source_url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172763",
+   "portal": "Grants.gov (SF-424) then JustGrants (full application)",
+   "accounts_needed": "Applicant state: SAM.gov, Grants.gov, JustGrants. More Therapy: SAM.gov/UEI helpful as a contractor or subrecipient vendor.",
+   "match_required": "Yes: at least 25% of total project costs must be non-federal, cash and/or in-kind; federal share is no more than 75%",
+   "page_limit": "Proposal Narrative no more than 10 pages, double-spaced, 12-pt font; abstract no more than 2,000 characters",
+   "attachments": [
+    "Proposal Narrative",
+    "Budget Detail Worksheet (web form)",
+    "Indirect Cost Rate Agreement (if applicable)",
+    "Consultant Rate (if applicable)",
+    "Employee Compensation Limitation waiver for awards over $250,000 (if applicable)",
+    "Certification Regarding Non-Residential SUD Treatment-Aftercare (if applicable)"
+   ],
+   "scoring_map": null,
+   "effort_hrs": null,
+   "kit_type": "line-item-kit",
+   "kit_url": null,
+   "notes": "Two deadlines: (1) SF-424 in Grants.gov by 11:59 pm ET on 2026-11-20; (2) full application in JustGrants by 8:59 pm ET on 2026-12-01. SAM.gov registration should start by 2026-10-19 and be done no later than 2026-11-05. Expected 56 awards, 48-month period starting 2026-10-01. Admin costs are capped at 10%. Allowable costs listed: salary/benefits, subawards for local correctional facilities, supplies, training curricula, pretrial programming, aftercare services, equipment, reentry support items. Action now: pitch MORE training as a budget line to state corrections/SUD agencies before 2026-11-20. Realistic access later is through state RSAT subgrant solicitations to jails and providers. The cycle_watch date is our own check-in date, not a published one. The lead's $2.2M ceiling is not in the NOFO.",
+   "evidence": {
+    "deadline_quote": "Step 1: Grants.gov Deadline 11:59 p.m. ET on November 20, 2026  Step 2: JustGrants Deadline 8:59 p.m. ET on December 1, 2026",
+    "amount_quote": "Expected Total Amount of Funding Approximately $26,285,604 ... Anticipated Number of Awards 56 ... Anticipated Award Amount Based on formula allocation",
+    "eligibility_quote": "The types of entities that are eligible to apply are: Government Entities • State governments",
+    "fetched": [
+     "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172763",
+     "https://www.ojp.gov/funding/docs/bja-2026-172763.pdf",
+     "https://www.grants.gov/search-results-detail/364043"
+    ]
+   },
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
+   "found_date": "2026-10-20",
+   "verified_by": "ai_pass"
+  },
+  {
+   "grant_id": "hrsa-rcorp-csd-fy27",
+   "aliases": [
+    "HRSA-27-042"
+   ],
+   "name": "Rural Communities Opioid Response Program - Community Systems Development (FY2027)",
+   "funder": "HRSA Federal Office of Rural Health Policy",
+   "program": "RCORP - Community Systems Development",
+   "channel": "Federal-discretionary",
+   "state": "US",
+   "path": "Sub",
+   "forprofit_direct": "Y",
+   "category": "SUD",
+   "accessible_usd": 500000,
+   "pool_usd": 3000000,
+   "deadline": "2027-04-06",
+   "cycle_watch": "2027-02-05",
+   "likelihood": 2,
+   "heart": "New RCORP line that pays for formalized rural networks to expand regional behavioral-health systems of care through coordinated, evidence-based SUD prevention, treatment and recovery services. MORE is an evidence-based SUD/OUD treatment with chronic-pain overlap that network clinicians can be trained in. The most realistic role is training vendor for a rural network applicant, since only 6 awards are expected and the program is built around networks.",
+   "eligibility": "Domestic public or private, non-profit or for-profit entities (listed as Unrestricted, and includes small businesses and other for-profits). Services may only support HRSA-designated rural counties and rural census tracts.",
+   "nofo_url": null,
+   "source_url": "https://simpler.grants.gov/opportunity/02b2d236-f596-4aca-874d-b8e364156ddc",
+   "portal": "Grants.gov",
+   "accounts_needed": "SAM.gov UEI, Grants.gov, HRSA EHBs (standard HRSA)",
+   "match_required": "No",
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": null,
+   "effort_hrs": null,
+   "kit_type": "line-item-kit",
+   "kit_url": null,
+   "notes": "FORECAST ONLY (version 3, forecast posted 2026-08-14, last updated 2026-08-21). No NOFO documents yet. All dates are HRSA estimates: post 2027-02-05, due 2027-04-06, award 2027-08-01, project start 2027-09-01, archive 2027-05-06. Re-verify the deadline, eligibility and network requirements when the NOFO posts. Contact: Lynlee Tanner Stapleton, ruralopioidresponse@hrsa.gov, 301-443-5764. Next step: approach FY26 RCORP-Planning/Impact grantees or rural networks as lead applicants, with MORE training as a budget line. The grants.gov detail page (363601) needs JavaScript and did not render, so I used the Simpler.Grants.gov mirror of the same record. Check for overlap with the existing hrsa-rcorp-fy27 row.",
+   "evidence": {
+    "deadline_quote": "Forecasted ... Estimated Post Date: February 5, 2027 ... Estimated Application Due Date: April 6, 2027",
+    "amount_quote": "$3,000,000 Program Funding; 6 Expected awards; $500,000 Award Maximum",
+    "eligibility_quote": "You can apply if you are a domestic public or private, non-profit or for-profit entity.",
+    "fetched": [
+     "https://simpler.grants.gov/opportunity/02b2d236-f596-4aca-874d-b8e364156ddc",
+     "https://www.grants.gov/search-results-detail/363601",
+     "https://www.hrsa.gov/rural-health/opioid-response"
+    ]
+   },
+   "last_verified": "2026-10-20",
+   "next_check": "2026-10-27",
+   "found_date": "2026-10-20",
+   "verified_by": "ai_pass"
   }
  ],
  "coverage": [
   {
-   "channel": "Federal",
+   "channel": "Federal grants",
    "cadence": "daily",
-   "what": "simpler.grants.gov new postings · SAMHSA dashboard + forecasts · HHS newsroom · Search2 API",
-   "stamp": "last scan 2026-08-04"
+   "phase": "scan_grants_gov",
+   "what": "grants.gov posted + forecast opportunities across 23 keyword and program-code queries (SAMHSA, HRSA, NIH, CDC, DOJ/BJA, DoD CDMRP, DOL); each hit enriched from the official record"
   },
   {
-   "channel": "Settlement states",
-   "cadence": "weekly",
-   "what": "OneOhio · TX OAFC · VA OAA · CA opioid response · NY OASAS · OpioidSettlementTracker",
-   "stamp": "last scan 2026-08-04"
+   "channel": "Federal contracts",
+   "cadence": "daily",
+   "phase": "scan_sam",
+   "what": "SAM.gov contract notices for training and behavioral-health NAICS codes, title-filtered"
+  },
+  {
+   "channel": "States & settlement funds",
+   "cadence": "daily",
+   "phase": "scan_states",
+   "what": "All 50 states + DC: behavioral-health agency RFP pages and opioid settlement / abatement pages, watched for new funding links; due dates read from the RFP itself"
   },
   {
    "channel": "Counties & cities",
-   "cadence": "weekly",
-   "what": "Open-web sweep for settlement RFPs (the 3–6-week windows)",
-   "stamp": "last scan 2026-08-04"
-  },
-  {
-   "channel": "Foundations",
-   "cadence": "weekly",
-   "what": "FORE · Arnold Ventures · RWJF · Kresge · Bloomberg · Conrad Hilton · Elevance Health Foundation",
-   "stamp": "last scan 2026-08-04"
-  },
-  {
-   "channel": "State pass-through",
-   "cadence": "building",
-   "what": "SOR/SUBG sub-RFPs via each state's behavioral-health agency (CA DHCS, NY OASAS, OH MHAS…)",
-   "stamp": "agency directory: all 50 states + DC mapped 2026-08-04 (3 URLs need manual confirm: KS, LA, NH)"
-  },
-  {
-   "channel": "Federal (non-HHS)",
    "cadence": "daily",
-   "what": "CDC OD2A · DOJ/BJA COSSUP · DoD CDMRP (pain, for-profit) · DOL apprenticeship/WIOA · SAMHSA SUPTRS+MHBG block grants",
-   "stamp": "added 2026-08-04"
+   "phase": "scan_states",
+   "what": "OpioidSettlementTracker's live list of open county/city settlement grant windows (discovery only; every lead links to the county's own page), plus each county page it has ever listed"
   },
   {
-   "channel": "Payers & associations",
+   "channel": "Tracked deadlines",
+   "cadence": "daily",
+   "phase": "nofo_watch",
+   "what": "Every tracked row's official page, flagged when new dates appear (extensions, amendments, next cycles)"
+  },
+  {
+   "channel": "Verification + deep sweep",
    "cadence": "weekly",
-   "what": "Medicaid 1115 SUD waivers · National Council / CCBHC-E · NACHC + state PCAs · ASAM education",
-   "stamp": "added 2026-08-04"
+   "phase": "ai_pass",
+   "what": "Claude checks each new lead on the funder's own page, re-verifies due rows, looks for next cycles, and deep-sweeps 5 states a week (all 50 + DC every ~10 weeks), with quotes for every date and dollar"
   },
   {
-   "channel": "Winners feed",
+   "channel": "Funded-cohort feed",
    "cadence": "monthly",
-   "what": "New SOR + RCORP awardees via USASpending → warm pitches via the contact pipeline",
-   "stamp": "next pull 2026-09-01"
+   "phase": "winners",
+   "what": "New SOR, RCORP and CCBHC-Expansion awardees via USASpending (warm-outreach list for the post-award play)"
   },
   {
-   "channel": "Research (CER)",
-   "cadence": "weekly",
-   "what": "PCORI comparative-effectiveness PFAs (for-profit-eligible, MORE-vs-CBT) · AHRQ NOFOs",
-   "stamp": "added 2026-08-04"
-  },
-  {
-   "channel": "Tribal & justice",
-   "cadence": "weekly",
-   "what": "SAMHSA Tribal Opioid Response · IHS COIPP/SASP · ONDCP + BJA drug-court TTA (sub/partner routes)",
-   "stamp": "added 2026-08-04"
-  },
-  {
-   "channel": "Workforce (states)",
-   "cadence": "weekly",
-   "what": "CA HCAI · NY OMH RFPs · MA Workforce Training Fund · OR HOWTO · HRSA BHWET · SAMHSA PCSS",
-   "stamp": "added 2026-08-04"
+   "channel": "Foundations & payers",
+   "cadence": "weekly sweep",
+   "phase": "ai_pass",
+   "what": "Covered only by the weekly AI sweep (FORE, Arnold Ventures, RWJF, Elevance, PCORI cycles); no dedicated scanner"
   }
  ],
  "state_directory": [

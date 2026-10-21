@@ -64,6 +64,11 @@ def main():
     names = {r["grant_id"]: (r.get("name") or r["grant_id"]) for r in rows}
     old = json.loads(SNAP.read_text(encoding="utf-8")) if SNAP.exists() else {}
     new, changes = {}, []
+    flags_path = ROOT / "data" / "row_flags.json"
+    flags = json.loads(flags_path.read_text(encoding="utf-8")) if flags_path.exists() else {}
+    live_ids = {r["grant_id"] for r in rows}
+    flags = {k: v for k, v in flags.items() if k in live_ids
+             and (date.today() - date.fromisoformat(v["date"])).days <= 21}
 
     for r in rows:
         url = r.get("nofo_url") or r.get("source_url")
@@ -81,13 +86,19 @@ def main():
         if not prev:
             changes.append(("NEW", gid, "no prior snapshot — baseline set", url))
         elif prev.get("hash") != fp["hash"]:
+            # Only new dates on the page are a signal; byte churn from rotating
+            # banners and tokens caused ~110 false alarms in v3.
             added = sorted(set(fp["dates"]) - set(prev.get("dates", [])))
-            removed = sorted(set(prev.get("dates", [])) - set(fp["dates"]))
-            detail = "content changed"
-            if added or removed:
-                detail += f" · dates +{added[:4]} -{removed[:4]}"
-            changes.append(("CHANGED", gid, detail, url))
+            if added:
+                changes.append(("CHANGED", gid, f"new dates on the page: {', '.join(added[:6])}", url))
+                flags[gid] = {"date": date.today().isoformat(), "added_dates": added[:6], "url": url}
 
+    flags_path.write_text(json.dumps(flags, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import runlog
+    runlog.record("nofo_watch", "ok", checked=len(new),
+                  changed=sum(1 for c in changes if c[0] == "CHANGED"),
+                  unreachable=sum(1 for c in changes if c[0] == "UNREACHABLE"))
     print(f"NOFO watch — {date.today()} · {len(new)} pages checked\n" + "=" * 70)
     order = {"CHANGED": 0, "UNREACHABLE": 1, "NEW": 2}
     for kind, gid, detail, url in sorted(changes, key=lambda c: order[c[0]]):

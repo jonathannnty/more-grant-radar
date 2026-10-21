@@ -374,6 +374,36 @@
   }
   .empty button:active { transform: translateY(1px); }
 
+  /* v4: radar health, machine-found leads, freshness badges */
+  .stalebar { display: none; margin-bottom: var(--space-5); padding: var(--space-3) var(--space-4); border-radius: var(--radius-2);
+    background: var(--color-critical-wash); color: var(--color-critical); border: var(--rule-1) solid var(--color-critical); font-size: var(--text-sm); font-weight: 500; }
+  .stalebar.show { display: block; }
+  .stalebar.warn { background: var(--color-warning-wash); color: var(--color-warning-ink); border-color: var(--color-warning-ink); }
+  .healthline { font-family: var(--font-mono); font-size: var(--text-2xs); color: var(--color-ink-3); margin: calc(-1 * var(--space-4)) 0 var(--space-6); }
+  .healthline b { color: var(--color-good); font-weight: 600; }
+  .healthline b.bad { color: var(--color-critical); }
+  .newbadge { display: inline-block; font-family: var(--font-mono); font-size: 0.62rem; font-weight: 600; letter-spacing: 0.06em;
+    padding: 1px 6px; border-radius: 999px; background: var(--color-accent); color: var(--color-paper); vertical-align: 2px; margin-left: 6px; }
+  .pageflag { grid-column: 1/-1; padding: var(--space-2) var(--space-3); border-radius: var(--radius-1); background: var(--color-warning-wash); color: var(--color-warning-ink); font-size: var(--text-sm); }
+  .leads { margin-top: var(--space-10); }
+  .leads .lead-intro { font-size: var(--text-sm); color: var(--color-ink-2); margin: calc(-1 * var(--space-2)) 0 var(--space-4); max-width: 70ch; }
+  .lead { display: grid; grid-template-columns: 1fr auto; gap: var(--space-2) var(--space-5); padding: var(--space-4) 0; border-top: var(--rule-1) solid var(--color-rule); }
+  .lead h3 { font-size: var(--text-lg); font-weight: 600; line-height: 1.35; }
+  .lead .meta { font-size: var(--text-xs); color: var(--color-ink-3); margin-top: 2px; }
+  .lead .syn { font-size: var(--text-sm); color: var(--color-ink-2); margin-top: var(--space-2); max-width: 75ch; }
+  .lead .lright { text-align: right; display: flex; flex-direction: column; gap: 4px; align-items: flex-end; font-size: var(--text-xs); }
+  .lead .lright a { color: var(--color-accent-ink); font-weight: 600; text-decoration: none; white-space: nowrap; }
+  .lead .lright a:hover { text-decoration: underline; }
+  .lead .fp { font-family: var(--font-mono); font-size: var(--text-2xs); padding: 1px 6px; border-radius: var(--radius-1); background: var(--color-muted-wash); color: var(--color-ink-2); }
+  .lead .fp.yes { background: var(--color-accent-wash); color: var(--color-accent-ink); }
+  .leads .more { margin-top: var(--space-3); font-family: var(--font-display); font-size: var(--text-sm); background: none; border: var(--rule-1) solid var(--color-border); color: var(--color-ink-2); border-radius: var(--radius-1); padding: var(--space-2) var(--space-4); cursor: pointer; }
+  .health-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: var(--space-3) var(--space-6); padding: 0 var(--space-5) var(--space-5); font-size: var(--text-sm); }
+  .health-grid .hj { border-left: 3px solid var(--color-good); padding-left: var(--space-3); }
+  .health-grid .hj.bad { border-left-color: var(--color-critical); }
+  .health-grid .hj p { color: var(--color-ink-3); font-size: var(--text-xs); }
+  .health-head { padding: var(--space-2) var(--space-5) var(--space-3); font-family: var(--font-mono); font-size: 0.65rem; font-weight: 600; color: var(--color-ink-3); letter-spacing: 0.05em; text-transform: uppercase; }
+  @media (max-width: 640px) { .lead { grid-template-columns: 1fr; } .lead .lright { align-items: flex-start; text-align: left; } }
+
   .coverage { margin-top: var(--space-10); border: var(--rule-1) solid var(--color-rule); border-radius: var(--radius-2); background: var(--color-paper); }
   .coverage summary {
     cursor: pointer; list-style: none; padding: var(--space-4) var(--space-5);
@@ -460,6 +490,8 @@
     </div>
     <p class="stamp"><span class="dot-live" aria-hidden="true">●</span>last run __BUILD_STAMP__</p>
   </header>
+  <div class="stalebar" id="stalebar" role="alert"></div>
+  <p class="healthline" id="healthline"></p>
   <p class="sub">Every funding route for MORE clinician training — ranked by likelihood × dollars, each with the heart of the opportunity and a direct line to the NOFO. Statuses live in the <b>Team sheet</b> and surface here on refresh. Tap a row for the fine print.</p>
 
   <section class="strip" aria-label="Summary" id="strip"></section>
@@ -505,15 +537,25 @@
       <button id="reset" type="button">Clear filters</button>
     </div>
 
+    <section class="leads" id="leadsBand" hidden aria-labelledby="leadsTitle">
+      <h2 class="band" id="leadsTitle"><span class="mark mut" aria-hidden="true">●</span> Found by the radar — not yet verified <span class="count" id="countLeads"></span></h2>
+      <p class="lead-intro">New opportunities the daily scans picked up on official grant portals and state, county and settlement pages. Each links to the funder's own page. The weekly verification pass checks them and moves the real ones into the ranked list above. Until then, confirm eligibility and dates on the page before acting.</p>
+      <div id="rowsLeads"></div>
+      <button type="button" class="more" id="moreLeads" hidden>Show all</button>
+    </section>
+
     <details class="coverage" id="coverage">
-      <summary>Coverage — what the radar watches <span class="count" id="covCount"></span></summary>
+      <summary>Coverage &amp; radar health — what runs, and when it last ran <span class="count" id="covCount"></span></summary>
+      <div class="health-head">Automated jobs</div>
+      <div class="health-grid" id="healthGrid"></div>
+      <div class="health-head">Channels</div>
       <div class="cov-grid" id="covGrid"></div>
     </details>
   </main>
 
   <footer>
     <p style="margin-bottom: var(--space-3);"><b>📅 Subscribe to deadlines:</b> add every deadline to your calendar as an auto-updating feed — in Google Calendar, <b>Other calendars → From URL</b>, paste <span class="mono">https://jonathannnty.github.io/more-grant-radar/deadlines.ics</span>. Each row above also has its own <b>Add to calendar</b> button.</p>
-    <b>How this stays fresh:</b> the radar engine scans daily (federal) and weekly (states, counties, foundations), re-scores, and republishes this page. Grant writers mark <b>status, owner, and notes in the Team sheet</b> — those appear here on the next refresh. Priority = likelihood (1–5) × log₁₀ of accessible dollars. ● red = due within 14 days · ▲ amber = within 45. Tips and forwarded announcements: <span class="mono">radar@moretherapy.com</span> (triaged into the next scan).
+    <b>How this stays fresh:</b> every day the radar scans grants.gov, SAM.gov, all 50 states' behavioral-health and opioid-settlement pages, and the live list of open county and city settlement grants, then republishes this page. New finds appear under “Found by the radar” the same day. Once a week an AI verification pass checks each one on the funder's own page, quotes the deadline and dollars, and promotes the real ones into the ranked list. No one has to triage anything. The banner at the top turns red if a job stops. Grant writers mark <b>status, owner, and notes in the Team sheet</b>. Priority = likelihood (1–5) × log₁₀ of accessible dollars. ● red = due within 14 days · ▲ amber = within 45.
   </footer>
 </div>
 
@@ -660,7 +702,7 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
       ? '<a class="kitbtn" href="' + esc(r.kit_url) + '" target="_blank" rel="noopener">' + esc(r.kit_type || 'insert kit') + '</a>'
       : (r.kit_type ? '<span class="kitbtn soon">' + esc(r.kit_type) + '</span>' : '');
     const staleDays = r.last_verified ? Math.round((TODAY - new Date(r.last_verified + 'T12:00:00')) / 86400000) : null;
-    const stale = staleDays == null || staleDays > 7;
+    const stale = staleDays == null || staleDays > 14;
     const verif = '<p class="verif' + (stale ? ' stale' : '') + '"><b>' + (stale ? '⚠' : '✓') + '</b> verified against the primary source · ' + esc(r.last_verified || 'pending') + (r.next_check ? ' · next check ' + esc(r.next_check) : '') + '</p>';
 
     const searchText = [r.grant_id, r.name, r.funder, r.program, r.state, r.channel, r.category].join(' ').toLowerCase();
@@ -669,13 +711,14 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
       '<div class="score"><div><div class="n">' + (r.priority != null ? r.priority.toFixed(1) : '—') + '</div><div class="l">priority</div></div>' +
       '<div class="dots" role="img" aria-label="Likelihood ' + like + ' of 5">' + dots + '</div></div>' +
       '<div class="main">' +
-        '<h3 class="name">' + esc(r.name) + ' <button class="chev" aria-expanded="false" aria-label="Show details">▾</button></h3>' +
+        '<h3 class="name">' + esc(r.name) + (r.found_date && (TODAY - new Date(r.found_date + 'T12:00:00')) / 86400000 <= 14 ? '<span class="newbadge">NEW</span>' : '') + ' <button class="chev" aria-expanded="false" aria-label="Show details">▾</button></h3>' +
         '<p class="funder">' + esc([r.funder, r.channel, r.state === 'US' ? 'national' : r.state].filter(Boolean).join(' · ')) + '</p>' +
         '<p class="heart">' + heartHTML(r.heart) + '</p>' +
         '<div class="tags">' + eligBadge(r) + pathTags(r.path) + (r.category ? '<span class="tag">' + esc(r.category) + '</span>' : '') + (r.channel ? '<span class="tag">' + esc(r.channel.toLowerCase()) + '</span>' : '') + '</div>' +
       '</div>' +
       '<div class="right">' + moneyBlock(r) + dueChip(r) + statusBlock(r) + link + '</div>' +
       '<div class="details"><div class="details-inner"><div class="details-body">' +
+        (r.page_flag ? '<div class="pageflag">⚑ The funder\'s page changed on ' + esc(fmtDate(r.page_flag.date)) + ': new dates ' + esc((r.page_flag.added_dates || []).join(', ')) + '. Check for an extension or a new cycle.</div>' : '') +
         (r.reg_alert ? '<div class="regalert" style="grid-column:1/-1">⏱ ' + esc(r.reg_alert) + '</div>' : '') +
         (r.subcontract_path ? '<div class="postaward" style="grid-column:1/-1"><h4>Post-award play</h4><p>' +
           (r.award_date ? '<b>Award list ~' + esc(fmtDate(r.award_date)) + ' ' + esc(r.award_date.slice(0, 4)) + '.</b> ' : '') +
@@ -729,6 +772,62 @@ const TEAM_FEED_URL = "__TEAM_FEED_URL__";
     '<div><h4>' + esc(c.channel) + ' · ' + esc(c.cadence) + '</h4><p>' + esc(c.what) + '</p><p class="cov-stamp' + (c.gap ? ' gap' : '') + '">' + esc(c.stamp) + '</p></div>'
   ).join('');
   $('covCount').textContent = RADAR.coverage.length + ' channels';
+
+  // ── v4: radar health (from data/runs.json) ──────────────────────────
+  const H = RADAR.health || [];
+  const fmtTs = ts => ts ? fmtDate(ts.slice(0, 10)) + ' ' + ts.slice(0, 4) : 'never';
+  $('healthGrid').innerHTML = H.map(h =>
+    '<div class="hj' + (h.ok ? '' : ' bad') + '"><b>' + esc(h.label) + '</b><p>' +
+    (h.status === 'skipped' ? '⚠ skipped · ' + esc(h.note) :
+     h.last ? (h.ok ? '✓ ' : '⚠ overdue · ') + 'last run ' + esc(fmtTs(h.last)) +
+       (Object.keys(h.counts || {}).length ? ' · ' + esc(Object.entries(h.counts).slice(0, 4).map(([k, v]) => k.replace(/_/g, ' ') + ' ' + v).join(', ')) : '')
+     : 'not run yet') + '</p></div>').join('');
+  const bad = H.filter(h => !h.ok && h.phase !== 'winners');
+  const builtAgeH = RADAR.built_utc ? (Date.now() - Date.parse(RADAR.built_utc)) / 3600000 : 0;
+  const sb = $('stalebar');
+  if (builtAgeH > 36) {
+    sb.innerHTML = '<b>⚠ This page has not refreshed since ' + esc(fmtTs(RADAR.built_utc)) + '.</b> The daily radar job may have stopped. Deadlines and countdowns below may be out of date.';
+    sb.classList.add('show');
+  } else if (bad.length) {
+    sb.innerHTML = '<b>⚠ ' + bad.length + ' radar job' + (bad.length > 1 ? 's need' : ' needs') + ' attention:</b> ' +
+      esc(bad.map(h => h.label + (h.status === 'skipped' ? ' (skipped: ' + h.note + ')' : h.last ? ' (last ran ' + fmtTs(h.last) + ')' : ' (never ran)')).join(' · ')) +
+      '. Details under “Coverage &amp; radar health” at the bottom.';
+    sb.classList.add('show', 'warn');
+  }
+  const okN = H.filter(h => h.ok).length;
+  const lastScan = H.map(h => h.last).filter(Boolean).sort().pop();
+  $('healthline').innerHTML = '<b class="' + (bad.length || builtAgeH > 36 ? 'bad' : '') + '">●</b> radar health: ' + okN + '/' + H.length +
+    ' jobs on schedule · last scan ' + esc(fmtTs(lastScan)) + ' · ' + (RADAR.leads || []).length + ' new leads awaiting verification';
+
+  // ── v4: machine-found leads ─────────────────────────────────────────
+  const L = RADAR.leads || [];
+  function leadHTML(l) {
+    const d = l.deadline ? Math.round((new Date(l.deadline + 'T12:00:00') - TODAY) / 86400000) : null;
+    const due = l.deadline ? (d <= 14 ? '<span class="due critical">● due ' + fmtDate(l.deadline) + ' · ' + d + 'd</span>' :
+      d <= 45 ? '<span class="due warning">▲ due ' + fmtDate(l.deadline) + ' · ' + d + 'd</span>' :
+      '<span class="due quiet">due ' + fmtDate(l.deadline) + ', ' + l.deadline.slice(0, 4) + '</span>') :
+      (l.cycle_watch ? '<span class="due quiet">forecast · watch ' + fmtMonth(l.cycle_watch) + '</span>' : '<span class="due quiet">deadline not stated</span>');
+    const fresh = l.found_date && (TODAY - new Date(l.found_date + 'T12:00:00')) / 86400000 <= 7;
+    const fp = l.forprofit_eligible === true ? '<span class="fp yes">for-profit eligible</span>' :
+      l.forprofit_eligible === false ? '<span class="fp">partner path · not for-profit direct</span>' : '<span class="fp">eligibility: check page</span>';
+    const src = { grants_gov: 'grants.gov', sam: 'SAM.gov', states: 'state/county page', settlement_tracker: 'settlement tracker' }[l.source] || l.source;
+    const money2 = l.award_ceiling ? ' · up to ' + money(l.award_ceiling) : '';
+    return '<article class="lead"><div><h3>' + esc(l.title) + (fresh ? '<span class="newbadge">NEW</span>' : '') + '</h3>' +
+      '<p class="meta">' + esc([l.funder, l.state === 'US' ? 'national' : l.state, 'via ' + src, 'found ' + fmtDate(l.found_date)].filter(Boolean).join(' · ')) + esc(money2) + '</p>' +
+      (l.synopsis ? '<p class="syn">' + esc(l.synopsis.length > 260 ? l.synopsis.slice(0, 257) + '…' : l.synopsis) + '</p>' : '') +
+      (l.deadline_quote && l.source !== 'grants_gov' ? '<p class="meta">' + esc(l.deadline_quote) + '</p>' : '') +
+      '</div><div class="lright">' + due + fp + '<a href="' + esc(l.nofo_url || l.url) + '" target="_blank" rel="noopener">Open source →</a></div></article>';
+  }
+  if (L.length) {
+    $('leadsBand').hidden = false;
+    $('countLeads').textContent = '(' + L.length + ')';
+    const FIRST = 12;
+    $('rowsLeads').innerHTML = L.slice(0, FIRST).map(leadHTML).join('');
+    if (L.length > FIRST) {
+      const mb = $('moreLeads'); mb.hidden = false; mb.textContent = 'Show all ' + L.length;
+      mb.addEventListener('click', () => { $('rowsLeads').innerHTML = L.map(leadHTML).join(''); mb.hidden = true; });
+    }
+  }
 
   // Filters — full canonical owner + status lists (see helpers above)
   $('fOwner').innerHTML = ownerOptions();
