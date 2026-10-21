@@ -243,7 +243,10 @@ def build_health(today):
             continue
         last = r["ts"][:10]
         age = (today - date.fromisoformat(last)).days
-        ok = r.get("status") in ("ok", "partial") and age <= max_age
+        c = r.get("counts") or {}
+        done = sum(c.get(k, 0) for k in ("added", "updated", "rejected", "watch"))
+        partial_ok = r.get("status") == "partial" and c.get("errors", 0) <= done
+        ok = (r.get("status") == "ok" or partial_ok) and age <= max_age
         out.append({"phase": phase, "label": label, "last": r["ts"], "status": r.get("status"),
                     "note": r.get("note", ""), "counts": r.get("counts", {}), "max_age": max_age, "ok": ok})
     return out

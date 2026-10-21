@@ -258,6 +258,16 @@ def main():
 
     import anthropic
     client = anthropic.Anthropic()
+    try:  # fail fast and loudly on a bad key instead of 35 identical errors
+        client.models.retrieve(MODEL)
+    except anthropic.AuthenticationError:
+        runlog.record("ai_pass", "error", note="ANTHROPIC_API_KEY was rejected (401 invalid x-api-key): "
+                      "re-paste the secret in GitHub Settings > Secrets > Actions",
+                      pending_leads=len(todo_leads), pending_rechecks=len(rechecks))
+        print("ai_pass: ANTHROPIC_API_KEY rejected (401)")
+        return
+    except anthropic.APIError as e:
+        print(f"ai_pass: key check inconclusive ({type(e).__name__}); continuing")
     budget = Budget(args.max_usd)
     log, added, updated, rejected, watched, errors = [], [], [], 0, 0, 0
     tracked = sorted(r["grant_id"] for r in src["rows"])
