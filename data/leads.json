@@ -30,13 +30,14 @@
    "aln": [
     "16.585"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "verified as ojjdp-jdtc-fy26",
    "funder_number": "O-OJJDP-2026-172741",
    "fit_terms": [
     "substance use",
     "treatment court"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:PAR-24-089",
@@ -77,13 +78,14 @@
    "aln": [
     "93.279"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Fetched the NIH Guide NOFO (grants.nih.gov/grants/guide/pa-files/PAR-24-089.html). (1) It isn't a fit: this is an institutional K12 research career-development award. It pays salary for clinician-scie",
    "funder_number": "PAR-24-089",
    "fit_terms": [
     "substance use",
     "training"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "states:https://solicitations.alleghenycounty.us/2026/10/16/rfp-for-one-time-assistance-to-support-veterans-and-or-their-families-2nd-round/",
@@ -141,14 +143,15 @@
    "aln": [
     "16.842"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "verified as ojjdp-opioid-affected-youth-fy26",
    "funder_number": "O-OJJDP-2026-172748",
    "fit_terms": [
     "opioid",
     "substance use",
     "overdose"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:O-OJJDP-2026-172738",
@@ -178,13 +181,14 @@
    "aln": [
     "16.838"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "verified as ojjdp-family-treatment-court-fy26",
    "funder_number": "O-OJJDP-2026-172738",
    "fit_terms": [
     "substance use",
     "treatment court"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:O-OJJDP-2026-172743",
@@ -220,14 +224,15 @@
    "aln": [
     "16.726"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Checked against the NOFO PDF (ojp.gov/funding/docs/ojjdp-2026-172743.pdf, fetched 2026-10-21). The grants.gov detail page loaded only an empty site shell with no content. The opportunity is real and o",
    "funder_number": "O-OJJDP-2026-172743",
    "fit_terms": [
     "opioid",
     "substance use",
     "implementation"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:RFA-CE-27-017",
@@ -269,13 +274,14 @@
     "93.136"
    ],
    "status": "new",
-   "status_note": "",
+   "status_note": "This is a real CDC NCIPC FY27 forecast. I checked it on simpler.grants.gov (forecast version 3, last updated July 18, 2026) and on CDC's Injury Center NOFO page. For-profits and small businesses are l",
    "funder_number": "RFA-CE-27-017",
    "fit_terms": [
     "opioid",
     "overdose",
     "evidence-based"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:RFA-DA-25-060",
@@ -316,13 +322,14 @@
    "aln": [
     "93.279"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Checked against the NIH Guide NOFO (fetched) and NOT-OD-26-029 (fetched). The NOFO is real and still open. For-profits are eligible (\"For-Profit Organizations (Other than Small Businesses)\"). Rejected",
    "funder_number": "RFA-DA-25-060",
    "fit_terms": [
     "substance use",
     "implementation"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:RFA-DA-25-024",
@@ -363,13 +370,14 @@
    "aln": [
     "93.279"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Poor fit, though the NOFO is still open. I fetched the NIH Guide page (grants.nih.gov/grants/guide/rfa-files/RFA-DA-25-024.html) and NOT-OD-26-029. The scope is HIV research in people who use substanc",
    "funder_number": "RFA-DA-25-024",
    "fit_terms": [
     "substance use",
     "implementation"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:HRSA-27-040",
@@ -410,14 +418,15 @@
    "aln": [
     "93.690"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "verified as hrsa-rcorp-overdose-response-fy27",
    "funder_number": "HRSA-27-040",
    "fit_terms": [
     "opioid",
     "substance use",
     "overdose"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:HRSA-27-043",
@@ -459,13 +468,14 @@
     "93.690"
    ],
    "status": "new",
-   "status_note": "",
+   "status_note": "The forecast is real and was fetched from the primary source (simpler.grants.gov listing for HRSA-27-043, forecast posted Aug 21, 2026, with estimated dates only). The grants.gov detail page itself is",
    "funder_number": "HRSA-27-043",
    "fit_terms": [
     "opioid",
     "substance use",
     "behavioral health"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:HRSA-27-041",
@@ -506,13 +516,14 @@
    "aln": [
     "93.690"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Not a fit: no path pays for MORE clinician training. I checked the primary source on simpler.grants.gov/opportunity/44a089ce-dd0a-4cde-b6f4-c77d08d56a08, the official grants.gov listing. The grants.go",
    "funder_number": "HRSA-27-041",
    "fit_terms": [
     "opioid",
     "behavioral health"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:RFA-DA-28-002",
@@ -553,13 +564,14 @@
    "aln": [
     "93.279"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "This is a real forecast and the lead's facts are correct, but it is not a fit. Checked on simpler.grants.gov's listing for RFA-DA-28-002 (forecast posted 2026-09-10; the grants.gov detail page would n",
    "funder_number": "RFA-DA-28-002",
    "fit_terms": [
     "substance use",
     "addiction"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:RFA-DA-28-001",
@@ -600,13 +612,14 @@
    "aln": [
     "93.279"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Not a fit. This is NIDA basic-science funding (SCORCH Phase 2): single-cell and single-nucleus work on postmortem human and animal brain tissue, looking at how HIV, ART and substances interact in the ",
    "funder_number": "RFA-DA-28-001",
    "fit_terms": [
     "opioid",
     "substance use"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:RFA-DA-26-034",
@@ -653,12 +666,13 @@
     "93.840",
     "93.855"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Not a fit. I fetched the NIH Guide NOFO (grants.nih.gov/grants/guide/rfa-files/RFA-DA-26-034.html). It is a NIDA-NIAID Chemical Countermeasures (CCRP) R01 for basic research, and clinical trials are n",
    "funder_number": "RFA-DA-26-034",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:RFA-DA-26-055",
@@ -700,12 +714,13 @@
     "93.273",
     "93.279"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Checked against the NIH Guide NOFO (fetched). It is real and still open: remaining due dates are Dec 03, 2026, Jul 15, 2027 and Dec 03, 2027, and it expires Dec 04, 2027. For-profits, including small ",
    "funder_number": "RFA-DA-26-055",
    "fit_terms": [
     "substance use"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:RFA-DA-26-056",
@@ -839,13 +854,14 @@
    "aln": [
     "93.279"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Poor fit. The opportunity is real and verified: the NIH full announcement (simpler.grants.gov attachment), the simpler.grants.gov listing and NOT-DA-26-016 all loaded. But it is a NIDA DP1 award for o",
    "funder_number": "PAR-27-026",
    "fit_terms": [
     "substance use",
     "implementation"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:PAR-28-093",
@@ -888,15 +904,16 @@
     "93.310",
     "93.681"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "verified as nida-pilot-feasibility-r34-par-28-093",
    "funder_number": "PAR-28-093",
    "fit_terms": [
     "substance use",
     "pain",
     "recovery",
     "implementation"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:TI-27-005",
@@ -924,13 +941,14 @@
     "93.490"
    ],
    "status": "new",
-   "status_note": "",
+   "status_note": "This is a real follow-on cycle. SAMHSA's own FY2027 NOFO Forecast Dashboard (last updated 09/04/2026) lists TI-27-005 \"Emergency Department Alternatives to Opioids Program\" as Forecasted. The forecast",
    "funder_number": "TI-27-005",
    "fit_terms": [
     "opioid",
     "overdose",
     "pain"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "grants_gov:FOR-FD-25-009",
@@ -971,15 +989,16 @@
    "aln": [
     "93.103"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Fetched the primary listing. The grants.gov detail page (356049) is rendered by JavaScript and returned no content. The official Simpler.Grants.gov mirror (https://simpler.grants.gov/opportunity/f01e4",
    "funder_number": "FOR-FD-25-009",
    "fit_terms": [
     "opioid",
     "addiction",
     "chronic pain",
     "pain"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "settlement_tracker:https://www.statesboroga.gov/opioid",
@@ -1137,12 +1156,13 @@
    "eligibility_text": "",
    "synopsis": "Ed. note: Boston's Family Overdose Support Fund is truly extraordinary.",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Not a fit, and no organization can apply. I fetched the primary page on boston.gov (BPHC news post, published 2025-01-29, updated 2026-06-23). The Family Overdose Support Fund is aid for individuals: ",
    "fit_terms": [
     "opioid",
     "overdose"
-   ]
+   ],
+   "ai_checked": "2026-10-21"
   },
   {
    "key": "settlement_tracker:https://www.townofbourne.com/select-board/pages/opioid-settlement-funds-mini-grants-program",
