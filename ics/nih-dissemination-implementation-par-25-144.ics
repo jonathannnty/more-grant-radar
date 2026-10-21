@@ -1,22 +1,22 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//MORE Grant Radar//EN
-BEGIN:VEVENT
-UID:nih-dissemination-implementation-par-25-144-due-20270205@more-grant-radar
-DTSTAMP:20261020T120000Z
-DTSTART;VALUE=DATE:20270205
-SUMMARY:[Grant Radar] NIH Dissemination & Implementation Research in Health (R01\, PAR-25-144) — due
-DESCRIPTION:Funds research on how evidence-based treatments get adopted and scaled. That is exactly the question of clinician training and implementation for MORE in health systems\, so the study's implementation strategy can be MORE training itself.\n\nPath: Direct/Sub · Priority 3.0\nhttp://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html
-URL:http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] NIH Dissemination & Implementation Research in Health (R01\, PAR-25-144) — due
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] NIH Dissemination & Implementation Research in Health (R01\, PAR-25-144) — due
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:nih-dissemination-implementation-par-25-144-due-20270205@more-grant-radar
+DTSTAMP:20261021T120000Z
+DTSTART;VALUE=DATE:20270205
+SUMMARY:[Grant Radar] NIH Dissemination & Implementation Research in Health (R01\, PAR-25-144) — due
+DESCRIPTION:Funds research on how evidence-based treatments get adopted and scaled. That is exactly the question of clinician training and implementation for MORE in health systems\, so the study's implementation strategy can be MORE training itself.\n\nPath: Direct/Sub · Priority 3.0\nhttp://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html
+URL:http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH Dissemination & Implementation Research in Health (R01\, PAR-25-144) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIH Dissemination & Implementation Research in Health (R01\, PAR-25-144) — due
+END:VALARM
+END:VEVENT
+END:VCALENDAR

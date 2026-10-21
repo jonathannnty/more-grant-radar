@@ -1,22 +1,22 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//MORE Grant Radar//EN
-BEGIN:VEVENT
-UID:nida-sud-interventions-par-25-446-due-20270222@more-grant-radar
-DTSTAMP:20261020T120000Z
-DTSTART;VALUE=DATE:20270222
-SUMMARY:[Grant Radar] NIDA — Interventions to Prevent and Treat SUD and Overdose (UG3/UH3\, PAR-25-446) — due
-DESCRIPTION:NIDA's standing mechanism for developing and testing SUD and overdose treatments\, including co-morbid SUD. It suits a MORE trial for OUD or for a stimulant or polysubstance population\, and for-profits can lead.\n\nPath: Direct/Sub · Priority 19.4\nhttp://grants.nih.gov/grants/guide/pa-files/PAR-25-446.html
-URL:http://grants.nih.gov/grants/guide/pa-files/PAR-25-446.html
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] NIDA — Interventions to Prevent and Treat SUD and Overdose (UG3/UH3\, PAR-25-446) — due
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] NIDA — Interventions to Prevent and Treat SUD and Overdose (UG3/UH3\, PAR-25-446) — due
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:nida-sud-interventions-par-25-446-due-20270222@more-grant-radar
+DTSTAMP:20261021T120000Z
+DTSTART;VALUE=DATE:20270222
+SUMMARY:[Grant Radar] NIDA — Interventions to Prevent and Treat SUD and Overdose (UG3/UH3\, PAR-25-446) — due
+DESCRIPTION:NIDA's standing mechanism for developing and testing SUD and overdose treatments\, including co-morbid SUD. It suits a MORE trial for OUD or for a stimulant or polysubstance population\, and for-profits can lead.\n\nPath: Direct/Sub · Priority 19.4\nhttp://grants.nih.gov/grants/guide/pa-files/PAR-25-446.html
+URL:http://grants.nih.gov/grants/guide/pa-files/PAR-25-446.html
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIDA — Interventions to Prevent and Treat SUD and Overdose (UG3/UH3\, PAR-25-446) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NIDA — Interventions to Prevent and Treat SUD and Overdose (UG3/UH3\, PAR-25-446) — due
+END:VALARM
+END:VEVENT
+END:VCALENDAR

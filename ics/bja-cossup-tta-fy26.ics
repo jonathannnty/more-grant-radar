@@ -1,22 +1,22 @@
-BEGIN:VCALENDAR
-VERSION:2.0
-PRODID:-//MORE Grant Radar//EN
-BEGIN:VEVENT
-UID:bja-cossup-tta-fy26-due-20261102@more-grant-radar
-DTSTAMP:20261020T120000Z
-DTSTART;VALUE=DATE:20261102
-SUMMARY:[Grant Radar] BJA COSSUP Training & Technical Assistance (FY26) — due
-DESCRIPTION:One national award to train and advise COSSUP grantees on overdose and substance-use responses in the justice system\, and for-profits may apply. MORE fits best as the clinical-training partner inside a national TTA provider's bid.\n\nPath: Direct/Sub · Priority 12.6\nhttps://bja.ojp.gov/funding/opportunities/o-bja-2026-172724
-URL:https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] BJA COSSUP Training & Technical Assistance (FY26) — due
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] BJA COSSUP Training & Technical Assistance (FY26) — due
-END:VALARM
-END:VEVENT
-END:VCALENDAR
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MORE Grant Radar//EN
+BEGIN:VEVENT
+UID:bja-cossup-tta-fy26-due-20261102@more-grant-radar
+DTSTAMP:20261021T120000Z
+DTSTART;VALUE=DATE:20261102
+SUMMARY:[Grant Radar] BJA COSSUP Training & Technical Assistance (FY26) — due
+DESCRIPTION:One national award to train and advise COSSUP grantees on overdose and substance-use responses in the justice system\, and for-profits may apply. MORE fits best as the clinical-training partner inside a national TTA provider's bid.\n\nPath: Direct/Sub · Priority 12.6\nhttps://bja.ojp.gov/funding/opportunities/o-bja-2026-172724
+URL:https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] BJA COSSUP Training & Technical Assistance (FY26) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] BJA COSSUP Training & Technical Assistance (FY26) — due
+END:VALARM
+END:VEVENT
+END:VCALENDAR
