@@ -765,5 +765,93 @@
    "rows": 39,
    "skipped": 0
   }
+ },
+ {
+  "phase": "generate",
+  "ts": "2026-10-26T17:03:23Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "rows": 39,
+   "skipped": 0
+  }
+ },
+ {
+  "phase": "scan_grants_gov",
+  "ts": "2026-10-26T17:03:31Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "queries": 23,
+   "unknown": 25
+  }
+ },
+ {
+  "phase": "scan_sam",
+  "ts": "2026-10-26T17:03:32Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "relevant": 0
+  }
+ },
+ {
+  "phase": "scan_states",
+  "ts": "2026-10-26T17:04:09Z",
+  "status": "ok",
+  "note": "120/141 pages read · tracker list updated 2026-08-02",
+  "counts": {
+   "pages": 141,
+   "read": 120,
+   "unreachable": 21,
+   "new_links": 0,
+   "tracker_open": 18
+  }
+ },
+ {
+  "phase": "nofo_watch",
+  "ts": "2026-10-26T17:04:30Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "checked": 43,
+   "changed": 1,
+   "unreachable": 1
+  }
+ },
+ {
+  "phase": "promote_leads",
+  "ts": "2026-10-26T17:04:30Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "added": 0,
+   "active": 28,
+   "expired": 0
+  }
+ },
+ {
+  "phase": "ai_pass",
+  "ts": "2026-10-26T17:25:31Z",
+  "status": "ok",
+  "note": "claude-sonnet-5-5 + claude-opus-5-5 sweep · $5.17 spent · swept IN,MO,MD,WI,CO",
+  "counts": {
+   "added": 20,
+   "updated": 5,
+   "rejected": 9,
+   "watch": 23,
+   "errors": 0,
+   "swept": 5
+  }
+ },
+ {
+  "phase": "generate",
+  "ts": "2026-10-26T17:25:31Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "rows": 59,
+   "skipped": 0
+  }
  }
 ]

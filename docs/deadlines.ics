@@ -80,6 +80,24 @@ DESCRIPTION:[Grant Radar] BJA COSSUP Training & Technical Assistance (FY26) — 
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:in-fssa-rcc-ta-rff-2026-due-20261105@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20261105
+SUMMARY:[Grant Radar] Technical Assistance for Recovery Community Centers RFF — due
+DESCRIPTION:FSSA is asking for applications to provide technical assistance to Indiana's recovery community centers. If eligibility allows a TA or training vendor\, More Therapy could offer MORE training as part of that TA\, or join a lead applicant as a subcontractor. The fit is uncertain because the centers are peer-led.\n\nPath: Direct/Sub · Priority 1.0\nhttps://www.in.gov/sba/files/opportunities.pdf
+URL:https://www.in.gov/sba/files/opportunities.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Technical Assistance for Recovery Community Centers RFF — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Technical Assistance for Recovery Community Centers RFF — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:ojjdp-opioid-affected-youth-fy26-due-20261116@more-grant-radar
 DTSTAMP:20261026T120000Z
 DTSTART;VALUE=DATE:20261116
@@ -350,6 +368,24 @@ DESCRIPTION:[Grant Radar] Allegheny County OSF — annual RFP — cycle watch
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:york-county-pa-2027-watch-20270501@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20270501
+SUMMARY:[Grant Radar] York County PA opioid settlement — next cycle (unverified) — cycle watch
+DESCRIPTION:York County settlement dollars fund treatment\, recovery and training under Exhibit E\, so a MORE cohort for local SUD clinicians is a plausible use. The 2026 cycle closed 2026-08-14\; the next cycle has not been verified.\n\nPath: Direct/Sub · Priority 16.6\nhttps://www.ycpc.org/691/How-to-Apply
+URL:https://www.ycpc.org/691/How-to-Apply
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] York County PA opioid settlement — next cycle (unverified) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] York County PA opioid settlement — next cycle (unverified) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:hrsa-rcorp-fy27-watch-20270111@more-grant-radar
 DTSTAMP:20261026T120000Z
 DTSTART;VALUE=DATE:20270111
@@ -494,9 +530,63 @@ DESCRIPTION:[Grant Radar] Maryland Opioid Restitution Fund Grant Program (MOOR N
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:oh-sos-passthrough-watch-watch-20261001@more-grant-radar
+UID:al-admh-settlement-r4-watch-20270701@more-grant-radar
 DTSTAMP:20261026T120000Z
-DTSTART;VALUE=DATE:20261001
+DTSTART;VALUE=DATE:20270701
+SUMMARY:[Grant Radar] Alabama ADMH Opioid Settlement Round 4 (RFP 2027-04) — cycle watch
+DESCRIPTION:Round 4 closed\; awardees pending. A Round 5 RFP is not yet announced. MORE training would be a line item in certified nonprofit providers' proposals.\n\nPath: Line-item · Priority 9.1\nhttps://mh.alabama.gov/wp-content/uploads/2026/07/RFP-2027-04-Opioid-Settlement-Round-4.pdf
+URL:https://mh.alabama.gov/wp-content/uploads/2026/07/RFP-2027-04-Opioid-Settlement-Round-4.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Alabama ADMH Opioid Settlement Round 4 (RFP 2027-04) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Alabama ADMH Opioid Settlement Round 4 (RFP 2027-04) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:pcori-substance-use-due-20270112@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20270112
+SUMMARY:[Grant Radar] PCORI — Addressing Substance Use (Cycle 3 2026) — due
+DESCRIPTION:PCORI substance-use CER (up to $12M direct costs\, for-profits eligible). The LOI gate closed 2026-09-09 and the page now shows invited applications only\, so this is reachable only if an LOI was submitted and invited (LOI notifications went out 2026-10-14). Otherwise wait for the next cycle.\n\nPath: Direct · Priority 6.3\nhttps://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026
+URL:https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] PCORI — Addressing Substance Use (Cycle 3 2026) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] PCORI — Addressing Substance Use (Cycle 3 2026) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tn-williamson-cy27-watch-20270601@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20270601
+SUMMARY:[Grant Radar] Williamson County TN opioid settlement — next cycle (CY28)\, not yet announced — cycle watch
+DESCRIPTION:For-profits are explicitly eligible to apply directly\, and remediation item FF4 funds 'training providers to offer multi-modal\, evidence-informed treatment of pain' — MORE training for Williamson County clinicians is a verbatim allowable activity. Open now\, due Aug 17.\n\nPath: Direct · Priority 4.0\nhttps://chhs.mtsu.edu/wp-content/uploads/sites/83/2026/07/Williamson-CY27-RFP-APD-3.pdf
+URL:https://chhs.mtsu.edu/wp-content/uploads/sites/83/2026/07/Williamson-CY27-RFP-APD-3.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Williamson County TN opioid settlement — next cycle (CY28)\, not yet announced — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Williamson County TN opioid settlement — next cycle (CY28)\, not yet announced — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:oh-sos-passthrough-watch-watch-20261115@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20261115
 SUMMARY:[Grant Radar] Ohio SOS 4.0 (SOR pass-through) — Year 3 RFA watch — cycle watch
 DESCRIPTION:Ohio's ~$100M/yr SOR pass-through explicitly funds 'expanding evidence-based practices' and names for-profit licensed community BH providers as eligible applicants — MORE training fits as the EBP line item in provider and ADAMH board applications when Year-3 RFAs post (~fall).\n\nPath: Line-item · Priority 3.0\nhttps://dbh.ohio.gov/supporting-providers/apply-for-funding/funding-opportunities/20-rfi-109-sos-4-0-grant
 URL:https://dbh.ohio.gov/supporting-providers/apply-for-funding/funding-opportunities/20-rfi-109-sos-4-0-grant
@@ -512,11 +602,11 @@ DESCRIPTION:[Grant Radar] Ohio SOS 4.0 (SOR pass-through) — Year 3 RFA watch �
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:ca-hcai-wet-obj1-watch-20261001@more-grant-radar
+UID:ca-hcai-wet-obj1-watch-20261109@more-grant-radar
 DTSTAMP:20261026T120000Z
-DTSTART;VALUE=DATE:20261001
+DTSTART;VALUE=DATE:20261109
 SUMMARY:[Grant Radar] CA HCAI BHSA WET Plan — workforce training vendor watch — cycle watch
-DESCRIPTION:HCAI will fund development and statewide delivery of training modules cross-training MH and SUD providers in substance-use treatment\, MAT\, and harm reduction for LCSW/LMFT/LPCC/psychologists — a near-exact description of MORE clinician training\, with CEU alignment planned. No RFP yet\; implementation began 7/1/2026.\n\nPath: Sub · Priority 3.0\nhttps://hcai.ca.gov/document/bhsa-2026-2030-wet-plan/
+DESCRIPTION:HCAI will fund development and statewide delivery of cross-training modules for MH and SUD providers\, which closely matches MORE clinician training. No RFP verified yet.\n\nPath: Sub · Priority 3.0\nhttps://hcai.ca.gov/document/bhsa-2026-2030-wet-plan/
 URL:https://hcai.ca.gov/document/bhsa-2026-2030-wet-plan/
 BEGIN:VALARM
 TRIGGER:-P14D
@@ -581,6 +671,24 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials (R34 Clinical Trial Optional) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sd-dss-opioid-settlement-fy27-watch-20261102@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20261102
+SUMMARY:[Grant Radar] South Dakota Opioid Settlement FY27 Funding Opportunities (statewide share) — cycle watch
+DESCRIPTION:SD's FY27 statewide opioid settlement share opens several RFPs in Nov 2026. Justice-impacted treatment (opens 11-09) and Continuum of Care (opens 11-09) list workforce development and evidence-based treatment supports. A jail\, drug court or Medicaid-enrolled provider partner could budget MORE clinician training.\n\nPath: Line-item · Priority 3.0\nhttps://dss.sd.gov/docs/behavioralhealth/grantinfo/FY27_Opioid_Settlement_Funding_Opportunities.pdf
+URL:https://dss.sd.gov/docs/behavioralhealth/grantinfo/FY27_Opioid_Settlement_Funding_Opportunities.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] South Dakota Opioid Settlement FY27 Funding Opportunities (statewide share) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] South Dakota Opioid Settlement FY27 Funding Opportunities (statewide share) — cycle watch
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -671,6 +779,168 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] Tennessee Opioid Abatement Council Community Grants – Cycle 4 — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:id-lewiston-opioid-response-grant-watch-20261201@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20261201
+SUMMARY:[Grant Radar] Lewiston Opioid Crisis Response Grant Program — cycle watch
+DESCRIPTION:Rolling city opioid-settlement grants for treatment\, recovery and training. MORE training could be funded as a line item in a local provider's application. The city's page does not say whether for-profits may apply.\n\nPath: Line-item · Priority 2.0\nhttps://www.cityoflewiston.org/816/Opioid-Crisis-Response-Grant-Program
+URL:https://www.cityoflewiston.org/816/Opioid-Crisis-Response-Grant-Program
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Lewiston Opioid Crisis Response Grant Program — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Lewiston Opioid Crisis Response Grant Program — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:wv-fairmont-opioid-settlement-watch-20261130@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20261130
+SUMMARY:[Grant Radar] City of Fairmont Opioid Settlement Funds Grant — cycle watch
+DESCRIPTION:City opioid settlement grants for organizations serving people affected by opioids. A local treatment provider could include MORE training as a line item\, but eligibility and the current cycle are unverified.\n\nPath: Line-item · Priority 2.0\nhttps://www.fairmontwv.gov/511/Opioid-Settlement-Funds
+URL:https://www.fairmontwv.gov/511/Opioid-Settlement-Funds
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] City of Fairmont Opioid Settlement Funds Grant — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] City of Fairmont Opioid Settlement Funds Grant — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:wv-moundsville-opioid-settlement-watch-20261115@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20261115
+SUMMARY:[Grant Radar] Moundsville Opioid Settlement Grant Program — cycle watch
+DESCRIPTION:Small city Purdue settlement pot\, with some of it passed to entities that meet approved core strategies. A partner treatment provider could include MORE training if the city allows it.\n\nPath: Line-item · Priority 2.0\nhttps://www.cityofmoundsville.com/news/opioid-settlement-grant-application/2119
+URL:https://www.cityofmoundsville.com/news/opioid-settlement-grant-application/2119
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Moundsville Opioid Settlement Grant Program — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Moundsville Opioid Settlement Grant Program — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:mo-greene-county-osp-watch-20270601@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20270601
+SUMMARY:[Grant Radar] Greene County Opioid Settlement Program (OSP) Funds — cycle watch
+DESCRIPTION:Greene County gives out opioid settlement grants to community organizations working on opioid recovery. A Springfield-area SUD provider could ask for MORE clinician training as an evidence-based treatment capacity cost.\n\nPath: Line-item · Priority 2.0\nhttps://greenecountymo.gov/files/file.php?id=46450
+URL:https://greenecountymo.gov/files/file.php?id=46450
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Greene County Opioid Settlement Program (OSP) Funds — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Greene County Opioid Settlement Program (OSP) Funds — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:md-baltimore-city-orf-community-r2-fy27-watch-20261027@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20261027
+SUMMARY:[Grant Radar] Baltimore City Opioid Restitution Community Grants Round 2 (FY2027) — cycle watch
+DESCRIPTION:This is Baltimore City's own opioid settlement fund (the City did not join the global settlement)\, giving community grants to organizations that treat and support people at overdose risk. A Baltimore treatment or recovery nonprofit could put MORE clinician training into its budget\, either as its own line or with More Therapy as a subcontractor.\n\nPath: Sub · Priority 2.0\nhttps://www.baltimorecity.gov/bcmoor/news/mayors-office-of-overdose-response-and-mayors-office-of-recovery-programs-announce-applications-for-round-two-of-opioid-restitution-fund-community-grants
+URL:https://www.baltimorecity.gov/bcmoor/news/mayors-office-of-overdose-response-and-mayors-office-of-recovery-programs-announce-applications-for-round-two-of-opioid-restitution-fund-community-grants
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Baltimore City Opioid Restitution Community Grants Round 2 (FY2027) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Baltimore City Opioid Restitution Community Grants Round 2 (FY2027) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:md-moor-competitive-fy28-watch-20270115@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20270115
+SUMMARY:[Grant Radar] MOOR Competitive Grant Program (FY2028) — cycle watch
+DESCRIPTION:MOOR gives out about $6M a year in competitive grants to governments and community partners. One FY27 priority was making evidence-based treatment accessible (MOUD\, holistic care\, MOUD and counseling in carceral settings\, reentry). A provider\, local health department or detention-center applicant could include MORE training to make MOUD and counseling services stronger.\n\nPath: Sub · Priority 2.0\nhttps://stopoverdose.maryland.gov/grants/
+URL:https://stopoverdose.maryland.gov/grants/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] MOOR Competitive Grant Program (FY2028) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] MOOR Competitive Grant Program (FY2028) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:wi-dhs-osf-moud-provider-training-watch-20270115@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20270115
+SUMMARY:[Grant Radar] WI DHS Opioid Settlement – Medications for Opioid Use Disorder Training for Providers — cycle watch
+DESCRIPTION:$1M in WI state opioid settlement money is set aside for MOUD training for primary care providers at community health centers and FQHCs. MORE could join as the evidence-based behavioral and chronic-pain part of MOUD care\, as a sub or training vendor once DHS names the vehicle.\n\nPath: Sub · Priority 2.0\nhttps://www.dhs.wisconsin.gov/opioids/settlement-funds.htm
+URL:https://www.dhs.wisconsin.gov/opioids/settlement-funds.htm
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] WI DHS Opioid Settlement – Medications for Opioid Use Disorder Training for Providers — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] WI DHS Opioid Settlement – Medications for Opioid Use Disorder Training for Providers — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:co-coac-infrastructure-share-r5-watch-20270115@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20270115
+SUMMARY:[Grant Radar] Colorado Opioid Abatement Council Infrastructure Share (next round\, Round 5) — cycle watch
+DESCRIPTION:A statewide competitive settlement pool for capital improvements and operational assistance for opioid-abatement infrastructure\, with rural and underserved areas prioritized. MORE fits only as a training line-item inside a ROAC's or provider's project\, for example clinician training tied to a new MOUD or outpatient site (Round 4 funded several).\n\nPath: Line-item · Priority 2.0\nhttps://coag.gov/opioids/colorado-opioid-abatement-council/
+URL:https://coag.gov/opioids/colorado-opioid-abatement-council/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Colorado Opioid Abatement Council Infrastructure Share (next round\, Round 5) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Colorado Opioid Abatement Council Infrastructure Share (next round\, Round 5) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:co-dol-state-share-rfa-watch-watch-20270115@more-grant-radar
+DTSTAMP:20261026T120000Z
+DTSTART;VALUE=DATE:20270115
+SUMMARY:[Grant Radar] Colorado Department of Law State Share opioid settlement RFAs (next cycle) — cycle watch
+DESCRIPTION:The AG's state-share RFAs have repeatedly funded behavioral-health workforce growth\, justice reentry\, and evidence-based clinical interventions for OUD. MORE clinician training for rural or justice-involved providers matches those targets well when the next RFA comes out.\n\nPath: Sub · Priority 2.0\nhttps://coag.gov/funding-opportunities/
+URL:https://coag.gov/funding-opportunities/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Colorado Department of Law State Share opioid settlement RFAs (next cycle) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Colorado Department of Law State Share opioid settlement RFAs (next cycle) — cycle watch
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT

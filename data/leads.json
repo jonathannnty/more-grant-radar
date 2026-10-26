@@ -1,6 +1,6 @@
 {
  "_comment": "Machine-found leads, not yet verified. Written by scripts/promote_leads.py and scripts/scan_states.py; verified into grants.json by scripts/ai_pass.py.",
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "leads": [
   {
    "key": "states:https://solicitations.alleghenycounty.us/2026/10/16/rfp-for-one-time-assistance-to-support-veterans-and-or-their-families-2nd-round/",
@@ -38,7 +38,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/rfa-files/RFA-DA-26-056.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2027-12-03",
    "deadline_quote": "grants.gov close date: Dec 03, 2027 12:00:00 AM EST",
    "cycle_watch": null,
@@ -67,12 +67,13 @@
     "93.273",
     "93.279"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "The NIH Guide NOFO page would not load with web_fetch, so I could not read the full text. The grants.gov record in the lead is enough to reject. This R21 funds secondary analysis of existing datasets ",
    "funder_number": "RFA-DA-26-056",
    "fit_terms": [
     "substance use"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "grants_gov:PAR-27-053",
@@ -85,7 +86,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2028-06-16",
    "deadline_quote": "grants.gov close date: Jun 16, 2028 12:00:00 AM EDT",
    "cycle_watch": null,
@@ -113,12 +114,13 @@
    "aln": [
     "93.279"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "I could not load the NIH Guide NOFO text. The direct fetch failed, and the search returned nothing usable. The grants.gov record says for-profits are eligible and gives a close date of Jun 16, 2028. T",
    "funder_number": "PAR-27-053",
    "fit_terms": [
     "substance use"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www.statesboroga.gov/opioid",
@@ -131,7 +133,7 @@
    "nofo_url": null,
    "state": "GA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -141,11 +143,12 @@
    "eligibility_text": "",
    "synopsis": "\"[W]ill remain open until all funds are fully distributed.\"",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "watching as ga-statesboro-orf-rolling",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www.cityoflewiston.org/816/Opioid-Crisis-Response-Grant-Program",
@@ -158,7 +161,7 @@
    "nofo_url": null,
    "state": "ID",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -168,11 +171,12 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "watching as id-lewiston-opioid-response-grant",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://dekalbcounty.org/departments/mental-health-board/grant-application/",
@@ -185,7 +189,7 @@
    "nofo_url": null,
    "state": "IL",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -196,10 +200,11 @@
    "synopsis": "Note: No deadline listed on application (see also 3/2 press release), but funding workshops were held 3/12.",
    "aln": [],
    "status": "new",
-   "status_note": "",
+   "status_note": "The DeKalb County IL primary page could not be fetched. web_fetch returned invalid_tool_input, and web_search also errored. The only evidence is the OpioidSettlementTracker listing, which can't be use",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www.iowaattorneygeneral.gov/newsroom/attorney-general-brenna-bird-announces-competitive-grants-for-fighting-opioid-crisis",
@@ -212,7 +217,7 @@
    "nofo_url": null,
    "state": "IA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -222,11 +227,12 @@
    "eligibility_text": "",
    "synopsis": "“[P]lease see the expected (but not final) application requirements and materials here.” “According to [the AG], submissions will be reviewed on a rolling basis and projects of all sizes and scope are encouraged to submit an application.” See 3/3 coverage.",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "verified as ia-ag-opioid-settlement-rolling",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www.belchertown.org/658/Opioid-Settlement-Funds",
@@ -239,7 +245,7 @@
    "nofo_url": null,
    "state": "MA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -250,10 +256,11 @@
    "synopsis": "\"Belchertown will be accepting grant proposals on a rolling basis.\"",
    "aln": [],
    "status": "new",
-   "status_note": "",
+   "status_note": "web_fetch of the Belchertown page failed (invalid_tool_input), so I can't add it under rule 4. A search snippet of the town's own page does show rolling grant proposals, Select Board approval, funds p",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www.townofbourne.com/select-board/pages/opioid-settlement-funds-mini-grants-program",
@@ -266,7 +273,7 @@
    "nofo_url": null,
    "state": "MA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -277,10 +284,11 @@
    "synopsis": "\"Rolling applications.\"",
    "aln": [],
    "status": "new",
-   "status_note": "",
+   "status_note": "The Bourne primary page would not load (url_not_accessible), so I could not verify eligibility, amounts, deadline or whether training is an allowable cost. The only evidence for the lead is OpioidSett",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www.co.marquette.mi.us/departments/health_department/community_outreach/mini_grant_application.php",
@@ -293,7 +301,7 @@
    "nofo_url": null,
    "state": "MI",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -304,10 +312,11 @@
    "synopsis": "\"Applications will be reviewed quarterly while funds remain.\"",
    "aln": [],
    "status": "new",
-   "status_note": "",
+   "status_note": "The primary page could not be fetched (web_fetch returned url_not_allowed), so I could not verify eligibility, amounts, whether the program is open, or whether training is an allowable cost. The only ",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www.co.freeborn.mn.us/584/Opioid-Settlement-Fund-Application",
@@ -320,7 +329,7 @@
    "nofo_url": null,
    "state": "MN",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -330,11 +339,12 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "verified as mn-freeborn-county-opioid-rfp",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://mn-wasecacounty.civicplus.com/581/Opioids",
@@ -347,7 +357,7 @@
    "nofo_url": null,
    "state": "MN",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -358,10 +368,11 @@
    "synopsis": "\"Submit applications at any time for quarterly committee review.\"",
    "aln": [],
    "status": "new",
-   "status_note": "",
+   "status_note": "The Waseca County page would not load: web_fetch returned an invalid-input error, and a search failed the same way. The only evidence is the tracker lead, which isn't a primary source. I can't confirm",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www2.tulsacounty.org/opioid-abatement-application/",
@@ -374,7 +385,7 @@
    "nofo_url": null,
    "state": "OK",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -384,11 +395,12 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "watching as ok-tulsa-county-opioid-abatement",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://buckscounty.gov/2231/Apply-for-OSF-Funding",
@@ -401,7 +413,7 @@
    "nofo_url": null,
    "state": "PA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -411,11 +423,12 @@
    "eligibility_text": "",
    "synopsis": "\"Rolling applications are open to applicants who have not previously received a mini-grant, and applicants are not required to adhere to the timeline below.\" See mini-grant application.",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "verified as bucks-county-pa-osf-rolling",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www.franklincountypa.gov/wp-content/uploads/2025/12/Prevention-MiniGrant-Application-2025.pdf",
@@ -428,7 +441,7 @@
    "nofo_url": null,
    "state": "PA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -438,11 +451,12 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "The lead URL (2025 form) would not load with web_fetch. A search surfaced the 2026 version on franklincountypa.gov. It is a mini-grant for youth and community drug and alcohol prevention events, funde",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://dss.sd.gov/behavioralhealth/grantinfo.aspx",
@@ -455,7 +469,7 @@
    "nofo_url": null,
    "state": "SD",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -465,11 +479,12 @@
    "eligibility_text": "",
    "synopsis": "\"Applications ... accepted on an ongoing basis.\"",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "verified as sd-dss-opioid-settlement-fy27",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www.fairmontwv.gov/511/Opioid-Settlement-Funds",
@@ -482,7 +497,7 @@
    "nofo_url": null,
    "state": "WV",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -492,11 +507,12 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "watching as wv-fairmont-opioid-settlement",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://www.cityofmoundsville.com/news/opioid-settlement-grant-application/2119",
@@ -509,7 +525,7 @@
    "nofo_url": null,
    "state": "WV",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -519,11 +535,12 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "watching as wv-moundsville-opioid-settlement",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:http://cityofweirton.com/586/Weirton-Opioid-Settlement-Funding-Reques",
@@ -536,7 +553,7 @@
    "nofo_url": null,
    "state": "WV",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -547,10 +564,11 @@
    "synopsis": "",
    "aln": [],
    "status": "new",
-   "status_note": "",
+   "status_note": "Could not fetch the Weirton primary page: web_fetch rejected both the http and https URL as invalid input, and web_search also errored. The only evidence is the OpioidSettlementTracker listing (rollin",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "settlement_tracker:https://oklahoma.gov/oag/resources/oklahoma-ready-initiative.html",
@@ -563,7 +581,7 @@
    "nofo_url": null,
    "state": "OK",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -573,11 +591,12 @@
    "eligibility_text": "",
    "synopsis": "\"Please complete this application if your school is interested in participating in the Oklahoma READY Initiative.\" \"The Oklahoma READY (Resilience, Education, Awareness, Decision-Making for Youth) Initiative is a statewide prevention effort launched by the Oklahoma Attorney General's Office and impl",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "The Oklahoma AG page is a school sign-up for the READY youth prevention initiative. It is not a grant open to clinicians, treatment providers or vendors, and it states no deadline or amount. Training ",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "states:https://www.dmh.ms.gov/wp-content/uploads/2026/05/FY-2027-NOFO-A-D-Certifed-Peer-Support-Training-Development.pdf",
@@ -600,11 +619,12 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Fetched the MS DMH FY2027 NOFO PDF. It funds one DMH-certified provider to run the statewide Certified Peer Support Specialist curriculum, under DMH oversight of all models. It is limited to DMH-certi",
    "fit_terms": [
     "training"
-   ]
+   ],
+   "ai_checked": "2026-10-26"
   },
   {
    "key": "states:https://www.dmh.ms.gov/wp-content/uploads/2026/05/FY-2027-NOFO-CYS-Parent-Caregiver-CPSS-Training.pdf",
@@ -1171,7 +1191,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/pa-files/PAR-24-089.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2026-11-13",
    "deadline_quote": "grants.gov close date: Nov 13, 2026 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1297,7 +1317,7 @@
    "nofo_url": "https://www.ojp.gov/funding/docs/ojjdp-2026-172743.pdf",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2026-11-16",
    "deadline_quote": "grants.gov close date: Nov 16, 2026 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1456,7 +1476,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/rfa-files/RFA-DA-25-060.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2027-03-05",
    "deadline_quote": "grants.gov close date: Mar 05, 2027 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1504,7 +1524,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/rfa-files/RFA-DA-25-024.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2027-03-06",
    "deadline_quote": "grants.gov close date: Mar 06, 2027 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1650,7 +1670,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2027-03-23",
    "deadline_quote": "grants.gov forecast: est. posting Jan 23, 2027 12:00:00 AM EST, est. due Mar 23, 2027 12:00:00 AM EDT",
    "cycle_watch": "2027-01-23",
@@ -1749,7 +1769,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2027-05-26",
    "deadline_quote": "grants.gov forecast: est. posting Feb 01, 2027 12:00:00 AM EST, est. due May 26, 2027 12:00:00 AM EDT",
    "cycle_watch": "2027-02-01",
@@ -1797,7 +1817,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2027-06-08",
    "deadline_quote": "grants.gov forecast: est. posting Feb 01, 2027 12:00:00 AM EST, est. due Jun 08, 2027 12:00:00 AM EDT",
    "cycle_watch": "2027-02-01",
@@ -1845,7 +1865,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/rfa-files/RFA-DA-26-034.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2027-11-18",
    "deadline_quote": "grants.gov close date: Nov 18, 2027 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1898,7 +1918,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/rfa-files/RFA-DA-26-055.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2027-12-03",
    "deadline_quote": "grants.gov close date: Dec 03, 2027 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1946,7 +1966,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": "2028-09-25",
    "deadline_quote": "grants.gov close date: Sep 25, 2028 12:00:00 AM EDT",
    "cycle_watch": null,
@@ -2081,7 +2101,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "grants.gov forecast: est. posting None, est. due None",
    "cycle_watch": null,
@@ -2131,7 +2151,7 @@
    "nofo_url": null,
    "state": "MA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-10-25",
+   "last_seen": "2026-10-26",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
