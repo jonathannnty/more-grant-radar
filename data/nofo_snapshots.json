@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "626d9c32d6cb8a8e",
-  "len": 2985,
+  "hash": "87e51d5ae554d2e9",
+  "len": 3105,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "432577d532ace44b",
-  "len": 2874,
+  "hash": "5735797fd8ea588d",
+  "len": 2853,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -396,8 +396,8 @@
   "url": "https://simpler.grants.gov/opportunity/579974eb-28f3-4ba0-8741-fa1a1183cd3e"
  },
  "samhsa-ed-alt-ti-27-005": {
-  "hash": "3c069ed36038505a",
-  "len": 49010,
+  "hash": "43b31d9bbcb5f325",
+  "len": 49011,
   "dates": [
    "09/04/2026"
   ],
@@ -422,8 +422,8 @@
   "url": "https://rva.gov/sites/default/files/2026-01/Request_for_Applications_%28Open_Application%29_%20UPDATED.pdf"
  },
  "az-ahcccs-sor-iv-passthrough": {
-  "hash": "58c6ace71cea6bce",
-  "len": 11034,
+  "hash": "96477cff17d16c1b",
+  "len": 11224,
   "dates": [
    "06/30/2027",
    "07/01/2026",
@@ -431,7 +431,7 @@
    "09/29/2027",
    "09/30/2024",
    "10/16/2022",
-   "3/14/2025",
+   "10/26/2025",
    "9/30/2024"
   ],
   "url": "https://www.azahcccs.gov/Resources/Grants/"
@@ -468,5 +468,200 @@
    "june 15, 2026"
   ],
   "url": "https://www.tn.gov/oac/community.html"
+ },
+ "ga-statesboro-orf-rolling": {},
+ "id-lewiston-opioid-response-grant": {
+  "hash": "3ae43b8441692386",
+  "len": 4996,
+  "dates": [],
+  "url": "https://www.cityoflewiston.org/816/Opioid-Crisis-Response-Grant-Program"
+ },
+ "ia-ag-opioid-settlement-rolling": {
+  "hash": "3c2c26d748ecfc35",
+  "len": 46464,
+  "dates": [],
+  "url": "https://www.iowaattorneygeneral.gov/media/cms/2_896626D80E7AF.pdf"
+ },
+ "mn-freeborn-county-opioid-rfp": {
+  "hash": "a33fadf42ede86b8",
+  "len": 216402,
+  "dates": [],
+  "url": "https://www.freeborncountymn.gov/DocumentCenter/View/10032/FC-OAC-RFP-Application"
+ },
+ "ok-tulsa-county-opioid-abatement": {
+  "hash": "a63f74a55bad21c9",
+  "len": 4075,
+  "dates": [],
+  "url": "https://www2.tulsacounty.org/opioid-abatement-application/"
+ },
+ "bucks-county-pa-osf-rolling": {
+  "hash": "e4509b5b16e8c7e2",
+  "len": 4345,
+  "dates": [
+   "august 3, 2026",
+   "september 4, 2026"
+  ],
+  "url": "https://buckscounty.gov/2231/Apply-for-OSF-Funding"
+ },
+ "sd-dss-opioid-settlement-fy27": {
+  "hash": "a4dd6f2e156ab691",
+  "len": 75116,
+  "dates": [],
+  "url": "https://dss.sd.gov/docs/behavioralhealth/grantinfo/FY27_Opioid_Settlement_Funding_Opportunities.pdf"
+ },
+ "wv-fairmont-opioid-settlement": {
+  "hash": "7524b4155bf280d5",
+  "len": 5020,
+  "dates": [],
+  "url": "https://www.fairmontwv.gov/511/Opioid-Settlement-Funds"
+ },
+ "wv-moundsville-opioid-settlement": {
+  "hash": "a694e348c7b35333",
+  "len": 4849,
+  "dates": [
+   "05/13/25"
+  ],
+  "url": "https://www.cityofmoundsville.com/news/opioid-settlement-grant-application/2119"
+ },
+ "in-fssa-rcc-ta-rff-2026": {
+  "hash": "f32a364b8ec54a20",
+  "len": 32913,
+  "dates": [],
+  "url": "https://www.in.gov/sba/files/opportunities.pdf"
+ },
+ "mo-greene-county-osp": {
+  "hash": "34503c0fb7430d28",
+  "len": 320696,
+  "dates": [],
+  "url": "https://greenecountymo.gov/files/file.php?id=46450"
+ },
+ "md-baltimore-city-orf-community-r2-fy27": {
+  "hash": "3f24d085e3ffbd57",
+  "len": 17100,
+  "dates": [
+   "09/30/2026",
+   "april 16, 2024",
+   "august 29, 2024",
+   "december 4, 2026",
+   "july 1, 2027",
+   "june 30, 2029",
+   "november 1, 2026",
+   "october 19, 2026",
+   "october 21, 2026",
+   "october 22, 2026",
+   "october 23, 2026",
+   "october 29, 2026",
+   "september 29, 2026"
+  ],
+  "url": "https://www.baltimorecity.gov/bcmoor/news/mayors-office-of-overdose-response-and-mayors-office-of-recovery-programs-announce-applications-for-round-two-of-opioid-restitution-fund-community-grants"
+ },
+ "md-moor-competitive-fy28": {
+  "hash": "96887920152e49e6",
+  "len": 3217,
+  "dates": [],
+  "url": "https://stopoverdose.maryland.gov/grants/"
+ },
+ "wi-dhs-osf-moud-provider-training": {
+  "hash": "cb310ee030f92f9e",
+  "len": 66852,
+  "dates": [
+   "december 14, 2026",
+   "december 29, 2023",
+   "december 30, 2022",
+   "december 30, 2025",
+   "january 2, 2025",
+   "july 1, 2022",
+   "july 1, 2023",
+   "july 1, 2024",
+   "july 1, 2025",
+   "july 1, 2026",
+   "july 10, 2026",
+   "june 28, 2024",
+   "june 30, 2023",
+   "june 30, 2024",
+   "june 30, 2025",
+   "june 30, 2026",
+   "june 30, 2027",
+   "march 29, 2023",
+   "march 29, 2024",
+   "march 31, 2025",
+   "march 31, 2026",
+   "october 25, 2026",
+   "october 26, 2026",
+   "september 29, 2023",
+   "september 30, 2024",
+   "september 30, 2025",
+   "september 30, 2026"
+  ],
+  "url": "https://www.dhs.wisconsin.gov/opioids/settlement-funds.htm"
+ },
+ "co-coac-infrastructure-share-r5": {
+  "hash": "b427cfd8022a9bf8",
+  "len": 39436,
+  "dates": [
+   "april 13, 2023",
+   "april 16, 2024",
+   "april 17, 2024",
+   "april 21, 2026",
+   "april 27, 2026",
+   "april 3, 2025",
+   "april 4, 2023",
+   "april 5, 2023",
+   "april 7, 2026",
+   "april 8, 2025",
+   "april 9, 2024",
+   "april 9, 2026",
+   "august 12, 2025",
+   "august 13, 2026",
+   "august 18, 2026",
+   "august 4, 2026",
+   "august 5, 2025",
+   "august 6, 2024",
+   "august 7, 2025",
+   "december 1, 2026",
+   "december 10, 2026",
+   "december 13, 2023",
+   "december 15, 2026",
+   "december 2, 2025",
+   "december 31, 2025",
+   "december 4, 2025",
+   "february 10, 2026",
+   "february 11, 2025",
+   "february 12, 2026",
+   "february 13, 2024",
+   "february 13, 2026",
+   "february 14, 2024",
+   "february 26, 2024",
+   "february 27, 2023",
+   "february 3, 2026",
+   "february 4, 2025",
+   "february 6, 2025",
+   "january 14, 2025",
+   "january 22, 2024",
+   "january 26, 2026"
+  ],
+  "url": "https://coag.gov/opioids/colorado-opioid-abatement-council/"
+ },
+ "co-dol-state-share-rfa-watch": {
+  "hash": "1ef1e9b7d48875e0",
+  "len": 11401,
+  "dates": [
+   "december 31, 2025",
+   "january 1, 2024",
+   "january 1, 2027",
+   "july 1, 2024",
+   "july 1, 2025",
+   "july 1, 2026",
+   "july 16, 2026",
+   "july 30, 2026",
+   "june 17, 2026",
+   "june 24, 2026",
+   "june 30, 2026",
+   "june 30, 2028",
+   "june 30, 2029",
+   "october 1, 2024",
+   "september 30, 2026"
+  ],
+  "url": "https://coag.gov/funding-opportunities/"
  }
 }
