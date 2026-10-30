@@ -8,26 +8,8 @@ X-WR-CALDESC:Funding deadlines and cycle-watch dates for MORE clinician training
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
-UID:ojjdp-jdtc-fy26-due-20261029@more-grant-radar
-DTSTAMP:20261029T120000Z
-DTSTART;VALUE=DATE:20261029
-SUMMARY:[Grant Radar] OJJDP FY 2026 Juvenile Drug Treatment Court Program — due
-DESCRIPTION:Funds governments to start (Cat 1) or enhance (Cat 2) juvenile drug treatment courts for youth with SUD or co-occurring MH and substance use disorders. Cat 2 explicitly covers improving 'the quality and types of treatment services'\, so MORE training for the JDTC's treatment provider could be a contractual line item. MORE's fit is weakened because the program is youth-only and very small (4 awards).\n\nPath: Line-item · Priority 1.0\nhttps://www.ojp.gov/funding/docs/ojjdp-2026-172741.pdf
-URL:https://www.ojp.gov/funding/docs/ojjdp-2026-172741.pdf
-BEGIN:VALARM
-TRIGGER:-P14D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] OJJDP FY 2026 Juvenile Drug Treatment Court Program — due
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-P3D
-ACTION:DISPLAY
-DESCRIPTION:[Grant Radar] OJJDP FY 2026 Juvenile Drug Treatment Court Program — due
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:bja-adult-treatment-court-fy26-due-20261030@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261030
 SUMMARY:[Grant Radar] BJA Adult Treatment Court Program (FY26) — due
 DESCRIPTION:About $49M for courts and counties to plan\, run\, or expand adult treatment courts. Clinical training for court treatment providers is a natural budget line\, so MORE gets in through a county or court applicant.\n\nPath: Line-item · Priority 12.8\nhttps://bja.ojp.gov/funding/opportunities/o-bja-2026-172721
@@ -45,7 +27,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bja-cossup-tta-fy26-due-20261102@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261102
 SUMMARY:[Grant Radar] BJA COSSUP Training & Technical Assistance (FY26) — due
 DESCRIPTION:One national award to train and advise COSSUP grantees on overdose and substance-use responses in the justice system\, and for-profits may apply. MORE fits best as the clinical-training partner inside a national TTA provider's bid.\n\nPath: Direct/Sub · Priority 12.6\nhttps://bja.ojp.gov/funding/opportunities/o-bja-2026-172724
@@ -63,7 +45,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:in-fssa-rcc-ta-rff-2026-due-20261105@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261105
 SUMMARY:[Grant Radar] Technical Assistance for Recovery Community Centers RFF — due
 DESCRIPTION:FSSA is asking for applications to provide technical assistance to Indiana's recovery community centers. If eligibility allows a TA or training vendor\, More Therapy could offer MORE training as part of that TA\, or join a lead applicant as a subcontractor. The fit is uncertain because the centers are peer-led.\n\nPath: Direct/Sub · Priority 1.0\nhttps://www.in.gov/sba/files/opportunities.pdf
@@ -81,7 +63,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ojjdp-opioid-affected-youth-fy26-due-20261116@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261116
 SUMMARY:[Grant Radar] OJJDP FY 2026 Opioid Affected Youth Initiative — due
 DESCRIPTION:Grants of up to $750K over 36 months for states\, local governments\, tribes and nonprofits to run prevention\, intervention and treatment for children\, youth and families affected by opioid\, stimulant and other SUDs\, in partnership with justice and child-welfare agencies. MORE fits as clinician training (subrecipient or consultant line) inside the parent/family treatment and recovery part of an application (Objective 3). The youth-only prevention parts are a weaker fit\, and MORE's evidence base is in adults.\n\nPath: Sub · Priority 2.0\nhttps://www.ojp.gov/funding/docs/ojjdp-2026-172748.pdf
@@ -99,7 +81,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ojjdp-family-treatment-court-fy26-due-20261116@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261116
 SUMMARY:[Grant Radar] OJJDP FY 2026 Family Treatment Court Program — due
 DESCRIPTION:Four-year federal grants (Cat 1 up to $850K\, Cat 2 up to $750K) for courts and local governments to start or expand family treatment courts that pay for SUD and co-occurring treatment for parents in the child welfare system\, with explicit objectives for opioid and stimulant use disorders. MORE fits as evidence-based OUD/SUD treatment capacity: a county or court can budget MORE clinician training for its treatment providers as a contractor/consultant cost or through a subrecipient provider.\n\nPath: Sub · Priority 2.0\nhttps://www.ojp.gov/funding/docs/ojjdp-2026-172738.pdf
@@ -117,7 +99,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bja-rsat-formula-fy26-due-20261120@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261120
 SUMMARY:[Grant Radar] BJA FY 2026 Residential Substance Abuse Treatment (RSAT) for State Prisoners Formula Grants Program — due
 DESCRIPTION:Formula money to every state for SUD treatment in prisons and jails (residential\, pretrial\, and aftercare tracks)\, with a required pass-through to local jails. 'Training curricula' is a listed allowable cost\, and MORE is an evidence-based treatment for OUD and co-occurring conditions that fits RSAT residential and aftercare programs as a training line item.\n\nPath: Line-item · Priority 2.0\nhttps://www.ojp.gov/funding/docs/bja-2026-172763.pdf
@@ -135,7 +117,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:oh-ag-jail-remediation-cy26-due-20261201@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261201
 SUMMARY:[Grant Radar] Ohio AG Opioid Remediation — jail addiction programs (CY2026) — due
 DESCRIPTION:$20M/yr for county jails and CBCFs to stand up addiction programming — 'new contract services related to OUD' explicitly qualifies\, so a jail grantee contracts More Therapy to train its treatment staff in MORE. Rolling review through Dec 1.\n\nPath: Line-item · Priority 15.9\nhttps://www.ohioattorneygeneral.gov/getattachment/ed88813d-94c9-4e90-ba0f-7d43614444e2/ed88813d-94c9-4e90-ba0f-7d43614444e2.aspx
@@ -153,7 +135,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pa-27-100-due-20270105@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270105
 SUMMARY:[Grant Radar] NIH/NIDA SBIR Phase I (PA-27-100) — due
 DESCRIPTION:The one big pot built for for-profits — R&D money for the MORE app and training platform. Eric wants the ~$2M path\; Phase I is the door. The Sep 5 date passed\; the next standard due date is Jan 5\, 2027.\n\nPath: Direct · Priority 28.0\nhttps://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e
@@ -171,7 +153,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tx-oafc-cjs-2026-watch-20260901@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20260901
 SUMMARY:[Grant Radar] Texas OAFC — criminal-justice opioid abatement (targeted cycle) — cycle watch
 DESCRIPTION:Up to $25M for opioid abatement in the criminal-justice system\, awards $250K–$2.5M\, categories explicitly include Workforce Development and Training — train jail/reentry clinicians in MORE layered onto MOUD. NOFA overdue\; watch closely.\n\nPath: Direct · Priority 25.6\nhttps://comptroller.texas.gov/programs/opioid-council/docs/grants/Amended-2026-OAFC-grant-issuance-plan.pdf
@@ -189,7 +171,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nih-heal-impowr-rm1-due-20270126@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270126
 SUMMARY:[Grant Radar] NIH HEAL IMPOWR Research Centers — chronic pain + OUD (RFA-DA-28-011) — due
 DESCRIPTION:Health-systems implementation of integrative interventions for co-occurring chronic pain + OUD — MORE's exact dyad and evidence space\, and clinician training is a core implementation strategy this NOFO funds. Team with Garland/U. Utah.\n\nPath: Direct/Sub · Priority 23.8\nhttps://www.grants.gov/search-results-detail/360048
@@ -207,7 +189,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:heal-translation-rfa-da-27-016-due-20270210@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270210
 SUMMARY:[Grant Radar] NIH HEAL — Translating Addiction Research into Practice (RFA-DA-27-016) — due
 DESCRIPTION:NIH money a for-profit can hold directly\, whose stated priority is exactly MORE's pitch: getting clinicians trained in and delivering evidence-based addiction treatment\, with chronic-pain-comorbid SUD named as a priority. An R61 (train clinicians\, pilot fidelity) into R33 (implementation trial) built around MORE dissemination.\n\nPath: Direct · Priority 23.4\nhttps://files.simpler.grants.gov/opportunities/c33f1e5e-0354-4976-adca-9aa7240778d3/attachments/d20bcf8b-9221-47b2-93d3-2351a3eac1a4/RFA-DA-27-016-Full-Announcement.html
@@ -225,7 +207,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nccih-mind-body-ewb-par-25-449-due-20270208@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270208
 SUMMARY:[Grant Radar] NCCIH — Mind and Body Interventions via Emotional Well-Being (R61/R33\, PAR-25-449) — due
 DESCRIPTION:NCCIH wants trials of mind and body practices\, naming mindfulness meditation first\, that work through emotional well-being. MORE's positive-affect and savoring mechanism is a direct match\, and for-profits can apply.\n\nPath: Direct/Sub · Priority 22.7\nhttp://grants.nih.gov/grants/guide/pa-files/PAR-25-449.html
@@ -243,7 +225,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hrsa-rcorp-overdose-response-fy27-due-20270310@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270310
 SUMMARY:[Grant Radar] Rural Communities Opioid Response Program - Overdose Response (FY27) — due
 DESCRIPTION:One-year HRSA grants of up to $300K to meet urgent overdose and SUD needs in HRSA-designated rural areas. For-profits can apply directly\, and the last cycle listed clinical training (certification\, CEU/CME) as an allowable activity. More Therapy could apply itself with a MORE training and implementation package for rural OUD providers\, or a rural clinic or health system could apply and budget MORE training.\n\nPath: Direct/Sub · Priority 21.9\nhttps://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da
@@ -261,7 +243,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:samhsa-sm-26-015-outreach-20261011@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261011
 SUMMARY:[Grant Radar] CCBHC Improvement & Advancement (SM-26-015) — outreach window (award ~2026-11-15)
 DESCRIPTION:The application window closed 2026-08-17. What's left is the post-award play: about 117 existing CCBHCs will each get up to $1M/yr for up to 4 years to improve services. Once SAMHSA publishes the FY26 grantees\, approach the funded clinics as their EBP and workforce-training partner (budget revision or a Year-2 line).\n\nPath: Line-item · Priority 21.2\nhttps://www.samhsa.gov/grants/grant-announcements/sm-26-015
@@ -279,7 +261,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nida-sud-interventions-par-25-446-due-20270222@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270222
 SUMMARY:[Grant Radar] NIDA — Interventions to Prevent and Treat SUD and Overdose (UG3/UH3\, PAR-25-446) — due
 DESCRIPTION:NIDA's standing mechanism for developing and testing SUD and overdose treatments\, including co-morbid SUD. It suits a MORE trial for OUD or for a stimulant or polysubstance population\, and for-profits can lead.\n\nPath: Direct/Sub · Priority 19.4\nhttp://grants.nih.gov/grants/guide/pa-files/PAR-25-446.html
@@ -297,7 +279,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tx-oafc-core-2026f-watch-20261104@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261104
 SUMMARY:[Grant Radar] Texas OAFC — Fall 2026 CORE grants — cycle watch
 DESCRIPTION:Up to $75M in multi-year (3-5 yr) settlement grants across Texas's 20 RHP regions. 'Workforce Training and Development' is an eligible category\, and MOUD expansion and pregnant/postpartum OUD get preference. MORE fits best as a training line-item or sub under a Texas MOUD provider in each target region. NOFA not yet posted.\n\nPath: Direct/Sub · Priority 18.8\nhttps://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php
@@ -315,7 +297,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nih-heal-impowr-beacon-due-20270126@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270126
 SUMMARY:[Grant Radar] NIH HEAL IMPOWR BEACON Coordination Center (RFA-DA-28-012) — due
 DESCRIPTION:The single capacity-building hub for scaling evidence-based practices across the chronic pain + OUD consortium — one award\, $1.75M\, and clinician training at the EBP/implementation intersection is its core duty.\n\nPath: Direct/Sub · Priority 18.5\nhttps://www.grants.gov/search-results-detail/360366
@@ -333,7 +315,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:allegheny-osf-2026-watch-20261119@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261119
 SUMMARY:[Grant Radar] Allegheny County OSF — annual RFP — cycle watch
 DESCRIPTION:Annual county settlement RFP — opens around November\, due January. Calendar it\; the county pattern of 3–6-week windows is the volume play nationwide.\n\nPath: Direct/Sub · Priority 17.1\nhttps://solicitations.alleghenycounty.us/wp-content/uploads/2025/09/REFERENCE-ONLY-1.-OSF-RFP_Amended-08-13-26.pdf
@@ -351,7 +333,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:york-county-pa-2027-watch-20270501@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270501
 SUMMARY:[Grant Radar] York County PA opioid settlement — next cycle (unverified) — cycle watch
 DESCRIPTION:York County settlement dollars fund treatment\, recovery and training under Exhibit E\, so a MORE cohort for local SUD clinicians is a plausible use. The 2026 cycle closed 2026-08-14\; the next cycle has not been verified.\n\nPath: Direct/Sub · Priority 16.6\nhttps://www.ycpc.org/691/How-to-Apply
@@ -369,7 +351,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hrsa-rcorp-fy27-watch-20270111@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270111
 SUMMARY:[Grant Radar] HRSA RCORP — FY27 cycle (Overdose Response\, HRSA-27-040 forecast) — cycle watch
 DESCRIPTION:HRSA has forecast an FY27 RCORP-Overdose Response round (35 × $300K) that lists for-profits as eligible\, which is rare for federal SUD money. MORE fits best as the evidence-based treatment/workforce piece of a rural applicant's plan (or a direct application with rural partners). Whether training is an allowable cost can't be confirmed until the NOFO posts.\n\nPath: Direct · Priority 16.4\nhttps://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da
@@ -387,7 +369,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ks-sedgwick-wichita-2026-watch-20270501@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270501
 SUMMARY:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4 programs) — cycle watch
 DESCRIPTION:For-profits check a box on the response form and apply directly — and RFP 26-0081's Workforce Support goal ($580K\, awards to $200K) explicitly funds 'continuing education and skill-building training' for behavioral-health clinicians. A straight MORE training proposal.\n\nPath: Direct · Priority 15.9\nhttps://www.sedgwickcounty.org/media/73907/26-0081-integrated-care_aod.pdf
@@ -405,7 +387,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:oneohio-c3-watch-20261119@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261119
 SUMMARY:[Grant Radar] OneOhio Recovery Foundation — Regional Grant Cycle 3 (not yet announced) — cycle watch
 DESCRIPTION:Ohio's 55% opioid-settlement foundation. Cycle 2 was $45.8M across 19 regions\, and private for-profits whose services meet the Foundation's charitable purpose could apply. Workforce development / BH continuing-education priorities in some regions fit MORE training. Cycle 3 is not announced yet\, and More Therapy's Ohio SoS registration under its EIN (2 consecutive years) is the gating item.\n\nPath: Direct · Priority 15.8\nhttps://www.oneohiofoundation.com/grants
@@ -423,7 +405,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ct-dmhas-recovery-centers-2027-due-20261218@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261218
 SUMMARY:[Grant Radar] Connecticut DMHAS — Recovery Community Centers (opioid settlement RFP) — due
 DESCRIPTION:CT is spending opioid settlement money on three low-barrier Recovery Community Centers\, at $1.25M per contract over 3 years\, and proprietary companies may propose. MORE fits as the evidence-based group and staff-training component inside a provider's bid.\n\nPath: Line-item · Priority 12.2\nhttps://portal.ct.gov/-/media/dmhas/publications/dmhas-osu-recovery-centers-2027-rfp.pdf
@@ -441,7 +423,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:sm-26-014-outreach-20261011@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261011
 SUMMARY:[Grant Radar] CCBHC Planning\, Development & Implementation (SM-26-014) — outreach window (award ~2026-11-15)
 DESCRIPTION:The application window closed 2026-08-17 and SAMHSA's FY27 forecast has no CCBHC successor. What's left is the post-award play: about 94 new CCBHCs are expected to be funded around Nov 15\, 2026\, with up to $1M/yr for up to 4 years. Allowable Activity #3 (training partnerships\, continuing education) lets them buy MORE training as a line item.\n\nPath: Line-item · Priority 12.0\nhttps://www.samhsa.gov/sites/default/files/grants/pdf/fy-2026-ccbhc-pdi-sm-26-014.pdf
@@ -459,7 +441,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:cdc-ncipc-rfa-ce-27-017-watch-20261104@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261104
 SUMMARY:[Grant Radar] Improving Linkage to Care for People with Opioid Use Disorder (U01) — cycle watch
 DESCRIPTION:CDC U01 research money to test strategies that overcome barriers to evidence-based OUD linkage-to-care in health care settings. MORE fits only if framed as an engagement/retention component that helps clinicians keep linked patients in care. Best led by Garland/UCSD with a health-system champion\, with More Therapy as the training sub.\n\nPath: Direct/Sub · Priority 11.5\nhttps://simpler.grants.gov/opportunity/04e6fd79-8789-47c8-be6f-646c0e686087
@@ -477,7 +459,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hrsa-rcorp-csd-fy27-due-20270406@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270406
 SUMMARY:[Grant Radar] Rural Communities Opioid Response Program - Community Systems Development (FY2027) — due
 DESCRIPTION:New RCORP line that pays for formalized rural networks to expand regional behavioral-health systems of care through coordinated\, evidence-based SUD prevention\, treatment and recovery services. MORE is an evidence-based SUD/OUD treatment with chronic-pain overlap that network clinicians can be trained in. The most realistic role is training vendor for a rural network applicant\, since only 6 awards are expected and the program is built around networks.\n\nPath: Sub · Priority 11.4\nhttps://simpler.grants.gov/opportunity/02b2d236-f596-4aca-874d-b8e364156ddc
@@ -495,7 +477,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:md-orf-2027-moor-watch-20270115@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270115
 SUMMARY:[Grant Radar] Maryland Opioid Restitution Fund Grant Program (MOOR NOFA) — next cycle TBD — cycle watch
 DESCRIPTION:Maryland settlement money\, up to $1M per 2-year project\, for evidence-based treatment and staff training. MORE can be a named training/subcontract line in a nonprofit partner's application. The 2027 round closed\; watch the award list for funded partners and for the next NOFA.\n\nPath: Line-item · Priority 10.0\nhttps://stopoverdose.maryland.gov/wp-content/uploads/sites/34/2026/08/MOOR-2027-ORF-NOFA-Revised-v2.pdf
@@ -513,7 +495,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:al-admh-settlement-r4-watch-20270701@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270701
 SUMMARY:[Grant Radar] Alabama ADMH Opioid Settlement Round 4 (RFP 2027-04) — cycle watch
 DESCRIPTION:Round 4 closed\; awardees pending. A Round 5 RFP is not yet announced. MORE training would be a line item in certified nonprofit providers' proposals.\n\nPath: Line-item · Priority 9.1\nhttps://mh.alabama.gov/wp-content/uploads/2026/07/RFP-2027-04-Opioid-Settlement-Round-4.pdf
@@ -531,7 +513,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:pcori-substance-use-due-20270112@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270112
 SUMMARY:[Grant Radar] PCORI — Addressing Substance Use (Cycle 3 2026) — due
 DESCRIPTION:PCORI substance-use CER (up to $12M direct costs\, for-profits eligible). The LOI gate closed 2026-09-09 and the page now shows invited applications only\, so this is reachable only if an LOI was submitted and invited (LOI notifications went out 2026-10-14). Otherwise wait for the next cycle.\n\nPath: Direct · Priority 6.3\nhttps://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026
@@ -549,7 +531,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tn-williamson-cy27-watch-20270601@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270601
 SUMMARY:[Grant Radar] Williamson County TN opioid settlement — next cycle (CY28)\, not yet announced — cycle watch
 DESCRIPTION:For-profits are explicitly eligible to apply directly\, and remediation item FF4 funds 'training providers to offer multi-modal\, evidence-informed treatment of pain' — MORE training for Williamson County clinicians is a verbatim allowable activity. Open now\, due Aug 17.\n\nPath: Direct · Priority 4.0\nhttps://chhs.mtsu.edu/wp-content/uploads/sites/83/2026/07/Williamson-CY27-RFP-APD-3.pdf
@@ -567,7 +549,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:oh-sos-passthrough-watch-watch-20261115@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261115
 SUMMARY:[Grant Radar] Ohio SOS 4.0 (SOR pass-through) — Year 3 RFA watch — cycle watch
 DESCRIPTION:Ohio's ~$100M/yr SOR pass-through explicitly funds 'expanding evidence-based practices' and names for-profit licensed community BH providers as eligible applicants — MORE training fits as the EBP line item in provider and ADAMH board applications when Year-3 RFAs post (~fall).\n\nPath: Line-item · Priority 3.0\nhttps://dbh.ohio.gov/supporting-providers/apply-for-funding/funding-opportunities/20-rfi-109-sos-4-0-grant
@@ -585,7 +567,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ca-hcai-wet-obj1-watch-20261109@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261109
 SUMMARY:[Grant Radar] CA HCAI BHSA WET Plan — workforce training vendor watch — cycle watch
 DESCRIPTION:HCAI will fund development and statewide delivery of cross-training modules for MH and SUD providers\, which closely matches MORE clinician training. No RFP verified yet.\n\nPath: Sub · Priority 3.0\nhttps://hcai.ca.gov/document/bhsa-2026-2030-wet-plan/
@@ -603,7 +585,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:dod-cdmrp-prmrp-watch-20270301@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270301
 SUMMARY:[Grant Radar] DoD CDMRP — chronic pain research (PRMRP / CPMRP) — cycle watch
 DESCRIPTION:Rare for-profit-direct DoD money for chronic-pain research — MORE's pain dyad fits squarely. FY26 entry is closed\; FY27 opens ~spring 2027\, so we prep and apply on day one.\n\nPath: Direct · Priority 3.0\nhttps://cdmrp.health.mil/funding/prmrp
@@ -621,7 +603,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nih-dissemination-implementation-par-25-144-due-20270205@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270205
 SUMMARY:[Grant Radar] NIH Dissemination & Implementation Research in Health (R01\, PAR-25-144) — due
 DESCRIPTION:Funds research on how evidence-based treatments get adopted and scaled. That is exactly the question of clinician training and implementation for MORE in health systems\, so the study's implementation strategy can be MORE training itself.\n\nPath: Direct/Sub · Priority 3.0\nhttp://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html
@@ -639,7 +621,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nida-pilot-feasibility-r34-par-28-093-due-20270216@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270216
 SUMMARY:[Grant Radar] Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials (R34 Clinical Trial Optional) — due
 DESCRIPTION:Three-year R34 grants (up to $450k direct costs in total) for pilot and feasibility work ahead of effectiveness or implementation trials in SUD treatment and recovery services. Pain-co-occurring populations and addiction-workforce training are named priorities. MORE fits as a pilot of a MORE implementation or training strategy (e.g.\, fidelity and workforce capacity in a new setting such as an OTP\, FQHC or treatment court) or an adaptation for an understudied population. Dr. Garland/UCSD would be the likely applicant\, with More Therapy as the training subcontractor\; More Therapy is also eligible to apply directly.\n\nPath: Direct/Sub · Priority 3.0\nhttps://files.simpler.grants.gov/opportunities/3820f2c5-4b44-47ad-8a29-9f6084d60bb2/attachments/ff757909-ab97-4782-8f40-2ba1c9731e1f/PAR-28-093-Full-Announcement.html
@@ -657,7 +639,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:sd-dss-opioid-settlement-fy27-watch-20261102@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261102
 SUMMARY:[Grant Radar] South Dakota Opioid Settlement FY27 Funding Opportunities (statewide share) — cycle watch
 DESCRIPTION:SD's FY27 statewide opioid settlement share opens several RFPs in Nov 2026. Justice-impacted treatment (opens 11-09) and Continuum of Care (opens 11-09) list workforce development and evidence-based treatment supports. A jail\, drug court or Medicaid-enrolled provider partner could budget MORE clinician training.\n\nPath: Line-item · Priority 3.0\nhttps://dss.sd.gov/docs/behavioralhealth/grantinfo/FY27_Opioid_Settlement_Funding_Opportunities.pdf
@@ -675,7 +657,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:samhsa-ed-alt-ti-27-005-watch-20261215@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261215
 SUMMARY:[Grant Radar] Emergency Department Alternatives to Opioids Program (ED-ALT) FY2027 — cycle watch
 DESCRIPTION:Hospital and ED grants to replace opioids in ED pain care with alternatives\, including required staff training and non-drug psychosocial pain treatment followed by referral to ongoing care. MORE fits as the evidence-based psychosocial pain/OUD treatment patients are referred to after the ED visit\, and as the staff-training vendor for a hospital applicant.\n\nPath: Sub · Priority 2.0\nhttps://www.samhsa.gov/grants/grants-dashboard/forecasts
@@ -693,7 +675,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:va-richmond-oosur-osf-2027-watch-20270115@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270115
 SUMMARY:[Grant Radar] City of Richmond Opioid Settlement Funds RFA (next cycle) — cycle watch
 DESCRIPTION:Richmond grants opioid settlement money to nonprofits and local government entities for evidence-based prevention\, treatment and recovery. A 2026 priority was adding evidence-based treatments across treatment settings\, so MORE training fits as a line-item in a provider's project.\n\nPath: Line-item · Priority 2.0\nhttps://rva.gov/sites/default/files/2026-01/Request_for_Applications_%28Open_Application%29_%20UPDATED.pdf
@@ -711,7 +693,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:az-ahcccs-sor-iv-passthrough-watch-20261201@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261201
 SUMMARY:[Grant Radar] AHCCCS State Opioid Response IV (SOR IV) subawards — cycle watch
 DESCRIPTION:Arizona's SOR IV federal funds pay for OUD treatment\, integrated care and recovery services across AHCCCS's provider network through 2027-09-29. Training providers in MORE\, an evidence-based OUD and chronic-pain intervention\, fits the program goal of expanding access to OUD treatment.\n\nPath: Line-item · Priority 2.0\nhttps://www.azahcccs.gov/Resources/Grants/
@@ -729,7 +711,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ma-springfield-orrf-minigrant-2026-27-watch-20261027@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261027
 SUMMARY:[Grant Radar] Springfield Opioid Recovery and Remediation Fund (ORRF) Mini-Grant Program\, next cycle (2026-2027) — cycle watch
 DESCRIPTION:Springfield's yearly opioid settlement mini-grants. If MORE clinician training is an allowable cost\, a local treatment or recovery provider could include it in its budget.\n\nPath: Line-item · Priority 2.0\nhttps://www.springfield-ma.gov/hhs/fileadmin/health/ORRF/Mini_Grants/Mini_Grant_RFP_-_FINAL.pdf
@@ -747,7 +729,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:tn-oac-community-cycle4-watch-20270701@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270701
 SUMMARY:[Grant Radar] Tennessee Opioid Abatement Council Community Grants – Cycle 4 — cycle watch
 DESCRIPTION:Three-year statewide opioid settlement grants to Tennessee-based agencies for prevention\, harm reduction\, treatment\, recovery support\, education/training and research. 40% is set aside for treatment and 10% for education/training\, so a TN treatment provider can put MORE clinician training in its budget.\n\nPath: Sub · Priority 2.0\nhttps://www.tn.gov/oac/community.html
@@ -765,7 +747,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:id-lewiston-opioid-response-grant-watch-20261201@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261201
 SUMMARY:[Grant Radar] Lewiston Opioid Crisis Response Grant Program — cycle watch
 DESCRIPTION:Rolling city opioid-settlement grants for treatment\, recovery and training. MORE training could be funded as a line item in a local provider's application. The city's page does not say whether for-profits may apply.\n\nPath: Line-item · Priority 2.0\nhttps://www.cityoflewiston.org/816/Opioid-Crisis-Response-Grant-Program
@@ -783,7 +765,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:wv-fairmont-opioid-settlement-watch-20261130@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261130
 SUMMARY:[Grant Radar] City of Fairmont Opioid Settlement Funds Grant — cycle watch
 DESCRIPTION:City opioid settlement grants for organizations serving people affected by opioids. A local treatment provider could include MORE training as a line item\, but eligibility and the current cycle are unverified.\n\nPath: Line-item · Priority 2.0\nhttps://www.fairmontwv.gov/511/Opioid-Settlement-Funds
@@ -801,7 +783,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:wv-moundsville-opioid-settlement-watch-20261115@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261115
 SUMMARY:[Grant Radar] Moundsville Opioid Settlement Grant Program — cycle watch
 DESCRIPTION:Small city Purdue settlement pot\, with some of it passed to entities that meet approved core strategies. A partner treatment provider could include MORE training if the city allows it.\n\nPath: Line-item · Priority 2.0\nhttps://www.cityofmoundsville.com/news/opioid-settlement-grant-application/2119
@@ -819,7 +801,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:mo-greene-county-osp-watch-20270601@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270601
 SUMMARY:[Grant Radar] Greene County Opioid Settlement Program (OSP) Funds — cycle watch
 DESCRIPTION:Greene County gives out opioid settlement grants to community organizations working on opioid recovery. A Springfield-area SUD provider could ask for MORE clinician training as an evidence-based treatment capacity cost.\n\nPath: Line-item · Priority 2.0\nhttps://greenecountymo.gov/files/file.php?id=46450
@@ -837,7 +819,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:md-baltimore-city-orf-community-r2-fy27-watch-20261027@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20261027
 SUMMARY:[Grant Radar] Baltimore City Opioid Restitution Community Grants Round 2 (FY2027) — cycle watch
 DESCRIPTION:This is Baltimore City's own opioid settlement fund (the City did not join the global settlement)\, giving community grants to organizations that treat and support people at overdose risk. A Baltimore treatment or recovery nonprofit could put MORE clinician training into its budget\, either as its own line or with More Therapy as a subcontractor.\n\nPath: Sub · Priority 2.0\nhttps://www.baltimorecity.gov/bcmoor/news/mayors-office-of-overdose-response-and-mayors-office-of-recovery-programs-announce-applications-for-round-two-of-opioid-restitution-fund-community-grants
@@ -855,7 +837,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:md-moor-competitive-fy28-watch-20270115@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270115
 SUMMARY:[Grant Radar] MOOR Competitive Grant Program (FY2028) — cycle watch
 DESCRIPTION:MOOR gives out about $6M a year in competitive grants to governments and community partners. One FY27 priority was making evidence-based treatment accessible (MOUD\, holistic care\, MOUD and counseling in carceral settings\, reentry). A provider\, local health department or detention-center applicant could include MORE training to make MOUD and counseling services stronger.\n\nPath: Sub · Priority 2.0\nhttps://stopoverdose.maryland.gov/grants/
@@ -873,7 +855,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:wi-dhs-osf-moud-provider-training-watch-20270115@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270115
 SUMMARY:[Grant Radar] WI DHS Opioid Settlement – Medications for Opioid Use Disorder Training for Providers — cycle watch
 DESCRIPTION:$1M in WI state opioid settlement money is set aside for MOUD training for primary care providers at community health centers and FQHCs. MORE could join as the evidence-based behavioral and chronic-pain part of MOUD care\, as a sub or training vendor once DHS names the vehicle.\n\nPath: Sub · Priority 2.0\nhttps://www.dhs.wisconsin.gov/opioids/settlement-funds.htm
@@ -891,7 +873,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:co-coac-infrastructure-share-r5-watch-20270115@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270115
 SUMMARY:[Grant Radar] Colorado Opioid Abatement Council Infrastructure Share (next round\, Round 5) — cycle watch
 DESCRIPTION:A statewide competitive settlement pool for capital improvements and operational assistance for opioid-abatement infrastructure\, with rural and underserved areas prioritized. MORE fits only as a training line-item inside a ROAC's or provider's project\, for example clinician training tied to a new MOUD or outpatient site (Round 4 funded several).\n\nPath: Line-item · Priority 2.0\nhttps://coag.gov/opioids/colorado-opioid-abatement-council/
@@ -909,7 +891,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:co-dol-state-share-rfa-watch-watch-20270115@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270115
 SUMMARY:[Grant Radar] Colorado Department of Law State Share opioid settlement RFAs (next cycle) — cycle watch
 DESCRIPTION:The AG's state-share RFAs have repeatedly funded behavioral-health workforce growth\, justice reentry\, and evidence-based clinical interventions for OUD. MORE clinician training for rural or justice-involved providers matches those targets well when the next RFA comes out.\n\nPath: Sub · Priority 2.0\nhttps://coag.gov/funding-opportunities/
@@ -927,7 +909,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:hrsa-rcorp-cabh-fy27-watch-20270122@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270122
 SUMMARY:[Grant Radar] Rural Communities Opioid Response Program - Child and Adolescent Behavioral Health (RCORP-CABH) FY2027 — cycle watch
 DESCRIPTION:About 9 four-year consortium grants\, up to $1M each\, to set up and expand behavioral health services (MH and SUD) for rural youth aged 5-17. MORE could fit only as a training vendor to a rural consortium if the NOFO allows workforce training and adolescent SUD treatment\; MORE's evidence base is adult\, so the fit is weak.\n\nPath: Sub · Priority 1.0\nhttps://simpler.grants.gov/opportunity/579974eb-28f3-4ba0-8741-fa1a1183cd3e
@@ -945,7 +927,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:az-state-opioid-settlement-watch-watch-20270701@more-grant-radar
-DTSTAMP:20261029T120000Z
+DTSTAMP:20261030T120000Z
 DTSTART;VALUE=DATE:20270701
 SUMMARY:[Grant Radar] Arizona State share of opioid settlement funds (One Arizona Agreement) — cycle watch
 DESCRIPTION:The State's opioid settlement share is appropriated to state agencies for approved purposes\, including OUD treatment and prison/jail SUD programs. MORE training could enter as a line item in an agency program\, e.g. ADCRR's SUD treatment program.\n\nPath: Line-item · Priority 1.0\nhttps://www.azag.gov/issues/opioids/one-arizona-agreement/state
