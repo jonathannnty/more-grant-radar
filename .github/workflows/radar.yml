@@ -108,6 +108,21 @@ jobs:
         continue-on-error: true   # never lose the scan/AI results below because of a build error
         run: python scripts/generate.py --today "$(date -u +%F)"
 
+      # 5. Email: deadline alerts + problem alerts daily, digest on Mondays (after
+      # the AI pass). Off until RESEND_API_KEY and RADAR_EMAIL_TO secrets exist.
+      # Test on demand: push a file named agent/SEND_TEST_EMAIL.
+      - name: Email alerts
+        continue-on-error: true
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RADAR_EMAIL_TO: ${{ secrets.RADAR_EMAIL_TO }}
+        run: |
+          if [ -f agent/SEND_TEST_EMAIL ]; then
+            python scripts/notify.py --today "$(date -u +%F)" --test
+            git rm -q --ignore-unmatch agent/SEND_TEST_EMAIL
+          fi
+          python scripts/notify.py --today "$(date -u +%F)"
+
       - name: Commit data and site
         if: always()
         run: |

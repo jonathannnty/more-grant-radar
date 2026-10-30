@@ -225,6 +225,7 @@ JOBS = [
     ("promote_leads", "New-lead intake", 2),
     ("ai_pass", "AI verification + state sweep · weekly", 8),
     ("winners", "Funded-cohort feed · monthly", 32),
+    ("notify", "Email alerts", 2),
 ]
 
 
