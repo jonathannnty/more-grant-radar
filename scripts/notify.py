@@ -200,16 +200,50 @@ def send(key, to, subject, html_, text):
         return json.load(r).get("id")
 
 
+def check_setup(key, to):
+    """Validate RESEND_API_KEY and RADAR_EMAIL_TO without emailing anyone. Records the
+    verdict (never the key or the addresses) in data/runs.json as phase notify_check."""
+    problems = []
+    bad = [a for a in to if "@" not in a or "." not in a.split("@")[-1] or " " in a]
+    if not to:
+        problems.append("RADAR_EMAIL_TO is empty")
+    elif bad:
+        problems.append(f"{len(bad)} of {len(to)} recipients look malformed")
+    key_state = "missing"
+    if key:
+        req = urllib.request.Request("https://api.resend.com/domains", headers={
+            "Authorization": f"Bearer {key}", "User-Agent": "more-grant-radar/4"})
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                key_state = "valid (full access; a sending-only key is safer)" if r.status == 200 else f"HTTP {r.status}"
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", "replace")
+            key_state = ("valid (sending-only)" if "restricted_api_key" in body
+                         else f"rejected (HTTP {e.code})")
+        except Exception as e:
+            key_state = f"unchecked ({type(e).__name__})"
+    if not key_state.startswith("valid"):
+        problems.append(f"RESEND_API_KEY {key_state}")
+    note = f"key {key_state}; {len(to)} recipient(s)" + (f"; problems: {'; '.join(problems)}" if problems else "")
+    runlog.record("notify_check", "ok" if not problems else "error", note=note, recipients=len(to))
+    print("notify check:", note)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--today", default=date.today().isoformat())
     ap.add_argument("--digest", action="store_true")
     ap.add_argument("--test", action="store_true")
     ap.add_argument("--preview", metavar="DIR")
+    ap.add_argument("--check", action="store_true", help="validate the secrets without sending anything")
     args = ap.parse_args()
     today = date.fromisoformat(args.today)
     key = os.environ.get("RESEND_API_KEY", "").strip()
     to = [a.strip() for a in os.environ.get("RADAR_EMAIL_TO", "").split(",") if a.strip()]
+
+    if args.check:
+        check_setup(key, to)
+        return
 
     if not args.preview and (not key or not to):
         missing = " and ".join(x for x, ok in (("RESEND_API_KEY", key), ("RADAR_EMAIL_TO", to)) if not ok)
