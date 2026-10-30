@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "9796a6feec60e1c7",
-  "len": 2965,
+  "hash": "e2ee7783fac5a16c",
+  "len": 3073,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "f649b318e9529a12",
-  "len": 2907,
+  "hash": "bdfe2965df4529c9",
+  "len": 2880,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -422,7 +422,7 @@
   "url": "https://rva.gov/sites/default/files/2026-01/Request_for_Applications_%28Open_Application%29_%20UPDATED.pdf"
  },
  "az-ahcccs-sor-iv-passthrough": {
-  "hash": "96477cff17d16c1b",
+  "hash": "93568538065b23d6",
   "len": 11224,
   "dates": [
    "06/30/2027",
@@ -431,7 +431,7 @@
    "09/29/2027",
    "09/30/2024",
    "10/16/2022",
-   "10/26/2025",
+   "10/26/2026",
    "9/30/2024"
   ],
   "url": "https://www.azahcccs.gov/Resources/Grants/"
