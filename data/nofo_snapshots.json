@@ -37,9 +37,16 @@
   "url": "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
  },
  "oneohio-c3": {
-  "hash": "526cbec801fe135b",
-  "len": 5508,
-  "dates": [],
+  "hash": "9312581ac494b67a",
+  "len": 10819,
+  "dates": [
+   "1/21/26",
+   "1/26/26",
+   "1/7/26",
+   "december 10, 2025",
+   "february 11, 2026",
+   "january 14, 2026"
+  ],
   "url": "https://www.oneohiofoundation.com/grants"
  },
  "allegheny-osf-2026": {
@@ -87,8 +94,8 @@
   "url": "https://www.grants.gov/search-results-detail/360366"
  },
  "samhsa-sm-26-015": {
-  "hash": "a24587bd75e841c3",
-  "len": 50916,
+  "hash": "b3083321878015bd",
+  "len": 50932,
   "dates": [
    "08/18/2026",
    "august 17, 2026",
@@ -272,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "a2e671a0e2b398bd",
-  "len": 3150,
+  "hash": "d3c7c21fa413bdee",
+  "len": 3084,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -282,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "c79670ef6272e5a1",
-  "len": 3028,
+  "hash": "03b9603f56ca4b26",
+  "len": 3141,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -389,8 +396,8 @@
   "url": "https://simpler.grants.gov/opportunity/579974eb-28f3-4ba0-8741-fa1a1183cd3e"
  },
  "samhsa-ed-alt-ti-27-005": {
-  "hash": "3dcf512d4055634b",
-  "len": 48903,
+  "hash": "42c0d76209b05610",
+  "len": 48918,
   "dates": [
    "10/30/2026"
   ],
@@ -589,8 +596,8 @@
   "url": "https://www.dhs.wisconsin.gov/opioids/settlement-funds.htm"
  },
  "co-coac-infrastructure-share-r5": {
-  "hash": "b427cfd8022a9bf8",
-  "len": 39436,
+  "hash": "20f1b4ff5e15c9b0",
+  "len": 39237,
   "dates": [
    "april 13, 2023",
    "april 16, 2024",

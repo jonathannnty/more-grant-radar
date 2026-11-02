@@ -1,6 +1,6 @@
 {
  "_comment": "Machine-found leads, not yet verified. Written by scripts/promote_leads.py and scripts/scan_states.py; verified into grants.json by scripts/ai_pass.py.",
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "leads": [
   {
    "key": "states:https://solicitations.alleghenycounty.us/2026/10/16/rfp-for-one-time-assistance-to-support-veterans-and-or-their-families-2nd-round/",
@@ -23,9 +23,10 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
-   "fit_terms": []
+   "status": "rejected",
+   "status_note": "Page fetched (due 2026-11-13, up to $9,999 per project). It funds one-time quality-of-life projects for veterans and families, with no SUD, pain or clinician-training focus. The award is too small and",
+   "fit_terms": [],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://dbh.ohio.gov/wps/portal/gov/dbh/supporting-providers/apply-for-funding/funding-opportunities/08-rfa-121-womens-treatment",
@@ -49,8 +50,38 @@
    "synopsis": "",
    "aln": [],
    "status": "new",
-   "status_note": "",
-   "fit_terms": []
+   "status_note": "Could not verify. web_fetch of the Ohio DBH RFA #121 page and the funding index returned invalid_tool_input errors, and web_search failed too. The lead's 2026-11-25 deadline is unconfirmed. The RFA se",
+   "fit_terms": [],
+   "ai_checked": "2026-11-02"
+  },
+  {
+   "key": "states:https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm",
+   "source": "states",
+   "kind": "new",
+   "id": "https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm",
+   "title": "Reentry Navigation Support and Training Assistance Center Funding Application",
+   "funder": "Wisconsin Department of Health Services (DHS) — Division of Care and Treatment Services, Bureau of Prevention Treatment ",
+   "url": "https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm",
+   "nofo_url": null,
+   "state": "WI",
+   "found_date": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "deadline": "2026-12-11",
+   "deadline_quote": "New funding link on https://www.dhs.wisconsin.gov/business/solicitations-list.htm · page says: “Submit by December 11, 2026”",
+   "cycle_watch": null,
+   "award_ceiling": null,
+   "applicant_types": [],
+   "forprofit_eligible": null,
+   "eligibility_text": "",
+   "synopsis": "",
+   "aln": [],
+   "status": "promoted",
+   "status_note": "verified as wi-dhs-reentry-navigation-tac-fy27",
+   "fit_terms": [
+    "training",
+    "reentry"
+   ],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "grants_gov:HHS-2027-IHS-SAPTA-0001",
@@ -79,14 +110,15 @@
    "aln": [
     "93.00G"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "watching as ihs-sapta-fy27",
    "funder_number": "HHS-2027-IHS-SAPTA-0001",
    "fit_terms": [
     "substance abuse",
     "behavioral health",
     "recovery"
-   ]
+   ],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "settlement_tracker:https://dekalbcounty.org/departments/mental-health-board/grant-application/",
@@ -99,7 +131,7 @@
    "nofo_url": null,
    "state": "IL",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -127,7 +159,7 @@
    "nofo_url": null,
    "state": "MA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -155,7 +187,7 @@
    "nofo_url": null,
    "state": "MA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -183,7 +215,7 @@
    "nofo_url": null,
    "state": "MI",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -211,7 +243,7 @@
    "nofo_url": null,
    "state": "MN",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -239,7 +271,7 @@
    "nofo_url": null,
    "state": "WV",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -277,11 +309,12 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "Could not fetch the NOFO PDF or the DMH FY2027 NOFO page (both web_fetch errors), so nothing is verified. The title suggests a parent/caregiver peer support specialist (CPSS) training NOFO for childre",
    "fit_terms": [
     "training"
-   ]
+   ],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://www.hca.nm.gov/wp-content/uploads/2026-MSBS-RFP-26-630-8000-0014-RMS-Administrative-Claiming-and-Direct-Services-Cost-Reporting-Settlement.docx",
@@ -304,9 +337,10 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
-   "fit_terms": []
+   "status": "rejected",
+   "status_note": "Not a fit. The title, \"RMS Administrative Claiming and Direct Services Cost Reporting Settlement\", describes a Medicaid school-based administrative claiming and cost-settlement procurement. It looks l",
+   "fit_terms": [],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://oklahoma.gov/content/dam/ok/en/oag/resources/grants/opioid-abatement-grant/2026%20Funding%20Opportunity%20for%20Educational%20Institutions.pdf",
@@ -329,9 +363,10 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
-   "fit_terms": []
+   "status": "promoted",
+   "status_note": "verified as ok-oag-opioid-abatement-educational-2026",
+   "fit_terms": [],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://hcai.ca.gov/document/2026-peer-personnel-training-and-placement-program-webinar/",
@@ -354,11 +389,12 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "closed 2026-03-06. The HCAI BHP page, fetched 2026-10-27, says the cycle is closed, awards were noticed in April 2026, and the next cycle is \"January 2027\" with no open date. The lead is only the Janu",
    "fit_terms": [
     "training"
-   ]
+   ],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://www.boston.gov/sites/default/files/file/2026/06/Community Overdose Response Grants RFP 2026_draft1.pdf",
@@ -381,9 +417,10 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
-   "fit_terms": []
+   "status": "rejected",
+   "status_note": "closed 2026-08-25. The BPHC bid listing 16596636 (Community Overdose Response Grants 2.0) shows status Closed, posted 06/30/2026 and closed 08/25/2026 05:00PM. No next cycle is announced on the page. ",
+   "fit_terms": [],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://www.cityoflewiston.org/Bids.aspx",
@@ -406,9 +443,10 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
-   "fit_terms": []
+   "status": "rejected",
+   "status_note": "Duplicate of tracked id-lewiston-opioid-response-grant (Lewiston Opioid Crisis Response Grant Program page). The web_fetch calls for the Bids page and the program page both failed with invalid tool in",
+   "fit_terms": [],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://stopoverdose.maryland.gov/grants/competitive-grant-program",
@@ -432,8 +470,9 @@
    "synopsis": "",
    "aln": [],
    "status": "new",
-   "status_note": "",
-   "fit_terms": []
+   "status_note": "Fetched the page. It says the FY2027 Competitive Grant Program is finished: final grantees were announced and about $6.3M went to 30 programs. Private and nonprofit partners were eligible. No FY2028 c",
+   "fit_terms": [],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://stopoverdose.maryland.gov/grants/buprenorphine-training-grant-program",
@@ -457,10 +496,11 @@
    "synopsis": "",
    "aln": [],
    "status": "new",
-   "status_note": "",
+   "status_note": "Primary page could not be fetched (web_fetch returned invalid_tool_input for the page and the /grants/ index; web_search also errored). Nothing is verified: no deadline, amount, eligibility or for-pro",
    "fit_terms": [
     "training"
-   ]
+   ],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://stopoverdose.maryland.gov/grants/block-grant-program",
@@ -483,9 +523,10 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
-   "fit_terms": []
+   "status": "rejected",
+   "status_note": "Fetched the page. It describes a $4M/yr formula block grant paid directly to Maryland's 24 local jurisdictions through local health departments. It lists only FY2026 awards. There is no open applicati",
+   "fit_terms": [],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://coag.gov/app/uploads/2026/06/Community-Rooted-Opioid-Response-Grant-RFA.pdf",
@@ -508,11 +549,12 @@
    "eligibility_text": "",
    "synopsis": "",
    "aln": [],
-   "status": "new",
-   "status_note": "",
+   "status": "rejected",
+   "status_note": "closed 2026-07-30. Fetched coag.gov/funding-opportunities (says applications due July 30, 2026 11:59 pm MST) and the RFA PDF (RFA #LAAA 2026*02, State Share). Eligibility is limited to 501(c)(3) \"By a",
    "fit_terms": [
     "opioid"
-   ]
+   ],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "grants_gov:TI-27-006",
@@ -525,7 +567,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-30",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "grants.gov forecast: est. posting Dec 15, 2026 12:00:00 AM EST, est. due None",
    "cycle_watch": "2026-12-15",
@@ -539,8 +581,8 @@
    "aln": [
     "93.490"
    ],
-   "status": "new",
-   "status_note": "",
+   "status": "promoted",
+   "status_note": "watching as samhsa-fr-cara-ti-27-006",
    "funder_number": "TI-27-006",
    "fit_terms": [
     "opioid",
@@ -548,7 +590,60 @@
     "overdose",
     "medication",
     "recovery"
-   ]
+   ],
+   "ai_checked": "2026-11-02"
+  },
+  {
+   "key": "states:https://static1.squarespace.com/static/63039e77ef9043374638573c/t/689cd3d8feb3d52b28285c85/1755108312708/Regional+Grant+Budget+Cycle+%232.pdf",
+   "source": "states",
+   "kind": "new",
+   "id": "https://static1.squarespace.com/static/63039e77ef9043374638573c/t/689cd3d8feb3d52b28285c85/1755108312708/Regional+Grant+Budget+Cycle+%232.pdf",
+   "title": "The approved Regional Grant Cycle 2 budget is available here",
+   "funder": "OneOhio Recovery Foundation",
+   "url": "https://static1.squarespace.com/static/63039e77ef9043374638573c/t/689cd3d8feb3d52b28285c85/1755108312708/Regional+Grant+Budget+Cycle+%232.pdf",
+   "nofo_url": null,
+   "state": "OH",
+   "found_date": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "deadline": null,
+   "deadline_quote": "New funding link on https://www.oneohiofoundation.com/grants",
+   "cycle_watch": null,
+   "award_ceiling": null,
+   "applicant_types": [],
+   "forprofit_eligible": null,
+   "eligibility_text": "",
+   "synopsis": "",
+   "aln": [],
+   "status": "rejected",
+   "status_note": "The lead is a budget PDF for OneOhio Regional Grant Cycle 2. It has no deadline, no eligibility text and no application terms. Both web_fetch attempts failed (the PDF and the oneohiofoundation.com/gra",
+   "fit_terms": [],
+   "ai_checked": "2026-11-02"
+  },
+  {
+   "key": "states:https://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://static1.squarespace.com/static/63039e77ef9043374638573c/t/695be705b2c0fc5e6a20ec1a/1769816779172/Cycle+2+Evidence+Guide_Final+12.27.25.pdf",
+   "source": "states",
+   "kind": "new",
+   "id": "https://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://static1.squarespace.com/static/63039e77ef9043374638573c/t/695be705b2c0fc5e6a20ec1a/1769816779172/Cycle+2+Evidence+Guide_Final+12.27.25.pdf",
+   "title": "Appendices C and D of the Regional Grant Cycle #2 Evidence Guide",
+   "funder": "OneOhio Recovery Foundation",
+   "url": "https://chrome-extension//efaidnbmnnnibpcajpcglclefindmkaj/https://static1.squarespace.com/static/63039e77ef9043374638573c/t/695be705b2c0fc5e6a20ec1a/1769816779172/Cycle+2+Evidence+Guide_Final+12.27.25.pdf",
+   "nofo_url": null,
+   "state": "OH",
+   "found_date": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "deadline": null,
+   "deadline_quote": "New funding link on https://www.oneohiofoundation.com/grants",
+   "cycle_watch": null,
+   "award_ceiling": null,
+   "applicant_types": [],
+   "forprofit_eligible": null,
+   "eligibility_text": "",
+   "synopsis": "",
+   "aln": [],
+   "status": "rejected",
+   "status_note": "The lead is an evidence-guide appendix PDF for OneOhio Regional Grant Cycle #2, not a solicitation. It carries no deadline or amount. The guide is dated 12/27/25, so Cycle 2 has most likely closed. Th",
+   "fit_terms": [],
+   "ai_checked": "2026-11-02"
   },
   {
    "key": "states:https://portal.ct.gov/-/media/dmhas/publications/dmhas-msd-bhrp-2027-rfpdocx.pdf?rev=b50c799147d24739adb1f42995cf9c1b&hash=31BD15CDECC534B5BABB29F93F577111",
@@ -601,6 +696,31 @@
    "aln": [],
    "status": "expired",
    "status_note": "closed 2025-11-21",
+   "fit_terms": []
+  },
+  {
+   "key": "states:https://static1.squarespace.com/static/63039e77ef9043374638573c/t/69388b28e8bdad1d6defbdff/1765313320251/Regional+Grant+Cycle+2+RFP.pdf",
+   "source": "states",
+   "kind": "new",
+   "id": "https://static1.squarespace.com/static/63039e77ef9043374638573c/t/69388b28e8bdad1d6defbdff/1765313320251/Regional+Grant+Cycle+2+RFP.pdf",
+   "title": "View Request For proposal (RFP)",
+   "funder": "OneOhio Recovery Foundation",
+   "url": "https://static1.squarespace.com/static/63039e77ef9043374638573c/t/69388b28e8bdad1d6defbdff/1765313320251/Regional+Grant+Cycle+2+RFP.pdf",
+   "nofo_url": null,
+   "state": "OH",
+   "found_date": "2026-11-02",
+   "last_seen": "2026-11-02",
+   "deadline": "2026-02-11",
+   "deadline_quote": "New funding link on https://www.oneohiofoundation.com/grants · page says: “Due February 11, 2026”",
+   "cycle_watch": null,
+   "award_ceiling": null,
+   "applicant_types": [],
+   "forprofit_eligible": null,
+   "eligibility_text": "",
+   "synopsis": "",
+   "aln": [],
+   "status": "expired",
+   "status_note": "closed 2026-02-11",
    "fit_terms": []
   },
   {
@@ -961,7 +1081,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/pa-files/PAR-24-089.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2026-11-13",
    "deadline_quote": "grants.gov close date: Nov 13, 2026 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1087,7 +1207,7 @@
    "nofo_url": "https://www.ojp.gov/funding/docs/ojjdp-2026-172743.pdf",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2026-11-16",
    "deadline_quote": "grants.gov close date: Nov 16, 2026 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1246,7 +1366,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/rfa-files/RFA-DA-25-060.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2027-03-05",
    "deadline_quote": "grants.gov close date: Mar 05, 2027 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1294,7 +1414,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/rfa-files/RFA-DA-25-024.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2027-03-06",
    "deadline_quote": "grants.gov close date: Mar 06, 2027 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1440,7 +1560,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2027-03-23",
    "deadline_quote": "grants.gov forecast: est. posting Jan 23, 2027 12:00:00 AM EST, est. due Mar 23, 2027 12:00:00 AM EDT",
    "cycle_watch": "2027-01-23",
@@ -1539,7 +1659,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2027-05-26",
    "deadline_quote": "grants.gov forecast: est. posting Feb 01, 2027 12:00:00 AM EST, est. due May 26, 2027 12:00:00 AM EDT",
    "cycle_watch": "2027-02-01",
@@ -1587,7 +1707,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2027-06-08",
    "deadline_quote": "grants.gov forecast: est. posting Feb 01, 2027 12:00:00 AM EST, est. due Jun 08, 2027 12:00:00 AM EDT",
    "cycle_watch": "2027-02-01",
@@ -1635,7 +1755,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/rfa-files/RFA-DA-26-034.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2027-11-18",
    "deadline_quote": "grants.gov close date: Nov 18, 2027 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1688,7 +1808,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/rfa-files/RFA-DA-26-056.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2027-12-03",
    "deadline_quote": "grants.gov close date: Dec 03, 2027 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1736,7 +1856,7 @@
    "nofo_url": "http://grants.nih.gov/grants/guide/rfa-files/RFA-DA-26-055.html",
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2027-12-03",
    "deadline_quote": "grants.gov close date: Dec 03, 2027 12:00:00 AM EST",
    "cycle_watch": null,
@@ -1784,7 +1904,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2028-06-16",
    "deadline_quote": "grants.gov close date: Jun 16, 2028 12:00:00 AM EDT",
    "cycle_watch": null,
@@ -1831,7 +1951,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": "2028-09-25",
    "deadline_quote": "grants.gov close date: Sep 25, 2028 12:00:00 AM EDT",
    "cycle_watch": null,
@@ -1987,7 +2107,7 @@
    "nofo_url": null,
    "state": "IA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -2099,7 +2219,7 @@
    "nofo_url": null,
    "state": "PA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -2211,7 +2331,7 @@
    "nofo_url": null,
    "state": "OK",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,
@@ -2329,7 +2449,7 @@
    "nofo_url": null,
    "state": "US",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "grants.gov forecast: est. posting None, est. due None",
    "cycle_watch": null,
@@ -2379,7 +2499,7 @@
    "nofo_url": null,
    "state": "MA",
    "found_date": "2026-10-20",
-   "last_seen": "2026-11-01",
+   "last_seen": "2026-11-02",
    "deadline": null,
    "deadline_quote": "Listed on OpioidSettlementTracker's Community Grant Tracker (list updated 2026-08-02) as rolling / open until funds run out. Confirm on the entity's page.",
    "cycle_watch": null,

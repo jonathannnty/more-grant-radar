@@ -36,20 +36,16 @@
    "effort_hrs": null,
    "kit_type": "line-item-kit",
    "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
-   "last_verified": "2026-10-20",
-   "next_check": "2026-10-27",
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
    "found_date": "2026-08-01",
    "notes": "CLOSED 2026-08-17. NOFO: Expected Award Date 2026-11-15, Expected Start Date 2026-11-30, project period 11/30/2026–11/29/2030. On 2026-11-16, check SAMHSA grant awards / USASpending for FY26 CCBHC-PDI grantees and start outreach. Check the FY27 forecast dashboard again for any CCBHC successor (none as of the 09/04/2026 update). Companion rows SM-26-015 and SM-26-016 had the same 8/17 deadline and are likely closed too; re-verify them separately.",
    "evidence": {
-    "deadline_quote": "Application Due Date: Monday, August 17, 2026 | NOFO: Expected Award Date: November 15, 2026",
-    "amount_quote": "Anticipated Total Available Funding: $94,000,000 ... Anticipated Number of Awards: 94 ... Up to $1,000,000 per year per award",
+    "deadline_quote": "Application Due Date: Monday, August 17, 2026",
+    "amount_quote": "Anticipated Total Available Funding: $94,000,000 Anticipated Number of Awards: 94 Anticipated Award Amount: Up to $1,000,000 per year per award",
     "eligibility_quote": "Eligibility is statutorily limited to community-based behavioral health non-profit organizations",
     "fetched": [
-     "https://www.samhsa.gov/grants/grant-announcements/sm-26-014",
-     "https://www.samhsa.gov/sites/default/files/grants/pdf/fy-2026-ccbhc-pdi-sm-26-014.pdf",
-     "https://www.samhsa.gov/grants/grants-dashboard",
-     "https://www.samhsa.gov/grants/grants-dashboard/forecasts",
-     "https://www.grants.gov/search-results-detail/360977 (did not render; JS shell only)"
+     "https://www.samhsa.gov/grants/grant-announcements/sm-26-014"
     ]
    },
    "verified_by": "ai_pass"
@@ -85,16 +81,18 @@
    "effort_hrs": 120,
    "kit_type": "direct-template",
    "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
-   "last_verified": "2026-10-20",
-   "next_check": "2026-10-27",
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
    "found_date": "2026-08-01",
    "notes": "Next standard due dates 2027-01-05 and 2027-04-05 (announcement expires after Apr 5, 2027 per grants.gov close date). Dr. Garland owns. SBIR requires SAM/UEI, eRA Commons and SBA company registration well ahead.",
    "evidence": {
     "deadline_quote": "Application Due Dates: September 05, 2026 * | January 05, 2027 * | April 05, 2027 *",
     "fetched": [
-     "https://www.grants.gov/search-results-detail/359671"
+     "https://www.grants.gov/search-results-detail/359671",
+     "https://simpler.grants.gov/opportunity/d1ba49e5-3684-4420-849a-ab2330ec493e"
     ]
-   }
+   },
+   "verified_by": "ai_pass"
   },
   {
    "grant_id": "tx-oafc-core-2026f",
@@ -110,7 +108,7 @@
    "accessible_usd": 1875000,
    "pool_usd": 75000000,
    "deadline": null,
-   "cycle_watch": "2026-11-04",
+   "cycle_watch": "2026-11-16",
    "likelihood": 3,
    "heart": "Up to $75M in multi-year (3-5 yr) settlement grants across Texas's 20 RHP regions. 'Workforce Training and Development' is an eligible category, and MOUD expansion and pregnant/postpartum OUD get preference. MORE fits best as a training line-item or sub under a Texas MOUD provider in each target region. NOFA not yet posted.",
    "eligibility": "Texas state agencies and political subdivisions, plus any entity that engages in business in Texas under 34 TAC 16.205 AND (1) has a physical address in the RHP region it applies for or (2) provides services in that region. One award per region; multi-region providers apply separately for each region. Other criteria to come in the NOFA.",
@@ -125,8 +123,8 @@
    "effort_hrs": 40,
    "kit_type": "direct-template",
    "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
-   "last_verified": "2026-10-21",
-   "next_check": "2026-10-28",
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
    "found_date": "2026-08-01",
    "notes": "Regional program: $75M split among 20 RHP regions by the percentages in 34 TAC 16.202(e)(1)(A). Award request may not exceed 50% of a region's funds (per-region dollar amounts not yet verified, so no ceiling is recorded). Multi-year terms of 3-5 years. As of 10/21 there is still no NOFA ('No grant opportunities are currently open'), and the 'Fall 2026' timing is slipping. The NOFA will be announced through the GovDelivery list (topic TXCOMPT_1664) and ESBD. Applications go through the Texas Opioid Grant Management System, and questions go to oafc.nofa@cpa.texas.gov. Last council meeting listed: 2026-06-16; watch the Texas Register for the next agenda. Action: line up 1-2 Texas MOUD/OTP partners and name MORE training as a workforce line-item.",
    "evidence": {
@@ -134,9 +132,7 @@
     "amount_quote": "Funding Amount: Up to $75 million across all regions ... The requested award amount may not exceed 50 percent of the total funds available for a region.",
     "eligibility_quote": "any entity that engages in business in Texas in accordance with Title 34, Section 16.205 of the Texas Administrative Code and (1) has a physical address within the geographic boundary of the Regional Healthcare Partnership (RHP) region in which the Applicant is requesting funding or (2) provides services within the geographic boundary of the RHP region",
     "fetched": [
-     "https://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php",
-     "https://comptroller.texas.gov/programs/opioid-council/docs/grants/Amended-2026-OAFC-grant-issuance-plan.pdf",
-     "https://comptroller.texas.gov/programs/opioid-council/about/meetings.php"
+     "https://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php"
     ]
    },
    "verified_by": "ai_pass"
@@ -174,16 +170,17 @@
    "effort_hrs": 60,
    "kit_type": "direct-template",
    "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
-   "last_verified": "2026-10-26",
-   "next_check": "2026-11-02",
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
    "found_date": "2026-08-01",
    "notes": "Re-verified 2026-10-21. FY26 is closed: Planning listing HRSA-26-036 archived 2026-09-30, and HRSA announced FY26 awards on 2026-09-25 ($89.3M total). HRSA-27-040 is only a FORECAST with no documents yet, and both dates are HRSA estimates, so deadline stays null until the NOFO posts. Re-check on or around 2027-01-11, then fill in the deadline, page limit, scoring and whether training is an allowable cost. The program's Impact page lists FY24 and FY26 award lists only, so whether an FY27 Impact round exists is unknown: keep checking Grants.gov for HRSA-27 RCORP Impact/Planning forecasts (this check was not exhaustive because the search budget ran out). Grants.gov now lists the program under Assistance Listing 93.690 (the old alias 93.912 is kept for matching). hrsa.gov/rural-health/opioid-response loads fine now. Earlier 404 note is obsolete.",
    "evidence": {
-    "deadline_quote": "Estimated Post Date: January 11, 2027 · Estimated Application Due Date: March 10, 2027 · Estimated Award Date: August 1, 2027 · Fiscal Year: 2027 (HRSA-27-040 forecast, posted August 21, 2026)",
+    "deadline_quote": "Estimated Post Date: January 11, 2027 · Estimated Application Due Date: March 10, 2027 · Estimated Award Date: August 1, 2027 · Fiscal Year: 2027 (HRSA-27-040 forecast, last updated Aug 21, 2026; no documents available)",
     "amount_quote": "$10,500,000 Program Funding · 35 Expected awards · $300,000 Award Minimum · $300,000 Award Maximum",
     "eligibility_quote": "You can apply if you are a domestic public or private, non-profit or for-profit entity... RCORP-Overdose Response services and activities may only support HRSA-designated rural counties and rural census tracts.",
     "fetched": [
-     "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
+     "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da",
+     "https://www.hrsa.gov/rural-health/opioid-response"
     ]
    },
    "verified_by": "ai_pass"
@@ -217,8 +214,8 @@
    "effort_hrs": 40,
    "kit_type": "direct-template",
    "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
-   "last_verified": "2026-10-26",
-   "next_check": "2026-11-02",
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
    "found_date": "2026-08-01",
    "notes": "Cycle 2: RFP 12/10/2025, Funding Inquiry 1/14–2/11/2026 (closed), Board slates 8/5/2026 and 9/23/2026 ($42.4M+ to 217 projects so far); award announcements still going out Oct 2026. Cycle 2 budget $45,780,885 including Cycle 1 carryover; the Board authorized the base $40M in June 2025, ~6 months before the RFP. No Cycle 3 authorization or timeline on the site, in the Sep 23, 2026 recap, or in the Sep 23 board packet. The Board is exploring a term-endowment model, which could change cycle size and cadence. Next board meeting Nov 18, 2026: check its recap and packet for Cycle 3. No pre-registration in Cycle 2. Max 2 submissions per org. Projects last 24 months. The RFP minimum request is $25,000 and regions may set maximums. Open decision #6: confirm whether More Therapy is registered with the Ohio SoS and operating in Ohio. If not, the realistic route is as partner/vendor to an Ohio lead applicant.",
    "evidence": {
@@ -260,8 +257,8 @@
    "effort_hrs": 30,
    "kit_type": "direct-template",
    "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
-   "last_verified": "2026-10-21",
-   "next_check": "2026-10-28",
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
    "found_date": "2026-08-01",
    "notes": "As of 2026-10-21: the planned Sept 2026 batch (PDF deadline 'Thursday, September 24, 2026 TBD') never opened. The live page says not accepting, Release Date 'To Be Announced', and next rounds expected annually from the 3rd week of November. The authoritative doc is now REFERENCE-ONLY-1.-OSF-RFP_Amended-08-13-26.pdf (reference only, may change). Average awards are $25k–$250k, single awards under $500k, one-time agreements. Unsuccessful proposals carry over to the next round. Pages are updated Thursdays after 6 p.m. ET. Response form and Annual OSF Budget Template are linked on the RFP page. Sign up for the DHS Constant Contact mailing list to get the opening announcement.",
    "evidence": {
@@ -269,10 +266,7 @@
     "amount_quote": "DHS anticipates single awards of less than $500,000 and an average award size of $25,000 - $250,000.",
     "eligibility_quote": "Anyone, including but not limited to non-profit organizations, for-profit organizations, small businesses and individuals, is eligible to submit a Proposal",
     "fetched": [
-     "https://solicitations.alleghenycounty.us/",
-     "https://solicitations.alleghenycounty.us/2025/05/08/rfp-for-open-solicitation-for-programs-that-prevent-or-treat-opioid-addiction-under-the-guidelines-of-the-opioid-settlement-fund-osf/",
-     "https://solicitations.alleghenycounty.us/wp-content/uploads/2025/09/REFERENCE-ONLY-1.-OSF-RFP_Amended-08-13-26.pdf",
-     "https://solicitations.alleghenycounty.us/archive/"
+     "https://solicitations.alleghenycounty.us/2025/05/08/rfp-for-open-solicitation-for-programs-that-prevent-or-treat-opioid-addiction-under-the-guidelines-of-the-opioid-settlement-fund-osf/"
     ]
    },
    "verified_by": "ai_pass"
@@ -280,7 +274,7 @@
   {
    "grant_id": "va-oaa-fy28",
    "aliases": [],
-   "name": "Virginia OAA — locality grants (FY27 final new-award window 10/27 / FY28 apps due 3/2/2027)",
+   "name": "Virginia OAA — locality grants (FY28 new apps due 3/2/2027)",
    "funder": "VA Opioid Abatement Authority",
    "program": "City & county grants",
    "channel": "Settlement-state",
@@ -290,10 +284,10 @@
    "category": "SUD",
    "accessible_usd": 200000,
    "pool_usd": null,
-   "deadline": "2026-10-27",
-   "cycle_watch": "2026-10-28",
+   "deadline": "2027-03-02",
+   "cycle_watch": "2026-12-08",
    "likelihood": 3,
-   "heart": "Every VA city and county has a settlement allocation it can only unlock by getting an abatement project approved. Get MORE named as the evidence-based training contractor in locality applications before the 10/27/2026 final new-FY2027 cutoff, or in FY2028 new applications (due 3/2/2027).",
+   "heart": "Every VA city and county has a settlement allocation it can only unlock by getting an abatement project approved. Get MORE named as the evidence-based training contractor in locality FY2028 new applications (due 3/2/2027), or via FY27 amendments (12/8/2026).",
    "eligibility": "VA cities/counties apply; vendors are named inside locality applications (application explicitly asks for contractor contracts/MOUs + evidence-based documentation).",
    "nofo_url": "https://www.oaa.virginia.gov/media/governorvirginiagov/oaa/documents/Guidance-Individual-Distribution-Gold-Standard.pdf",
    "source_url": "https://www.oaa.virginia.gov/portal-grants/",
@@ -306,17 +300,16 @@
    "effort_hrs": 20,
    "kit_type": "letter-of-support",
    "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
-   "last_verified": "2026-10-21",
-   "next_check": "2026-10-28",
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
    "found_date": "2026-08-01",
-   "notes": "Interim windows in the 2026-27 cycle: (1) 10/27/2026: last portal deadline for NEW FY2027 Individual Distribution/Gold Standard awards, for the Grants Committee on 12/4/2026 (moved from 11/19). Cooperative Partnerships are amendments only. (2) 12/8/2026: FY27 amendments only (Individual and Cooperative), for the 1/19/2027 committee. A locality that already has an FY27 award could add MORE training through an amendment. FY2028: renewals due 2/16/2027, new applications due 3/2/2027. The cycle opened 7/15/2026. Committee information session about 5/12/2027 and committee meeting about 5/19/2027 (both placeholders). Eligible applicants are cities, counties and state agencies only. State-agency awards follow a separate PP2026-2027 RFP. Not yet checked: the Individual Distribution guidance PDF (Guidance-Individual-Distribution-Gold-Standard.pdf) for wording on whether training costs are allowed.",
+   "notes": "10/27/2026 new-FY27 window closed. Remaining: 12/8/2026 FY27 amendments only (for 1/19/2027 committee); FY2028 renewals 2/16/2027; FY2028 new applications 3/2/2027. Eligible applicants are cities, counties and state agencies only. Individual Distribution guidance PDF still not checked for training-cost wording. The 'new FY27' 10/27 date is no longer listed on the page; the page now labels the 10/27 and 12/8 entries in the Cooperative section as amendments only.",
    "evidence": {
-    "deadline_quote": "Applications for 12/4/2026 Grants Committee – 10/27/2026 - Last Opportunity for NEW FY2027 Individual Distribution Awards ... Applications for 1/19/2027 Grants Committee - 12/8/2026 (FY27 Amendments Only) ... FY2028 Renewal Applications - 2/16/2027 ... FY2028 New Applications - 3/2/2027",
+    "deadline_quote": "Applications for 1/19/2027 Grants Committee - 12/8/2026 (Cooperative Amendments Only) FY2028 Renewal Applications - 2/16/2027 FY2028 New Applications - 3/2/2027",
     "amount_quote": null,
     "eligibility_quote": "The OAA offers financial assistance to cities, counties and state agencies in the Commonwealth of Virginia.",
     "fetched": [
-     "https://www.oaa.virginia.gov/portal-grants/",
-     "https://www.oaa.virginia.gov/media/governorvirginiagov/oaa/documents/2026-2027-application-cycle-dates.pdf"
+     "https://www.oaa.virginia.gov/portal-grants/"
     ]
    },
    "verified_by": "ai_pass"
@@ -352,17 +345,16 @@
    "effort_hrs": 100,
    "kit_type": "direct-template",
    "kit_url": "https://docs.google.com/document/d/1nYvlnmWmL0Pmzax3coSLEcJoaJ8hNSCaUN1UWbDcE3Q/edit",
-   "last_verified": "2026-10-21",
-   "next_check": "2026-10-28",
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
    "found_date": "2026-08-04",
    "notes": "Posted 2026-06-04. 2026-07-10 and 2026-10-09 due dates have passed. Next due date: 2027-02-10 (review Jul 2027, council Oct 2027, earliest start Dec 2027). Later due dates: 2027-06-09, 2027-10-13, 2028-02-10, 2028-06-09, 2028-10-10, 2029-02-09 (last). NOFO expires 2029-02-10. Applications due 5:00 PM applicant local time. The $6M / ~12 awards figure is stated for FY2027 only. The Feb 2027 cycle starts no earlier than Dec 2027 (FY2028), so funding for that cycle is not stated. Caps: R61 $350K direct/yr, up to 2 yrs (accessible = 2-yr R61 phase); R33 $750K direct/yr, up to 5 yrs; combined max 6 yrs. Start SAM/eRA registrations now (6+ weeks).",
    "evidence": {
     "deadline_quote": "| February 10, 2027 | February 10, 2027 | Not Applicable | July 2027 | October 2027 | December 2027 | ... Expiration Date February 10, 2029",
-    "amount_quote": "The NIH HEAL Initiative intends to commit an estimated total of $6,000,000 to fund 12 awards in FY2027. ... The R61 phase is limited to a budget of no more than $350,000 in direct costs per year and the R33 phase is limited to a budget of no more than $750,000 in direct costs per year.",
+    "amount_quote": "The NIH HEAL Initiative intends to commit an estimated total of $6,000,000 to fund 12 awards in FY2027.",
     "eligibility_quote": "For-Profit Organizations - Small Businesses - For-Profit Organizations (Other than Small Businesses)",
     "fetched": [
-     "https://files.simpler.grants.gov/opportunities/c33f1e5e-0354-4976-adca-9aa7240778d3/attachments/d20bcf8b-9221-47b2-93d3-2351a3eac1a4/RFA-DA-27-016-Full-Announcement.html",
-     "https://www.grants.gov/search-results-detail/362672 (loaded only a JS shell, no content)"
+     "https://files.simpler.grants.gov/opportunities/c33f1e5e-0354-4976-adca-9aa7240778d3/attachments/d20bcf8b-9221-47b2-93d3-2351a3eac1a4/RFA-DA-27-016-Full-Announcement.html"
     ]
    },
    "verified_by": "ai_pass"
@@ -399,18 +391,19 @@
    "effort_hrs": 120,
    "kit_type": null,
    "kit_url": null,
-   "last_verified": "2026-10-20",
-   "next_check": "2026-10-27",
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
    "found_date": "2026-08-04",
    "notes": "POSTED (was a forecast; renumbered RFA-DA-28-011). Due 2027-01-26, 5:00 PM local; no LOI date stated; earliest start Dec 2027. Direct costs capped at $900,000/yr over 5 years; HEAL intends $12M in FY2027 for 6-8 awards. For-profits eligible; foreign orgs not. RM1 = multi-component center: realistic play is Dr. Garland/UCSD as lead or a component with an academic health-system partner.",
    "evidence": {
-    "deadline_quote": "Application Due Dates ... January 26, 2027 · grants.gov close date Jan 26, 2027",
-    "amount_quote": "Direct costs are limited to $900,000 per year over the 5-year project period. The HEAL Initiative intends to commit $12,000,000 in FY 2027 to fund six-eight awards.",
-    "eligibility_quote": "For-Profit Organizations: Small Businesses; For-Profit Organizations (Other than Small Businesses)",
+    "deadline_quote": "Closing: January 26, 2027",
+    "amount_quote": "Direct costs are limited to $900,000 per year over the 5-year project period. The HEAL Initiative intends to commit $12,000,000 in FY 2027 to fund six-eight awards. (carried over from the 2026-10-20 check; not re-read on 2026-11-02)",
+    "eligibility_quote": "Business: For-profit organizations other than small businesses; Small businesses",
     "fetched": [
-     "https://www.grants.gov/search-results-detail/360048"
+     "https://simpler.grants.gov/opportunity/bdea7396-f052-4c3f-89a5-4677d3f2339a"
     ]
-   }
+   },
+   "verified_by": "ai_pass"
   },
   {
    "grant_id": "nih-heal-impowr-beacon",
@@ -432,7 +425,7 @@
    "cycle_watch": null,
    "likelihood": 3,
    "heart": "The single capacity-building hub for scaling evidence-based practices across the chronic pain + OUD consortium — one award, $1.75M, and clinician training at the EBP/implementation intersection is its core duty.",
-   "eligibility": "Forecast lists for-profit organizations as eligible.",
+   "eligibility": "Full NOFO lists For-Profit Organizations (small businesses and other than small businesses) as eligible.",
    "nofo_url": "https://www.grants.gov/search-results-detail/360366",
    "source_url": "https://www.grants.gov/search-results-detail/360366",
    "portal": "Grants.gov",
@@ -444,17 +437,20 @@
    "effort_hrs": 100,
    "kit_type": null,
    "kit_url": null,
-   "last_verified": "2026-10-20",
-   "next_check": "2026-10-27",
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
    "found_date": "2026-08-04",
-   "notes": "POSTED (renumbered RFA-DA-28-012). Due 2027-01-26; one award in FY2027 (~$2.5M total); budgets capped at $1.50M direct/yr, up to 5 years. Multi-Project (M) application instructions. Funds the network's coordination/capacity center, not the trials.",
+   "notes": "POSTED 2026-10-06 (RFA-DA-28-012). Opens (earliest submission) 2026-12-26; due 2027-01-26; expires 2027-01-27. One award in FY2027 (~$2.5M total); budgets capped at $1.50M direct/yr, up to 5 years. Multi-Project (M) instructions. Earliest start Dec 2027. Companion: RFA-DA-28-011 (RM1 trials). Funds the coordination/capacity center, not the trials.",
    "evidence": {
-    "deadline_quote": "Application Due Dates ... January 26, 2027 · grants.gov close date Jan 26, 2027",
-    "amount_quote": "Application budgets are limited to $1.50 million direct costs per year ... intends to commit an estimated total of $2.5 million to fund one award in FY2027",
+    "deadline_quote": "January 26, 2027 (Application Due Dates table); Open Date (Earliest Submission Date) December 26, 2026; Expiration Date January 27, 2027",
+    "amount_quote": "Application budgets are limited to $1.50 million direct costs per year. ... intends to commit an estimated total of $2.5 million to fund one award in FY2027",
     "fetched": [
-     "https://www.grants.gov/search-results-detail/360366"
-    ]
-   }
+     "https://www.grants.gov/search-results-detail/360366",
+     "https://files.simpler.grants.gov/opportunities/8e1f564e-26b9-47d2-b838-486402d83eae/attachments/8b6d24ff-8c0a-4d73-b150-793a1cf70ef3/RFA-DA-28-012-Full-Announcement.html"
+    ],
+    "eligibility_quote": "For-Profit Organizations - Small Businesses - For-Profit Organizations (Other than Small Businesses)"
+   },
+   "verified_by": "ai_pass"
   },
   {
    "grant_id": "samhsa-sm-26-015",
@@ -2568,6 +2564,392 @@
    "last_verified": "2026-10-26",
    "next_check": "2026-11-02",
    "found_date": "2026-10-26",
+   "verified_by": "ai_pass"
+  },
+  {
+   "grant_id": "samhsa-fr-cara-ti-27-006",
+   "name": "First Responders-Comprehensive Addiction and Recovery Act (FR-CARA)",
+   "funder": "SAMHSA",
+   "channel": "Federal-discretionary",
+   "path": "Line-item",
+   "heart": "SAMHSA FR-CARA funds states, local governments and Tribes to train first responders and communities in giving opioid overdose reversal medications. MORE would fit only if a grantee budgets clinician training, which is unverified and a weak fit.",
+   "likelihood": 1,
+   "source_url": "https://www.grants.gov/search-results-detail/364173",
+   "state": "US",
+   "forprofit_direct": "N",
+   "category": "SUD",
+   "deadline": null,
+   "cycle_watch": "2026-12-15",
+   "evidence": {
+    "deadline_quote": "grants.gov forecast: est. posting Dec 15, 2026 12:00:00 AM EST, est. due None",
+    "amount_quote": null,
+    "eligibility_quote": "Eligibility for this program is statutorily limited (Section 546 of the Public Health Service Act [42 USC 290ee-1], as amended) to states, local governmental entities, and Indian Tribes and Tribal organizations",
+    "fetched": []
+   },
+   "aliases": [],
+   "kit_url": null,
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
+   "found_date": "2026-11-02",
+   "verified_by": "ai_pass"
+  },
+  {
+   "grant_id": "ihs-sapta-fy27",
+   "aliases": [
+    "HHS-2027-IHS-SAPTA-0001"
+   ],
+   "name": "IHS Substance Abuse Prevention, Treatment, and Aftercare",
+   "funder": "Indian Health Service (HHS)",
+   "program": "SAPTA",
+   "channel": "Federal-discretionary",
+   "state": "US",
+   "path": "Sub",
+   "forprofit_direct": "N",
+   "category": "SUD",
+   "accessible_usd": null,
+   "pool_usd": null,
+   "deadline": null,
+   "cycle_watch": "2027-02-01",
+   "likelihood": 2,
+   "heart": "IHS forecast for AI/AN substance abuse prevention, treatment and recovery. MORE could be a training vendor or line item for a tribal or urban Indian grantee, but no partner is identified yet.",
+   "eligibility": "Federally recognized Tribe as defined by 25 U.S.C. 1603 (14); Tribal organization as defined by 25 U.S.C. 1603 (26); Urban Indian organization as defined by 25 U.S.C. 1603 (29).",
+   "nofo_url": null,
+   "source_url": "https://www.grants.gov/search-results-detail/363652",
+   "portal": "grants.gov",
+   "accounts_needed": null,
+   "match_required": null,
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": null,
+   "effort_hrs": null,
+   "kit_type": "letter-of-support",
+   "kit_url": null,
+   "notes": "Forecast only. Est. posting 2027-02-01, est. due 2027-04-01 per grants.gov forecast. Full NOFO not yet fetched.",
+   "evidence": {
+    "deadline_quote": "grants.gov forecast: est. posting Feb 01, 2027 12:00:00 AM EST, est. due Apr 01, 2027 12:00:00 AM EDT",
+    "amount_quote": null,
+    "eligibility_quote": "Federally recognized Tribe as defined by 25 U.S.C. 1603 (14); Tribal organization as defined by 25 U.S.C. 1603 (26); Urban Indian organization as defined by 25 U.S.C. 1603 (29).",
+    "fetched": []
+   },
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
+   "found_date": "2026-11-02",
+   "verified_by": "ai_pass"
+  },
+  {
+   "grant_id": "wi-dhs-reentry-navigation-tac-fy27",
+   "aliases": [],
+   "name": "Reentry Navigation Support and Training Assistance Center Funding Application",
+   "funder": "Wisconsin Department of Health Services (DHS), Division of Care and Treatment Services, Bureau of Prevention Treatment and Recovery",
+   "program": "CDC Overdose Data to Action for States (OD2A-S) pass-through RFA",
+   "channel": "Fed-state-passthrough",
+   "state": "WI",
+   "path": "Sub",
+   "forprofit_direct": "unclear",
+   "category": "SUD",
+   "accessible_usd": 75000,
+   "pool_usd": null,
+   "deadline": "2026-12-11",
+   "cycle_watch": null,
+   "likelihood": 2,
+   "heart": "One $75k award to a center that gives overdose-prevention reentry navigation plus training and technical assistance to organizations serving justice-involved people. MORE could be the evidence-based training vendor or subcontractor for the winner, or for an applicant's TA component.",
+   "eligibility": "Organizations serving people at risk of overdose, community-based organizations, non-profits, and municipal, county or Tribal agencies. Applicants must work in Wisconsin. For-profits are not named.",
+   "nofo_url": null,
+   "source_url": "https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm",
+   "portal": "Alchemer online form (linked from the DHS page)",
+   "accounts_needed": null,
+   "match_required": "No match requirement",
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": "Section 4: Provisional budget and budget justification (10 points)",
+   "effort_hrs": null,
+   "kit_type": "letter-of-support",
+   "kit_url": null,
+   "notes": "Questions are due in writing by 2026-12-04, 11:59 p.m. Initial award period is 2027-03-01 to 2027-08-31, with a possible $150,000 for FY28 based on performance and fund availability. The budget cap for the initial period is $75k. The page says contracts are between DHS and the awarded applicant, and subcontractors are allowed. Approach local nonprofits that are likely to apply. This is distinct from wi-dhs-osf-moud-provider-training.",
+   "evidence": {
+    "deadline_quote": "The deadline to apply for this funding opportunity is 11:59 p.m. on Dec. 11, 2026.",
+    "amount_quote": "Initial award amount is $75,000. Based on successful project performance, an additional $150,000 will be awarded for the following project year (FY28).",
+    "eligibility_quote": "Eligible organizations include organizations serving people at risk of overdose, community-based organizations, non-profit organizations, and municipal, county, or Tribal agencies",
+    "fetched": [
+     "https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm"
+    ]
+   },
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
+   "found_date": "2026-11-02",
+   "verified_by": "ai_pass"
+  },
+  {
+   "grant_id": "ok-oag-opioid-abatement-educational-2026",
+   "aliases": [],
+   "name": "Oklahoma Opioid Abatement Grant - Educational Institutions cycle (2026)",
+   "funder": "Oklahoma Attorney General / Opioid Abatement Board (not ODMHSAS as the lead said)",
+   "program": "Opioid Abatement Grant",
+   "channel": "Settlement-state",
+   "state": "OK",
+   "path": "Line-item",
+   "forprofit_direct": "N",
+   "category": "SUD",
+   "accessible_usd": null,
+   "pool_usd": null,
+   "deadline": "2026-11-30",
+   "cycle_watch": "2027-03-01",
+   "likelihood": 2,
+   "heart": "Oklahoma settlement abatement grants for 3-year projects. Priority strategies include contingency management, integrated care and MOUD. A university or school district applicant could contract More Therapy for MORE training, since subgrants are barred but contracting for services is allowed. Treat as a weak fit that only works through a partner.",
+   "eligibility": "Limited to Oklahoma political subdivisions. This cycle only K-12 school districts, technology school districts and institutes of higher education. Counties, municipalities, public trusts and joint applications open Spring 2027.",
+   "nofo_url": null,
+   "source_url": "https://oklahoma.gov/oag/resources/grants/opioid-abatement-grant.html",
+   "portal": "OAG opioid abatement grant portal (link on the source page)",
+   "accounts_needed": null,
+   "match_required": "No",
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": null,
+   "effort_hrs": null,
+   "kit_type": "line-item-kit",
+   "kit_url": null,
+   "notes": "The Board reviews applications December through February 2027, with awards announced March/April 2027. Salaries must be tied to abatement work. Indirect costs are capped at 5%, and contractors may not charge grantees indirect. The next cycle opens to counties and municipalities in Spring 2027, which is a better fit for treatment-provider partners. Related to the tracked ok-tulsa-county-opioid-abatement row, but this is a separate state program. The deck's funding tier amounts are in images and were not readable.",
+   "evidence": {
+    "deadline_quote": "Application Portal Opens: October 01, 2026 / Application Portal Closes: November 30, 2026",
+    "amount_quote": null,
+    "eligibility_quote": "Grant awards are limited to Political Subdivisions of the State of Oklahoma only.",
+    "fetched": [
+     "https://oklahoma.gov/content/dam/ok/en/oag/resources/grants/opioid-abatement-grant/2026%20Funding%20Opportunity%20for%20Educational%20Institutions.pdf",
+     "https://oklahoma.gov/oag/resources/grants/opioid-abatement-grant.html"
+    ]
+   },
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
+   "found_date": "2026-11-02",
+   "verified_by": "ai_pass"
+  },
+  {
+   "grant_id": "sc-scorf-opioid-recovery-fund-watch",
+   "aliases": [],
+   "name": "South Carolina Opioid Recovery Fund (SCORF) grants",
+   "funder": "South Carolina Opioid Recovery Fund Board",
+   "program": "South Carolina Opioid Recovery Fund (SC Code §11-58-10 et seq.)",
+   "channel": "Settlement-state",
+   "state": "SC",
+   "path": "Line-item",
+   "forprofit_direct": "unclear",
+   "category": "SUD",
+   "accessible_usd": null,
+   "pool_usd": null,
+   "deadline": null,
+   "cycle_watch": "2026-12-01",
+   "likelihood": 2,
+   "heart": "Statewide opioid settlement fund that the SCORF Board pays out to address and remediate the opioid epidemic in SC. Treatment and recovery are listed focus areas, so MORE clinician training could be a line item in a funded provider's or subdivision's budget.",
+   "eligibility": null,
+   "nofo_url": null,
+   "source_url": "https://scorf.sc.gov",
+   "portal": "SCORF Grant Management System (per site; URL not verified)",
+   "accounts_needed": null,
+   "match_required": null,
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": null,
+   "effort_hrs": null,
+   "kit_type": "line-item-kit",
+   "kit_url": null,
+   "notes": "Fetched homepage content is stale (2025 events). Still to verify: the current application window, eligible applicants (whether these are political subdivisions or also providers/nonprofits), the Guiding Principles / approved-uses list, and the grant management system URL. Check SCORF Board meeting agendas/minutes for 2026–27 cycle announcements.",
+   "evidence": {
+    "deadline_quote": null,
+    "amount_quote": null,
+    "eligibility_quote": null,
+    "fetched": [
+     "https://scorf.sc.gov"
+    ]
+   },
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
+   "found_date": "2026-11-02",
+   "verified_by": "ai_pass"
+  },
+  {
+   "grant_id": "sc-bhdd-osus-subgrant-watch",
+   "aliases": [],
+   "name": "SC BHDD Office of Substance Use Services sub-grants (SUBG / SOR)",
+   "funder": "South Carolina Department of Behavioral Health & Developmental Disabilities (BHDD), Office of Substance Use Services",
+   "program": "SUBG and State Opioid Response sub-grants",
+   "channel": "Fed-state-passthrough",
+   "state": "SC",
+   "path": "Line-item",
+   "forprofit_direct": "unclear",
+   "category": "MAT-MOUD",
+   "accessible_usd": null,
+   "pool_usd": null,
+   "deadline": null,
+   "cycle_watch": "2027-01-15",
+   "likelihood": 2,
+   "heart": "OSUS passes SAMHSA SUBG and SOR money to SC providers and hospitals; past rounds funded MOUD on inpatient units and peer services in criminal-justice settings. A future provider sub-grant round could include MORE training as an allowable workforce cost.",
+   "eligibility": null,
+   "nofo_url": null,
+   "source_url": "https://bhdd.sc.gov/about/grants",
+   "portal": "bhdd.sc.gov grants page; SC eProcurement / SCBO for RFPs",
+   "accounts_needed": "SC state vendor registration (procurement.sc.gov) for RFP-based procurements",
+   "match_required": null,
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": null,
+   "effort_hrs": null,
+   "kit_type": "line-item-kit",
+   "kit_url": null,
+   "notes": "No open opportunity as of 2026-11-02. OSUS procurement runs through SC Dept. of Administration Shared Services; watch SCBO (scbo.sc.gov) for SUD training RFPs. OSUS contact: Jimmy Mount, Information & Training Coordinator, jmount@osus.bhdd.sc.gov.",
+   "evidence": {
+    "deadline_quote": null,
+    "amount_quote": null,
+    "eligibility_quote": null,
+    "fetched": [
+     "https://www.daodas.sc.gov/about/grants",
+     "https://bhdd.sc.gov/about/grants",
+     "https://bhdd.sc.gov/about/procurement"
+    ]
+   },
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
+   "found_date": "2026-11-02",
+   "verified_by": "ai_pass"
+  },
+  {
+   "grant_id": "al-admh-rfp-2027-09-adolescent-tx",
+   "aliases": [
+    "RFP 2027-09"
+   ],
+   "name": "ADMH Adolescent Early Intervention and/or Outpatient Substance Use Treatment Services – Region 4",
+   "funder": "Alabama Department of Mental Health (ADMH), Office of Contracts & Purchasing",
+   "program": "ADMH Division of Mental Health & Substance Use Services – adolescent SUD treatment RFP",
+   "channel": "Fed-state-passthrough",
+   "state": "AL",
+   "path": "Line-item",
+   "forprofit_direct": "N",
+   "category": "SUD",
+   "accessible_usd": null,
+   "pool_usd": 500000,
+   "deadline": "2026-12-07",
+   "cycle_watch": null,
+   "likelihood": 2,
+   "heart": "A one-time pot of $250K x 2 for ADMH-certified providers to start adolescent SUD early intervention and outpatient care in Region 4. The RFP says ADMH wants awardees to 'adopt and integrate evidence-based treatment practices' and scores named EBPs, so MORE training could be a budget line for a partner provider. Fit is weak because the population is adolescents.",
+   "eligibility": "ANY public or private organization that is certified by ADMH to provide prevention or substance use treatment services, or can be certified within four months of award. Excluded: ADMH and state employees, and entities that directly received funds from the state opioid litigation. Must register with AL SOS, E-Verify and STAARS.",
+   "nofo_url": "https://mh.alabama.gov/wp-content/uploads/2026/10/2027-09-Adolescent-Treatment.pdf",
+   "source_url": "https://mh.alabama.gov/contracts-and-purchasing/",
+   "portal": "Paper/physical submission to ADMH Office of Contracts & Purchasing, 100 N. Union St., Suite 570, Montgomery AL (no email/fax)",
+   "accounts_needed": "Alabama Secretary of State registration; E-Verify; STAARS Vendor Self Service (applicant)",
+   "match_required": null,
+   "page_limit": "Cover 1 p; Org history 2 pp; Program description 5 pp; Budget 1 p",
+   "attachments": "Exhibit 2 budget narrative + 12-month detailed budget; 1 original, 2 copies, 1 USB",
+   "scoring_map": "Understanding/Responsiveness 20; Organizational experience 20; Program description quality incl. specific EBPs 25; Readiness to implement 20; Budget/narrative (indirect <=15%) 15",
+   "effort_hrs": null,
+   "kit_type": "line-item-kit",
+   "kit_url": null,
+   "notes": "The question deadline (2026-10-22) has passed, and Q&A was tentatively due 2026-10-30 on the ADMH site. The budget section lists initiation costs and does not name training, so present MORE as the named EBP plus staff training. Funding is one-time over a 12-month cost-reimbursement cycle. The RFP text says both 12 and 13 counties for Region 4, and a partner must be ADMH-certified. Only a hard-copy proposal received by the deadline counts; postmarks do not.",
+   "evidence": {
+    "deadline_quote": "Request for Proposals (RFP) will be accepted until 2:00 pm on Monday, December 7, 2026.",
+    "amount_quote": "The Alabama Department of Mental Health will award a total of $250,000 each to two applicants ... A total of $500,000 will be awarded through this RFP.",
+    "eligibility_quote": "ANY Public or Private organizations who meet the following: Agencies and/or organizations certified by ADMH to provide prevention or substance use treatment services. Can be certified by ADMH to provide such services within four months of award.",
+    "fetched": [
+     "https://mh.alabama.gov/grants/",
+     "https://mh.alabama.gov/faq/opioid-grants/",
+     "https://mh.alabama.gov/opioid-settlement/",
+     "https://mh.alabama.gov/contracts-and-purchasing/",
+     "https://mh.alabama.gov/wp-content/uploads/2026/10/2027-09-Adolescent-Treatment.pdf"
+    ]
+   },
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
+   "found_date": "2026-11-02",
+   "verified_by": "ai_pass"
+  },
+  {
+   "grant_id": "la-ebr-baton-rouge-opioid-abatement-nofa-watch",
+   "aliases": [],
+   "name": "City of Baton Rouge / Parish of East Baton Rouge – Louisiana Opioid Abatement Settlement NOFA (two-step LOI + NOFA)",
+   "funder": "City of Baton Rouge / Parish of East Baton Rouge, Mayor's Office of Community Development",
+   "program": "Louisiana Opioid Abatement Settlement funds (parish share under LA State-Local MOU)",
+   "channel": "Settlement-county",
+   "state": "LA",
+   "path": "Line-item",
+   "forprofit_direct": "unclear",
+   "category": "SUD",
+   "accessible_usd": null,
+   "pool_usd": null,
+   "deadline": null,
+   "cycle_watch": "2027-09-01",
+   "likelihood": 2,
+   "heart": "EBR Parish gives its opioid settlement share to local agencies through a yearly LOI→NOFA competition. A Baton Rouge treatment provider, drug court or FQHC could include MORE clinician training in its budget as an evidence-based OUD treatment and workforce cost.",
+   "eligibility": "The page says 'your agency' must submit an LOI via the Neighborly Participant Portal. After the Selection Committee reviews LOIs, only eligible parties are invited to apply. Whether for-profits can apply is not stated.",
+   "nofo_url": null,
+   "source_url": "https://www.brla.gov/3185/Office-of-Community-Development",
+   "portal": "Neighborly (https://portal.neighborlysoftware.com/CITYOFBATONROUGELA/Participant)",
+   "accounts_needed": "Neighborly participant profile",
+   "match_required": null,
+   "page_limit": null,
+   "attachments": null,
+   "scoring_map": null,
+   "effort_hrs": null,
+   "kit_type": "line-item-kit",
+   "kit_url": null,
+   "notes": "Two steps: (1) LOI via Neighborly. In the 2026-27 cycle the window was Oct 5–19, with the year printed as '2029' (likely a typo). Questions went to ocd@brla.gov by Oct 13, 2026. (2) Invited parties then submit the full NOFA Opioid application. The 2026-27 LOI step is closed. Possible near-term angle: offer a line-item MORE training budget and letter to Baton Rouge providers who were invited to the full NOFA. Contact: Kelly LeDuff, OCD Director, (225) 389-3039 ext. 3031.",
+   "evidence": {
+    "deadline_quote": "beginning October 5 – October 19, 2029.  No LOIs will be accepted after this time!",
+    "amount_quote": null,
+    "eligibility_quote": "only eligible parties will be invited to use the Neighborly Portal to apply for the Notice of Funding Availability (NOFA) Opioid application",
+    "fetched": [
+     "https://www.brla.gov/3185/Office-of-Community-Development",
+     "https://laoatf.org/",
+     "https://www.ldh.la.gov/office-of-behavioral-health"
+    ]
+   },
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
+   "found_date": "2026-11-02",
+   "verified_by": "ai_pass"
+  },
+  {
+   "grant_id": "ky-oaac-treatment-recovery-2027",
+   "aliases": [],
+   "name": "KYOAAC Opioid Abatement Grants: Treatment & Recovery (next cycle, opened Oct 2026)",
+   "funder": "Kentucky Opioid Abatement Advisory Commission (through the Kentucky Office of the Attorney General)",
+   "program": "Statewide opioid settlement abatement grants (Treatment & Recovery category; a separate Prevention category also exists)",
+   "channel": "Settlement-state",
+   "state": "KY",
+   "path": "Direct",
+   "forprofit_direct": "Y",
+   "category": "SUD",
+   "accessible_usd": null,
+   "pool_usd": null,
+   "deadline": null,
+   "cycle_watch": "2026-11-09",
+   "likelihood": 4,
+   "heart": "Kentucky's statewide settlement fund pays for opioid treatment and recovery projects, and any for-profit registered with the KY Secretary of State can apply. MORE can apply directly or through KY treatment providers for MOUD-retention and co-occurring OUD/mental-illness training. Both are stated priorities, and the budget form includes contractual and training lines.",
+   "eligibility": "Prior-cycle NOFO: open to any registered entity (for-profit or non-profit) in good standing with the Kentucky Secretary of State, plus counties, cities, towns and other government entities. Need to confirm this is unchanged for the new cycle.",
+   "nofo_url": null,
+   "source_url": "https://kyoaac.ky.gov/pdfs/FINAL%202026%20NOFO%20Treatment%20Recovery.pdf",
+   "portal": "Intelligrants (IGX): https://kyoaac.intelligrants.com/",
+   "accounts_needed": "IGX user credentials. Prior cycle said to email hallie.mattingly@ky.gov if your organization has none. Also needs KY Secretary of State registration in good standing.",
+   "match_required": "Prior cycle: none",
+   "page_limit": null,
+   "attachments": "Prior cycle: evaluation plan, timeline, collaboration letters/MOAs, contractor documentation, financial statements/audits, budget (12- or 24-month)",
+   "scoring_map": "Fills a treatment service gap in the area; Links and retains people in treatment/recovery; Programs for OUD plus co-occurring mental illness; Expanded MOUD/MAT and peer support; Strong collaboration, documented with letters/MOAs; Expands services rather than replacing existing funding; continuation requests must drop 25%",
+   "effort_hrs": null,
+   "kit_type": "direct-template",
+   "kit_url": null,
+   "notes": "Only the 2025 cycle is confirmed from primary sources: NOFO released Oct 1, 2025, window Oct 15 to Dec 19, 2025, awards April 2026, contracts July 2026. A new cycle reportedly opened 2026-10-19 with a Dec 17, 6 p.m. close (WKYT, news only, not evidence). kyoaac.ky.gov/funding is a JavaScript page that came back blank, and the new NOFO PDF was not located. Kentucky's DBHDID/KORE funding page currently lists only the FY26 Contingency Management pilot, which closed 2025-12-05.",
+   "evidence": {
+    "deadline_quote": null,
+    "amount_quote": "Prior cycle (2025, closed): \"Award Ceiling: $1,000,000.00 (regardless of budget timeline chosen)\"",
+    "eligibility_quote": "Prior cycle: \"open to any registered entity (for-proﬁt or non-proﬁt) that is in good standing with the Kentucky Secretary of State\"",
+    "fetched": [
+     "https://kyoaac.ky.gov/pdfs/FINAL%202026%20NOFO%20Treatment%20Recovery.pdf",
+     "https://kyoaac.ky.gov/pdfs/APPLICATION%20-%2026-27%20TREATMENTRECOVERY-R.pdf",
+     "https://kyoaac.ky.gov/",
+     "https://kyoaac.ky.gov/funding",
+     "https://www.chfs.ky.gov/agencies/dbhdid/Pages/sud.aspx"
+    ]
+   },
+   "last_verified": "2026-11-02",
+   "next_check": "2026-11-09",
+   "found_date": "2026-11-02",
    "verified_by": "ai_pass"
   }
  ],

@@ -98,6 +98,24 @@ DESCRIPTION:[Grant Radar] BJA FY 2026 Residential Substance Abuse Treatment (RSA
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:ok-oag-opioid-abatement-educational-2026-due-20261130@more-grant-radar
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20261130
+SUMMARY:[Grant Radar] Oklahoma Opioid Abatement Grant - Educational Institutions cycle (2026) — due
+DESCRIPTION:Oklahoma settlement abatement grants for 3-year projects. Priority strategies include contingency management\, integrated care and MOUD. A university or school district applicant could contract More Therapy for MORE training\, since subgrants are barred but contracting for services is allowed. Treat as a weak fit that only works through a partner.\n\nPath: Line-item · Priority 2.0\nhttps://oklahoma.gov/oag/resources/grants/opioid-abatement-grant.html
+URL:https://oklahoma.gov/oag/resources/grants/opioid-abatement-grant.html
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Oklahoma Opioid Abatement Grant - Educational Institutions cycle (2026) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Oklahoma Opioid Abatement Grant - Educational Institutions cycle (2026) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:oh-ag-jail-remediation-cy26-due-20261201@more-grant-radar
 DTSTAMP:20261102T120000Z
 DTSTART;VALUE=DATE:20261201
@@ -113,6 +131,42 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] Ohio AG Opioid Remediation — jail addiction programs (CY2026) — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:al-admh-rfp-2027-09-adolescent-tx-due-20261207@more-grant-radar
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20261207
+SUMMARY:[Grant Radar] ADMH Adolescent Early Intervention and/or Outpatient Substance Use Treatment Services – Region 4 — due
+DESCRIPTION:A one-time pot of $250K x 2 for ADMH-certified providers to start adolescent SUD early intervention and outpatient care in Region 4. The RFP says ADMH wants awardees to 'adopt and integrate evidence-based treatment practices' and scores named EBPs\, so MORE training could be a budget line for a partner provider. Fit is weak because the population is adolescents.\n\nPath: Line-item · Priority 2.0\nhttps://mh.alabama.gov/wp-content/uploads/2026/10/2027-09-Adolescent-Treatment.pdf
+URL:https://mh.alabama.gov/wp-content/uploads/2026/10/2027-09-Adolescent-Treatment.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] ADMH Adolescent Early Intervention and/or Outpatient Substance Use Treatment Services – Region 4 — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] ADMH Adolescent Early Intervention and/or Outpatient Substance Use Treatment Services – Region 4 — due
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:wi-dhs-reentry-navigation-tac-fy27-due-20261211@more-grant-radar
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20261211
+SUMMARY:[Grant Radar] Reentry Navigation Support and Training Assistance Center Funding Application — due
+DESCRIPTION:One $75k award to a center that gives overdose-prevention reentry navigation plus training and technical assistance to organizations serving justice-involved people. MORE could be the evidence-based training vendor or subcontractor for the winner\, or for an applicant's TA component.\n\nPath: Sub · Priority 9.8\nhttps://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm
+URL:https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Reentry Navigation Support and Training Assistance Center Funding Application — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Reentry Navigation Support and Training Assistance Center Funding Application — due
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -260,9 +314,9 @@ DESCRIPTION:[Grant Radar] NIDA — Interventions to Prevent and Treat SUD and Ov
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:tx-oafc-core-2026f-watch-20261104@more-grant-radar
+UID:tx-oafc-core-2026f-watch-20261116@more-grant-radar
 DTSTAMP:20261102T120000Z
-DTSTART;VALUE=DATE:20261104
+DTSTART;VALUE=DATE:20261116
 SUMMARY:[Grant Radar] Texas OAFC — Fall 2026 CORE grants — cycle watch
 DESCRIPTION:Up to $75M in multi-year (3-5 yr) settlement grants across Texas's 20 RHP regions. 'Workforce Training and Development' is an eligible category\, and MOUD expansion and pregnant/postpartum OUD get preference. MORE fits best as a training line-item or sub under a Texas MOUD provider in each target region. NOFA not yet posted.\n\nPath: Direct/Sub · Priority 18.8\nhttps://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php
 URL:https://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php
@@ -347,6 +401,24 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] HRSA RCORP — FY27 cycle (Overdose Response\, HRSA-27-040 forecast) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:va-oaa-fy28-due-20270302@more-grant-radar
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20270302
+SUMMARY:[Grant Radar] Virginia OAA — locality grants (FY28 new apps due 3/2/2027) — due
+DESCRIPTION:Every VA city and county has a settlement allocation it can only unlock by getting an abatement project approved. Get MORE named as the evidence-based training contractor in locality FY2028 new applications (due 3/2/2027)\, or via FY27 amendments (12/8/2026).\n\nPath: Sub · Priority 15.9\nhttps://www.oaa.virginia.gov/media/governorvirginiagov/oaa/documents/Guidance-Individual-Distribution-Gold-Standard.pdf
+URL:https://www.oaa.virginia.gov/media/governorvirginiagov/oaa/documents/Guidance-Individual-Distribution-Gold-Standard.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Virginia OAA — locality grants (FY28 new apps due 3/2/2027) — due
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Virginia OAA — locality grants (FY28 new apps due 3/2/2027) — due
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -527,6 +599,24 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] Williamson County TN opioid settlement — next cycle (CY28)\, not yet announced — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ky-oaac-treatment-recovery-2027-watch-20261109@more-grant-radar
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20261109
+SUMMARY:[Grant Radar] KYOAAC Opioid Abatement Grants: Treatment & Recovery (next cycle\, opened Oct 2026) — cycle watch
+DESCRIPTION:Kentucky's statewide settlement fund pays for opioid treatment and recovery projects\, and any for-profit registered with the KY Secretary of State can apply. MORE can apply directly or through KY treatment providers for MOUD-retention and co-occurring OUD/mental-illness training. Both are stated priorities\, and the budget form includes contractual and training lines.\n\nPath: Direct · Priority 4.0\nhttps://kyoaac.ky.gov/pdfs/FINAL%202026%20NOFO%20Treatment%20Recovery.pdf
+URL:https://kyoaac.ky.gov/pdfs/FINAL%202026%20NOFO%20Treatment%20Recovery.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] KYOAAC Opioid Abatement Grants: Treatment & Recovery (next cycle\, opened Oct 2026) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] KYOAAC Opioid Abatement Grants: Treatment & Recovery (next cycle\, opened Oct 2026) — cycle watch
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -890,6 +980,78 @@ DESCRIPTION:[Grant Radar] Colorado Department of Law State Share opioid settleme
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:ihs-sapta-fy27-watch-20270201@more-grant-radar
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20270201
+SUMMARY:[Grant Radar] IHS Substance Abuse Prevention\, Treatment\, and Aftercare — cycle watch
+DESCRIPTION:IHS forecast for AI/AN substance abuse prevention\, treatment and recovery. MORE could be a training vendor or line item for a tribal or urban Indian grantee\, but no partner is identified yet.\n\nPath: Sub · Priority 2.0\nhttps://www.grants.gov/search-results-detail/363652
+URL:https://www.grants.gov/search-results-detail/363652
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] IHS Substance Abuse Prevention\, Treatment\, and Aftercare — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] IHS Substance Abuse Prevention\, Treatment\, and Aftercare — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-scorf-opioid-recovery-fund-watch-watch-20261201@more-grant-radar
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20261201
+SUMMARY:[Grant Radar] South Carolina Opioid Recovery Fund (SCORF) grants — cycle watch
+DESCRIPTION:Statewide opioid settlement fund that the SCORF Board pays out to address and remediate the opioid epidemic in SC. Treatment and recovery are listed focus areas\, so MORE clinician training could be a line item in a funded provider's or subdivision's budget.\n\nPath: Line-item · Priority 2.0\nhttps://scorf.sc.gov
+URL:https://scorf.sc.gov
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] South Carolina Opioid Recovery Fund (SCORF) grants — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] South Carolina Opioid Recovery Fund (SCORF) grants — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-bhdd-osus-subgrant-watch-watch-20270115@more-grant-radar
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20270115
+SUMMARY:[Grant Radar] SC BHDD Office of Substance Use Services sub-grants (SUBG / SOR) — cycle watch
+DESCRIPTION:OSUS passes SAMHSA SUBG and SOR money to SC providers and hospitals\; past rounds funded MOUD on inpatient units and peer services in criminal-justice settings. A future provider sub-grant round could include MORE training as an allowable workforce cost.\n\nPath: Line-item · Priority 2.0\nhttps://bhdd.sc.gov/about/grants
+URL:https://bhdd.sc.gov/about/grants
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] SC BHDD Office of Substance Use Services sub-grants (SUBG / SOR) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] SC BHDD Office of Substance Use Services sub-grants (SUBG / SOR) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:la-ebr-baton-rouge-opioid-abatement-nofa-watch-watch-20270901@more-grant-radar
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20270901
+SUMMARY:[Grant Radar] City of Baton Rouge / Parish of East Baton Rouge – Louisiana Opioid Abatement Settlement NOFA (two-step LOI + NOFA) — cycle watch
+DESCRIPTION:EBR Parish gives its opioid settlement share to local agencies through a yearly LOI→NOFA competition. A Baton Rouge treatment provider\, drug court or FQHC could include MORE clinician training in its budget as an evidence-based OUD treatment and workforce cost.\n\nPath: Line-item · Priority 2.0\nhttps://www.brla.gov/3185/Office-of-Community-Development
+URL:https://www.brla.gov/3185/Office-of-Community-Development
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] City of Baton Rouge / Parish of East Baton Rouge – Louisiana Opioid Abatement Settlement NOFA (two-step LOI + NOFA) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] City of Baton Rouge / Parish of East Baton Rouge – Louisiana Opioid Abatement Settlement NOFA (two-step LOI + NOFA) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:hrsa-rcorp-cabh-fy27-watch-20270122@more-grant-radar
 DTSTAMP:20261102T120000Z
 DTSTART;VALUE=DATE:20270122
@@ -923,6 +1085,24 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] Arizona State share of opioid settlement funds (One Arizona Agreement) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:samhsa-fr-cara-ti-27-006-watch-20261215@more-grant-radar
+DTSTAMP:20261102T120000Z
+DTSTART;VALUE=DATE:20261215
+SUMMARY:[Grant Radar] First Responders-Comprehensive Addiction and Recovery Act (FR-CARA) — cycle watch
+DESCRIPTION:SAMHSA FR-CARA funds states\, local governments and Tribes to train first responders and communities in giving opioid overdose reversal medications. MORE would fit only if a grantee budgets clinician training\, which is unverified and a weak fit.\n\nPath: Line-item · Priority 1.0\nhttps://www.grants.gov/search-results-detail/364173
+URL:https://www.grants.gov/search-results-detail/364173
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] First Responders-Comprehensive Addiction and Recovery Act (FR-CARA) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] First Responders-Comprehensive Addiction and Recovery Act (FR-CARA) — cycle watch
 END:VALARM
 END:VEVENT
 END:VCALENDAR
