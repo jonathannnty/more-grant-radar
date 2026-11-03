@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "d3c7c21fa413bdee",
-  "len": 3084,
+  "hash": "85ba5143681f3983",
+  "len": 3290,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "03b9603f56ca4b26",
-  "len": 3141,
+  "hash": "b1d82ba97b69cd3b",
+  "len": 3148,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -357,14 +357,14 @@
   "url": "https://www.ojp.gov/funding/docs/ojjdp-2026-172748.pdf"
  },
  "cdc-ncipc-rfa-ce-27-017": {
-  "hash": "f5a0c2fc2fc5e25b",
-  "len": 5265,
+  "hash": "a09a89663454d3c7",
+  "len": 5261,
   "dates": [
    "august 29, 2027",
    "december 1, 2026",
-   "december 31, 2026",
+   "february 1, 2027",
    "july 2, 2026",
-   "october 1, 2026",
+   "march 3, 2027",
    "september 30, 2027"
   ],
   "url": "https://simpler.grants.gov/opportunity/04e6fd79-8789-47c8-be6f-646c0e686087"
@@ -396,8 +396,8 @@
   "url": "https://simpler.grants.gov/opportunity/579974eb-28f3-4ba0-8741-fa1a1183cd3e"
  },
  "samhsa-ed-alt-ti-27-005": {
-  "hash": "42c0d76209b05610",
-  "len": 48918,
+  "hash": "3dcf512d4055634b",
+  "len": 48903,
   "dates": [
    "10/30/2026"
   ],
@@ -495,8 +495,8 @@
   "url": "https://www2.tulsacounty.org/opioid-abatement-application/"
  },
  "bucks-county-pa-osf-rolling": {
-  "hash": "e4509b5b16e8c7e2",
-  "len": 4345,
+  "hash": "c68b88b1b5af5dbc",
+  "len": 4417,
   "dates": [
    "august 3, 2026",
    "september 4, 2026"
@@ -663,5 +663,97 @@
    "september 30, 2026"
   ],
   "url": "https://coag.gov/funding-opportunities/"
+ },
+ "samhsa-fr-cara-ti-27-006": {
+  "hash": "e0d24c18c10e0bcf",
+  "len": 1021,
+  "dates": [],
+  "url": "https://www.grants.gov/search-results-detail/364173"
+ },
+ "ihs-sapta-fy27": {
+  "hash": "e0d24c18c10e0bcf",
+  "len": 1021,
+  "dates": [],
+  "url": "https://www.grants.gov/search-results-detail/363652"
+ },
+ "wi-dhs-reentry-navigation-tac-fy27": {
+  "hash": "eb34461cda8994f4",
+  "len": 25291,
+  "dates": [
+   "august 31, 2027",
+   "august 31, 2028",
+   "december 11, 2026",
+   "march 1, 2027",
+   "november 2, 2026",
+   "september 1, 2027"
+  ],
+  "url": "https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm"
+ },
+ "ok-oag-opioid-abatement-educational-2026": {
+  "hash": "0f7388ab2790e87c",
+  "len": 28983,
+  "dates": [
+   "april 1, 2026",
+   "december 1, 2026",
+   "december 31, 2026",
+   "february 1, 2026",
+   "february 28, 2027",
+   "january 1, 2026",
+   "june 30, 2026",
+   "march 31, 2026",
+   "november 1, 2025",
+   "november 30, 2026",
+   "october 1, 2026"
+  ],
+  "url": "https://oklahoma.gov/oag/resources/grants/opioid-abatement-grant.html"
+ },
+ "sc-scorf-opioid-recovery-fund-watch": {},
+ "sc-bhdd-osus-subgrant-watch": {
+  "hash": "bd5ec6fc0c54280e",
+  "len": 17274,
+  "dates": [
+   "07/31/2026",
+   "08/01/2022",
+   "9/29/22",
+   "april 15, 2025",
+   "december 1, 2021",
+   "july 1, 2023",
+   "july 31, 2025",
+   "june 30, 2024",
+   "march 14, 2024",
+   "november 1, 2021",
+   "october 1, 2021",
+   "october 1, 2022",
+   "october 1, 2023",
+   "september 29, 2022",
+   "september 29, 2024",
+   "september 29, 2025",
+   "september 30, 2023",
+   "september 30, 2024",
+   "september 30, 2026"
+  ],
+  "url": "https://bhdd.sc.gov/about/grants"
+ },
+ "al-admh-rfp-2027-09-adolescent-tx": {
+  "hash": "5584e9350f9e3e23",
+  "len": 209507,
+  "dates": [],
+  "url": "https://mh.alabama.gov/wp-content/uploads/2026/10/2027-09-Adolescent-Treatment.pdf"
+ },
+ "la-ebr-baton-rouge-opioid-abatement-nofa-watch": {
+  "hash": "60d5c94642aa3b11",
+  "len": 7091,
+  "dates": [
+   "december 8, 2026",
+   "october 13, 2026",
+   "october 19, 2029"
+  ],
+  "url": "https://www.brla.gov/3185/Office-of-Community-Development"
+ },
+ "ky-oaac-treatment-recovery-2027": {
+  "hash": "5184428ca1b9bb57",
+  "len": 173388,
+  "dates": [],
+  "url": "https://kyoaac.ky.gov/pdfs/FINAL%202026%20NOFO%20Treatment%20Recovery.pdf"
  }
 }
