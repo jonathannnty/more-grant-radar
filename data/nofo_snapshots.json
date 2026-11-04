@@ -169,7 +169,7 @@
   "url": "https://cdmrp.health.mil/funding/prmrp"
  },
  "pcori-substance-use": {
-  "hash": "70d6241b72f0733f",
+  "hash": "8dc9585a7db8041b",
   "len": 13377,
   "dates": [],
   "url": "https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026"
@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "85ba5143681f3983",
-  "len": 3290,
+  "hash": "63fa9d51873e1e41",
+  "len": 3215,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "b1d82ba97b69cd3b",
-  "len": 3148,
+  "hash": "34b721743652b3b3",
+  "len": 3103,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -495,8 +495,8 @@
   "url": "https://www2.tulsacounty.org/opioid-abatement-application/"
  },
  "bucks-county-pa-osf-rolling": {
-  "hash": "c68b88b1b5af5dbc",
-  "len": 4417,
+  "hash": "f62f7231ad8d2aec",
+  "len": 4436,
   "dates": [
    "august 3, 2026",
    "september 4, 2026"
@@ -510,8 +510,8 @@
   "url": "https://dss.sd.gov/docs/behavioralhealth/grantinfo/FY27_Opioid_Settlement_Funding_Opportunities.pdf"
  },
  "wv-fairmont-opioid-settlement": {
-  "hash": "7524b4155bf280d5",
-  "len": 5020,
+  "hash": "ba46b316a05cdeb4",
+  "len": 5139,
   "dates": [],
   "url": "https://www.fairmontwv.gov/511/Opioid-Settlement-Funds"
  },
