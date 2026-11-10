@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "0bda46b45bf92ee2",
-  "len": 3241,
+  "hash": "98390b8ed2ed1075",
+  "len": 3071,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "477664858d1b8aab",
-  "len": 2861,
+  "hash": "363dee785e23b43b",
+  "len": 2903,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -396,8 +396,8 @@
   "url": "https://simpler.grants.gov/opportunity/579974eb-28f3-4ba0-8741-fa1a1183cd3e"
  },
  "samhsa-ed-alt-ti-27-005": {
-  "hash": "d5a3d1b483b3e364",
-  "len": 48634,
+  "hash": "59c14243a964e670",
+  "len": 48635,
   "dates": [
    "10/30/2026"
   ],
@@ -422,8 +422,8 @@
   "url": "https://rva.gov/sites/default/files/2026-01/Request_for_Applications_%28Open_Application%29_%20UPDATED.pdf"
  },
  "az-ahcccs-sor-iv-passthrough": {
-  "hash": "93568538065b23d6",
-  "len": 11224,
+  "hash": "c0666cb459cff1c6",
+  "len": 10905,
   "dates": [
    "06/30/2027",
    "07/01/2026",
@@ -431,7 +431,6 @@
    "09/29/2027",
    "09/30/2024",
    "10/16/2022",
-   "10/26/2026",
    "9/30/2024"
   ],
   "url": "https://www.azahcccs.gov/Resources/Grants/"
@@ -495,8 +494,8 @@
   "url": "https://www2.tulsacounty.org/opioid-abatement-application/"
  },
  "bucks-county-pa-osf-rolling": {
-  "hash": "1ff72f780898496b",
-  "len": 2544,
+  "hash": "b2a7f8529eb0eb64",
+  "len": 2453,
   "dates": [
    "april 16, 2027",
    "july 1, 2027",
@@ -758,5 +757,143 @@
   "len": 173388,
   "dates": [],
   "url": "https://kyoaac.ky.gov/pdfs/FINAL%202026%20NOFO%20Treatment%20Recovery.pdf"
+ },
+ "or-osptr-opioid-settlement-community-grant": {
+  "hash": "c40cd1d8dc6dda2f",
+  "len": 5792,
+  "dates": [
+   "07/01/2027",
+   "10/15/2026",
+   "10/16/2026",
+   "10/19/2026",
+   "10/26/2026",
+   "11/02/2026",
+   "12/17/2026"
+  ],
+  "url": "https://oregonbuys.gov/bso/external/bidDetail.sda?docId=S-44300-00017937&external=true&parentUrl=close"
+ },
+ "ok-oag-opioid-abatement-government-2027": {
+  "hash": "0f7388ab2790e87c",
+  "len": 28983,
+  "dates": [
+   "april 1, 2026",
+   "december 1, 2026",
+   "december 31, 2026",
+   "february 1, 2026",
+   "february 28, 2027",
+   "january 1, 2026",
+   "june 30, 2026",
+   "march 31, 2026",
+   "november 1, 2025",
+   "november 30, 2026",
+   "october 1, 2026"
+  ],
+  "url": "https://oklahoma.gov/oag/resources/grants/opioid-abatement-grant.html"
+ },
+ "ct-osac-funding-recommendation-watch": {
+  "hash": "396e18a1b32a9bc9",
+  "len": 12182,
+  "dates": [
+   "09/25/2026",
+   "3/3/26",
+   "april 7, 2026",
+   "january 13, 2026",
+   "january 14, 2025",
+   "january 9, 2024",
+   "july 11, 2023",
+   "july 14, 2026",
+   "july 21, 2021",
+   "july 8, 2025",
+   "july 9, 2024",
+   "march 11, 2025",
+   "march 12, 2024",
+   "march 14, 2023",
+   "may 13, 2025",
+   "may 14, 2024",
+   "may 9, 2023",
+   "november 14, 2023",
+   "november 19, 2024",
+   "october 1, 2023",
+   "october 1, 2026",
+   "october 13, 2026",
+   "september 10, 2024",
+   "september 12, 2023",
+   "september 16, 2025"
+  ],
+  "url": "https://portal.ct.gov/dmhas/newsworthy/news-items/ct-opioid-settlement-advisory-committee"
+ },
+ "ct-norwalk-opioid-settlement-minigrant-watch": {
+  "hash": "81e0c7e2a90ed83c",
+  "len": 2845,
+  "dates": [],
+  "url": "https://norwalkct.gov/3735/Opioid-Settlement-Funds"
+ },
+ "ut-weber-county-opioid-settlement-watch": {
+  "hash": "e83b0dc85f262a91",
+  "len": 13971,
+  "dates": [],
+  "url": "https://www.webercountyutah.gov/opioid-settlement/documents/opioid-template-application.docx"
+ },
+ "ut-state-opioid-settlement-appropriation-watch": {
+  "hash": "1101d686f02fae03",
+  "len": 11818,
+  "dates": [
+   "september 30, 2024"
+  ],
+  "url": "https://sumh.utah.gov/data-reports/opioidlitigation/"
+ },
+ "ia-hhs-osf-competitive-rfp-next": {
+  "hash": "ecac45bc38ce67d0",
+  "len": 55954,
+  "dates": [
+   "01/08/2028",
+   "01/09/2026",
+   "09/24/2025",
+   "10/30/2025",
+   "11/12/2025",
+   "12/23/2025",
+   "december 2, 2025",
+   "december 23, 2025",
+   "january 8, 2027",
+   "january 8, 2028",
+   "january 9, 2026",
+   "november 12, 2025",
+   "november 19, 2025",
+   "november 24, 2025",
+   "november 7, 2025",
+   "october 31, 2025"
+  ],
+  "url": "https://www.iowagrants.gov/viewStorefrontOpportunity.do?OIDString=1758745329639%7COpportunity"
+ },
+ "ia-johnson-county-osf-community-grants-fy28": {
+  "hash": "7c007eddde0ad7ac",
+  "len": 5125,
+  "dates": [
+   "april 15, 2026",
+   "april 21, 2026",
+   "april 30, 2026",
+   "january 29, 2027",
+   "july 1, 2026",
+   "july 30, 2027",
+   "june 1, 2026",
+   "june 1, 2027",
+   "june 30, 2026",
+   "june 30, 2027",
+   "may 29, 2026",
+   "may 6, 2026"
+  ],
+  "url": "https://www.johnsoncountyiowa.gov/opioid-community-grants"
+ },
+ "ia-black-hawk-county-osf-fy28": {
+  "hash": "5d14f79be2c80e58",
+  "len": 4046,
+  "dates": [
+   "december 3, 2025",
+   "january 1, 2026",
+   "june 30, 2027",
+   "november 12, 2025",
+   "october 15, 2025"
+  ],
+  "url": "https://www.blackhawkcounty.iowa.gov/844/Opioid-Settlement-Funds"
  }
 }
