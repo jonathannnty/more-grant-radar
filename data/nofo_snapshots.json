@@ -169,8 +169,8 @@
   "url": "https://cdmrp.health.mil/funding/prmrp"
  },
  "pcori-substance-use": {
-  "hash": "8dc9585a7db8041b",
-  "len": 13377,
+  "hash": "e8287346f33cc115",
+  "len": 14749,
   "dates": [],
   "url": "https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026"
  },
@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "98390b8ed2ed1075",
-  "len": 3071,
+  "hash": "855b3472fe396fe5",
+  "len": 3080,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "363dee785e23b43b",
-  "len": 2903,
+  "hash": "bfb8764854b7c02d",
+  "len": 2879,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -396,8 +396,8 @@
   "url": "https://simpler.grants.gov/opportunity/579974eb-28f3-4ba0-8741-fa1a1183cd3e"
  },
  "samhsa-ed-alt-ti-27-005": {
-  "hash": "59c14243a964e670",
-  "len": 48635,
+  "hash": "d5a3d1b483b3e364",
+  "len": 48634,
   "dates": [
    "10/30/2026"
   ],
@@ -711,8 +711,8 @@
  },
  "sc-scorf-opioid-recovery-fund-watch": {},
  "sc-bhdd-osus-subgrant-watch": {
-  "hash": "8ea4ac1e734654a3",
-  "len": 17445,
+  "hash": "211e27aa15d2363a",
+  "len": 17450,
   "dates": [
    "07/31/2026",
    "08/01/2022",
@@ -743,8 +743,8 @@
   "url": "https://mh.alabama.gov/wp-content/uploads/2026/10/2027-09-Adolescent-Treatment.pdf"
  },
  "la-ebr-baton-rouge-opioid-abatement-nofa-watch": {
-  "hash": "5ae96e2e3ec10b13",
-  "len": 6990,
+  "hash": "ee52ae7de9c19d76",
+  "len": 7117,
   "dates": [
    "december 8, 2026",
    "october 13, 2026",
@@ -759,8 +759,8 @@
   "url": "https://kyoaac.ky.gov/pdfs/FINAL%202026%20NOFO%20Treatment%20Recovery.pdf"
  },
  "or-osptr-opioid-settlement-community-grant": {
-  "hash": "c40cd1d8dc6dda2f",
-  "len": 5792,
+  "hash": "89f8dfcbaacd9257",
+  "len": 5991,
   "dates": [
    "07/01/2027",
    "10/15/2026",
@@ -768,6 +768,7 @@
    "10/19/2026",
    "10/26/2026",
    "11/02/2026",
+   "11/10/2026",
    "12/17/2026"
   ],
   "url": "https://oregonbuys.gov/bso/external/bidDetail.sda?docId=S-44300-00017937&external=true&parentUrl=close"
