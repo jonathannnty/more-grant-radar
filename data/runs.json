@@ -2450,5 +2450,89 @@
    "rows": 73,
    "skipped": 0
   }
+ },
+ {
+  "phase": "generate",
+  "ts": "2026-11-12T18:38:32Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "rows": 73,
+   "skipped": 0
+  }
+ },
+ {
+  "phase": "scan_grants_gov",
+  "ts": "2026-11-12T18:38:37Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "queries": 23,
+   "unknown": 26
+  }
+ },
+ {
+  "phase": "scan_sam",
+  "ts": "2026-11-12T18:38:38Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "relevant": 0
+  }
+ },
+ {
+  "phase": "scan_states",
+  "ts": "2026-11-12T18:39:15Z",
+  "status": "ok",
+  "note": "139/158 pages read · tracker list updated 2026-08-02",
+  "counts": {
+   "pages": 158,
+   "read": 139,
+   "unreachable": 19,
+   "new_links": 0,
+   "tracker_open": 18
+  }
+ },
+ {
+  "phase": "nofo_watch",
+  "ts": "2026-11-12T18:40:16Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "checked": 77,
+   "changed": 0,
+   "unreachable": 5
+  }
+ },
+ {
+  "phase": "promote_leads",
+  "ts": "2026-11-12T18:40:17Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "added": 0,
+   "active": 12,
+   "expired": 0
+  }
+ },
+ {
+  "phase": "notify",
+  "ts": "2026-11-12T18:40:17Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "sent": 0,
+   "recipients": 2
+  }
+ },
+ {
+  "phase": "generate",
+  "ts": "2026-11-12T18:40:17Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "rows": 73,
+   "skipped": 0
+  }
  }
 ]
