@@ -37,16 +37,9 @@
   "url": "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
  },
  "oneohio-c3": {
-  "hash": "9312581ac494b67a",
-  "len": 10819,
-  "dates": [
-   "1/21/26",
-   "1/26/26",
-   "1/7/26",
-   "december 10, 2025",
-   "february 11, 2026",
-   "january 14, 2026"
-  ],
+  "hash": "cc9d3de556eb86f3",
+  "len": 5186,
+  "dates": [],
   "url": "https://www.oneohiofoundation.com/grants"
  },
  "allegheny-osf-2026": {
@@ -279,8 +272,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "6e2f9172029f98f7",
-  "len": 3050,
+  "hash": "dd47ee13450568b2",
+  "len": 3051,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +282,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "7b168038fc76be40",
-  "len": 2937,
+  "hash": "b272af92b92b8153",
+  "len": 2831,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
