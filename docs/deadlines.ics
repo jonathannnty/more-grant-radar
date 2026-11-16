@@ -296,9 +296,9 @@ DESCRIPTION:[Grant Radar] NIDA — Interventions to Prevent and Treat SUD and Ov
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:tx-oafc-core-2026f-watch-20261116@more-grant-radar
+UID:tx-oafc-core-2026f-watch-20261130@more-grant-radar
 DTSTAMP:20261116T120000Z
-DTSTART;VALUE=DATE:20261116
+DTSTART;VALUE=DATE:20261130
 SUMMARY:[Grant Radar] Texas OAFC — Fall 2026 CORE grants — cycle watch
 DESCRIPTION:Up to $75M in multi-year (3-5 yr) settlement grants across Texas's 20 RHP regions. 'Workforce Training and Development' is an eligible category\, and MOUD expansion and pregnant/postpartum OUD get preference. MORE fits best as a training line-item or sub under a Texas MOUD provider in each target region. NOFA not yet posted.\n\nPath: Direct/Sub · Priority 18.8\nhttps://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php
 URL:https://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php
@@ -444,7 +444,7 @@ UID:sm-26-014-outreach-20261011@more-grant-radar
 DTSTAMP:20261116T120000Z
 DTSTART;VALUE=DATE:20261011
 SUMMARY:[Grant Radar] CCBHC Planning\, Development & Implementation (SM-26-014) — outreach window (award ~2026-11-15)
-DESCRIPTION:The application window closed 2026-08-17 and SAMHSA's FY27 forecast has no CCBHC successor. What's left is the post-award play: about 94 new CCBHCs are expected to be funded around Nov 15\, 2026\, with up to $1M/yr for up to 4 years. Allowable Activity #3 (training partnerships\, continuing education) lets them buy MORE training as a line item.\n\nPath: Line-item · Priority 12.0\nhttps://www.samhsa.gov/sites/default/files/grants/pdf/fy-2026-ccbhc-pdi-sm-26-014.pdf
+DESCRIPTION:The application window closed 2026-08-17. The post-award play remains: about 94 new CCBHCs are expected to be funded\, and training partnerships (Allowable Activity #3) can buy MORE training as a line item. Award status is unverified.\n\nPath: Line-item · Priority 12.0\nhttps://www.samhsa.gov/sites/default/files/grants/pdf/fy-2026-ccbhc-pdi-sm-26-014.pdf
 URL:https://www.samhsa.gov/sites/default/files/grants/pdf/fy-2026-ccbhc-pdi-sm-26-014.pdf
 BEGIN:VALARM
 TRIGGER:-P14D
@@ -689,6 +689,24 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] South Dakota Opioid Settlement FY27 Funding Opportunities (statewide share) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ms-osfac-opioid-abatement-grants-2027-watch-20270715@more-grant-radar
+DTSTAMP:20261116T120000Z
+DTSTART;VALUE=DATE:20270715
+SUMMARY:[Grant Radar] Mississippi Opioid Settlement Fund Advisory Council - Opioid Abatement Grants (next annual cycle) — cycle watch
+DESCRIPTION:Mississippi's statewide settlement grant cycle funds opioid abatement projects. Recommended awards are line-items in the Legislature's appropriations bill. A Mississippi CMHC or treatment provider can budget MORE training as Contractual/Professional Services tagged to Exhibit E. The scoring rubric rewards naming evidence-based practices and has 11 priorities\, including impact and treating OUD\, all of which MORE's 16 RCTs speak to.\n\nPath: Line-item · Priority 3.0\nhttps://attorneygenerallynnfitch.com/wp-content/uploads/2026/09/OSFC-Request-for-Grant-Applications-August-2026.pdf
+URL:https://attorneygenerallynnfitch.com/wp-content/uploads/2026/09/OSFC-Request-for-Grant-Applications-August-2026.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Mississippi Opioid Settlement Fund Advisory Council - Opioid Abatement Grants (next annual cycle) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Mississippi Opioid Settlement Fund Advisory Council - Opioid Abatement Grants (next annual cycle) — cycle watch
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1160,6 +1178,42 @@ DESCRIPTION:[Grant Radar] Black Hawk County (IA) Opioid Abatement Funds – FY28
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:nv-dhs-frn-opioid-settlement-nofo-watch-watch-20270131@more-grant-radar
+DTSTAMP:20261116T120000Z
+DTSTART;VALUE=DATE:20270131
+SUMMARY:[Grant Radar] Fund for a Resilient Nevada (FRN) opioid settlement NOFO / RFP – next cycle — cycle watch
+DESCRIPTION:Nevada's state share of opioid settlement money goes into the FRN. DHS gives it out through NOFOs (subgrants) and State Purchasing RFPs for opioid abatement work listed in the statewide plan\, including jail-based MOUD/treatment. MORE clinician training fits as a line item for an FRN-funded treatment provider or as a vendor service when a solicitation includes workforce training.\n\nPath: Line-item · Priority 2.0\nhttps://www.dhs.nv.gov/Programs/frn/nofo/
+URL:https://www.dhs.nv.gov/Programs/frn/nofo/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Fund for a Resilient Nevada (FRN) opioid settlement NOFO / RFP – next cycle — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Fund for a Resilient Nevada (FRN) opioid settlement NOFO / RFP – next cycle — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nv-dpbh-sor-next-cycle-watch-watch-20270601@more-grant-radar
+DTSTAMP:20261116T120000Z
+DTSTART;VALUE=DATE:20270601
+SUMMARY:[Grant Radar] Nevada State Opioid Response (SOR) subgrant RFA – next cycle after SOR 4 — cycle watch
+DESCRIPTION:Nevada DPBH passes SAMHSA SOR money to community stakeholders through an RFA for opioid and stimulant projects. MORE training for MOUD providers fits either as a direct project or as a vendor line in a provider's application.\n\nPath: Sub · Priority 2.0\nhttps://www.dpbh.nv.gov/programs/bh-wellness-and-prevention-bbhwp/sor/sor4rfa/
+URL:https://www.dpbh.nv.gov/programs/bh-wellness-and-prevention-bbhwp/sor/sor4rfa/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Nevada State Opioid Response (SOR) subgrant RFA – next cycle after SOR 4 — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Nevada State Opioid Response (SOR) subgrant RFA – next cycle after SOR 4 — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:hrsa-rcorp-cabh-fy27-watch-20270122@more-grant-radar
 DTSTAMP:20261116T120000Z
 DTSTART;VALUE=DATE:20270122
@@ -1229,6 +1283,24 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] Utah Opioid Litigation Settlement Restricted Account – legislative appropriations — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nm-hca-bhsd-sbirt-training-vendor-watch-watch-20270315@more-grant-radar
+DTSTAMP:20261116T120000Z
+DTSTART;VALUE=DATE:20270315
+SUMMARY:[Grant Radar] NM HCA BHSD SBIRT Training Vendor (next cycle) — cycle watch
+DESCRIPTION:BHSD pays up to $4M (SFY27) for one vendor to build and deliver a statewide online SBIRT training platform. This only fits MORE if a future cycle widens the scope beyond SBIRT\, or if MORE partners with or subcontracts to the SBIRT vendor.\n\nPath: Direct · Priority 1.0\nhttps://www.hca.nm.gov/wp-content/uploads/HCA_BHSD_SBIRT_RFI_FY26-04.28.26.pdf
+URL:https://www.hca.nm.gov/wp-content/uploads/HCA_BHSD_SBIRT_RFI_FY26-04.28.26.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NM HCA BHSD SBIRT Training Vendor (next cycle) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NM HCA BHSD SBIRT Training Vendor (next cycle) — cycle watch
 END:VALARM
 END:VEVENT
 END:VCALENDAR

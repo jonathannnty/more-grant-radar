@@ -37,9 +37,16 @@
   "url": "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
  },
  "oneohio-c3": {
-  "hash": "9000c6e9f560805d",
-  "len": 2109,
-  "dates": [],
+  "hash": "9312581ac494b67a",
+  "len": 10819,
+  "dates": [
+   "1/21/26",
+   "1/26/26",
+   "1/7/26",
+   "december 10, 2025",
+   "february 11, 2026",
+   "january 14, 2026"
+  ],
   "url": "https://www.oneohiofoundation.com/grants"
  },
  "allegheny-osf-2026": {
@@ -87,8 +94,8 @@
   "url": "https://www.grants.gov/search-results-detail/360366"
  },
  "samhsa-sm-26-015": {
-  "hash": "9b5694c4dcb0b69e",
-  "len": 49680,
+  "hash": "967373e5241dd2db",
+  "len": 49679,
   "dates": [
    "08/18/2026",
    "august 17, 2026",
@@ -272,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "7668e11451b1a31e",
-  "len": 3078,
+  "hash": "f317fff91516d63c",
+  "len": 2976,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -282,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "3e8db67230e976b4",
-  "len": 2941,
+  "hash": "667d053463775e89",
+  "len": 2816,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -686,8 +693,8 @@
   "url": "https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm"
  },
  "ok-oag-opioid-abatement-educational-2026": {
-  "hash": "0f7388ab2790e87c",
-  "len": 28983,
+  "hash": "d7bd905759666b97",
+  "len": 29011,
   "dates": [
    "april 1, 2026",
    "december 1, 2026",
@@ -705,8 +712,8 @@
  },
  "sc-scorf-opioid-recovery-fund-watch": {},
  "sc-bhdd-osus-subgrant-watch": {
-  "hash": "211e27aa15d2363a",
-  "len": 17450,
+  "hash": "0601cffd664f0571",
+  "len": 17458,
   "dates": [
    "07/31/2026",
    "08/01/2022",
@@ -737,8 +744,8 @@
   "url": "https://mh.alabama.gov/wp-content/uploads/2026/10/2027-09-Adolescent-Treatment.pdf"
  },
  "la-ebr-baton-rouge-opioid-abatement-nofa-watch": {
-  "hash": "ee52ae7de9c19d76",
-  "len": 7117,
+  "hash": "ed8916cef75ad6e9",
+  "len": 7074,
   "dates": [
    "december 8, 2026",
    "october 13, 2026",
@@ -768,8 +775,8 @@
   "url": "https://oregonbuys.gov/bso/external/bidDetail.sda?docId=S-44300-00017937&external=true&parentUrl=close"
  },
  "ok-oag-opioid-abatement-government-2027": {
-  "hash": "0f7388ab2790e87c",
-  "len": 28983,
+  "hash": "d7bd905759666b97",
+  "len": 29011,
   "dates": [
    "april 1, 2026",
    "december 1, 2026",

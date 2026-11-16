@@ -2786,5 +2786,103 @@
    "rows": 73,
    "skipped": 0
   }
+ },
+ {
+  "phase": "generate",
+  "ts": "2026-11-16T20:44:09Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "rows": 73,
+   "skipped": 0
+  }
+ },
+ {
+  "phase": "scan_grants_gov",
+  "ts": "2026-11-16T20:44:18Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "queries": 23,
+   "unknown": 24
+  }
+ },
+ {
+  "phase": "scan_sam",
+  "ts": "2026-11-16T20:44:19Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "relevant": 0
+  }
+ },
+ {
+  "phase": "scan_states",
+  "ts": "2026-11-16T20:44:32Z",
+  "status": "ok",
+  "note": "140/158 pages read · tracker list updated 2026-08-02",
+  "counts": {
+   "pages": 158,
+   "read": 140,
+   "unreachable": 18,
+   "new_links": 3,
+   "tracker_open": 18
+  }
+ },
+ {
+  "phase": "nofo_watch",
+  "ts": "2026-11-16T20:45:29Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "checked": 77,
+   "changed": 1,
+   "unreachable": 4
+  }
+ },
+ {
+  "phase": "promote_leads",
+  "ts": "2026-11-16T20:45:29Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "added": 0,
+   "active": 12,
+   "expired": 0
+  }
+ },
+ {
+  "phase": "ai_pass",
+  "ts": "2026-11-16T20:57:26Z",
+  "status": "ok",
+  "note": "claude-sonnet-5-5 + claude-opus-5-5 sweep · $3.98 spent · swept NV,AR,MS,KS,NM · refused ks-kfa-responsive-grant-program-2026: deadline 2026-11-20 not found on any fetched page",
+  "counts": {
+   "added": 6,
+   "updated": 7,
+   "rejected": 2,
+   "watch": 7,
+   "errors": 0,
+   "swept": 5
+  }
+ },
+ {
+  "phase": "notify",
+  "ts": "2026-11-16T20:57:26Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "sent": 1,
+   "recipients": 2
+  }
+ },
+ {
+  "phase": "generate",
+  "ts": "2026-11-16T20:57:27Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "rows": 78,
+   "skipped": 0
+  }
  }
 ]
