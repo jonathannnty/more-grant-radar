@@ -94,8 +94,8 @@
   "url": "https://www.grants.gov/search-results-detail/360366"
  },
  "samhsa-sm-26-015": {
-  "hash": "967373e5241dd2db",
-  "len": 49679,
+  "hash": "f2dd5a9677c3b68d",
+  "len": 50152,
   "dates": [
    "08/18/2026",
    "august 17, 2026",
@@ -169,8 +169,8 @@
   "url": "https://cdmrp.health.mil/funding/prmrp"
  },
  "pcori-substance-use": {
-  "hash": "e8287346f33cc115",
-  "len": 14749,
+  "hash": "ce8ec7f6c1279a92",
+  "len": 14616,
   "dates": [],
   "url": "https://www.pcori.org/funding-opportunities/announcement/addressing-substance-use-pcori-funding-announcement-cycle-3-2026"
  },
@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "f317fff91516d63c",
-  "len": 2976,
+  "hash": "14ea8b09b77c6b9d",
+  "len": 3010,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "667d053463775e89",
-  "len": 2816,
+  "hash": "a3314f428be79631",
+  "len": 2831,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -396,8 +396,8 @@
   "url": "https://simpler.grants.gov/opportunity/579974eb-28f3-4ba0-8741-fa1a1183cd3e"
  },
  "samhsa-ed-alt-ti-27-005": {
-  "hash": "ad5782a1cb63f5f8",
-  "len": 47663,
+  "hash": "c893f1bca4a39532",
+  "len": 48137,
   "dates": [
    "10/30/2026"
   ],
@@ -422,8 +422,8 @@
   "url": "https://rva.gov/sites/default/files/2026-01/Request_for_Applications_%28Open_Application%29_%20UPDATED.pdf"
  },
  "az-ahcccs-sor-iv-passthrough": {
-  "hash": "ea28ebec05d890f0",
-  "len": 11118,
+  "hash": "664a8607ee54a7c5",
+  "len": 11122,
   "dates": [
    "06/30/2027",
    "07/01/2026",
@@ -559,8 +559,8 @@
   "url": "https://www.baltimorecity.gov/bcmoor/news/mayors-office-of-overdose-response-and-mayors-office-of-recovery-programs-announce-applications-for-round-two-of-opioid-restitution-fund-community-grants"
  },
  "md-moor-competitive-fy28": {
-  "hash": "96887920152e49e6",
-  "len": 3217,
+  "hash": "f682cd5be30377d8",
+  "len": 3301,
   "dates": [],
   "url": "https://stopoverdose.maryland.gov/grants/"
  },
@@ -712,8 +712,8 @@
  },
  "sc-scorf-opioid-recovery-fund-watch": {},
  "sc-bhdd-osus-subgrant-watch": {
-  "hash": "0601cffd664f0571",
-  "len": 17458,
+  "hash": "e9b4bb21a158dcfc",
+  "len": 17526,
   "dates": [
    "07/31/2026",
    "08/01/2022",
@@ -825,8 +825,8 @@
   "url": "https://portal.ct.gov/dmhas/newsworthy/news-items/ct-opioid-settlement-advisory-committee"
  },
  "ct-norwalk-opioid-settlement-minigrant-watch": {
-  "hash": "81e0c7e2a90ed83c",
-  "len": 2845,
+  "hash": "80174b9d23d66201",
+  "len": 2887,
   "dates": [],
   "url": "https://norwalkct.gov/3735/Opioid-Settlement-Funds"
  },
@@ -897,5 +897,45 @@
    "october 15, 2025"
   ],
   "url": "https://www.blackhawkcounty.iowa.gov/844/Opioid-Settlement-Funds"
+ },
+ "nv-dhs-frn-opioid-settlement-nofo-watch": {
+  "hash": "aea786762d2b80b4",
+  "len": 2694,
+  "dates": [
+   "11/12/2025",
+   "november 27, 2026",
+   "october 31, 1864"
+  ],
+  "url": "https://www.dhs.nv.gov/Programs/frn/nofo/"
+ },
+ "nv-dpbh-sor-next-cycle-watch": {
+  "hash": "652c023e2bf76005",
+  "len": 2257,
+  "dates": [
+   "01/08/2026",
+   "january 1, 2025",
+   "november 27, 2026",
+   "october 31, 1864",
+   "september 29, 2027"
+  ],
+  "url": "https://www.dpbh.nv.gov/programs/bh-wellness-and-prevention-bbhwp/sor/sor4rfa/"
+ },
+ "ar-arorp-general-application-rolling": {
+  "hash": "181746e87109a40d",
+  "len": 5601,
+  "dates": [],
+  "url": "https://www.arorp.org/learn-more-general-application/"
+ },
+ "ms-osfac-opioid-abatement-grants-2027": {
+  "hash": "2912dfab176f269e",
+  "len": 120113,
+  "dates": [],
+  "url": "https://attorneygenerallynnfitch.com/wp-content/uploads/2026/09/OSFC-Request-for-Grant-Applications-August-2026.pdf"
+ },
+ "nm-hca-bhsd-sbirt-training-vendor-watch": {
+  "hash": "1f47bffc302c35ed",
+  "len": 232462,
+  "dates": [],
+  "url": "https://www.hca.nm.gov/wp-content/uploads/HCA_BHSD_SBIRT_RFI_FY26-04.28.26.pdf"
  }
 }
