@@ -37,8 +37,8 @@
   "url": "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
  },
  "oneohio-c3": {
-  "hash": "9312581ac494b67a",
-  "len": 10819,
+  "hash": "ee73a7fc707044f3",
+  "len": 10777,
   "dates": [
    "1/21/26",
    "1/26/26",
@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "d049c081f101e85e",
-  "len": 2993,
+  "hash": "13c132323b5e340b",
+  "len": 3076,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "7b993c9e90462094",
-  "len": 2869,
+  "hash": "4f0c0aeacdd2c9d2",
+  "len": 2857,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -712,8 +712,8 @@
  },
  "sc-scorf-opioid-recovery-fund-watch": {},
  "sc-bhdd-osus-subgrant-watch": {
-  "hash": "6f1a7fe4b5ec809e",
-  "len": 17498,
+  "hash": "6658cf6a85d521b1",
+  "len": 17506,
   "dates": [
    "07/31/2026",
    "08/01/2022",
@@ -744,8 +744,8 @@
   "url": "https://mh.alabama.gov/wp-content/uploads/2026/10/2027-09-Adolescent-Treatment.pdf"
  },
  "la-ebr-baton-rouge-opioid-abatement-nofa-watch": {
-  "hash": "ed8916cef75ad6e9",
-  "len": 7074,
+  "hash": "4b0d192834689b49",
+  "len": 7025,
   "dates": [
    "december 8, 2026",
    "october 13, 2026",
@@ -793,8 +793,8 @@
   "url": "https://oklahoma.gov/oag/resources/grants/opioid-abatement-grant.html"
  },
  "ct-osac-funding-recommendation-watch": {
-  "hash": "396e18a1b32a9bc9",
-  "len": 12182,
+  "hash": "ca72816d500bd8af",
+  "len": 12283,
   "dates": [
    "09/25/2026",
    "3/3/26",
@@ -899,20 +899,21 @@
   "url": "https://www.blackhawkcounty.iowa.gov/844/Opioid-Settlement-Funds"
  },
  "nv-dhs-frn-opioid-settlement-nofo-watch": {
-  "hash": "aea786762d2b80b4",
-  "len": 2694,
+  "hash": "6aa9c3e3a43b424e",
+  "len": 2817,
   "dates": [
    "11/12/2025",
-   "november 27, 2026",
-   "october 31, 1864"
+   "11/19/2026",
+   "november 27, 2026"
   ],
   "url": "https://www.dhs.nv.gov/Programs/frn/nofo/"
  },
  "nv-dpbh-sor-next-cycle-watch": {
-  "hash": "c244931354a0ff0f",
-  "len": 2249,
+  "hash": "d1902d90fd883654",
+  "len": 2364,
   "dates": [
    "01/08/2026",
+   "11/19/2026",
    "january 1, 2025",
    "november 27, 2026",
    "september 29, 2027"
