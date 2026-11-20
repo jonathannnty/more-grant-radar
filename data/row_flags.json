@@ -45,9 +45,10 @@
   "url": "https://buckscounty.gov/2231/Apply-for-OSF-Funding"
  },
  "or-osptr-opioid-settlement-community-grant": {
-  "date": "2026-11-11",
+  "date": "2026-11-20",
   "added_dates": [
-   "11/10/2026"
+   "11/19/2026",
+   "11/20/26"
   ],
   "url": "https://oregonbuys.gov/bso/external/bidDetail.sda?docId=S-44300-00017937&external=true&parentUrl=close"
  },
@@ -64,5 +65,12 @@
    "11/19/2026"
   ],
   "url": "https://www.dpbh.nv.gov/programs/bh-wellness-and-prevention-bbhwp/sor/sor4rfa/"
+ },
+ "wi-dhs-reentry-navigation-tac-fy27": {
+  "date": "2026-11-20",
+  "added_dates": [
+   "november 20, 2026"
+  ],
+  "url": "https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm"
  }
 }

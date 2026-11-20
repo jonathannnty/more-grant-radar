@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "13c132323b5e340b",
-  "len": 3076,
+  "hash": "4da9a0238112704b",
+  "len": 3182,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "4f0c0aeacdd2c9d2",
-  "len": 2857,
+  "hash": "dba27814c5a3d8e9",
+  "len": 2887,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -599,8 +599,8 @@
   "url": "https://www.dhs.wisconsin.gov/opioids/settlement-funds.htm"
  },
  "co-coac-infrastructure-share-r5": {
-  "hash": "bf0f066cdc88febd",
-  "len": 39266,
+  "hash": "c3df792cde3f5ce2",
+  "len": 39302,
   "dates": [
    "april 13, 2023",
    "april 16, 2024",
@@ -680,14 +680,15 @@
   "url": "https://www.grants.gov/search-results-detail/363652"
  },
  "wi-dhs-reentry-navigation-tac-fy27": {
-  "hash": "eb34461cda8994f4",
-  "len": 25291,
+  "hash": "29a3774c0fcd3b5a",
+  "len": 26253,
   "dates": [
    "august 31, 2027",
    "august 31, 2028",
    "december 11, 2026",
    "march 1, 2027",
    "november 2, 2026",
+   "november 20, 2026",
    "september 1, 2027"
   ],
   "url": "https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm"
@@ -760,8 +761,8 @@
   "url": "https://kyoaac.ky.gov/pdfs/FINAL%202026%20NOFO%20Treatment%20Recovery.pdf"
  },
  "or-osptr-opioid-settlement-community-grant": {
-  "hash": "89f8dfcbaacd9257",
-  "len": 5991,
+  "hash": "1e5bea917a0242e3",
+  "len": 6125,
   "dates": [
    "07/01/2027",
    "10/15/2026",
@@ -770,6 +771,8 @@
    "10/26/2026",
    "11/02/2026",
    "11/10/2026",
+   "11/19/2026",
+   "11/20/26",
    "12/17/2026"
   ],
   "url": "https://oregonbuys.gov/bso/external/bidDetail.sda?docId=S-44300-00017937&external=true&parentUrl=close"
@@ -899,21 +902,19 @@
   "url": "https://www.blackhawkcounty.iowa.gov/844/Opioid-Settlement-Funds"
  },
  "nv-dhs-frn-opioid-settlement-nofo-watch": {
-  "hash": "6aa9c3e3a43b424e",
-  "len": 2817,
+  "hash": "e806aedda0c98c1c",
+  "len": 2686,
   "dates": [
    "11/12/2025",
-   "11/19/2026",
    "november 27, 2026"
   ],
   "url": "https://www.dhs.nv.gov/Programs/frn/nofo/"
  },
  "nv-dpbh-sor-next-cycle-watch": {
-  "hash": "d1902d90fd883654",
-  "len": 2364,
+  "hash": "a4cdb90af1068fe8",
+  "len": 2231,
   "dates": [
    "01/08/2026",
-   "11/19/2026",
    "january 1, 2025",
    "november 27, 2026",
    "september 29, 2027"
