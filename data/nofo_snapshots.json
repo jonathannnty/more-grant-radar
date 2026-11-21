@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "4da9a0238112704b",
-  "len": 3182,
+  "hash": "4fc5a7ae13fc0bc4",
+  "len": 3090,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "dba27814c5a3d8e9",
-  "len": 2887,
+  "hash": "19500e6474568a49",
+  "len": 2866,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -460,8 +460,8 @@
   "url": "https://www.springfield-ma.gov/hhs/fileadmin/health/ORRF/Mini_Grants/Mini_Grant_RFP_-_FINAL.pdf"
  },
  "tn-oac-community-cycle4": {
-  "hash": "fb3d5a9db229f187",
-  "len": 4263,
+  "hash": "90c20b29f6b80ec2",
+  "len": 4313,
   "dates": [
    "december 5, 2022",
    "july 31, 2024",
@@ -745,12 +745,13 @@
   "url": "https://mh.alabama.gov/wp-content/uploads/2026/10/2027-09-Adolescent-Treatment.pdf"
  },
  "la-ebr-baton-rouge-opioid-abatement-nofa-watch": {
-  "hash": "4b0d192834689b49",
-  "len": 7025,
+  "hash": "a318989abb87cca2",
+  "len": 7014,
   "dates": [
    "december 8, 2026",
    "october 13, 2026",
-   "october 19, 2029"
+   "october 19, 2029",
+   "october 23, 2026"
   ],
   "url": "https://www.brla.gov/3185/Office-of-Community-Development"
  },
@@ -761,8 +762,8 @@
   "url": "https://kyoaac.ky.gov/pdfs/FINAL%202026%20NOFO%20Treatment%20Recovery.pdf"
  },
  "or-osptr-opioid-settlement-community-grant": {
-  "hash": "1e5bea917a0242e3",
-  "len": 6125,
+  "hash": "d97b30b9682def8f",
+  "len": 6532,
   "dates": [
    "07/01/2027",
    "10/15/2026",
@@ -772,6 +773,7 @@
    "11/02/2026",
    "11/10/2026",
    "11/19/2026",
+   "11/20/2026",
    "11/20/26",
    "12/17/2026"
   ],
@@ -911,8 +913,8 @@
   "url": "https://www.dhs.nv.gov/Programs/frn/nofo/"
  },
  "nv-dpbh-sor-next-cycle-watch": {
-  "hash": "a4cdb90af1068fe8",
-  "len": 2231,
+  "hash": "0f2a38099d5e93bf",
+  "len": 2247,
   "dates": [
    "01/08/2026",
    "january 1, 2025",

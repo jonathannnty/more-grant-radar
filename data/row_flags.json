@@ -18,13 +18,6 @@
   ],
   "url": "https://www.azahcccs.gov/Resources/Grants/"
  },
- "samhsa-ed-alt-ti-27-005": {
-  "date": "2026-10-30",
-  "added_dates": [
-   "10/30/2026"
-  ],
-  "url": "https://www.samhsa.gov/grants/grants-dashboard/forecasts"
- },
  "cdc-ncipc-rfa-ce-27-017": {
   "date": "2026-11-03",
   "added_dates": [
@@ -45,10 +38,9 @@
   "url": "https://buckscounty.gov/2231/Apply-for-OSF-Funding"
  },
  "or-osptr-opioid-settlement-community-grant": {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "added_dates": [
-   "11/19/2026",
-   "11/20/26"
+   "11/20/2026"
   ],
   "url": "https://oregonbuys.gov/bso/external/bidDetail.sda?docId=S-44300-00017937&external=true&parentUrl=close"
  },
@@ -72,5 +64,12 @@
    "november 20, 2026"
   ],
   "url": "https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm"
+ },
+ "la-ebr-baton-rouge-opioid-abatement-nofa-watch": {
+  "date": "2026-11-21",
+  "added_dates": [
+   "october 23, 2026"
+  ],
+  "url": "https://www.brla.gov/3185/Office-of-Community-Development"
  }
 }
