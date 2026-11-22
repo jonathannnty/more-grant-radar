@@ -37,16 +37,9 @@
   "url": "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
  },
  "oneohio-c3": {
-  "hash": "ee73a7fc707044f3",
-  "len": 10777,
-  "dates": [
-   "1/21/26",
-   "1/26/26",
-   "1/7/26",
-   "december 10, 2025",
-   "february 11, 2026",
-   "january 14, 2026"
-  ],
+  "hash": "a36e72ad801ffe73",
+  "len": 1765,
+  "dates": [],
   "url": "https://www.oneohiofoundation.com/grants"
  },
  "allegheny-osf-2026": {
@@ -279,8 +272,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "4fc5a7ae13fc0bc4",
-  "len": 3090,
+  "hash": "6ac3083efc7ff40e",
+  "len": 3050,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +282,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "19500e6474568a49",
-  "len": 2866,
+  "hash": "a0af269940c50fa9",
+  "len": 2902,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -713,8 +706,8 @@
  },
  "sc-scorf-opioid-recovery-fund-watch": {},
  "sc-bhdd-osus-subgrant-watch": {
-  "hash": "6658cf6a85d521b1",
-  "len": 17506,
+  "hash": "5d34aa26961a750f",
+  "len": 16932,
   "dates": [
    "07/31/2026",
    "08/01/2022",
@@ -904,8 +897,8 @@
   "url": "https://www.blackhawkcounty.iowa.gov/844/Opioid-Settlement-Funds"
  },
  "nv-dhs-frn-opioid-settlement-nofo-watch": {
-  "hash": "e806aedda0c98c1c",
-  "len": 2686,
+  "hash": "55f67ab65d007e4e",
+  "len": 2691,
   "dates": [
    "11/12/2025",
    "november 27, 2026"
@@ -913,8 +906,8 @@
   "url": "https://www.dhs.nv.gov/Programs/frn/nofo/"
  },
  "nv-dpbh-sor-next-cycle-watch": {
-  "hash": "0f2a38099d5e93bf",
-  "len": 2247,
+  "hash": "c244931354a0ff0f",
+  "len": 2249,
   "dates": [
    "01/08/2026",
    "january 1, 2025",
