@@ -37,9 +37,16 @@
   "url": "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
  },
  "oneohio-c3": {
-  "hash": "a36e72ad801ffe73",
-  "len": 1765,
-  "dates": [],
+  "hash": "ee73a7fc707044f3",
+  "len": 10777,
+  "dates": [
+   "1/21/26",
+   "1/26/26",
+   "1/7/26",
+   "december 10, 2025",
+   "february 11, 2026",
+   "january 14, 2026"
+  ],
   "url": "https://www.oneohiofoundation.com/grants"
  },
  "allegheny-osf-2026": {
@@ -87,8 +94,8 @@
   "url": "https://www.grants.gov/search-results-detail/360366"
  },
  "samhsa-sm-26-015": {
-  "hash": "f2dd5a9677c3b68d",
-  "len": 50152,
+  "hash": "5c0a56a3ba400a1d",
+  "len": 46731,
   "dates": [
    "08/18/2026",
    "august 17, 2026",
@@ -272,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "6ac3083efc7ff40e",
-  "len": 3050,
+  "hash": "1ce44958656a77f0",
+  "len": 3056,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -282,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "a0af269940c50fa9",
-  "len": 2902,
+  "hash": "797486128e7c3e93",
+  "len": 2834,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -389,8 +396,8 @@
   "url": "https://simpler.grants.gov/opportunity/579974eb-28f3-4ba0-8741-fa1a1183cd3e"
  },
  "samhsa-ed-alt-ti-27-005": {
-  "hash": "c893f1bca4a39532",
-  "len": 48137,
+  "hash": "be8c8de08686da0d",
+  "len": 50135,
   "dates": [
    "10/30/2026"
   ],
@@ -673,16 +680,12 @@
   "url": "https://www.grants.gov/search-results-detail/363652"
  },
  "wi-dhs-reentry-navigation-tac-fy27": {
-  "hash": "29a3774c0fcd3b5a",
-  "len": 26253,
+  "hash": "26b826f46836f948",
+  "len": 7645,
   "dates": [
-   "august 31, 2027",
-   "august 31, 2028",
    "december 11, 2026",
-   "march 1, 2027",
    "november 2, 2026",
-   "november 20, 2026",
-   "september 1, 2027"
+   "november 23, 2026"
   ],
   "url": "https://www.dhs.wisconsin.gov/contracts/reentry-navigation-support-and-training-assistance-center-funding-application.htm"
  },
@@ -755,8 +758,8 @@
   "url": "https://kyoaac.ky.gov/pdfs/FINAL%202026%20NOFO%20Treatment%20Recovery.pdf"
  },
  "or-osptr-opioid-settlement-community-grant": {
-  "hash": "d97b30b9682def8f",
-  "len": 6532,
+  "hash": "9495aca1893e3d56",
+  "len": 6741,
   "dates": [
    "07/01/2027",
    "10/15/2026",
@@ -768,6 +771,7 @@
    "11/19/2026",
    "11/20/2026",
    "11/20/26",
+   "11/23/2026",
    "12/17/2026"
   ],
   "url": "https://oregonbuys.gov/bso/external/bidDetail.sda?docId=S-44300-00017937&external=true&parentUrl=close"
@@ -897,8 +901,8 @@
   "url": "https://www.blackhawkcounty.iowa.gov/844/Opioid-Settlement-Funds"
  },
  "nv-dhs-frn-opioid-settlement-nofo-watch": {
-  "hash": "55f67ab65d007e4e",
-  "len": 2691,
+  "hash": "1e97a42b7f003001",
+  "len": 2675,
   "dates": [
    "11/12/2025",
    "november 27, 2026"
@@ -906,8 +910,8 @@
   "url": "https://www.dhs.nv.gov/Programs/frn/nofo/"
  },
  "nv-dpbh-sor-next-cycle-watch": {
-  "hash": "c244931354a0ff0f",
-  "len": 2249,
+  "hash": "a4cdb90af1068fe8",
+  "len": 2231,
   "dates": [
    "01/08/2026",
    "january 1, 2025",

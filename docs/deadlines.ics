@@ -278,9 +278,9 @@ DESCRIPTION:[Grant Radar] NIH HEAL IMPOWR BEACON Coordination Center (RFA-DA-28-
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:allegheny-osf-2026-watch-20261119@more-grant-radar
+UID:allegheny-osf-2026-watch-20261203@more-grant-radar
 DTSTAMP:20261123T120000Z
-DTSTART;VALUE=DATE:20261119
+DTSTART;VALUE=DATE:20261203
 SUMMARY:[Grant Radar] Allegheny County OSF — annual RFP — cycle watch
 DESCRIPTION:Annual county settlement RFP — opens around November\, due January. Calendar it\; the county pattern of 3–6-week windows is the volume play nationwide.\n\nPath: Direct/Sub · Priority 17.1\nhttps://solicitations.alleghenycounty.us/wp-content/uploads/2025/09/REFERENCE-ONLY-1.-OSF-RFP_Amended-08-13-26.pdf
 URL:https://solicitations.alleghenycounty.us/wp-content/uploads/2025/09/REFERENCE-ONLY-1.-OSF-RFP_Amended-08-13-26.pdf
@@ -368,9 +368,9 @@ DESCRIPTION:[Grant Radar] Sedgwick County / Wichita KS opioid settlement RFPs (4
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:oneohio-c3-watch-20261119@more-grant-radar
+UID:oneohio-c3-watch-20261215@more-grant-radar
 DTSTAMP:20261123T120000Z
-DTSTART;VALUE=DATE:20261119
+DTSTART;VALUE=DATE:20261215
 SUMMARY:[Grant Radar] OneOhio Recovery Foundation — Regional Grant Cycle 3 (not yet announced) — cycle watch
 DESCRIPTION:Ohio's 55% opioid-settlement foundation. Cycle 2 was $45.8M across 19 regions\, and private for-profits whose services meet the Foundation's charitable purpose could apply. Workforce development / BH continuing-education priorities in some regions fit MORE training. Cycle 3 is not announced yet\, and More Therapy's Ohio SoS registration under its EIN (2 consecutive years) is the gating item.\n\nPath: Direct · Priority 15.8\nhttps://www.oneohiofoundation.com/grants
 URL:https://www.oneohiofoundation.com/grants
@@ -473,6 +473,24 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] Alabama ADMH Opioid Settlement Round 4 (RFP 2027-04) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nh-oacgp-granite-united-way-responsive-watch-watch-20270115@more-grant-radar
+DTSTAMP:20261123T120000Z
+DTSTART;VALUE=DATE:20270115
+SUMMARY:[Grant Radar] NH Opioid Abatement Community Grants Program (OACGP) - Responsive & Multiyear Grants — cycle watch
+DESCRIPTION:NH sends part of its opioid settlement money to communities through 4 Responsive cycles a year (up to $15K) and occasional Multiyear grants (up to $75K/yr). Both list training and consultant/professional services as allowable costs. An NH treatment or recovery nonprofit\, county or city could pay for a MORE clinician cohort as a one-time training project.\n\nPath: Line-item · Priority 8.4\nhttps://graniteuw.org/opioid-abatement-community-grants-program/
+URL:https://graniteuw.org/opioid-abatement-community-grants-program/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NH Opioid Abatement Community Grants Program (OACGP) - Responsive & Multiyear Grants — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] NH Opioid Abatement Community Grants Program (OACGP) - Responsive & Multiyear Grants — cycle watch
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -653,6 +671,24 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] Mississippi Opioid Settlement Fund Advisory Council - Opioid Abatement Grants (next annual cycle) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ne-region5-opioid-settlement-fy28-watch-watch-20270515@more-grant-radar
+DTSTAMP:20261123T120000Z
+DTSTART;VALUE=DATE:20270515
+SUMMARY:[Grant Radar] Region 5 Systems – Opioid Settlement Funds Open Application (FY28) — cycle watch
+DESCRIPTION:Region 5 Systems (Lincoln area) puts opioid settlement money toward its own priority strategies. One of them is training addiction professionals who provide direct care for OUD/SUD\, and another is expanding MAT/MOUD capacity through training. MORE clinician training fits both\, either as a provider's line item or as a direct proposal if eligibility allows.\n\nPath: Line-item · Priority 3.0\nhttps://dhhs.ne.gov/Behavioral%20Health%20Documents/June%2024\,%202026%20-%20OSRAC%20Meeting%20Minutes%20DRAFT.pdf
+URL:https://dhhs.ne.gov/Behavioral%20Health%20Documents/June%2024,%202026%20-%20OSRAC%20Meeting%20Minutes%20DRAFT.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Region 5 Systems – Opioid Settlement Funds Open Application (FY28) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Region 5 Systems – Opioid Settlement Funds Open Application (FY28) — cycle watch
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1160,6 +1196,78 @@ DESCRIPTION:[Grant Radar] Nevada State Opioid Response (SOR) subgrant RFA – ne
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+UID:ne-region3-opioid-settlement-grant-cycle4-watch-20270615@more-grant-radar
+DTSTAMP:20261123T120000Z
+DTSTART;VALUE=DATE:20270615
+SUMMARY:[Grant Radar] Region 3 Behavioral Health Services – Opioid Settlement Competitive Grant (Cycle 4) — cycle watch
+DESCRIPTION:Region 3 gives out a share of Nebraska's opioid settlement money through a yearly competitive grant cycle that funds treatment and recovery projects. A Region 3 provider (for example Mid Plains Center or Revive Inc.) could include MORE clinician training as a treatment/recovery workforce cost\; More Therapy might also apply directly if for-profits are confirmed eligible.\n\nPath: Line-item · Priority 2.0\nhttps://region3.net/opioid-resources/
+URL:https://region3.net/opioid-resources/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Region 3 Behavioral Health Services – Opioid Settlement Competitive Grant (Cycle 4) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Region 3 Behavioral Health Services – Opioid Settlement Competitive Grant (Cycle 4) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ne-region4-opioid-settlement-fall-cycle-watch-watch-20270801@more-grant-radar
+DTSTAMP:20261123T120000Z
+DTSTART;VALUE=DATE:20270801
+SUMMARY:[Grant Radar] Region 4 Behavioral Health System – Annual Opioid Settlement Grant Cycle — cycle watch
+DESCRIPTION:Region 4 gives out opioid settlement money each fall. Its priorities\, set at its 2024 Opioid Summit\, include expanding access to treatment. A Region 4 provider could include MORE clinician training as a line item.\n\nPath: Line-item · Priority 2.0\nhttps://dhhs.ne.gov/Behavioral%20Health%20Documents/June%2024\,%202026%20-%20OSRAC%20Meeting%20Minutes%20DRAFT.pdf
+URL:https://dhhs.ne.gov/Behavioral%20Health%20Documents/June%2024,%202026%20-%20OSRAC%20Meeting%20Minutes%20DRAFT.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Region 4 Behavioral Health System – Annual Opioid Settlement Grant Cycle — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Region 4 Behavioral Health System – Annual Opioid Settlement Grant Cycle — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:id-ibhc-opioid-settlement-recommendation-fy2029-watch-watch-20270501@more-grant-radar
+DTSTAMP:20261123T120000Z
+DTSTART;VALUE=DATE:20270501
+SUMMARY:[Grant Radar] Idaho Behavioral Health Council – State Opioid Settlement Fund proposal/recommendation process (FY2029 cycle) — cycle watch
+DESCRIPTION:Idaho's 40% state share of opioid settlement money is set through an annual IBHC public-proposal process. For FY2028 the council named workforce development and MOUD treatment as priorities. A proposal for statewide or rural MORE clinician training\, tied to a specific state agency budget (e.g.\, DHW Behavioral Health)\, fits both priorities.\n\nPath: Line-item · Priority 2.0\nhttps://behavioralhealthcouncil.idaho.gov/idaho-opioid-settlement-fund/
+URL:https://behavioralhealthcouncil.idaho.gov/idaho-opioid-settlement-fund/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Idaho Behavioral Health Council – State Opioid Settlement Fund proposal/recommendation process (FY2029 cycle) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Idaho Behavioral Health Council – State Opioid Settlement Fund proposal/recommendation process (FY2029 cycle) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:wv-wvff-opioid-settlement-next-cycle-watch-watch-20270301@more-grant-radar
+DTSTAMP:20261123T120000Z
+DTSTART;VALUE=DATE:20270301
+SUMMARY:[Grant Radar] West Virginia First Foundation – next opioid settlement grant cycle (after 2026 Community Catalyst Grant) — cycle watch
+DESCRIPTION:WV's statewide opioid settlement foundation awards about $10-18M a year in competitive cycles covering prevention\, treatment\, recovery and workforce. In a WV treatment\, reentry or Day Report Center applicant's budget\, MORE training is an evidence-based line item that fits WVFF's measurable-outcomes requirements.\n\nPath: Line-item · Priority 2.0\nhttps://wvfirst.org/grant-cycles/
+URL:https://wvfirst.org/grant-cycles/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] West Virginia First Foundation – next opioid settlement grant cycle (after 2026 Community Catalyst Grant) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] West Virginia First Foundation – next opioid settlement grant cycle (after 2026 Community Catalyst Grant) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 UID:hrsa-rcorp-cabh-fy27-watch-20270122@more-grant-radar
 DTSTAMP:20261123T120000Z
 DTSTART;VALUE=DATE:20270122
@@ -1247,6 +1355,60 @@ BEGIN:VALARM
 TRIGGER:-P3D
 ACTION:DISPLAY
 DESCRIPTION:[Grant Radar] NM HCA BHSD SBIRT Training Vendor (next cycle) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ne-region6-opioid-settlement-watch-watch-20270115@more-grant-radar
+DTSTAMP:20261123T120000Z
+DTSTART;VALUE=DATE:20270115
+SUMMARY:[Grant Radar] Region 6 Behavioral Healthcare – Opioid Settlement Projects (Omaha metro) — cycle watch
+DESCRIPTION:Region 6 controls nearly half of Nebraska's regional opioid settlement money for the Omaha metro\, and its FY2027 projects already include workforce development. MORE training could be proposed to Region 6 directly or included in a provider's project.\n\nPath: Sub · Priority 1.0\nhttps://dhhs.ne.gov/Behavioral%20Health%20Documents/June%2024\,%202026%20-%20OSRAC%20Meeting%20Minutes%20DRAFT.pdf
+URL:https://dhhs.ne.gov/Behavioral%20Health%20Documents/June%2024,%202026%20-%20OSRAC%20Meeting%20Minutes%20DRAFT.pdf
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Region 6 Behavioral Healthcare – Opioid Settlement Projects (Omaha metro) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Region 6 Behavioral Healthcare – Opioid Settlement Projects (Omaha metro) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:wv-bbh-funding-announcements-watch-watch-20270115@more-grant-radar
+DTSTAMP:20261123T120000Z
+DTSTART;VALUE=DATE:20270115
+SUMMARY:[Grant Radar] WV Bureau for Behavioral Health – funding announcements (SOR/SUBG pass-through) — cycle watch
+DESCRIPTION:BBH passes federal SOR/SUBG money to WV providers and CCBHCs through funding announcements. A future workforce/EBP training or MOUD-provider announcement could fund MORE training through a provider applicant.\n\nPath: Sub · Priority 1.0\nhttps://bbh.wv.gov/bbh/funding/current-funding-announcements
+URL:https://bbh.wv.gov/bbh/funding/current-funding-announcements
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] WV Bureau for Behavioral Health – funding announcements (SOR/SUBG pass-through) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] WV Bureau for Behavioral Health – funding announcements (SOR/SUBG pass-through) — cycle watch
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:hi-osp-hosac-county-microgrants-watch-watch-20270115@more-grant-radar
+DTSTAMP:20261123T120000Z
+DTSTART;VALUE=DATE:20270115
+SUMMARY:[Grant Radar] Hawaii Opioid Settlement Program – County Microgrants (planned) — cycle watch
+DESCRIPTION:Hawaii's state opioid settlement program plans microgrants to make settlement funds available to smaller entities on each island. A funded Hawaii treatment provider or community organization could budget MORE clinician training as a line item\, if training turns out to be an allowable cost.\n\nPath: Line-item · Priority 1.0\nhttps://osp.hawaii.gov/hosac-members/
+URL:https://osp.hawaii.gov/hosac-members/
+BEGIN:VALARM
+TRIGGER:-P14D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Hawaii Opioid Settlement Program – County Microgrants (planned) — cycle watch
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-P3D
+ACTION:DISPLAY
+DESCRIPTION:[Grant Radar] Hawaii Opioid Settlement Program – County Microgrants (planned) — cycle watch
 END:VALARM
 END:VEVENT
 END:VCALENDAR
