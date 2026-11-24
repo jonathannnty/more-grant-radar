@@ -6,8 +6,8 @@
   "url": "https://www.samhsa.gov/sites/default/files/grants/pdf/fy-2026-ccbhc-pdi-sm-26-014.pdf"
  },
  "pa-27-100": {
-  "hash": "c4e4ac660b03e758",
-  "len": 6595,
+  "hash": "39fd6d1972568d37",
+  "len": 6767,
   "dates": [
    "april 5, 2027",
    "june 4, 2027",
@@ -24,8 +24,8 @@
   "url": "https://comptroller.texas.gov/programs/opioid-council/grants/grant-opp.php"
  },
  "hrsa-rcorp-fy27": {
-  "hash": "d722bedf9599a512",
-  "len": 4580,
+  "hash": "cbaf17d2e618c2bb",
+  "len": 4752,
   "dates": [
    "april 9, 2027",
    "august 1, 2027",
@@ -94,8 +94,8 @@
   "url": "https://www.grants.gov/search-results-detail/360366"
  },
  "samhsa-sm-26-015": {
-  "hash": "5c0a56a3ba400a1d",
-  "len": 46731,
+  "hash": "bccca27bb8883317",
+  "len": 46882,
   "dates": [
    "08/18/2026",
    "august 17, 2026",
@@ -279,8 +279,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "1ce44958656a77f0",
-  "len": 3056,
+  "hash": "ed099f9baf6a1003",
+  "len": 3012,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +289,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "797486128e7c3e93",
-  "len": 2834,
+  "hash": "13491b4e09f79b22",
+  "len": 2939,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -311,8 +311,8 @@
   "url": "https://www.ojp.gov/funding/docs/bja-2026-172763.pdf"
  },
  "hrsa-rcorp-csd-fy27": {
-  "hash": "0c9c17652576fe38",
-  "len": 4661,
+  "hash": "83d262d8bf174c43",
+  "len": 4833,
   "dates": [
    "april 6, 2027",
    "august 1, 2027",
@@ -357,8 +357,8 @@
   "url": "https://www.ojp.gov/funding/docs/ojjdp-2026-172748.pdf"
  },
  "cdc-ncipc-rfa-ce-27-017": {
-  "hash": "b99d86c76c2d93d5",
-  "len": 5119,
+  "hash": "82825695e67f4183",
+  "len": 5291,
   "dates": [
    "august 29, 2027",
    "december 1, 2026",
@@ -370,8 +370,8 @@
   "url": "https://simpler.grants.gov/opportunity/04e6fd79-8789-47c8-be6f-646c0e686087"
  },
  "hrsa-rcorp-overdose-response-fy27": {
-  "hash": "d722bedf9599a512",
-  "len": 4580,
+  "hash": "cbaf17d2e618c2bb",
+  "len": 4752,
   "dates": [
    "april 9, 2027",
    "august 1, 2027",
@@ -383,8 +383,8 @@
   "url": "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
  },
  "hrsa-rcorp-cabh-fy27": {
-  "hash": "feca5900d504e369",
-  "len": 4543,
+  "hash": "43351dfcd4a1249b",
+  "len": 4715,
   "dates": [
    "april 22, 2027",
    "august 1, 2027",
@@ -396,8 +396,8 @@
   "url": "https://simpler.grants.gov/opportunity/579974eb-28f3-4ba0-8741-fa1a1183cd3e"
  },
  "samhsa-ed-alt-ti-27-005": {
-  "hash": "be8c8de08686da0d",
-  "len": 50135,
+  "hash": "4c2758857741e10b",
+  "len": 50286,
   "dates": [
    "10/30/2026"
   ],
@@ -901,11 +901,12 @@
   "url": "https://www.blackhawkcounty.iowa.gov/844/Opioid-Settlement-Funds"
  },
  "nv-dhs-frn-opioid-settlement-nofo-watch": {
-  "hash": "1e97a42b7f003001",
-  "len": 2675,
+  "hash": "aea786762d2b80b4",
+  "len": 2694,
   "dates": [
    "11/12/2025",
-   "november 27, 2026"
+   "november 27, 2026",
+   "october 31, 1864"
   ],
   "url": "https://www.dhs.nv.gov/Programs/frn/nofo/"
  },
@@ -937,5 +938,71 @@
   "len": 232462,
   "dates": [],
   "url": "https://www.hca.nm.gov/wp-content/uploads/HCA_BHSD_SBIRT_RFI_FY26-04.28.26.pdf"
+ },
+ "ne-region3-opioid-settlement-grant-cycle4": {
+  "hash": "466755432318828e",
+  "len": 3865,
+  "dates": [
+   "8/31/2027",
+   "9/1/2026"
+  ],
+  "url": "https://region3.net/opioid-resources/"
+ },
+ "ne-region4-opioid-settlement-fall-cycle-watch": {
+  "hash": "f831f136f40dd9b8",
+  "len": 333806,
+  "dates": [],
+  "url": "https://dhhs.ne.gov/Behavioral%20Health%20Documents/June%2024,%202026%20-%20OSRAC%20Meeting%20Minutes%20DRAFT.pdf"
+ },
+ "ne-region5-opioid-settlement-fy28-watch": {
+  "hash": "f831f136f40dd9b8",
+  "len": 333806,
+  "dates": [],
+  "url": "https://dhhs.ne.gov/Behavioral%20Health%20Documents/June%2024,%202026%20-%20OSRAC%20Meeting%20Minutes%20DRAFT.pdf"
+ },
+ "ne-region6-opioid-settlement-watch": {
+  "hash": "f831f136f40dd9b8",
+  "len": 333806,
+  "dates": [],
+  "url": "https://dhhs.ne.gov/Behavioral%20Health%20Documents/June%2024,%202026%20-%20OSRAC%20Meeting%20Minutes%20DRAFT.pdf"
+ },
+ "id-ibhc-opioid-settlement-recommendation-fy2029-watch": {
+  "hash": "b3911e9d31f22d85",
+  "len": 4295,
+  "dates": [
+   "august 28, 2026",
+   "july 1, 2028",
+   "june 26, 2026",
+   "june 5, 2026",
+   "september 15, 2026"
+  ],
+  "url": "https://behavioralhealthcouncil.idaho.gov/idaho-opioid-settlement-fund/"
+ },
+ "wv-wvff-opioid-settlement-next-cycle-watch": {
+  "hash": "8f3bb7a17dd70a3e",
+  "len": 1109,
+  "dates": [],
+  "url": "https://wvfirst.org/grant-cycles/"
+ },
+ "wv-bbh-funding-announcements-watch": {
+  "hash": "c789b85b5eccbf37",
+  "len": 1438,
+  "dates": [],
+  "url": "https://bbh.wv.gov/bbh/funding/current-funding-announcements"
+ },
+ "hi-osp-hosac-county-microgrants-watch": {
+  "hash": "da290d5020aa2ab3",
+  "len": 4241,
+  "dates": [],
+  "url": "https://osp.hawaii.gov/hosac-members/"
+ },
+ "nh-oacgp-granite-united-way-responsive-watch": {
+  "hash": "cdfc5af2daf1d6d9",
+  "len": 12333,
+  "dates": [
+   "july 1, 2026",
+   "june 30, 2027"
+  ],
+  "url": "https://graniteuw.org/opioid-abatement-community-grants-program/"
  }
 }

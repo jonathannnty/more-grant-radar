@@ -1,89 +1,5 @@
 [
  {
-  "phase": "generate",
-  "ts": "2026-10-21T06:10:58Z",
-  "status": "ok",
-  "note": "",
-  "counts": {
-   "rows": 39,
-   "skipped": 0
-  }
- },
- {
-  "phase": "scan_grants_gov",
-  "ts": "2026-10-21T06:11:03Z",
-  "status": "ok",
-  "note": "",
-  "counts": {
-   "queries": 23,
-   "unknown": 27
-  }
- },
- {
-  "phase": "scan_sam",
-  "ts": "2026-10-21T06:11:03Z",
-  "status": "ok",
-  "note": "",
-  "counts": {
-   "relevant": 0
-  }
- },
- {
-  "phase": "scan_states",
-  "ts": "2026-10-21T06:11:11Z",
-  "status": "ok",
-  "note": "123/141 pages read · tracker list updated 2026-08-02",
-  "counts": {
-   "pages": 141,
-   "read": 123,
-   "unreachable": 18,
-   "new_links": 0,
-   "tracker_open": 18
-  }
- },
- {
-  "phase": "nofo_watch",
-  "ts": "2026-10-21T06:11:21Z",
-  "status": "ok",
-  "note": "",
-  "counts": {
-   "checked": 43,
-   "changed": 1,
-   "unreachable": 1
-  }
- },
- {
-  "phase": "promote_leads",
-  "ts": "2026-10-21T06:11:21Z",
-  "status": "ok",
-  "note": "",
-  "counts": {
-   "added": 0,
-   "active": 27,
-   "expired": 0
-  }
- },
- {
-  "phase": "generate",
-  "ts": "2026-10-21T06:11:22Z",
-  "status": "ok",
-  "note": "",
-  "counts": {
-   "rows": 39,
-   "skipped": 0
-  }
- },
- {
-  "phase": "generate",
-  "ts": "2026-10-21T15:43:43Z",
-  "status": "ok",
-  "note": "",
-  "counts": {
-   "rows": 39,
-   "skipped": 0
-  }
- },
- {
   "phase": "scan_grants_gov",
   "ts": "2026-10-21T15:43:50Z",
   "status": "ok",
@@ -3157,6 +3073,90 @@
  {
   "phase": "generate",
   "ts": "2026-11-23T22:34:16Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "rows": 84,
+   "skipped": 0
+  }
+ },
+ {
+  "phase": "generate",
+  "ts": "2026-11-24T20:55:32Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "rows": 84,
+   "skipped": 0
+  }
+ },
+ {
+  "phase": "scan_grants_gov",
+  "ts": "2026-11-24T20:55:39Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "queries": 23,
+   "unknown": 22
+  }
+ },
+ {
+  "phase": "scan_sam",
+  "ts": "2026-11-24T20:55:40Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "relevant": 0
+  }
+ },
+ {
+  "phase": "scan_states",
+  "ts": "2026-11-24T20:55:52Z",
+  "status": "ok",
+  "note": "141/165 pages read · tracker list updated 2026-08-02",
+  "counts": {
+   "pages": 165,
+   "read": 141,
+   "unreachable": 24,
+   "new_links": 6,
+   "tracker_open": 18
+  }
+ },
+ {
+  "phase": "nofo_watch",
+  "ts": "2026-11-24T20:56:29Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "checked": 91,
+   "changed": 1,
+   "unreachable": 9
+  }
+ },
+ {
+  "phase": "promote_leads",
+  "ts": "2026-11-24T20:56:29Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "added": 6,
+   "active": 11,
+   "expired": 5
+  }
+ },
+ {
+  "phase": "notify",
+  "ts": "2026-11-24T20:56:29Z",
+  "status": "ok",
+  "note": "",
+  "counts": {
+   "sent": 0,
+   "recipients": 2
+  }
+ },
+ {
+  "phase": "generate",
+  "ts": "2026-11-24T20:56:29Z",
   "status": "ok",
   "note": "",
   "counts": {
