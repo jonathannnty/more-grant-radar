@@ -37,16 +37,9 @@
   "url": "https://simpler.grants.gov/opportunity/6e9b19d6-ad0b-423f-830e-97341e72b6da"
  },
  "oneohio-c3": {
-  "hash": "ee73a7fc707044f3",
-  "len": 10777,
-  "dates": [
-   "1/21/26",
-   "1/26/26",
-   "1/7/26",
-   "december 10, 2025",
-   "february 11, 2026",
-   "january 14, 2026"
-  ],
+  "hash": "3e2c2399d52c03d1",
+  "len": 3736,
+  "dates": [],
   "url": "https://www.oneohiofoundation.com/grants"
  },
  "allegheny-osf-2026": {
@@ -279,8 +272,8 @@
   "url": "http://grants.nih.gov/grants/guide/pa-files/PAR-25-144.html"
  },
  "bja-cossup-tta-fy26": {
-  "hash": "c95035e1468f5394",
-  "len": 2980,
+  "hash": "f44ecdfc14858e3c",
+  "len": 2976,
   "dates": [
    "november 2, 2026",
    "november 9, 2026",
@@ -289,8 +282,8 @@
   "url": "https://bja.ojp.gov/funding/opportunities/o-bja-2026-172724"
  },
  "bja-adult-treatment-court-fy26": {
-  "hash": "a3e801e5bd36ab4f",
-  "len": 2869,
+  "hash": "f9dfbd79e9f3284b",
+  "len": 2949,
   "dates": [
    "november 6, 2026",
    "october 30, 2026",
@@ -910,12 +903,13 @@
   "url": "https://www.dhs.nv.gov/Programs/frn/nofo/"
  },
  "nv-dpbh-sor-next-cycle-watch": {
-  "hash": "ba62832d944db83e",
-  "len": 2238,
+  "hash": "652c023e2bf76005",
+  "len": 2257,
   "dates": [
    "01/08/2026",
    "january 1, 2025",
    "november 27, 2026",
+   "october 31, 1864",
    "september 29, 2027"
   ],
   "url": "https://www.dpbh.nv.gov/programs/bh-wellness-and-prevention-bbhwp/sor/sor4rfa/"
